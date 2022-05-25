@@ -1,13 +1,20 @@
 const Discord = require('discord.js')
 const { SlashCommandBuilder } = require('@discordjs/builders');
 module.exports = {
-    name: 'leaders',
-    description: 'displays leaderboard',
-    data: new SlashCommandBuilder(),
-    async execute(client, message, args) {
+    data: new SlashCommandBuilder()
+        .setName('leaders')
+        .setDescription('Displays Leaderboard'),
 
-        let leaderboard = await client.leveling.getTopUser(message.guild.id)
+    async execute(interaction) {
 
+
+
+        const client = interaction.client
+        const user = interaction.user
+        let userId = interaction.user.id
+        let username = interaction.user.username
+        let guildId = interaction.guild.id
+        let leaderboard = await client.leveling.getTopUser(guildId)
         // console.log(leaderboard[0])
         const embed = new Discord.MessageEmbed()
             .setTitle('Haus of Decline Leaderboard')
@@ -17,7 +24,7 @@ module.exports = {
             embed.addField(`${ i + 1 }: ${ leaderboard[i].username }`, `*Level:* ${ leaderboard[i].level } 
             *XP:* ${ leaderboard[i].xp } `)
         }
-        message.channel.send({ embeds: [embed] })
+        await interaction.reply({ embeds: [embed] })
     }
 }
 

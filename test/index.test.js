@@ -50,30 +50,11 @@ client.on('ready', () => {
         }
 
     })
-// .on('messageCreate', (message) => {
-//     if (message.author.bot) return;
-//     // command handler (set prefix in config.json)
-//     if (!message.content.startsWith(config.PREFIX)) {
-//         client.leveling.addLevels(message.author.id, message.guild.id, message.channel.id, message.createdTimestamp, message.author.username, message.author);
-//         return;
-//     }
-//     const args = message.content.slice(config.PREFIX.length).trim().split(' ');
-//     const commandName = args.shift().toLowerCase();
-//     if (!client.commands.has(commandName)) return;
-//     const command = client.commands.get(commandName);
-//     try {
-//         if (command.name === 'roll' && message.channel.id !== config.TESTXPCHANNEL) {
-//             message.channel.send('Please play dice in the dice channel.');
-//             return;
-//         }
-//         // console.log(command)
-//         command.execute(client, message, args);
-//     }
-//     catch (error) {
-//         console.error(error);
-//         message.reply('there was an error trying to execute that command!');
-//     }
-// });
+    .on('messageCreate', (message) => {
+        if (message.author.bot) return;
+        // command handler (set prefix in config.json)
+        client.leveling.addLevels(message.author.id, message.guild.id, message.channel.id, message.createdTimestamp, message.author.username, message.author);
+    });
 client.leveling.on('UserLevelUp', (newLevel, lastLevel, userId, guildId, channelId, username, author) => {
     const embed = new Discord.MessageEmbed()
         .setThumbnail(author.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
@@ -83,7 +64,7 @@ client.leveling.on('UserLevelUp', (newLevel, lastLevel, userId, guildId, channel
     client.channels.cache.get(config.TESTXPCHANNEL).send({ embeds: [embed] });
 });
 client.leveling.on('cooldownActive', (channelId, userId) => {
-    client.channels.cache.get(config.TESTXPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  You'll get more XP in ${ options.cooldown / 1000 } seconds.`);
+    client.channels.cache.get(config.TESTXPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  You'll get more 🪙 in ${ options.cooldown / 1000 } seconds.`);
 });
 client.leveling.on('diceCooldownActive', (channelId, userId) => {
     client.channels.cache.get(config.TESTXPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  Roll again in ${ options.diceCooldown / 1000 } seconds.`);

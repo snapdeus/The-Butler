@@ -29,7 +29,7 @@ module.exports = {
 
         const userStats = await client.leveling.getUserLevel(userId, guildId);
         const stakes = userStats.level * 5
-        interaction.reply(`Let's begin. The stakes are: ${ stakes } XP...rolling...`)
+        await interaction.reply(`Let's begin. The stakes are: ${ stakes } XP...rolling...`)
 
 
         if (playerDiceRoll > botDiceRoll) {
@@ -58,7 +58,7 @@ module.exports = {
                     .addField('Total XP needed to level up:', `${ nextLevel }`)
                     .addField('Haus Coins: ', `🪙 ${ rank.XPoverTime }`)
 
-                await interaction.reply({ embeds: [embed] })
+                await interaction.followUp({ embeds: [embed] })
 
                 //just gain xp
             } else {
@@ -74,7 +74,7 @@ module.exports = {
                     .addField('Total XP needed to level up:', `${ curLevelUp }`)
                     .addField('Haus Coins: ', `🪙 ${ rank.XPoverTime }`)
 
-                await interaction.reply({ embeds: [embed] })
+                await interaction.followUp({ embeds: [embed] })
 
             }
 
@@ -97,7 +97,7 @@ module.exports = {
                     .addField('Total XP needed to level up:', `${ curLevel }`)
                     .addField('Haus Coins: ', `🪙 ${ rank.XPoverTime }`)
 
-                await interaction.reply({ embeds: [embed] })
+                await interaction.followUp({ embeds: [embed] })
 
                 return
             }
@@ -126,7 +126,7 @@ module.exports = {
                     .addField('Total XP needed to level up:', `${ nextLevel }`)
                     .addField('Haus Coins: ', `🪙 ${ rank.XPoverTime }`)
 
-                await interaction.reply({ embeds: [embed] })
+                await interaction.followUp({ embeds: [embed] })
 
 
                 //lose level and xp
@@ -149,7 +149,7 @@ module.exports = {
                     .addField('Total XP needed to level up:', `${ nextLevel }`)
                     .addField('Haus Coins: ', `🪙 ${ rank.XPoverTime }`)
 
-                await interaction.reply({ embeds: [embed] })
+                await interaction.followUp({ embeds: [embed] })
                 //just lose xp
             } else {
                 client.leveling.reduceXP(userId, guildId, stakes)
@@ -164,7 +164,7 @@ module.exports = {
                     .addField('Total XP needed to level up:', `${ curLevel }`)
                     .addField('Haus Coins: ', `🪙 ${ rank.XPoverTime }`)
 
-                await interaction.reply({ embeds: [embed] })
+                await interaction.followUp({ embeds: [embed] })
 
 
             }
@@ -182,7 +182,7 @@ module.exports = {
                 .addField('Total XP needed to level up:', `${ curLevelUp }`)
                 .addField('Haus Coins: ', `🪙 ${ rank.XPoverTime }`)
 
-            await interaction.reply({ embeds: [embed] })
+            await interaction.followUp({ embeds: [embed] })
 
         }
 
