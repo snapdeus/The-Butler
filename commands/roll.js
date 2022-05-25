@@ -6,9 +6,12 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('roll')
-        .setDescription('Roll Dice'),
+        .setDescription('Roll Dice')
+        .addNumberOption(option =>
+            option.setName('wager')
+                .setDescription('Optional amount to wager')),
     async execute(interaction) {
-
+        let wager = interaction.options.getNumber("wager")
         const client = interaction.client
         let player = interaction.user;
         let username = interaction.user.username
@@ -28,7 +31,19 @@ module.exports = {
         const { playerDiceRoll, botDiceRoll } = await client.leveling.rollDice(userId, guildId, username)
 
         const userStats = await client.leveling.getUserLevel(userId, guildId);
-        const stakes = userStats.level * 5
+
+
+        let stakes;
+        if (!wager) {
+            stakes = userStats.level * 5
+        } else {
+            if (wager > userStats.XPoverTime) {
+                wager = userStats.XPoverTime
+            }
+            stakes = wager;
+        }
+
+
         await interaction.reply(`Let's begin. The stakes are: ${ stakes } XP...rolling...`)
 
 
@@ -86,6 +101,7 @@ module.exports = {
             //reset back to level 1 with 1 xp
             if (rank.level === 1 && rank.xp < stakes) {
                 client.leveling.setXP(1, userId, guildId)
+                client.leveling.reduceXP(userId, guildId, stakes)
                 rank = await client.leveling.getUserLevel(userId, guildId)
                 const embed = new Discord.MessageEmbed()
                     .setThumbnail(player.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
