@@ -1,7 +1,30 @@
+require('dotenv').config();
+
 const { Client: DiscordClient, Intents } = require('discord.js');
 const client = new DiscordClient({
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
+
+
+const mongoose = require('mongoose')
+mongoose.connect(`mongodb://localhost:27017/butler-db?authSource=butler-db`, {
+    useNewUrlParser: true,
+    // useCreateIndex: true,
+    useUnifiedTopology: true,
+    // useFindAndModify: false
+    user: process.env.MONGO_USER,
+    pass: process.env.MONGO_PW,
+    autoIndex: false
+});
+
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', () => {
+    console.log('Database connected');
+});
+
+
+
 const { EasyLeveling } = require('../index.js');
 const config = require('./config.json');
 const options = {
