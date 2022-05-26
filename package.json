@@ -1,9 +1,9 @@
 {
-  "name": "discord-easy-leveling",
-  "version": "0.3.1",
-  "description": "An easy package to make leveling system for your bot",
+  "name": "the-butler",
+  "version": "0.2",
+  "description": "butler bot",
   "main": "index.js",
-  "author": "retro_ig",
+  "author": "snapdeus",
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -26,9 +26,5 @@
     "Discord-bot",
     "Leveling",
     "discordjs"
-  ],
-  "repository": {
-    "url": "https://github.com/retrouser955/discord-easy-leveling"
-  },
-  "homepage": "https://github.com/retrouser955/discord-easy-leveling#README"
+  ]
 }
