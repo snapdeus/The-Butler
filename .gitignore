@@ -13,3 +13,5 @@ deletealldata.js
 package-lock.json
 
 .github
+
+.env

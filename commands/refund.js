@@ -16,7 +16,7 @@ module.exports = {
     async execute(interaction) {
         const amount = interaction.options.getNumber("amount")
         const mentionable = interaction.options.getMentionable('user');
-        console.log(mentionable)
+
         if (!interaction.memberPermissions.has("ADMINISTRATOR")) {
             return await interaction.reply("NO. **You can not use this command | Permission: ADMINISTRATOR**");
         }
