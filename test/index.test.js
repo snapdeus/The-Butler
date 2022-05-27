@@ -6,22 +6,22 @@ const client = new DiscordClient({
 });
 
 
-// const mongoose = require('mongoose')
-// mongoose.connect(`mongodb://localhost:27017/butler-db?authSource=butler-db`, {
-//     useNewUrlParser: true,
-//     // useCreateIndex: true,
-//     useUnifiedTopology: true,
-//     // useFindAndModify: false
-//     user: process.env.MONGO_USER,
-//     pass: process.env.MONGO_PW,
-//     autoIndex: false
-// });
+const mongoose = require('mongoose')
+mongoose.connect(`mongodb://localhost:27017/butler-db?authSource=butler-db`, {
+    useNewUrlParser: true,
+    // useCreateIndex: true,
+    useUnifiedTopology: true,
+    // useFindAndModify: false
+    user: process.env.MONGO_USER,
+    pass: process.env.MONGO_PW,
+    autoIndex: false
+});
 
-// const db = mongoose.connection;
-// db.on('error', console.error.bind(console, 'connection error:'));
-// db.once('open', () => {
-//     console.log('Database connected');
-// });
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', () => {
+    console.log('Database connected');
+});
 
 
 
