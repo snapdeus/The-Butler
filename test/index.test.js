@@ -6,34 +6,34 @@ const client = new DiscordClient({
 });
 
 
-const mongoose = require('mongoose')
-mongoose.connect(`mongodb://localhost:27017/butler-db?authSource=butler-db`, {
-    useNewUrlParser: true,
-    // useCreateIndex: true,
-    useUnifiedTopology: true,
-    // useFindAndModify: false
-    user: process.env.MONGO_USER,
-    pass: process.env.MONGO_PW,
-    autoIndex: false
-});
+// const mongoose = require('mongoose')
+// mongoose.connect(`mongodb://localhost:27017/butler-db?authSource=butler-db`, {
+//     useNewUrlParser: true,
+//     // useCreateIndex: true,
+//     useUnifiedTopology: true,
+//     // useFindAndModify: false
+//     user: process.env.MONGO_USER,
+//     pass: process.env.MONGO_PW,
+//     autoIndex: false
+// });
 
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', () => {
-    console.log('Database connected');
-});
+// const db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'connection error:'));
+// db.once('open', () => {
+//     console.log('Database connected');
+// });
 
 
 
 const { EasyLeveling } = require('../index.js');
 const config = require('./config.json');
 const options = {
-    startingXP: 1,
+    startingXP: 0,
     startingLevel: 1,
-    levelUpXP: 10,
+    levelUpXP: 9,
     database: 'sqlite',
-    cooldown: 1500,
-    diceCooldown: 5000,
+    cooldown: 100,
+    diceCooldown: 100,
 };
 
 const fs = require('fs');
