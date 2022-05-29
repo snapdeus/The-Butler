@@ -33,6 +33,9 @@ module.exports = {
                 xpOverTime: 1,
                 timestamp: null,
                 gameTimestamp: null,
+                dice_wins: 0,
+                dice_losses: 0,
+                dice_ties: 0,
                 level: `${ 1 }`,
                 nextLevel: `${ 9 }`
             })
@@ -95,10 +98,8 @@ module.exports = {
                 mongoUser.xp = difference;
                 mongoUser.xpOverTime += stakes
                 mongoUser.nextLevel = nextLevel
-                // client.leveling.addOneLevel(userId, guildId, 1)
-                // client.leveling.addXP(userId, guildId, difference)
-                // client.leveling.addxpOverTime(userId, guildId, stakes)
-
+                mongoUser.dice_wins += 1
+                mongoUser.gameTimestamp = timestamp
                 await mongoUser.save()
 
                 const embed = new Discord.MessageEmbed()
@@ -121,10 +122,10 @@ module.exports = {
             } else {
                 mongoUser.xp += xpStakes;
                 mongoUser.xpOverTime += stakes
+                mongoUser.dice_wins += 1
 
 
-                // client.leveling.addXP(userId, guildId, xpStakes)
-                // client.leveling.addxpOverTime(userId, guildId, stakes)
+                mongoUser.gameTimestamp = timestamp
                 await mongoUser.save()
                 const embed = new Discord.MessageEmbed()
                     .setThumbnail(player.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
@@ -155,8 +156,8 @@ module.exports = {
 
                 mongoUser.xp = 0
                 mongoUser.xpOverTime -= stakes
-                // client.leveling.setXP(0, userId, guildId)
-                // client.leveling.reducexpOverTime(userId, guildId, stakes)
+                mongoUser.dice_losses += 1
+                mongoUser.gameTimestamp = timestamp
                 await mongoUser.save()
                 const embed = new Discord.MessageEmbed()
                     .setThumbnail(player.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
@@ -193,6 +194,8 @@ module.exports = {
                 }
 
                 mongoUser.xp = total
+                mongoUser.dice_losses += 1
+                mongoUser.gameTimestamp = timestamp
                 await mongoUser.save()
                 const embed = new Discord.MessageEmbed()
                     .setThumbnail(player.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
@@ -219,6 +222,8 @@ module.exports = {
                 mongoUser.nextLevel = nextLevel
 
                 mongoUser.xp = nextLevel
+                mongoUser.dice_losses += 1
+                mongoUser.gameTimestamp = timestamp
                 await mongoUser.save()
                 const embed = new Discord.MessageEmbed()
                     .setThumbnail(player.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
@@ -239,6 +244,8 @@ module.exports = {
 
                 mongoUser.xp -= xpStakes
                 mongoUser.xpOverTime -= stakes
+                mongoUser.dice_losses += 1
+                mongoUser.gameTimestamp = timestamp
                 await mongoUser.save()
                 const embed = new Discord.MessageEmbed()
                     .setThumbnail(player.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
@@ -261,7 +268,9 @@ module.exports = {
             //tie
         } else {
             let curLevelUp = mongoUser.nextLevel
-
+            mongoUser.dice_ties += 1
+            mongoUser.gameTimestamp = timestamp
+            await mongoUser.save()
             const embed = new Discord.MessageEmbed()
                 .setThumbnail(player.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
 
@@ -279,12 +288,6 @@ module.exports = {
             await interaction.followUp({ embeds: [embed] })
 
         }
-
-        // new timestamp
-
-        mongoUser.gameTimestamp = timestamp
-        await mongoUser.save()
-
     }
 }
 

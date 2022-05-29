@@ -13,6 +13,9 @@ const UserSchema = new Schema({
     nextLevel: Number,
     timestamp: String,
     gameTimestamp: String,
+    dice_wins: Number,
+    dice_losses: Number,
+    dice_ties: Number,
     bag: {
         type: Schema.Types.ObjectId,
         ref: 'Bag'

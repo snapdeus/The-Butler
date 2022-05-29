@@ -77,7 +77,10 @@ const seedUsers = async () => {
             level: `${ users[i].level }`,
             nextLevel: `${ users[i].nextLevel }`,
             timestamp: `${ users[i].timestamp }`,
-            gameTimestamp: `${ users[i].gameTimestamp }`
+            gameTimestamp: `${ users[i].gameTimestamp }`,
+            dice_wins: 0,
+            dice_losses: 0,
+            dice_ties: 0,
         })
         await user.save()
     }
@@ -114,6 +117,12 @@ const seedSoup = async () => {
     }
 }
 
-seedSoup().then(() => {
+// seedSoup().then(() => {
+//     mongoose.connection.close();
+// });
+
+Promise.all([seedDairy(), seedSoup(), seedBread(), seedUsers()]).then(() => {
     mongoose.connection.close();
 });
+
+

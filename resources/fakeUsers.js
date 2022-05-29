@@ -9,6 +9,9 @@ exports.users = [
         nextLevel: 9,
         timestamp: '1653695697585',
         gameTimestamp: '1653695697585',
+        dice_wins: 0,
+        dice_losses: 0,
+        dice_ties: 0,
 
     },
     {
@@ -21,6 +24,9 @@ exports.users = [
         nextLevel: 9,
         timestamp: '1653695697585',
         gameTimestamp: '1653695697585',
+        dice_wins: 0,
+        dice_losses: 0,
+        dice_ties: 0,
 
     },
     {
@@ -33,6 +39,9 @@ exports.users = [
         nextLevel: 9,
         timestamp: '1653695697585',
         gameTimestamp: '1653695697585',
+        dice_wins: 0,
+        dice_losses: 0,
+        dice_ties: 0,
 
     },
     {
@@ -45,6 +54,9 @@ exports.users = [
         nextLevel: 9,
         timestamp: '1653695697585',
         gameTimestamp: '1653695697585',
+        dice_wins: 0,
+        dice_losses: 0,
+        dice_ties: 0,
 
     },
     {
@@ -57,6 +69,9 @@ exports.users = [
         nextLevel: 9,
         timestamp: '1653695697585',
         gameTimestamp: '1653695697585',
+        dice_wins: 0,
+        dice_losses: 0,
+        dice_ties: 0,
 
     }
 ]

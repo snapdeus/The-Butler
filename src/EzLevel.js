@@ -46,6 +46,9 @@ class EasyLeveling extends EventEmitter {
                     xpOverTime: 1,
                     timestamp: null,
                     gameTimestamp: null,
+                    dice_wins: 0,
+                    dice_losses: 0,
+                    dice_ties: 0,
                     level: `${ this.startingLevel }`,
                     nextLevel: `${ this.levelUpXP }`
                 })
@@ -110,6 +113,9 @@ class EasyLeveling extends EventEmitter {
                     xpOverTime: 1,
                     timestamp: null,
                     gameTimestamp: null,
+                    dice_wins: 0,
+                    dice_losses: 0,
+                    dice_ties: 0,
                     level: `${ this.startingLevel }`,
                     nextLevel: `${ this.levelUpXP }`
                 })
@@ -122,7 +128,10 @@ class EasyLeveling extends EventEmitter {
                     level: user.level,
                     xp: user.xp,
                     nextLevel: user.nextLevel,
-                    XPoverTime: user.xpOverTime
+                    XPoverTime: user.xpOverTime,
+                    dice_wins: mongoDbHasUser.dice_wins,
+                    dice_losses: mongoDbHasUser.dice_losses,
+                    dice_ties: mongoDbHasUser.dice_ties,
                 }
                 await user.save()
                 return data
@@ -132,7 +141,10 @@ class EasyLeveling extends EventEmitter {
                 level: mongoDbHasUser.level,
                 xp: mongoDbHasUser.xp,
                 nextLevel: mongoDbHasUser.nextLevel,
-                XPoverTime: mongoDbHasUser.xpOverTime
+                XPoverTime: mongoDbHasUser.xpOverTime,
+                dice_wins: mongoDbHasUser.dice_wins,
+                dice_losses: mongoDbHasUser.dice_losses,
+                dice_ties: mongoDbHasUser.dice_ties,
             }
             return data
         } catch (error) {

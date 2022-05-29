@@ -12,12 +12,15 @@ module.exports = {
         let guildId = interaction.guild.id
         let rank = await client.leveling.getUserLevel(userId, guildId, username)
 
+        const winningPercentage = ((rank.dice_wins + (rank.dice_ties * 0.5)) / (rank.dice_ties + rank.dice_wins + rank.dice_losses)) * 100
+
         const embed = new Discord.MessageEmbed()
             .setThumbnail(interaction.user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
             .setTitle(`${ username } Stats`)
             .addField('Level: ', `${ rank.level }`)
             .addField('XP: ', `${ rank.xp }`)
             .addField('Haus Coins: ', `🪙 ${ rank.XPoverTime }`)
+            .addField('Dice Winning Percentage', `${ winningPercentage.toFixed(2) }%`)
         if (rank.level === 1) {
             embed.addField('Total XP needed to level up:', `${ rank.nextLevel + 1 }`)
         } else {
