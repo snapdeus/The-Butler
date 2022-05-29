@@ -1,19 +1,19 @@
 
-const { dairies } = require('../resources/dairy')
+const { soups } = require('../resources/soups')
 const Discord = require('discord.js')
 const db = require('quick.db')
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
 
 const User = require('../models/user')
-const Dairy = require('../models/dairy')
+const Soup = require('../models/soup')
 const Bag = require('../models/bag')
 
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('dairy')
-        .setDescription('purchase dairy'),
+        .setName('soup')
+        .setDescription('purchase soup'),
 
     async execute(interaction) {
 
@@ -24,34 +24,34 @@ module.exports = {
 
         const mongoUser = await User.findOne({ userId: userId })
 
-        if (mongoUser.xpOverTime < 50) {
+        if (mongoUser.xpOverTime < 75) {
             const embed = new Discord.MessageEmbed()
                 .setTitle("Insufficient Funds")
-                .addField('You do not have: ', ` 50 Haus Coin`)
+                .addField('You do not have: ', ` 75 Haus Coin`)
                 .addField(`Remaining Funds for ${ username }: `, `🪙 ${ mongoUser.xpOverTime } Haus Coin`)
 
             await interaction.reply({ embeds: [embed] })
             return
         }
 
-        const allDairies = await Dairy.find()
-        let dairy = allDairies[(Math.floor(Math.random() * allDairies.length))]
+        const allSoups = await Soup.find()
+        let soup = allSoups[(Math.floor(Math.random() * allSoups.length))]
 
-        await Bag.findOneAndUpdate({ user: mongoUser._id }, { $push: { dairy: dairy._id } })
+        await Bag.findOneAndUpdate({ user: mongoUser._id }, { $push: { soup: soup._id } })
 
-        await User.findOneAndUpdate({ userId: userId }, { $inc: { xpOverTime: -50 } })
+        await User.findOneAndUpdate({ userId: userId }, { $inc: { xpOverTime: -75 } })
 
 
 
 
 
         const embed = new Discord.MessageEmbed()
-            .setThumbnail(dairy.image)
-            .setTitle(dairy.name)
-            .setDescription(dairy.description)
-            .addField('Origin: ', `${ dairy.origin }`)
-            .addField('You have been debited: ', `🪙 50`)
-            .addField(`Remaining Funds for ${ username }: `, `🪙 ${ mongoUser.xpOverTime - 50 } Haus Coin`)
+            .setThumbnail(soup.image)
+            .setTitle(soup.name)
+            .setDescription(soup.description)
+            .addField('Origin: ', `${ soup.origin }`)
+            .addField('You have been debited: ', `🪙 75`)
+            .addField(`Remaining Funds for ${ username }: `, `🪙 ${ mongoUser.xpOverTime - 75 } Haus Coin`)
 
         await interaction.reply({ embeds: [embed] })
 
