@@ -68,6 +68,9 @@ client.on('ready', () => {
             if (interaction.channel.id !== config.XPCHANNEL) {
                 return await interaction.reply('Please use this command in the Games channel')
             }
+            if (interaction.commandName === 'double') {
+                return await interaction.reply('Use roll instead ;]')
+            }
             const command = client.commands.get(interaction.commandName)
             try {
                 await command.execute(interaction);

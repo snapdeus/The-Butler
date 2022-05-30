@@ -181,7 +181,8 @@ module.exports = {
 
 
         } else if (playerDiceRoll < botDiceRoll) {
-            stakes = 0
+            stakes = wager / 2
+            console.log(stakes)
 
 
             let curLevelUp = mongoUser.nextLevel;
