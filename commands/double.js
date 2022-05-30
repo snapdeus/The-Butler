@@ -132,8 +132,8 @@ module.exports = {
 
                 });
 
-                await interaction.reply({ embeds: [embed], components: [row] })
-                return { stakes, xpStakes }
+                await interaction.reply({ content: `Let's begin. The stakes are: 🪙 ${ stakes } Haus coins ...rolling...`, embeds: [embed], components: [row], })
+                return
 
                 //just gain xp
             } else {
@@ -175,8 +175,8 @@ module.exports = {
 
                 });
 
-                await interaction.reply({ embeds: [embed], components: [row] })
-                return { stakes, xpStakes }
+                await interaction.reply({ content: `Let's begin. The stakes are: 🪙 ${ stakes } Haus coins ...rolling...`, embeds: [embed], components: [row], })
+                return
             }
 
 
@@ -208,7 +208,7 @@ module.exports = {
                     embed.addField('Total XP needed to level up:', `${ curLevelUp }`)
                 }
                 embed.addField('Amount Wagered: ', `${ stakes }`)
-                await interaction.reply({ embeds: [embed] })
+                await interaction.reply({ content: `Let's begin. The stakes are: 🪙 ${ stakes } Haus coins ...rolling...`, embeds: [embed], components: [row], })
 
                 return
             }
@@ -247,7 +247,7 @@ module.exports = {
                     embed.addField('Total XP needed to level up:', `${ mongoUser.nextLevel }`)
                 }
                 embed.addField('Amount Wagered: ', `${ stakes }`)
-                await interaction.reply({ embeds: [embed] })
+                await interaction.reply({ content: `Let's begin. The stakes are: 🪙 ${ stakes } Haus coins ...rolling...`, embeds: [embed], components: [row], })
 
 
                 //lose level and xp
@@ -275,7 +275,7 @@ module.exports = {
                     embed.addField('Total XP needed to level up:', `${ mongoUser.nextLevel }`)
                 }
                 embed.addField('Amount Wagered: ', `${ stakes }`)
-                await interaction.reply({ embeds: [embed] })
+                await interaction.reply({ content: `Let's begin. The stakes are: 🪙 ${ stakes } Haus coins ...rolling...`, embeds: [embed], components: [row], })
                 //just lose xp
             } else {
 
@@ -298,8 +298,7 @@ module.exports = {
                     embed.addField('Total XP needed to level up:', `${ curLevelUp }`)
                 }
                 embed.addField('Amount Wagered: ', `${ stakes }`)
-                await interaction.reply({ embeds: [embed] })
-
+                await interaction.reply({ content: `Let's begin. The stakes are: 🪙 ${ stakes } Haus coins ...rolling...`, embeds: [embed], components: [row], })
 
             }
             //tie
