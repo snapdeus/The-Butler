@@ -124,7 +124,7 @@ module.exports = {
                             .setCustomId(interaction.user.id)
                     );
                 const filter = async i => i.customId.endsWith(interaction.user.id)
-                const collector = interaction.channel.createMessageComponentCollector({ filter, time: 15000 });
+                const collector = interaction.channel.createMessageComponentCollector({ filter, time: 899999 });
 
                 collector.on('collect', async i => {
                     row.components[0].setDisabled(true)
@@ -167,7 +167,7 @@ module.exports = {
                             .setCustomId(interaction.user.id)
                     );
                 const filter = async i => i.customId.endsWith(interaction.user.id)
-                const collector = interaction.channel.createMessageComponentCollector({ filter, time: 15000 });
+                const collector = interaction.channel.createMessageComponentCollector({ filter, time: 899999 });
 
                 collector.on('collect', async i => {
                     row.components[0].setDisabled(true)
@@ -182,7 +182,6 @@ module.exports = {
 
         } else if (playerDiceRoll < botDiceRoll) {
             stakes = wager / 2
-            console.log(stakes)
 
 
             let curLevelUp = mongoUser.nextLevel;
