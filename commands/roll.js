@@ -127,7 +127,7 @@ module.exports = {
                             .setCustomId(interaction.user.id)
                     );
                 const filter = async i => i.customId.endsWith(interaction.user.id)
-                const collector = interaction.channel.createMessageComponentCollector({ filter, time: 899999 });
+                const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
                 collector.on('collect', async i => {
                     row.components[0].setDisabled(true)
@@ -137,6 +137,11 @@ module.exports = {
 
 
                 await interaction.reply({ content: `Let's begin. The stakes are: 🪙 ${ stakes } Haus coins ...rolling...`, embeds: [embed], components: [row], })
+                setTimeout(function () {
+                    row.components[0].setDisabled(true);
+                    interaction.editReply({ components: [row] });
+                }, 60000);
+
 
                 return
 
@@ -172,7 +177,7 @@ module.exports = {
                             .setCustomId(interaction.user.id)
                     );
                 const filter = async i => i.customId.endsWith(interaction.user.id)
-                const collector = interaction.channel.createMessageComponentCollector({ filter, time: 899999 });
+                const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
                 collector.on('collect', async i => {
                     row.components[0].setDisabled(true)
@@ -181,6 +186,12 @@ module.exports = {
                 });
 
                 await interaction.reply({ content: `Let's begin. The stakes are: 🪙 ${ stakes } Haus coins ...rolling...`, embeds: [embed], components: [row], })
+
+                setTimeout(function () {
+                    row.components[0].setDisabled(true);
+                    interaction.editReply({ components: [row] });
+                }, 60000);
+
 
                 return
             }
