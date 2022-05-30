@@ -1,7 +1,7 @@
 
 const { breads } = require('../resources/breads')
 const Discord = require('discord.js')
-const db = require('quick.db')
+
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const User = require('../models/user')
 const Bread = require('../models/bread')

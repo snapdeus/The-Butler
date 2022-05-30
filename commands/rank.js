@@ -12,6 +12,7 @@ module.exports = {
         let guildId = interaction.guild.id
         let rank = await client.leveling.getUserLevel(userId, guildId, username)
 
+
         const winningPercentage = ((rank.dice_wins + (rank.dice_ties * 0.5)) / (rank.dice_ties + rank.dice_wins + rank.dice_losses)) * 100
 
         const embed = new Discord.MessageEmbed()

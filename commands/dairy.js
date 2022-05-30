@@ -1,7 +1,7 @@
 
 const { dairies } = require('../resources/dairy')
 const Discord = require('discord.js')
-const db = require('quick.db')
+
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
 

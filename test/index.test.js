@@ -62,22 +62,38 @@ client.on('ready', () => {
     console.log(client.user.tag + ' is ready!');
 
 })
-    .on('interactionCreate', async interaction => {
-        if (!interaction.isCommand()) return;
-        const command = client.commands.get(interaction.commandName)
-        try {
-            await command.execute(interaction);
-        } catch (error) {
-            console.error(error);
-            await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
-        }
+    .on('interactionCreate', async (interaction, message) => {
+        if (interaction.isCommand()) {
+            const command = client.commands.get(interaction.commandName)
+            try {
+                await command.execute(interaction);
+            } catch (error) {
+                console.error(error);
+                await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
+            }
+        } else if (interaction.isButton()) {
 
+            if (!interaction.customId.endsWith(interaction.user.id)) {
+                return interaction.reply({
+                    content: "This button is not for you",
+                    ephemeral: true
+                })
+            }
+
+
+            const command = client.commands.get('double')
+            const value = parseInt(interaction.message.embeds[0].fields[4].value)
+            await command.execute(interaction, value)
+
+        } else return
     })
     .on('messageCreate', (message) => {
         if (message.author.bot) return;
         // command handler (set prefix in config.json)
         client.leveling.addLevels(message.author.id, message.guild.id, message.channel.id, message.createdTimestamp, message.author.username, message.author);
     });
+
+
 client.leveling.on('UserLevelUp', (newLevel, lastLevel, userId, guildId, channelId, username, author) => {
     const embed = new Discord.MessageEmbed()
         .setThumbnail(author.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))

@@ -9,13 +9,11 @@ const { MessageActionRow, MessageButton } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('roll')
-        .setDescription('Roll Dice')
-        .addNumberOption(option =>
-            option.setName('wager')
-                .setDescription('Optional amount to wager')),
-    async execute(interaction) {
-        let wager = Math.abs(interaction.options.getNumber("wager"))
+        .setName('double')
+        .setDescription('Roll Dice again'),
+
+    async execute(interaction, value) {
+        let wager = value * 2;
         const client = interaction.client
         let player = interaction.user;
         let username = interaction.user.username
@@ -79,9 +77,8 @@ module.exports = {
             stakes = Math.abs(wager);
         }
 
-
         const xpStakes = mongoUser.level * 5
-        // await interaction.reply(`Let's begin. The stakes are: 🪙 ${ stakes } Haus coins ...rolling...`)
+
 
 
         if (playerDiceRoll > botDiceRoll) {
@@ -135,10 +132,8 @@ module.exports = {
 
                 });
 
-
-                await interaction.reply({ content: `Let's begin. The stakes are: 🪙 ${ stakes } Haus coins ...rolling...`, embeds: [embed], components: [row], })
-
-                return
+                await interaction.reply({ embeds: [embed], components: [row] })
+                return { stakes, xpStakes }
 
                 //just gain xp
             } else {
@@ -180,14 +175,13 @@ module.exports = {
 
                 });
 
-                await interaction.reply({ content: `Let's begin. The stakes are: 🪙 ${ stakes } Haus coins ...rolling...`, embeds: [embed], components: [row], })
-
-                return
+                await interaction.reply({ embeds: [embed], components: [row] })
+                return { stakes, xpStakes }
             }
 
 
         } else if (playerDiceRoll < botDiceRoll) {
-
+            stakes = 0
 
 
             let curLevelUp = mongoUser.nextLevel;
@@ -220,6 +214,7 @@ module.exports = {
 
             //go down a level and lose xp
             if (mongoUser.xp < xpStakes) {
+
                 let negativeNumber = mongoUser.xp - xpStakes;
 
                 mongoUser.level -= 1;
@@ -326,7 +321,7 @@ module.exports = {
                 embed.addField('Total XP needed to level up:', `${ curLevelUp }`)
             }
             embed.addField('Amount Wagered: ', `${ stakes }`)
-            await interaction.reply({ embeds: [embed] })
+            await interaction.reply({ content: `Let's begin. The stakes are: 🪙 ${ stakes } Haus coins ...rolling...`, embeds: [embed] })
 
         }
     }

@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-const db = require('quick.db')
+
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { breads } = require('../resources/breads')
 const { dairy } = require('../resources/dairy')
@@ -20,6 +20,35 @@ module.exports = {
 
 
         const mongoUser = await User.findOne({ userId: userId })
+        if (!mongoUser) {
+            const user = new User({
+                username: `${ username }`,
+                userId: `${ userId }`,
+                guildId: `${ guildId }`,
+                xp: 1,
+                xpOverTime: 1,
+                timestamp: null,
+                gameTimestamp: null,
+                dice_wins: 0,
+                dice_losses: 0,
+                dice_ties: 0,
+                level: `${ 1 }`,
+                nextLevel: `${ 9 }`
+            })
+            const bag = new Bag({
+                user: `${ user._id }`,
+            })
+            await bag.save()
+            user.bag = bag;
+            await user.save()
+            return await interaction.reply(`Generating your bag. Use command again.`)
+        }
+
+
+
+
+
+
         const bag = await Bag.findOne({ user: mongoUser._id })
 
 
@@ -31,12 +60,12 @@ module.exports = {
             .populate({
                 path: 'dairy',
             }).populate('dairy')
-        // .populate({
-        //     path: 'soup',
-        // }).populate('soup')
-        // .populate({
-        //     path: 'pasta',
-        // }).populate('pasta')
+            .populate({
+                path: 'soup',
+            }).populate('soup')
+            .populate({
+                path: 'pasta',
+            }).populate('pasta')
 
 
 
@@ -122,8 +151,6 @@ module.exports = {
         if (pastaArray.length !== 0) {
             embed.addField('Pasta: ', `${ pastaString }`)
         }
-
-
         await interaction.reply({ embeds: [embed] })
 
 

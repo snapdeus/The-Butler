@@ -5,11 +5,12 @@ const Bread = require('../models/bread')
 const Dairy = require('../models/dairy')
 const User = require('../models/user')
 const Soup = require('../models/soup')
+const Pasta = require('../models/pasta')
 const { breads } = require('../resources/breads')
 const { dairies } = require('../resources/dairy')
 const { users } = require('../resources/fakeUsers')
 const { soups } = require('../resources/soups')
-
+const { pastas } = require('../resources/pasta')
 
 mongoose.connect(`mongodb://localhost:27017/butler-db?authSource=butler-db`, {
     useNewUrlParser: true,
@@ -26,6 +27,27 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
     console.log('Database connected');
 });
+
+const seedPasta = async () => {
+    await Pasta.deleteMany({});
+    for (let i = 0; i < pastas.length; i++) {
+        const pasta = new Pasta({
+            name: `${ pastas[i].Type }`,
+            image: `${ pastas[i].image }`,
+            origin: `${ pastas[i].Origin }`,
+            description: `${ pastas[i].Description }`,
+            translation: `${ pastas[i].Description }`,
+            origin: `${ pastas[i].Origin }`
+        })
+        await pasta.save()
+    }
+}
+
+
+
+// seedPasta().then(() => {
+//     mongoose.connection.close();
+// });
 
 
 const seedBread = async () => {
@@ -121,7 +143,7 @@ const seedSoup = async () => {
 //     mongoose.connection.close();
 // });
 
-Promise.all([seedDairy(), seedSoup(), seedBread(), seedUsers()]).then(() => {
+Promise.all([seedDairy(), seedSoup(), seedBread(), seedPasta(), seedUsers()]).then(() => {
     mongoose.connection.close();
 });
 

@@ -1,4 +1,4 @@
-const db = require('quick.db')
+
 const { EventEmitter } = require("events")
 const events = require('./events/events.js')
 const deleteModule = require('./deletedb.js')
@@ -24,7 +24,7 @@ class EasyLeveling extends EventEmitter {
         this.levelUpXP = options.levelUpXP || 100
         this.cooldown = options.cooldown || 1000
         this.diceCooldown = options.diceCooldown || 5000
-        this.db = db
+
         this.User = User
         this.Bag = Bag
     }
@@ -86,11 +86,11 @@ class EasyLeveling extends EventEmitter {
                 return
             }
             //cooldown
-            const lastMessage = mongoDbHasUser.timestamp
-            if (lastMessage !== null && this.cooldown - (Date.now() - lastMessage) > 0) {
-                console.log('cooldown active')
-                this.emit(events.cooldownActive, channelId, userId)
-            }
+            // const lastMessage = mongoDbHasUser.timestamp
+            // if (lastMessage !== null && this.cooldown - (Date.now() - lastMessage) > 0) {
+            //     console.log('cooldown active')
+            //     this.emit(events.cooldownActive, channelId, userId)
+            // }
             //add new timestamp
             mongoDbHasUser.timestamp = timestamp;
             await mongoDbHasUser.save()
@@ -129,9 +129,9 @@ class EasyLeveling extends EventEmitter {
                     xp: user.xp,
                     nextLevel: user.nextLevel,
                     XPoverTime: user.xpOverTime,
-                    dice_wins: mongoDbHasUser.dice_wins,
-                    dice_losses: mongoDbHasUser.dice_losses,
-                    dice_ties: mongoDbHasUser.dice_ties,
+                    dice_wins: user.dice_wins,
+                    dice_losses: user.dice_losses,
+                    dice_ties: user.dice_ties,
                 }
                 await user.save()
                 return data
@@ -160,7 +160,7 @@ class EasyLeveling extends EventEmitter {
         if (!guildId) throw new Error('Easy Level Error: A valid guild id must be provided')
         try {
             await this.User.findOneAndUpdate({ userId: userId }, { level: level })
-            // await this.db.set(`${ userId }-${ guildId }.level`, level)
+
         } catch (error) {
             this.emit(events.error, error, 'setLevel')
         }
@@ -178,7 +178,7 @@ class EasyLeveling extends EventEmitter {
         try {
             mongoUser.xp = xp;
             await mongoUser.save()
-            // await this.db.set(`${ userId }-${ guildId }.XP`, xp)
+
         } catch (error) {
             this.emit(events.error, error, 'setXP')
         }
