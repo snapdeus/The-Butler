@@ -125,9 +125,9 @@ const seedBags = async () => {
 }
 
 
-seedBags().then(() => {
-    mongoose.connection.close();
-});
+// seedBags().then(() => {
+//     mongoose.connection.close();
+// });
 
 
 // seedUsers().then(() => {
