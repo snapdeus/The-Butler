@@ -7,7 +7,7 @@ const client = new DiscordClient({
 
 
 const mongoose = require('mongoose')
-mongoose.connect(`mongodb://localhost:27017/butler-db?authSource=butler-db`, {
+mongoose.connect(`mongodb://127.0.0.1:27017/butler-db?authSource=butler-db`, {
     useNewUrlParser: true,
     // useCreateIndex: true,
     useUnifiedTopology: true,
@@ -64,6 +64,10 @@ client.on('ready', () => {
 })
     .on('interactionCreate', async (interaction, message) => {
         if (interaction.isCommand()) {
+
+            if (interaction.channel.id !== config.XPCHANNEL) {
+                return await interaction.reply('Please use this command in the Games channel')
+            }
             const command = client.commands.get(interaction.commandName)
             try {
                 await command.execute(interaction);
@@ -89,6 +93,11 @@ client.on('ready', () => {
     })
     .on('messageCreate', (message) => {
         if (message.author.bot) return;
+
+        if (message.content === '!bag' || message.content === '!bread' || message.content === '!dairy' ||
+            message.content === '!leaders' || message.content === '!pasta' || message.content === '!rank' || message.content === '!roll' || message.content === '!soup') {
+            return message.reply('Now using slash commands for games and XP. No more "!" for commands: bag, bread, dairy, soup, pasta, leaders, rank, roll ')
+        }
         // command handler (set prefix in config.json)
         client.leveling.addLevels(message.author.id, message.guild.id, message.channel.id, message.createdTimestamp, message.author.username, message.author);
     });
@@ -100,16 +109,16 @@ client.leveling.on('UserLevelUp', (newLevel, lastLevel, userId, guildId, channel
         .setTitle('LEVEL UP!')
         .setDescription(`Congrats <@${ userId }>! You have advanced to level ${ newLevel }. Your old level was level ${ lastLevel }`)
         .setColor('RED');
-    client.channels.cache.get(config.TESTXPCHANNEL).send({ embeds: [embed] });
+    client.channels.cache.get(config.XPCHANNEL).send({ embeds: [embed] });
 });
 client.leveling.on('cooldownActive', (channelId, userId) => {
-    client.channels.cache.get(config.TESTXPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  You'll get more 🪙 in ${ options.cooldown / 1000 } seconds.`);
+    client.channels.cache.get(config.XPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  You'll get more 🪙 in ${ options.cooldown / 1000 } seconds.`);
 });
 client.leveling.on('diceCooldownActive', (channelId, userId) => {
-    client.channels.cache.get(config.TESTXPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  Roll again in ${ options.diceCooldown / 1000 } seconds.`);
+    client.channels.cache.get(config.XPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  Roll again in ${ options.diceCooldown / 1000 } seconds.`);
 });
 client.leveling.on('error', (e, functionName) => {
     console.log(`An error occured at the function ${ functionName }. The error is as follows`);
     console.log(e);
 });
-client.login(config.TESTTOKEN);
+client.login(config.TOKEN);

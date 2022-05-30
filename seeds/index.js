@@ -11,8 +11,10 @@ const { dairies } = require('../resources/dairy')
 const { users } = require('../resources/fakeUsers')
 const { soups } = require('../resources/soups')
 const { pastas } = require('../resources/pasta')
+const Bag = require('../models/bag');
+const user = require('../models/user');
 
-mongoose.connect(`mongodb://localhost:27017/butler-db?authSource=butler-db`, {
+mongoose.connect(`mongodb://127.0.0.1:27017/butler-db?authSource=butler-db`, {
     useNewUrlParser: true,
     // useCreateIndex: true,
     useUnifiedTopology: true,
@@ -88,26 +90,44 @@ const seedDairy = async () => {
 
 const seedUsers = async () => {
 
-    await User.deleteMany({});
+    // await User.deleteMany({});
     for (let i = 0; i < users.length; i++) {
         const user = new User({
             username: `${ users[i].username }`,
             userId: `${ users[i].userId }`,
-            guildId: `${ users[i].guildId }`,
-            xp: `${ users[i].xp }`,
-            xpOverTime: `${ users[i].xpOverTime }`,
+            guildId: `953987327858978836`,
+            xp: `${ users[i].XP }`,
+            xpOverTime: `${ users[i].XPoverTime }`,
             level: `${ users[i].level }`,
             nextLevel: `${ users[i].nextLevel }`,
-            timestamp: `${ users[i].timestamp }`,
-            gameTimestamp: `${ users[i].gameTimestamp }`,
+            timestamp: 0,
+            gameTimestamp: 0,
             dice_wins: 0,
             dice_losses: 0,
             dice_ties: 0,
         })
+
+        await user.save()
+    }
+
+}
+
+const seedBags = async () => {
+    const users = await User.find({})
+    for (let user of users) {
+        const bag = new Bag({
+            user: `${ user._id }`,
+        })
+        await bag.save()
+        user.bag = bag;
         await user.save()
     }
 }
 
+
+seedBags().then(() => {
+    mongoose.connection.close();
+});
 
 
 // seedUsers().then(() => {
@@ -143,7 +163,7 @@ const seedSoup = async () => {
 //     mongoose.connection.close();
 // });
 
-Promise.all([seedDairy(), seedSoup(), seedBread(), seedPasta(), seedUsers()]).then(() => {
+Promise.all([seedUsers(), seedDairy(), seedSoup(), seedBread(), seedPasta(), seedBags()]).then(() => {
     mongoose.connection.close();
 });
 
