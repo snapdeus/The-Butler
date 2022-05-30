@@ -25,27 +25,16 @@ module.exports = {
         let username = mentionable.user.username
         let guildId = interaction.guild.id
 
-
-
-
-
-
         let rank = await client.leveling.getUserLevel(userId, guildId, username)
-
-
         client.leveling.addXPoverTime(userId, guildId, amount)
-
-        rank = await client.leveling.getUserLevel(userId, guildId, username)
-
         const embed = new Discord.MessageEmbed()
             .setTitle('Administrator Refund')
             .addField('Username:', `**${ username }**`)
             .addField('Refund Amount:', `🪙 ${ amount }`)
             .addField('Refunded by', `**${ interaction.user.username }**`)
-            .addField('New Total Balance: ', `🪙 ${ rank.XPoverTime }`)
+            .addField('New Total Balance: ', `🪙 ${ rank.XPoverTime + amount }`)
 
         await interaction.reply({ embeds: [embed] })
-
 
     }
 }

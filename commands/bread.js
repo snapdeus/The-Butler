@@ -1,8 +1,11 @@
 
 const { breads } = require('../resources/breads')
 const Discord = require('discord.js')
-const db = require('quick.db')
+
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const User = require('../models/user')
+const Bread = require('../models/bread')
+const Bag = require('../models/bag')
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('bread')
@@ -15,47 +18,35 @@ module.exports = {
         let username = interaction.user.username
         let guildId = interaction.guild.id
 
-        let rank = await client.leveling.getUserLevel(userId, guildId, username)
 
+        const mongoUser = await User.findOne({ userId: userId })
 
-        const bag = new db.table('bag')
-
-        const dbHasBag = bag.has(`${ userId }`)
-        if (!dbHasBag) {
-            bag.set(`${ userId }.bread`, [])
-
-        }
-
-
-        if (rank.XPoverTime < 35) {
+        if (mongoUser.xpOverTime < 35) {
             const embed = new Discord.MessageEmbed()
                 .setTitle("Insufficient Funds")
                 .addField('You do not have: ', `🪙 35 Haus Coin`)
-                .addField(`Remaining Funds for ${ username }: `, `🪙 ${ rank.XPoverTime } Haus Coin`)
+                .addField(`Remaining Funds for ${ username }: `, `🪙 ${ mongoUser.xpOverTime } Haus Coin`)
 
             await interaction.reply({ embeds: [embed] })
             return
         }
-
-        let bread = breads[(Math.floor(Math.random() * breads.length))]
-
-        bag.push(`${ userId }.bread`, bread.breadId)
+        const allBreads = await Bread.find()
+        let bread = allBreads[(Math.floor(Math.random() * allBreads.length))]
 
 
+        await Bag.findOneAndUpdate({ user: mongoUser._id }, { $push: { bread: bread._id } })
 
+        await User.findOneAndUpdate({ userId: userId }, { $inc: { xpOverTime: -35 } })
 
-        client.leveling.reduceXPoverTime(userId, guildId, 35)
-
-        rank = await client.leveling.getUserLevel(userId, guildId, username)
 
         const embed = new Discord.MessageEmbed()
-            .setThumbnail(bread.Image)
-            .setTitle(bread.Name)
-            .setDescription(bread.Description)
-            .addField('Type: ', `${ bread.Type }`)
-            .addField('Origin: ', `${ bread.Origin }`)
+            .setThumbnail(bread.image)
+            .setTitle(bread.name)
+            .setDescription(bread.description)
+            .addField('Type: ', `${ bread.type }`)
+            .addField('Origin: ', `${ bread.origin }`)
             .addField('You have been debited: ', `🪙 35`)
-            .addField(`Remaining Funds for ${ username }: `, `🪙 ${ rank.XPoverTime } Haus Coin`)
+            .addField(`Remaining Funds for ${ username }: `, `🪙 ${ mongoUser.xpOverTime - 35 } Haus Coin`)
 
         await interaction.reply({ embeds: [embed] })
 

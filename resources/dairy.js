@@ -1,4 +1,4 @@
-exports.dairy = [
+exports.dairies = [
     {
         Name: "Aarts",
         Image: "https://mongolianstore.com/wp-content/uploads/2019/09/Mongolian-Dried-Curd-Snack.jpg",
