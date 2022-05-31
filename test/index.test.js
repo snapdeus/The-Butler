@@ -81,6 +81,7 @@ client.on('ready', () => {
         } else if (interaction.isButton()) {
 
             if (!interaction.customId.endsWith(interaction.user.id)) {
+
                 return interaction.reply({
                     content: "This button is not for you",
                     ephemeral: true

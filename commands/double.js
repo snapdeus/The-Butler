@@ -64,13 +64,14 @@ module.exports = {
         if (!wager) {
             stakes = parseInt(mongoUser.level * 5)
         } else if (mongoUser.xpOverTime < 0) {
-
+            if (wager < 0) wager = Math.abs(wager)
             if (wager > mongoUser.xpOverTime) {
                 wager = Math.abs(mongoUser.xpOverTime)
 
             }
             stakes = Math.abs(wager);
         } else {
+            if (wager < 0) wager = Math.abs(wager)
             if (wager > mongoUser.xpOverTime) {
                 wager = Math.abs(mongoUser.xpOverTime)
             }
@@ -127,8 +128,10 @@ module.exports = {
                 const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
                 collector.on('collect', async i => {
-                    row.components[0].setDisabled(true)
-                    interaction.editReply({ components: [row] });
+                    if (i.user.id === userId) {
+                        row.components[0].setDisabled(true)
+                        interaction.editReply({ components: [row] });
+                    }
 
                 });
 
@@ -177,9 +180,10 @@ module.exports = {
                 const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
                 collector.on('collect', async i => {
-                    row.components[0].setDisabled(true)
-                    interaction.editReply({ components: [row] });
-
+                    if (i.user.id === userId) {
+                        row.components[0].setDisabled(true)
+                        interaction.editReply({ components: [row] });
+                    }
                 });
 
                 await interaction.reply({ embeds: [embed], components: [row] })
