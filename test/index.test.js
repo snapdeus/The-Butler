@@ -65,7 +65,7 @@ client.on('ready', () => {
     .on('interactionCreate', async (interaction, message) => {
         if (interaction.isCommand()) {
 
-            if (interaction.channel.id !== config.XPCHANNEL) {
+            if (interaction.channel.id !== config.TESTXPCHANNEL) {
                 return await interaction.reply('Please use this command in the Games channel')
             }
             if (interaction.commandName === 'double') {
@@ -76,22 +76,27 @@ client.on('ready', () => {
                 await command.execute(interaction);
             } catch (error) {
                 console.error(error);
-                await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
+                // await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
             }
         } else if (interaction.isButton()) {
 
-            if (!interaction.customId.endsWith(interaction.user.id)) {
 
+            if (!interaction.customId.endsWith(interaction.user.id)) {
                 return interaction.reply({
                     content: "This button is not for you",
                     ephemeral: true
                 })
             }
+            if (interaction.customId.startsWith('DICE_')) {
+                const command = client.commands.get('double')
+                const value = parseInt(interaction.message.embeds[0].fields[4].value)
+                await command.execute(interaction, value)
 
+            } else if (interaction.customId.startsWith('SCC_')) {
 
-            const command = client.commands.get('double')
-            const value = parseInt(interaction.message.embeds[0].fields[4].value)
-            await command.execute(interaction, value)
+                const command = client.commands.get('shipcc')
+                await command.execute(interaction)
+            }
 
         } else return
     })
@@ -113,16 +118,16 @@ client.leveling.on('UserLevelUp', (newLevel, lastLevel, userId, guildId, channel
         .setTitle('LEVEL UP!')
         .setDescription(`Congrats <@${ userId }>! You have advanced to level ${ newLevel }. Your old level was level ${ lastLevel }`)
         .setColor('RED');
-    client.channels.cache.get(config.XPCHANNEL).send({ embeds: [embed] });
+    client.channels.cache.get(config.TESTXPCHANNEL).send({ embeds: [embed] });
 });
 client.leveling.on('cooldownActive', (channelId, userId) => {
-    client.channels.cache.get(config.XPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  You'll get more 🪙 in ${ options.cooldown / 1000 } seconds.`);
+    client.channels.cache.get(config.TESTXPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  You'll get more 🪙 in ${ options.cooldown / 1000 } seconds.`);
 });
 client.leveling.on('diceCooldownActive', (channelId, userId) => {
-    client.channels.cache.get(config.XPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  Roll again in ${ options.diceCooldown / 1000 } seconds.`);
+    client.channels.cache.get(config.TESTXPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  Roll again in ${ options.diceCooldown / 1000 } seconds.`);
 });
 client.leveling.on('error', (e, functionName) => {
     console.log(`An error occured at the function ${ functionName }. The error is as follows`);
     console.log(e);
 });
-client.login(config.TOKEN);
+client.login(config.TESTTOKEN);

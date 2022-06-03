@@ -54,7 +54,7 @@ module.exports = {
         //     // console.log('cooldown active')
         //     client.leveling.emit(events.diceCooldownActive, channelId, userId)
         //     return
-        // }
+        // }c
 
         const { playerDiceRoll, botDiceRoll } = await client.leveling.rollDice(userId, guildId, username)
 
@@ -178,7 +178,7 @@ module.exports = {
                             .setCustomId('primary')
                             .setLabel('Double or Nothing?')
                             .setStyle('PRIMARY')
-                            .setCustomId(interaction.user.id)
+                            .setCustomId("DICE_" + interaction.user.id)
 
                     );
                 const filter = async i => i.customId.endsWith(interaction.user.id)
