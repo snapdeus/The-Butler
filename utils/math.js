@@ -35,19 +35,21 @@ function addIDs(array, idArray) {
 
 // console.log(dairy.length)
 
-let botDiceRoll = [1, 2, 3, 4, 5]
+let botDiceRoll = [5, 4, 3]
+let cargoArray = botDiceRoll.slice()
 
-function retrieveCargo() {
-    if (botDiceRoll.indexOf(6) > 0) {
-        botDiceRoll.splice(botDiceRoll.indexOf(6), 1)
+function retrieveCargo(cargoArray) {
+    if (cargoArray.indexOf(6) > -1) {
+        cargoArray.splice(cargoArray.indexOf(6), 1)
     }
-    if (botDiceRoll.indexOf(5) > 0) {
-        botDiceRoll.splice(botDiceRoll.indexOf(5), 1)
+    if (cargoArray.indexOf(5) > -1) {
+        cargoArray.splice(cargoArray.indexOf(5), 1)
     }
-    if (botDiceRoll.indexOf(4) > 0) {
-        botDiceRoll.splice(botDiceRoll.indexOf(4), 1)
+    if (cargoArray.indexOf(4) > -1) {
+        cargoArray.splice(cargoArray.indexOf(4), 1)
     }
-    return botDiceRoll
+    return cargoArray
 }
-const botCargo = retrieveCargo()
+
+const botCargo = retrieveCargo(cargoArray)
 console.log(botCargo)

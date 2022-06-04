@@ -358,9 +358,8 @@ class EasyLeveling extends EventEmitter {
         }
     }
 
-    async rollShipCC(userId, guildId, username, b_val, p_val) {
-        if (!userId) throw new Error('Easy Level Error: A valid user id must be provided!')
-        if (!guildId) throw new Error('Easy Level Error: A valid user guild must be provided!')
+    async rollShipCC(userId, guildId, username) {
+
         try {
             const mongoDbHasUser = await this.User.findOne({ userId: userId })
             if (!mongoDbHasUser) {
@@ -386,101 +385,9 @@ class EasyLeveling extends EventEmitter {
 
 
 
-            const playerDiceRoll = Array.from({ length: p_val }, () => Math.ceil(Math.random() * 6));
-
-            if (playerDiceRoll.includes(6) && playerDiceRoll.includes(5) && playerDiceRoll.includes(4)) {
-                playerStatus.roll_S_C_C = true;
-            } else if (playerDiceRoll.includes(6) && playerDiceRoll.includes(5)) {
-                playerStatus.roll_S_C = true
-            } else if (playerDiceRoll.includes(6)) {
-                playerStatus.roll_Ship = true
-            } else if (playerDiceRoll.includes(5) && (playerDiceRoll.roll_Ship)) {
-                playerStatus.roll_Captain = true
-                playerStatus.roll_S_C = true
-            } else if (playerDiceRoll.includes(4) && playerStatus.roll_S_C) {
-                playerStatus.roll_Crew = true
-                playerStatus.roll_S_C_C = true
-            }
-
-            let botCargo;
-            const botDiceRoll = Array.from({ length: b_val }, () => Math.ceil(Math.random() * 6));
-
-            if (b_val === 2) {
-                botCargo = botDiceRoll
-                if (botCargo[0] + botCargo[1] > 5) {
-                    botScore.hold = true;
-                    botScore.roll = false;
-                    return { playerDiceRoll, botDiceRoll, playerStatus, botStatus, botCargo }
-                }
-            }
-
-            function retrieveCargo() {
-                if (botDiceRoll.indexOf(6) > 0) {
-                    botDiceRoll.splice(botDiceRoll.indexOf(6), 1)
-                }
-                if (botDiceRoll.indexOf(5) > 0) {
-                    botDiceRoll.splice(botDiceRoll.indexOf(5), 1)
-                }
-                if (botDiceRoll.indexOf(4) > 0) {
-                    botDiceRoll.splice(botDiceRoll.indexOf(4), 1)
-                }
-                return botDiceRoll
-            }
-
-            if (botDiceRoll.includes(6) && botDiceRoll.includes(5) && botDiceRoll.includes(4)) {
-                botStatus.roll_S_C_C = true;
-                botCargo = retrieveCargo()
-
-                console.log("THE botCargo" + botCargo)
-                if (botCargo[0] + botCargo[1] > 5) {
-                    botScore.hold = true;
-                    botScore.roll = false;
-                } else {
-                    botScore.roll = true;
-                }
-            } else if (botDiceRoll.includes(6) && botDiceRoll.includes(5)) {
-                botStatus.roll_S_C = true
-                botScore.roll = true;
-            } else if (botDiceRoll.includes(6)) {
-                botStatus.roll_Ship = true
-                botScore.roll = true;
-            } else if (botDiceRoll.includes(5) && (botStatus.roll_Ship)) {
-                botStatus.roll_Captain = true
-                botStatus.roll_S_C = true
-                if (botDiceRoll.includes(4)) {
-                    botStatus.roll_S_C_C = true
-                    botCargo = retrieveCargo()
-                    console.log("THE  botCargo" + botCargo)
-                    if (botCargo[0] + botCargo[1] > 5) {
-                        botScore.hold = true;
-                        botScore.roll = false;
-                    } else {
-                        botScore.roll = true;
-                    }
-                } else {
-                    botScore.roll = true;
-                }
-
-
-            } else if (botDiceRoll.includes(4) && botStatus.roll_S_C) {
-                botCargo = retrieveCargo()
-                botStatus.roll_Crew = true
-                botStatus.roll_S_C_C = true
-                console.log("THE  botCargo" + botCargo)
-                if (botCargo[0] + botCargo[1] > 5) {
-                    botScore.hold = true;
-                    botScore.roll = false;
-                }
-            } else {
-                botScore.roll = true;
-            }
-            console.log(botStatus)
-
-
-
-            return { playerDiceRoll, botDiceRoll, playerStatus, botStatus, botCargo }
+            return mongoDbHasUser
         } catch (error) {
-            this.emit(events.error, error, 'rollDice')
+            this.emit(events.error, error, 'shipcc')
         }
     }
 
