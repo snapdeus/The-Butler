@@ -136,12 +136,7 @@ module.exports = async function botRollSCC(interaction) {
     await interaction.reply({ embeds: [embed] })
 
     async function game() {
-        let reply;
-        if (numOfRolls === 1) {
-            reply = await interaction.fetchReply()
-                .then(reply => reply)
 
-        }
 
         let rollableDiceList = getRollableDiceList();
 
@@ -161,16 +156,11 @@ module.exports = async function botRollSCC(interaction) {
             newDiceArray.push(dice.currentRoll)
         }
 
-        if (numOfRolls === 0) {
-            embed.addField(`Roll #${ numOfRolls + 1 }: `, `${ newDiceArray } `)
-            interaction.editReply({ embeds: [embed] });
-        }
 
-        if (numOfRolls === 1) {
-            console.log(numOfRolls)
-            embed.addField(`Roll #${ numOfRolls + 1 }: `, `${ newDiceArray } `)
-            reply.edit({ embeds: [embed] });
-        }
+        embed.addField(`Roll #${ numOfRolls + 1 }: `, `${ newDiceArray } `)
+        interaction.editReply({ embeds: [embed] });
+
+
 
 
         if (shipExist && !captExist) {
@@ -248,14 +238,15 @@ module.exports = async function botRollSCC(interaction) {
             return
         }
 
-        numOfRolls++;
+        console.log(numOfRolls)
         // console.log(embed.fields)
-        if (numOfRolls < 3) {
+        if (numOfRolls === 0) {
+            numOfRolls++;
             const row = new MessageActionRow()
                 .addComponents(
                     new MessageButton()
                         .setCustomId('primary')
-                        .setLabel('Roll Again')
+                        .setLabel('defer update')
                         .setStyle('PRIMARY')
                         .setCustomId(`ROLLAGAIN_` + interaction.user.id)
 
@@ -266,11 +257,50 @@ module.exports = async function botRollSCC(interaction) {
             collector.on('collect', async i => {
 
                 if (i.customId.startsWith('ROLLAGAIN_')) {
-
+                    i.deferUpdate();
                     ///put edit the embed message her
 
                     // row.components[0].setDisabled(true)
                     // interaction.editReply({ components: [row] });
+
+                    return game()
+                }
+                if (i.user.id === userId) {
+                    ///put edit the embed message her
+                    // row.components[0].setDisabled(true)
+                    // row.components[1].setDisabled(true)
+                    // await interaction.editReply({ components: [row] });
+                }
+            });
+            await interaction.editReply({ embeds: [embed], components: [row], })
+            setTimeout(function () {
+                row.components[0].setDisabled(true);
+                interaction.editReply({ components: [row] });
+            }, 60000);
+
+        } else if (numOfRolls === 1) {
+            numOfRolls++;
+            const row = new MessageActionRow()
+                .addComponents(
+                    new MessageButton()
+                        .setCustomId('primary')
+                        .setLabel('defer update2')
+                        .setStyle('PRIMARY')
+                        .setCustomId(`ROLLAGAIN2_` + interaction.user.id)
+
+                );
+            const filter = async i => i.customId.endsWith(interaction.user.id)
+            const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
+
+            collector.on('collect', async i => {
+
+                if (i.customId.startsWith('ROLLAGAIN2_')) {
+                    i.deferUpdate();
+                    ///put edit the embed message her
+
+                    // row.components[0].setDisabled(true)
+                    // interaction.editReply({ components: [row] });
+
                     return game()
                 }
                 if (i.user.id === userId) {
@@ -287,7 +317,8 @@ module.exports = async function botRollSCC(interaction) {
             }, 60000);
 
 
-        } else {
+        } else if (numOfRolls === 2) {
+
             const row = new MessageActionRow()
                 .addComponents(
                     new MessageButton()
@@ -301,7 +332,7 @@ module.exports = async function botRollSCC(interaction) {
             const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
             collector.on('collect', async i => {
-
+                i.deferUpdate();
                 if (i.user.id === userId) {
 
                     ///put edit the embed message her
@@ -317,7 +348,7 @@ module.exports = async function botRollSCC(interaction) {
 
 
         }
-        return numOfRolls
+        return
     }
 
     game()
