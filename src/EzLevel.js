@@ -89,12 +89,16 @@ class EasyLeveling extends EventEmitter {
             }
             //cooldown
             // const lastMessage = mongoDbHasUser.timestamp
+
+            // console.log(lastMessage)
+            // console.log(Date.now())
             // if (lastMessage !== null && this.cooldown - (Date.now() - lastMessage) > 0) {
             //     console.log('cooldown active')
             //     this.emit(events.cooldownActive, channelId, userId)
             // }
             //add new timestamp
-            mongoDbHasUser.timestamp = timestamp;
+            // mongoDbHasUser.timestamp = timestamp;
+
             await mongoDbHasUser.save()
         } catch (error) {
             this.emit(events.error, error, 'addLevels')

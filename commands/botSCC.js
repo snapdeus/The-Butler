@@ -4,7 +4,7 @@ const User = require('../models/user');
 const Bag = require('../models/bag')
 const { MessageActionRow, MessageButton } = require('discord.js');
 const { botScore } = require('../utils/score');
-
+const events = require('../src/events/events')
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -161,18 +161,12 @@ module.exports = {
 
             // console.log("___________________", "\n", "this is the num roll: ", numOfRolls, "\n", nonSelectedDice,)
 
-
             let newDiceArray = []
             for (let dice of nonSelectedDice) {
                 newDiceArray.push(dice.currentRoll)
             }
-
-
-
-            embed.addField(`The ${ numOfRolls + 1 } roll was: `, `${ newDiceArray } `)
+            embed.addField(`Roll #${ numOfRolls + 1 }: `, `${ newDiceArray } `)
             interaction.editReply({ embeds: [embed] });
-
-
             if (shipExist && !captExist) {
                 embed.addField("Result", `The Butler has <:ferry:982714449599299604>`)
                 interaction.editReply({ embeds: [embed] });
@@ -191,16 +185,45 @@ module.exports = {
                 // checkForShipCaptCrew();
                 nonSelectedDice = getNonSelectedDice();
                 cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll
-                if (numOfRolls < 2 && cargo < 7) {
-                    embed.addField(`There is some cargo on this roll but not enough for Butler: `, `${ cargo }`)
+                if (numOfRolls < 1 && cargo < 8) {
+                    numOfRolls++;
+                    embed.addField(`(!!!)Not a high enough score! Cargo: `, `${ cargo }`)
                     interaction.editReply({ embeds: [embed] });
-                } else {
-                    embed.addField(`The cargo score is `, `${ cargo }`)
+                    return setTimeout(function () { game() }, 2000);
+                }
+                if (numOfRolls < 2 && cargo < 6) {
+                    embed.addField(`Not a high enough score! Cargo: `, `${ cargo }`)
                     interaction.editReply({ embeds: [embed] });
                 }
 
-                if (cargo >= 7) {
-                    embed.addField(`The cargo was enough for Butler and was: `, `${ cargo }`)
+                if (numOfRolls === 2 || cargo >= 6) {
+                    embed.addField(`The final cargo score is: `, `${ cargo }`)
+                    const row = new MessageActionRow()
+                        .addComponents(
+                            new MessageButton()
+                                .setCustomId('primary')
+                                .setLabel('PLAYER ROLL ')
+                                .setStyle('PRIMARY')
+                                .setCustomId(`PLAYSCC_` + interaction.user.id)
+
+                        );
+                    const filter = async i => i.customId.endsWith(interaction.user.id)
+                    const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
+
+                    collector.on('collect', async i => {
+
+                        if (i.user.id === userId) {
+                            ///put edit the embed message her
+                            row.components[0].setDisabled(true)
+                            interaction.editReply({ components: [row] });
+                        }
+                    });
+                    await interaction.editReply({ embeds: [embed], components: [row], })
+                    setTimeout(function () {
+                        row.components[0].setDisabled(true);
+                        interaction.editReply({ components: [row] });
+                    }, 60000);
+
                     interaction.editReply({ embeds: [embed] });
                     return
                 }
@@ -212,23 +235,45 @@ module.exports = {
 
             }
 
-
-
-
             numOfRolls++;
-
-
             // console.log(embed.fields)
             if (numOfRolls < 3) {
-                return setTimeout(function () { game() }, 2500);
+                return setTimeout(function () { game() }, 1000);
+            } else {
+                const row = new MessageActionRow()
+                    .addComponents(
+                        new MessageButton()
+                            .setCustomId('primary')
+                            .setLabel('PLAYER ROLL')
+                            .setStyle('PRIMARY')
+                            .setCustomId(`PLAYSCC_` + interaction.user.id)
+
+                    );
+                const filter = async i => i.customId.endsWith(interaction.user.id)
+                const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
+
+                collector.on('collect', async i => {
+
+                    if (i.user.id === userId) {
+
+                        ///put edit the embed message her
+                        row.components[0].setDisabled(true)
+                        interaction.editReply({ components: [row] });
+                    }
+                });
+                await interaction.editReply({ embeds: [embed], components: [row], })
+                setTimeout(function () {
+                    row.components[0].setDisabled(true);
+                    interaction.editReply({ components: [row] });
+                }, 60000);
+
 
             }
             return
         }
-
         setTimeout(function () {
             game()
-        }, 2500);
+        }, 1000);
 
 
 

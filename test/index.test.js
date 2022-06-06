@@ -5,8 +5,13 @@ const client = new DiscordClient({
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
 
+const botRollSCC = require('../src/botRollSCC')
+const playerRollSCC = require('../src/playerRollSCC')
+const secondPlayerRoll = require('../src/secondPlayerRoll')
+const events = require('../src/events/events')
 
 const mongoose = require('mongoose')
+
 mongoose.connect(`mongodb://127.0.0.1:27017/butler-db?authSource=butler-db`, {
     useNewUrlParser: true,
     // useCreateIndex: true,
@@ -32,8 +37,8 @@ const options = {
     startingLevel: 1,
     levelUpXP: 9,
     database: 'sqlite',
-    cooldown: 100,
-    diceCooldown: 100,
+    cooldown: 50,
+    diceCooldown: 1000,
 };
 
 const fs = require('fs');
@@ -92,11 +97,15 @@ client.on('ready', () => {
                 const value = parseInt(interaction.message.embeds[0].fields[4].value)
                 await command.execute(interaction, value)
 
-            } else if (interaction.customId.startsWith('SCC_')) {
-
-                const command = client.commands.get('shipcc')
-                await command.execute(interaction)
+            } else if (interaction.customId.startsWith('INITSCC_')) {
+                client.leveling.emit(events.botRollSCC, interaction)
+            } else if (interaction.customId.startsWith('PLAYSCC_')) {
+                client.leveling.emit(events.playerRollSCC, interaction)
+            } else if (interaction.customId.startsWith('2NDROLL_')) {
+                const value = parseInt(interaction.message.embeds[0].fields[0].value)
+                client.leveling.emit(events.secondPlayerRoll, interaction, value)
             }
+
 
         } else return
     })
@@ -125,6 +134,15 @@ client.leveling.on('cooldownActive', (channelId, userId) => {
 });
 client.leveling.on('diceCooldownActive', (channelId, userId) => {
     client.channels.cache.get(config.TESTXPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  Roll again in ${ options.diceCooldown / 1000 } seconds.`);
+});
+client.leveling.on('botRollSCC', (interaction) => {
+    botRollSCC(interaction)
+});
+client.leveling.on('playerRollSCC', (interaction) => {
+    playerRollSCC(interaction)
+});
+client.leveling.on('secondPlayerRoll', (interaction, value) => {
+    secondPlayerRoll(interaction, value)
 });
 client.leveling.on('error', (e, functionName) => {
     console.log(`An error occured at the function ${ functionName }. The error is as follows`);
