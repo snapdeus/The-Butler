@@ -21,13 +21,14 @@ module.exports = async function endTurnSCC(interaction, value) {
 
     const rank = await client.leveling.getUserLevel(userId, guildId, username)
 
-    const message = await interaction.fetchReply();
     const embed = new Discord.MessageEmbed()
 
     embed.setThumbnail(interaction.user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
-    embed.setTitle(`GAME OVER`)
-    embed.setDescription(`${ username } has either won or lost`)
-    // await message.send({ embeds: [embed] })
+    embed.setTitle(`GAMEOVER`)
+
+
+
+    await interaction.message.channel.send({ embeds: [embed] })
 
     console.log('GAMEOVER')
 

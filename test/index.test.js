@@ -50,7 +50,22 @@ const path = require('path');
 
 
 
-const commands = []
+
+
+// const eventsPath = path.join(__dirname, 'events');
+// const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
+
+// for (const file of eventFiles) {
+//     const filePath = path.join(eventsPath, file);
+//     const event = require(filePath);
+//     if (event.once) {
+//         client.once(event.name, (...args) => event.execute(...args));
+//     } else {
+//         client.on(event.name, (...args) => event.execute(...args));
+//     }
+// }
+
+
 const commandsPath = path.resolve(__dirname, '../commands');
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync(`${ commandsPath }`).filter(file => file.endsWith('.js'));
@@ -68,61 +83,66 @@ client.on('ready', () => {
     console.log(client.user.tag + ' is ready!');
 
 })
-    .on('interactionCreate', async (interaction, message) => {
-        if (interaction.isCommand()) {
+client.on('interactionCreate', async (interaction) => {
+    if (interaction.isCommand()) {
 
-            if (interaction.channel.id !== config.TESTXPCHANNEL) {
-                return await interaction.reply('Please use this command in the Games channel')
-            }
-            if (interaction.commandName === 'double') {
-                return await interaction.reply('Use roll instead ;]')
-            }
-            const command = client.commands.get(interaction.commandName)
-            try {
-                await command.execute(interaction);
-            } catch (error) {
-                console.error(error);
-                // await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
-            }
-        } else if (interaction.isButton()) {
-
-
-            if (!interaction.customId.endsWith(interaction.user.id)) {
-                return interaction.reply({
-                    content: "This button is not for you",
-                    ephemeral: true
-                })
-            }
-            if (interaction.customId.startsWith('DICE_')) {
-                const command = client.commands.get('double')
-                const value = parseInt(interaction.message.embeds[0].fields[4].value)
-                await command.execute(interaction, value)
-
-            } else if (interaction.customId.startsWith('INITSCC_')) {
-                client.leveling.emit(events.botRollSCC, interaction)
-            } else if (interaction.customId.startsWith('PLAYSCC_')) {
-                client.leveling.emit(events.playerRollSCC, interaction)
-            } else if (interaction.customId.startsWith('ENDTURNSCC_')) {
-                client.leveling.emit(events.endTurnSCC, interaction)
-            }
-            // } else if (interaction.customId.startsWith('2NDROLL_')) {
-            //     const value = parseInt(interaction.message.embeds[0].fields[0].value)
-            //     client.leveling.emit(events.secondPlayerRoll, interaction, value)
-            // }
-
-
-        } else return
-    })
-    .on('messageCreate', (message) => {
-        if (message.author.bot) return;
-
-        if (message.content === '!bag' || message.content === '!bread' || message.content === '!dairy' ||
-            message.content === '!leaders' || message.content === '!pasta' || message.content === '!rank' || message.content === '!roll' || message.content === '!soup') {
-            return message.reply('Now using slash commands for games and XP. No more "!" for commands: bag, bread, dairy, soup, pasta, leaders, rank, roll ')
+        if (interaction.channel.id !== config.TESTXPCHANNEL) {
+            return await interaction.reply('Please use this command in the Games channel')
         }
-        // command handler (set prefix in config.json)
-        client.leveling.addLevels(message.author.id, message.guild.id, message.channel.id, message.createdTimestamp, message.author.username, message.author);
-    });
+        if (interaction.commandName === 'double') {
+            return await interaction.reply('Use roll instead ;]')
+        }
+        const command = client.commands.get(interaction.commandName)
+        try {
+            await command.execute(interaction);
+        } catch (error) {
+            console.error(error);
+            // await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
+        }
+    } else if (interaction.isButton()) {
+
+
+        if (!interaction.customId.endsWith(interaction.user.id)) {
+            return interaction.reply({
+                content: "This button is not for you",
+                ephemeral: true
+            })
+        }
+        if (interaction.customId.startsWith('DICE_')) {
+            const command = client.commands.get('double')
+            const value = parseInt(interaction.message.embeds[0].fields[4].value)
+            await command.execute(interaction, value)
+
+        } else if (interaction.customId.startsWith('INITSCC_')) {
+            // client.leveling.emit(events.botRollSCC, interaction)
+            const command = client.commands.get('botscc')
+            await command.execute(interaction)
+        } else if (interaction.customId.startsWith('PLAYSCC_')) {
+            // client.leveling.emit(events.playerRollSCC, interaction)
+            const command = client.commands.get('playerroll')
+            await command.execute(interaction)
+
+        } else if (interaction.customId.startsWith('ENDTURNSCC_')) {
+            // client.leveling.emit(events.endTurnSCC, interaction)
+            const command = client.commands.get('endscc')
+            await command.execute(interaction)
+        }
+        // } else if (interaction.customId.startsWith('2NDROLL_')) {
+        //     const value = parseInt(interaction.message.embeds[0].fields[0].value)
+        //     client.leveling.emit(events.secondPlayerRoll, interaction, value)
+        // }
+    } else return
+})
+client.on('messageCreate', (message) => {
+    if (message.author.bot) return;
+
+    if (message.content === '!bag' || message.content === '!bread' || message.content === '!dairy' ||
+        message.content === '!leaders' || message.content === '!pasta' || message.content === '!rank' || message.content === '!roll' || message.content === '!soup') {
+        return message.reply('Now using slash commands for games and XP. No more "!" for commands: bag, bread, dairy, soup, pasta, leaders, rank, roll ')
+    }
+    // command handler (set prefix in config.json)
+    client.leveling.addLevels(message.author.id, message.guild.id, message.channel.id, message.createdTimestamp, message.author.username, message.author);
+});
 
 
 client.leveling.on('UserLevelUp', (newLevel, lastLevel, userId, guildId, channelId, username, author) => {
@@ -139,16 +159,17 @@ client.leveling.on('cooldownActive', (channelId, userId) => {
 client.leveling.on('diceCooldownActive', (channelId, userId) => {
     client.channels.cache.get(config.TESTXPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  Roll again in ${ options.diceCooldown / 1000 } seconds.`);
 });
-client.leveling.on('botRollSCC', (interaction) => {
-    botRollSCC(interaction)
+client.leveling.once('botRollSCC', (interaction) => {
+    // console.log(interaction)
+    // botRollSCC(interaction)
 });
-client.leveling.on('playerRollSCC', (interaction) => {
+client.leveling.once('playerRollSCC', (interaction) => {
     playerRollSCC(interaction)
 });
-client.leveling.on('endTurnSCC', (interaction) => {
+client.leveling.once('endTurnSCC', (interaction) => {
     endTurnSCC(interaction)
 });
-client.leveling.on('secondPlayerRoll', (interaction, value) => {
+client.leveling.once('secondPlayerRoll', (interaction, value) => {
     secondPlayerRoll(interaction, value)
 });
 

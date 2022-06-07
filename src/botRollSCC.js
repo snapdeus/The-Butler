@@ -135,6 +135,7 @@ module.exports = async function botRollSCC(interaction) {
         .setTitle(`${ username } is playing Ship, Captain & Crew!`)
         .setDescription(`The Butler will roll first `)
 
+
     await interaction.reply({ embeds: [embed] })
 
 
@@ -211,7 +212,8 @@ module.exports = async function botRollSCC(interaction) {
                 const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
                 collector.on('collect', async i => {
-                    console.log(i.customId)
+                    i.deferUpdate()
+                    // console.log(i.customId)
                     if (i.user.id === userId) {
                         ///put edit the embed message her
                         row.components[0].setDisabled(true)
@@ -257,7 +259,8 @@ module.exports = async function botRollSCC(interaction) {
             const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
             collector.on('collect', async i => {
-                console.log(i.customId)
+                i.deferUpdate()
+                // console.log(i.customId)
                 if (i.user.id === userId) {
                     ///put edit the embed message her
                     row.components[0].setDisabled(true)
