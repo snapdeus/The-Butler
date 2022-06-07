@@ -5,7 +5,7 @@ const Bag = require('../models/bag')
 const { MessageActionRow, MessageButton } = require('discord.js');
 const { botScore } = require('../utils/score');
 const events = require('../src/events/events')
-
+const { v4: uuidv4 } = require('uuid');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -30,10 +30,10 @@ module.exports = {
         const row = new MessageActionRow()
             .addComponents(
                 new MessageButton()
-                    .setCustomId('primary')
+
                     .setLabel('Roll ')
                     .setStyle('PRIMARY')
-                    .setCustomId(`INITSCC_` + interaction.user.id)
+                    .setCustomId(`INITSCC_` + uuidv4() + interaction.user.id)
 
             );
         const filter = async i => i.customId.endsWith(interaction.user.id)

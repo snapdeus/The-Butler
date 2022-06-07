@@ -5,6 +5,7 @@ const Bag = require('../models/bag')
 const { MessageActionRow, MessageButton } = require('discord.js');
 const { botScore } = require('../utils/score');
 const events = require('./events/events')
+const { v4: uuidv4 } = require('uuid');
 
 module.exports = async function botRollSCC(interaction) {
     const client = interaction.client;
@@ -200,17 +201,17 @@ module.exports = async function botRollSCC(interaction) {
                 const row = new MessageActionRow()
                     .addComponents(
                         new MessageButton()
-                            .setCustomId('primary')
+
                             .setLabel('PLAYER ROLL ')
                             .setStyle('PRIMARY')
-                            .setCustomId(`PLAYSCC_` + interaction.user.id)
+                            .setCustomId(`PLAYSCC_` + uuidv4() + interaction.user.id)
 
                     );
                 const filter = async i => i.customId.endsWith(interaction.user.id)
                 const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
                 collector.on('collect', async i => {
-
+                    console.log(i.customId)
                     if (i.user.id === userId) {
                         ///put edit the embed message her
                         row.components[0].setDisabled(true)
@@ -246,17 +247,17 @@ module.exports = async function botRollSCC(interaction) {
             const row = new MessageActionRow()
                 .addComponents(
                     new MessageButton()
-                        .setCustomId('primary')
+
                         .setLabel('PLAYER ROLL')
                         .setStyle('PRIMARY')
-                        .setCustomId(`PLAYSCC_` + interaction.user.id)
+                        .setCustomId(`PLAYSCC_` + uuidv4() + interaction.user.id)
 
                 );
             const filter = async i => i.customId.endsWith(interaction.user.id)
             const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
             collector.on('collect', async i => {
-
+                console.log(i.customId)
                 if (i.user.id === userId) {
                     ///put edit the embed message her
                     row.components[0].setDisabled(true)

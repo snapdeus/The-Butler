@@ -8,5 +8,6 @@ module.exports = {
     diceCooldownActive: 'diceCooldownActive',
     botRollSCC: 'botRollSCC',
     playerRollSCC: 'playerRollSCC',
-    secondPlayerRoll: 'secondPlayerRoll'
+    secondPlayerRoll: 'secondPlayerRoll',
+    endTurnSCC: 'endTurnSCC'
 }

@@ -5,8 +5,9 @@ const Bag = require('../models/bag')
 const { MessageActionRow, MessageButton } = require('discord.js');
 const { botScore } = require('../utils/score');
 const events = require('./events/events')
+const { v4: uuidv4 } = require('uuid');
 
-module.exports = async function botRollSCC(interaction) {
+module.exports = async function playerRollSCC(interaction) {
     const client = interaction.client;
     let player = interaction.user;
     let username = interaction.user.username;
@@ -158,7 +159,7 @@ module.exports = async function botRollSCC(interaction) {
 
 
         embed.addField(`Roll #${ numOfRolls + 1 }: `, `${ newDiceArray } `)
-        interaction.editReply({ embeds: [embed] });
+        await interaction.editReply({ embeds: [embed] });
 
 
 
@@ -176,87 +177,70 @@ module.exports = async function botRollSCC(interaction) {
             await interaction.editReply({ embeds: [embed] });
         }
 
-
-        // if (canHaveCargo) {
-        //     // checkForShipCaptCrew();
-        //     nonSelectedDice = getNonSelectedDice();
-        //     cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll
-        //     embed.addField('Your cargo: ', `${ cargo }`)
-        //     const row = new MessageActionRow()
-        //         .addComponents(
-        //             new MessageButton()
-        //                 .setCustomId('primary')
-        //                 .setLabel('Roll Again')
-        //                 .setStyle('PRIMARY')
-        //                 .setCustomId(`ROLLAGAIN_` + interaction.user.id)
-
-        //         )
-        //         .addComponents(
-        //             new MessageButton()
-        //                 .setCustomId('primary')
-        //                 .setLabel('End Turn?')
-        //                 .setStyle('PRIMARY')
-        //                 .setCustomId(`ENDTURN_` + interaction.user.id)
-
-        //         );
-        //     const filter = async i => i.customId.endsWith(interaction.user.id)
-        //     const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
-
-        //     collector.on('collect', async i => {
-        //         if (i.customId.startsWith('ROLLAGAIN_')) {
-
-        //             row.components[0].setDisabled(true)
-        //             row.components[1].setDisabled(true)
-        //             await interaction.editReply({ components: [row] });
-        //             return game()
-        //         }
-
-        //         if (i.user.id === userId) {
-        //             ///put edit the embed message her
-        //             row.components[0].setDisabled(true)
-        //             row.components[1].setDisabled(true)
-        //             await interaction.editReply({ components: [row] });
-        //         }
-        //     });
-        //     await interaction.editReply({ embeds: [embed], components: [row], })
-        //     setTimeout(function () {
-        //         row.components[0].setDisabled(true);
-        //         row.components[1].setDisabled(true);
-        //         interaction.editReply({ components: [row] });
-        //     }, 60000);
-
-
-
-        //     await interaction.editReply({ embeds: [embed] });
-        //     return
-
-        // }
-
         if (!canHaveCargo && numOfRolls === 2) {
             embed.addField(`You did not score any cargo`, " :[ ")
-            await interaction.editReply({ embeds: [embed] });
+
+            const row = new MessageActionRow()
+                .addComponents(
+                    new MessageButton()
+                        .setLabel('End Turn')
+                        .setStyle('PRIMARY')
+                        .setCustomId(`ENDTURNSCC_` + uuidv4() + interaction.user.id)
+
+                );
+            const filter = async i => i.customId.endsWith(interaction.user.id)
+            const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
+
+            collector.on('collect', async i => {
+                console.log(i.customId)
+
+                i.deferUpdate();
+                i.deferReply();
+                // if (i.user.id === userId) {
+                //     row.components[0].setDisabled(true)
+                //     await interaction.editReply({ components: [row] });
+                // }
+            });
+            await interaction.editReply({ embeds: [embed], components: [row], })
+            // setTimeout(async function () {
+            //     row.components[0].setDisabled(true);
+            //     await interaction.editReply({ components: [row] });
+            // }, 60000);
+
             return
         }
 
-        console.log(numOfRolls)
+        // console.log(numOfRolls)
         // console.log(embed.fields)
         if (numOfRolls === 0) {
             numOfRolls++;
             const row = new MessageActionRow()
                 .addComponents(
                     new MessageButton()
-                        .setCustomId('primary')
+
                         .setLabel('defer update')
                         .setStyle('PRIMARY')
-                        .setCustomId(`ROLLAGAIN_` + interaction.user.id)
+                        .setCustomId(`2NDROLL_` + uuidv4() + interaction.user.id))
+            if (canHaveCargo) {
+                nonSelectedDice = getNonSelectedDice();
+                cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll
+                embed.addField('Your cargo: ', `${ cargo }`)
+                row.addComponents(
+                    new MessageButton()
+
+                        .setLabel('End Turn')
+                        .setStyle('PRIMARY')
+                        .setCustomId(`ENDTURNSCC_` + uuidv4() + interaction.user.id)
 
                 );
+            }
             const filter = async i => i.customId.endsWith(interaction.user.id)
             const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
             collector.on('collect', async i => {
 
-                if (i.customId.startsWith('ROLLAGAIN_')) {
+                if (i.customId.startsWith('2NDROLL_')) {
+                    console.log(i.customId)
                     i.deferUpdate();
                     ///put edit the embed message her
 
@@ -265,36 +249,56 @@ module.exports = async function botRollSCC(interaction) {
 
                     return game()
                 }
-                if (i.user.id === userId) {
-                    ///put edit the embed message her
-                    // row.components[0].setDisabled(true)
-                    // row.components[1].setDisabled(true)
-                    // await interaction.editReply({ components: [row] });
+                if (i.customId.startsWith('ENDTURNSCC_')) {
+                    console.log(i.customId)
+                    i.deferUpdate();
+                    i.deferReply();
                 }
+
+                // if (i.user.id === userId) {
+                ///put edit the embed message her
+                // row.components[0].setDisabled(true)
+                // row.components[1].setDisabled(true)
+                //         await interaction.editReply({ components: [row] });
+                //     }
             });
             await interaction.editReply({ embeds: [embed], components: [row], })
-            setTimeout(function () {
-                row.components[0].setDisabled(true);
-                interaction.editReply({ components: [row] });
-            }, 60000);
+            // setTimeout(function () {
+            //     row.components[0].setDisabled(true);
+            //     interaction.editReply({ components: [row] });
+            // }, 60000);
 
         } else if (numOfRolls === 1) {
             numOfRolls++;
             const row = new MessageActionRow()
                 .addComponents(
                     new MessageButton()
-                        .setCustomId('primary')
+
                         .setLabel('defer update2')
                         .setStyle('PRIMARY')
-                        .setCustomId(`ROLLAGAIN2_` + interaction.user.id)
+                        .setCustomId(`3RDROLL_` + uuidv4() + interaction.user.id)
 
                 );
+            if (canHaveCargo) {
+                nonSelectedDice = getNonSelectedDice();
+                cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll
+                embed.addField('Your cargo: ', `${ cargo }`)
+                row.addComponents(
+                    new MessageButton()
+
+                        .setLabel('End Turn')
+                        .setStyle('PRIMARY')
+                        .setCustomId(`ENDTURNSCC_` + uuidv4() + interaction.user.id)
+
+                );
+            }
             const filter = async i => i.customId.endsWith(interaction.user.id)
             const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
             collector.on('collect', async i => {
 
-                if (i.customId.startsWith('ROLLAGAIN2_')) {
+                if (i.customId.startsWith('3RDROLL_')) {
+                    console.log(i.customId)
                     i.deferUpdate();
                     ///put edit the embed message her
 
@@ -303,48 +307,59 @@ module.exports = async function botRollSCC(interaction) {
 
                     return game()
                 }
-                if (i.user.id === userId) {
-                    ///put edit the embed message her
-                    // row.components[0].setDisabled(true)
-                    // row.components[1].setDisabled(true)
-                    // await interaction.editReply({ components: [row] });
+                if (i.customId.startsWith('ENDTURNSCC_')) {
+                    console.log(i.customId)
+                    i.deferUpdate();
+                    i.deferReply();
                 }
+                // if (i.user.id === userId) {
+                ///put edit the embed message her
+                // row.components[0].setDisabled(true)
+                // row.components[1].setDisabled(true)
+                // await interaction.editReply({ components: [row] });
+                // }
             });
             await interaction.editReply({ embeds: [embed], components: [row], })
-            setTimeout(function () {
-                row.components[0].setDisabled(true);
-                interaction.editReply({ components: [row] });
-            }, 60000);
+            // setTimeout(async function () {
+            //     row.components[0].setDisabled(true);
+            //     await interaction.editReply({ components: [row] });
+            // }, 60000);
 
 
         } else if (numOfRolls === 2) {
-
+            if (canHaveCargo) {
+                nonSelectedDice = getNonSelectedDice();
+                cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll
+                embed.addField('Your cargo: ', `${ cargo }`)
+            }
             const row = new MessageActionRow()
                 .addComponents(
                     new MessageButton()
-                        .setCustomId('primary')
+
                         .setLabel('End Turn')
                         .setStyle('PRIMARY')
-                        .setCustomId(`ENDTURN_` + interaction.user.id)
+                        .setCustomId(`ENDTURNSCC_` + uuidv4() + interaction.user.id)
 
                 );
             const filter = async i => i.customId.endsWith(interaction.user.id)
             const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
             collector.on('collect', async i => {
+                console.log(i.customId)
                 i.deferUpdate();
-                if (i.user.id === userId) {
+                i.deferReply();
+                // if (i.user.id === userId) {
 
-                    ///put edit the embed message her
-                    row.components[0].setDisabled(true)
-                    await interaction.editReply({ components: [row] });
-                }
+
+                //     row.components[0].setDisabled(true)
+                //     await interaction.editReply({ components: [row] });
+                // }
             });
             await interaction.editReply({ embeds: [embed], components: [row], })
-            setTimeout(async function () {
-                row.components[0].setDisabled(true);
-                await interaction.editReply({ components: [row] });
-            }, 60000);
+            // setTimeout(async function () {
+            //     row.components[0].setDisabled(true);
+            //     await interaction.editReply({ components: [row] });
+            // }, 60000);
 
 
         }

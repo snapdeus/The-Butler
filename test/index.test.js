@@ -7,6 +7,7 @@ const client = new DiscordClient({
 
 const botRollSCC = require('../src/botRollSCC')
 const playerRollSCC = require('../src/playerRollSCC')
+const endTurnSCC = require('../src/endTurnSCC')
 const secondPlayerRoll = require('../src/secondPlayerRoll')
 const events = require('../src/events/events')
 
@@ -101,10 +102,13 @@ client.on('ready', () => {
                 client.leveling.emit(events.botRollSCC, interaction)
             } else if (interaction.customId.startsWith('PLAYSCC_')) {
                 client.leveling.emit(events.playerRollSCC, interaction)
-            } else if (interaction.customId.startsWith('2NDROLL_')) {
-                const value = parseInt(interaction.message.embeds[0].fields[0].value)
-                client.leveling.emit(events.secondPlayerRoll, interaction, value)
+            } else if (interaction.customId.startsWith('ENDTURNSCC_')) {
+                client.leveling.emit(events.endTurnSCC, interaction)
             }
+            // } else if (interaction.customId.startsWith('2NDROLL_')) {
+            //     const value = parseInt(interaction.message.embeds[0].fields[0].value)
+            //     client.leveling.emit(events.secondPlayerRoll, interaction, value)
+            // }
 
 
         } else return
@@ -141,9 +145,13 @@ client.leveling.on('botRollSCC', (interaction) => {
 client.leveling.on('playerRollSCC', (interaction) => {
     playerRollSCC(interaction)
 });
+client.leveling.on('endTurnSCC', (interaction) => {
+    endTurnSCC(interaction)
+});
 client.leveling.on('secondPlayerRoll', (interaction, value) => {
     secondPlayerRoll(interaction, value)
 });
+
 client.leveling.on('error', (e, functionName) => {
     console.log(`An error occured at the function ${ functionName }. The error is as follows`);
     console.log(e);

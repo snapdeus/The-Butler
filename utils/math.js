@@ -4,6 +4,7 @@ const { ids } = require('../resources/id')
 const { dairy } = require('../resources/dairy')
 const fs = require('fs')
 
+const { v4: uuidv4 } = require('uuid');
 // for (let i = 0; i < 20; i++) {
 //     console.log("level: " + i + " requires this much " + (10 * (Math.pow(2, i) - 1)) + "xp to level up to next level")
 
@@ -13,13 +14,13 @@ const fs = require('fs')
 
 // console.log(diceRoll)
 
-function addIDs(array, idArray) {
-    for (let i = 0; i <= array.length - 1; i++) {
-        array[i].dairyId = idArray[i]
+// function addIDs(array, idArray) {
+//     for (let i = 0; i <= array.length - 1; i++) {
+//         array[i].dairyId = idArray[i]
 
-    }
-    return array
-}
+//     }
+//     return array
+// }
 
 
 
@@ -35,21 +36,21 @@ function addIDs(array, idArray) {
 
 // console.log(dairy.length)
 
-let botDiceRoll = [5, 4, 3]
-let cargoArray = botDiceRoll.slice()
+// let botDiceRoll = [5, 4, 3]
+// let cargoArray = botDiceRoll.slice()
 
-function retrieveCargo(cargoArray) {
-    if (cargoArray.indexOf(6) > -1) {
-        cargoArray.splice(cargoArray.indexOf(6), 1)
-    }
-    if (cargoArray.indexOf(5) > -1) {
-        cargoArray.splice(cargoArray.indexOf(5), 1)
-    }
-    if (cargoArray.indexOf(4) > -1) {
-        cargoArray.splice(cargoArray.indexOf(4), 1)
-    }
-    return cargoArray
-}
+// function retrieveCargo(cargoArray) {
+//     if (cargoArray.indexOf(6) > -1) {
+//         cargoArray.splice(cargoArray.indexOf(6), 1)
+//     }
+//     if (cargoArray.indexOf(5) > -1) {
+//         cargoArray.splice(cargoArray.indexOf(5), 1)
+//     }
+//     if (cargoArray.indexOf(4) > -1) {
+//         cargoArray.splice(cargoArray.indexOf(4), 1)
+//     }
+//     return cargoArray
+// }
 
-const botCargo = retrieveCargo(cargoArray)
-console.log(botCargo)
+// const botCargo = retrieveCargo(cargoArray)
+// console.log(botCargo)
