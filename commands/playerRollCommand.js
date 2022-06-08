@@ -23,11 +23,18 @@ module.exports = {
         let timestamp = interaction.createdTimestamp;
 
 
-        const mongoUser = await client.leveling.rollShipCC(userId, guildId, username)
+        const mongoUser = await User.findOne({ userId: userId })
 
         const dice = ['⚀', '⚁', '⚂', '⚃', '⚄', '⚅']
+        const diceText = {
+            1: '⚀',
+            2: '⚁',
+            3: '⚂',
+            4: '⚃',
+            5: '⚄',
+            6: '⚅'
+        }
 
-        const rank = await client.leveling.getUserLevel(userId, guildId, username)
         // console.log(rank)
         // console.log(playerDiceRoll)
         class Die {
@@ -162,9 +169,13 @@ module.exports = {
             for (let dice of nonSelectedDice) {
                 newDiceArray.push(dice.currentRoll)
             }
+            let visRepOfDice = []
+            for (die of newDiceArray) {
+                visRepOfDice.push(diceText[die])
+            }
 
 
-            embed.addField(`Roll #${ numOfRolls + 1 }: `, `${ newDiceArray } `)
+            embed.addField(`Roll #${ numOfRolls + 1 }: `, `${ newDiceArray }\n${ visRepOfDice } `)
             await interaction.editReply({ embeds: [embed] });
 
 
@@ -198,7 +209,10 @@ module.exports = {
                 if (canHaveCargo) {
                     nonSelectedDice = getNonSelectedDice();
                     cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll
-                    embed.addField('Your cargo: ', `${ cargo }`)
+
+                    mongoUser.my_cargo = parseInt(cargo);
+
+                    embed.addField(`Your cargo:\n ${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =`, `${ cargo }`)
                     row.addComponents(
                         new MessageButton()
 
@@ -224,6 +238,7 @@ module.exports = {
                         return game()
                     }
                     if (i.customId.startsWith('ENDTURNSCC_')) {
+                        await mongoUser.save()
                         console.log(i.customId)
                         i.deferUpdate();
                         return
@@ -250,8 +265,9 @@ module.exports = {
                     );
                 if (canHaveCargo) {
                     nonSelectedDice = getNonSelectedDice();
-                    cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll
-                    embed.addField('Your cargo: ', `${ cargo }`)
+                    cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll;
+                    mongoUser.my_cargo = parseInt(cargo);
+                    embed.addField(`Your cargo:\n ${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =`, `${ cargo }`)
                     row.addComponents(
                         new MessageButton()
 
@@ -277,6 +293,7 @@ module.exports = {
                         return game()
                     }
                     if (i.customId.startsWith('ENDTURNSCC_')) {
+                        await mongoUser.save()
                         console.log(i.customId)
                         i.deferUpdate();
                         return
@@ -292,8 +309,8 @@ module.exports = {
 
             } else if (!canHaveCargo && numOfRolls === 2) {
                 numOfRolls++;
-
-                embed.addField(`You did not score any cargo`, " :[ ")
+                mongoUser.my_cargo = 0;
+                embed.addField(`You did not score any cargo`, "0")
 
                 const row = new MessageActionRow()
                     .addComponents(
@@ -308,6 +325,7 @@ module.exports = {
                 const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
                 collector.once('collect', async i => {
+                    await mongoUser.save()
                     console.log(i.customId)
                     i.deferUpdate();
                     if (i.user.id === userId) {
@@ -326,7 +344,8 @@ module.exports = {
             } else if (canHaveCargo && numOfRolls === 2) {
                 nonSelectedDice = getNonSelectedDice();
                 cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll
-                embed.addField('Your cargo: ', `${ cargo }`)
+                mongoUser.my_cargo = parseInt(cargo);
+                embed.addField(`Your cargo:\n ${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =`, `${ cargo }`)
 
                 const row = new MessageActionRow()
                     .addComponents(
@@ -344,6 +363,7 @@ module.exports = {
                         await interaction.editReply({ components: [row] });
                     }
                     if (i.customId.startsWith('ENDTURNSCC_')) {
+                        await mongoUser.save()
                         console.log(i.customId)
                         i.deferUpdate();
                         return

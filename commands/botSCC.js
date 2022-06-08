@@ -23,13 +23,19 @@ module.exports = {
         let timestamp = interaction.createdTimestamp;
 
 
-        const mongoUser = await client.leveling.rollShipCC(userId, guildId, username)
+        let mongoUser = await User.findOne({ userId: userId })
 
         const dice = ['⚀', '⚁', '⚂', '⚃', '⚄', '⚅']
+        const diceText = {
+            1: '⚀',
+            2: '⚁',
+            3: '⚂',
+            4: '⚃',
+            5: '⚄',
+            6: '⚅'
+        }
 
-        const rank = await client.leveling.getUserLevel(userId, guildId, username)
-        // console.log(rank)
-        // console.log(playerDiceRoll)
+
         class Die {
             constructor (id) {
                 this.id = id;
@@ -141,6 +147,7 @@ module.exports = {
             .setTitle(`${ username } is playing Ship, Captain & Crew!`)
             .setDescription(`The Butler will roll first `)
 
+
         await interaction.reply({ embeds: [embed] })
 
 
@@ -165,7 +172,12 @@ module.exports = {
             for (let dice of nonSelectedDice) {
                 newDiceArray.push(dice.currentRoll)
             }
-            embed.addField(`Roll #${ numOfRolls + 1 }: `, `${ newDiceArray } `)
+            let visRepOfDice = []
+            for (die of newDiceArray) {
+                visRepOfDice.push(diceText[die])
+            }
+
+            embed.addField(`Roll #${ numOfRolls + 1 }: `, `${ newDiceArray }\n${ visRepOfDice } `)
             interaction.editReply({ embeds: [embed] });
             if (shipExist && !captExist) {
                 embed.addField("Result", `The Butler has <:ferry:982714449599299604>`)
@@ -191,18 +203,20 @@ module.exports = {
 
                 if (numOfRolls < 1 && cargo < 8) {
                     numOfRolls++;
-                    embed.addField(`Not a high enough score! Cargo: `, `${ cargo }`)
+                    embed.addField(`Not a high enough score! Cargo:\n ${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } = `, `${ cargo }`)
                     await interaction.editReply({ embeds: [embed] });
                     return setTimeout(function () { game() }, 500);
                 }
                 if (numOfRolls < 2 && cargo < 6) {
-                    embed.addField(`Not a high enough score! Cargo: `, `${ cargo }`)
+                    embed.addField(`Not a high enough score! Cargo:\n ${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } = `, `${ cargo }`)
                     await interaction.editReply({ embeds: [embed] });
                 }
 
 
                 if (numOfRolls === 2 || cargo >= 6) {
-                    embed.addField(`The final cargo score is: `, `${ cargo }`)
+                    mongoUser.bot_cargo = parseInt(cargo);
+                    await mongoUser.save();
+                    embed.addField(`The final cargo score is:\n ${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =`, `${ cargo }`)
                     //BUTTON STUFF
                     const row = new MessageActionRow()
                         .addComponents(
@@ -241,7 +255,9 @@ module.exports = {
 
             //NO CARGO :[
             if (!canHaveCargo && numOfRolls === 2) {
-                embed.addField(`There was no cargo for Butler`, " :[ ")
+                mongoUser.bot_cargo = 0;
+                await mongoUser.save();
+                embed.addField(`There was no cargo for Butler`, '0')
                 await interaction.editReply({ embeds: [embed] });
 
             }

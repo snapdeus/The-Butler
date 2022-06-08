@@ -10,28 +10,35 @@ const { v4: uuidv4 } = require('uuid');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('shipcc')
-        .setDescription('begins game'),
-
+        .setDescription('begins game')
+        .addNumberOption(option =>
+            option.setName('wager')
+                .setDescription('Optional amount to wager')),
     async execute(interaction) {
+        let wager = Math.abs(interaction.options.getNumber("wager"))
         const client = interaction.client
         let userId = interaction.user.id
         let username = interaction.user.username
         let guildId = interaction.guild.id
-        let rank = await client.leveling.getUserLevel(userId, guildId, username)
+        let mongoUser = await User.findOne({ userId: userId })
 
+        if (!wager) {
+            wager = parseInt(mongoUser.level * 10)
+        }
 
-        const winningPercentage = ((rank.dice_wins + (rank.dice_ties * 0.5)) / (rank.dice_ties + rank.dice_wins + rank.dice_losses)) * 100
-
+        mongoUser.my_scc_wager = parseInt(wager)
+        await mongoUser.save()
         const embed = new Discord.MessageEmbed()
             .setThumbnail(interaction.user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
-            .setTitle(`${ username } Stats`)
-            .addField('Level: ', `${ rank.level }`)
-
+            .setTitle(`Ship Captain Crew`)
+            .setDescription('Wagering Stage')
+            .addField(`Your current Gold is 🪙 ${ mongoUser.xpOverTime }`, 'You may select a wager when you\n issue the command, /shipcc + optional wager.\nThe default wager is your level x 10.')
+            .addField("You have wagered:", `🪙 ${ wager }`)
         const row = new MessageActionRow()
             .addComponents(
                 new MessageButton()
 
-                    .setLabel('Roll ')
+                    .setLabel('Play')
                     .setStyle('PRIMARY')
                     .setCustomId(`INITSCC_` + uuidv4() + interaction.user.id)
 

@@ -16,13 +16,17 @@ const UserSchema = new Schema({
     dice_wins: Number,
     dice_losses: Number,
     dice_ties: Number,
+    my_cargo: Number,
+    bot_cargo: Number,
+    my_scc_wager: Number,
+    scc_wins: Number,
+    scc_losses: Number,
+    scc_ties: Number,
     bag: {
         type: Schema.Types.ObjectId,
         ref: 'Bag'
     },
 
 }, opts)
-
-
 
 module.exports = mongoose.model('User', UserSchema)

@@ -54,3 +54,12 @@ const { v4: uuidv4 } = require('uuid');
 
 // const botCargo = retrieveCargo(cargoArray)
 // console.log(botCargo)
+const diceText = {
+    1: '⚀',
+    2: '⚁',
+    3: '⚂',
+    4: '⚃',
+    5: '⚄',
+    6: '⚅'
+}
+
