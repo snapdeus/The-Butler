@@ -8,7 +8,7 @@ const events = require('../src/events/events')
 const { v4: uuidv4 } = require('uuid');
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('playerroll')
+        .setName('playerrollscc')
         .setDescription('Play Ship, Captain & Crew'),
     // .addNumberOption(option =>
     //     option.setName('wager')
@@ -187,6 +187,7 @@ module.exports = {
                 nonSelectedDice = getNonSelectedDice();
                 cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll
                 embed.addField('Your cargo: ', `${ cargo }`)
+
                 const row = new MessageActionRow()
                     .addComponents(
                         new MessageButton()
@@ -208,7 +209,6 @@ module.exports = {
 
                         return
                     }
-
                     // if (i.user.id === userId) {
                     ///put edit the embed message her
                     // row.components[0].setDisabled(true)
@@ -229,7 +229,7 @@ module.exports = {
                     .addComponents(
                         new MessageButton()
 
-                            .setLabel('defer update')
+                            .setLabel('Roll again? (#2)')
                             .setStyle('PRIMARY')
                             .setCustomId(`2NDROLL_` + uuidv4() + interaction.user.id))
 
@@ -270,7 +270,7 @@ module.exports = {
                     .addComponents(
                         new MessageButton()
 
-                            .setLabel('defer update2')
+                            .setLabel('Roll Again? (#3)')
                             .setStyle('PRIMARY')
                             .setCustomId(`3RDROLL_` + uuidv4() + interaction.user.id)
 
@@ -339,50 +339,14 @@ module.exports = {
                     // }
                 });
                 await interaction.editReply({ embeds: [embed], components: [row], })
-                // setTimeout(async function () {
-                //     row.components[0].setDisabled(true);
-                //     await interaction.editReply({ components: [row] });
-                // }, 60000);
+                setTimeout(async function () {
+                    row.components[0].setDisabled(true);
+                    await interaction.editReply({ components: [row] });
+                }, 60000);
 
 
             }
-            // if (!canHaveCargo && numOfRolls > 2) {
-            //     embed.addField(`You did not score any cargo`, " :[ ")
 
-            //     const row = new MessageActionRow()
-            //         .addComponents(
-            //             new MessageButton()
-            //                 .setLabel('End Turn')
-            //                 .setStyle('PRIMARY')
-            //                 .setCustomId(`ENDTURNSCC_` + uuidv4() + interaction.user.id)
-
-            //         );
-            //     const filter = async i => i.customId.endsWith(interaction.user.id)
-            //     const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
-
-            //     collector.once('collect', async i => {
-            //         console.log(i.customId)
-            //         i.deferUpdate();
-            //         // embed.fields = []
-
-            //         // embed.setTitle('GAMEOVER')
-            //         // await interaction.editReply({ embeds: [embed]})
-
-
-            //         return
-            //         // if (i.user.id === userId) {
-            //         //     row.components[0].setDisabled(true)
-            //         //     await interaction.editReply({ components: [row] });
-            //         // }
-            //     });
-            //     await interaction.editReply({ embeds: [embed], components: [row], })
-            //     // setTimeout(async function () {
-            //     //     row.components[0].setDisabled(true);
-            //     //     await interaction.editReply({ components: [row] });
-            //     // }, 60000);
-
-            //     return
-            // }
 
 
 
@@ -390,9 +354,7 @@ module.exports = {
         }
 
         game()
-        // setTimeout(function () {
-        //     game()
-        // }, 2000);
+
 
     }
 }

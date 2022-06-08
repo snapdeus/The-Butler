@@ -193,7 +193,7 @@ module.exports = {
                     numOfRolls++;
                     embed.addField(`Not a high enough score! Cargo: `, `${ cargo }`)
                     await interaction.editReply({ embeds: [embed] });
-                    return setTimeout(function () { game() }, 2000);
+                    return setTimeout(function () { game() }, 500);
                 }
                 if (numOfRolls < 2 && cargo < 6) {
                     embed.addField(`Not a high enough score! Cargo: `, `${ cargo }`)
@@ -217,25 +217,16 @@ module.exports = {
                     const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
                     collector.once('collect', async i => {
-
+                        if (i.user.id === userId) {
+                            row.components[0].setDisabled(true)
+                            await interaction.editReply({ components: [row] });
+                        }
                         if (i.customId.startsWith('PLAYSCC_')) {
                             console.log(i.customId)
-
-                            // i.deferReply();
-                            // embed.fields = []
-                            // embed.setTitle('GAMEOVER')
-                            // await interaction.editReply({ embeds: [embed]})
 
                             return
                         }
 
-
-                        //     if (i.user.id === userId) {
-                        //         return
-                        //         ///put edit the embed message her
-                        //         // row.components[0].setDisabled(true)
-                        //         // interaction.editReply({ components: [row] });
-                        //     }
                     });
                     await interaction.editReply({ embeds: [embed], components: [row], })
                     setTimeout(async function () {
@@ -260,7 +251,7 @@ module.exports = {
 
 
             if (numOfRolls < 3) {
-                return setTimeout(function () { game() }, 2000);
+                return setTimeout(function () { game() }, 500);
             } else {
                 //ADD BUTTON
                 const row = new MessageActionRow()
@@ -278,22 +269,15 @@ module.exports = {
                 collector.once('collect', async i => {
                     // console.log(i)
                     // console.log(i.customId)
+                    if (i.user.id === userId) {
+                        row.components[0].setDisabled(true)
+                        await interaction.editReply({ components: [row] });
+                    }
                     if (i.customId.startsWith('PLAYSCC_')) {
                         console.log(i.customId)
-
-                        // i.deferReply();
-                        // embed.fields = []
-                        // embed.setTitle('GAMEOVER')
-                        // await interaction.editReply({ embeds: [embed]})
-
                         return
                     }
-                    // if (i.user.id === userId) {
-                    //     return
-                    //     ///put edit the embed message her
-                    //     // row.components[0].setDisabled(true)
-                    //     // interaction.editReply({ components: [row] });
-                    // }
+
                 });
 
 
@@ -309,6 +293,6 @@ module.exports = {
             return
         }
         //RUN GAME
-        setTimeout(function () { game() }, 1000);
+        setTimeout(function () { game() }, 500);
     }
 }

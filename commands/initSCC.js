@@ -9,7 +9,7 @@ const { v4: uuidv4 } = require('uuid');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('initscc')
+        .setName('shipcc')
         .setDescription('begins game'),
 
     async execute(interaction) {

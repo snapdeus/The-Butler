@@ -5,10 +5,10 @@ const client = new DiscordClient({
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
 
-const botRollSCC = require('../src/botRollSCC')
-const playerRollSCC = require('../src/playerRollSCC')
-const endTurnSCC = require('../src/endTurnSCC')
-const secondPlayerRoll = require('../src/secondPlayerRoll')
+// const botRollSCC = require('../src/botRollSCC')
+// const playerRollSCC = require('../src/playerRollSCC')
+// const endTurnSCC = require('../src/endTurnSCC')
+// const secondPlayerRoll = require('../src/secondPlayerRoll')
 const events = require('../src/events/events')
 
 const mongoose = require('mongoose')
@@ -119,7 +119,7 @@ client.on('interactionCreate', async (interaction) => {
             await command.execute(interaction)
         } else if (interaction.customId.startsWith('PLAYSCC_')) {
             // client.leveling.emit(events.playerRollSCC, interaction)
-            const command = client.commands.get('playerroll')
+            const command = client.commands.get('playerrollscc')
             await command.execute(interaction)
 
         } else if (interaction.customId.startsWith('ENDTURNSCC_')) {
@@ -159,19 +159,19 @@ client.leveling.on('cooldownActive', (channelId, userId) => {
 client.leveling.on('diceCooldownActive', (channelId, userId) => {
     client.channels.cache.get(config.TESTXPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  Roll again in ${ options.diceCooldown / 1000 } seconds.`);
 });
-client.leveling.once('botRollSCC', (interaction) => {
-    // console.log(interaction)
-    // botRollSCC(interaction)
-});
-client.leveling.once('playerRollSCC', (interaction) => {
-    playerRollSCC(interaction)
-});
-client.leveling.once('endTurnSCC', (interaction) => {
-    endTurnSCC(interaction)
-});
-client.leveling.once('secondPlayerRoll', (interaction, value) => {
-    secondPlayerRoll(interaction, value)
-});
+// client.leveling.once('botRollSCC', (interaction) => {
+// console.log(interaction)
+// botRollSCC(interaction)
+// });
+// client.leveling.once('playerRollSCC', (interaction) => {
+//     playerRollSCC(interaction)
+// });
+// client.leveling.once('endTurnSCC', (interaction) => {
+//     endTurnSCC(interaction)
+// });
+// client.leveling.once('secondPlayerRoll', (interaction, value) => {
+//     secondPlayerRoll(interaction, value)
+// });
 
 client.leveling.on('error', (e, functionName) => {
     console.log(`An error occured at the function ${ functionName }. The error is as follows`);
