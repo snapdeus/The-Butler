@@ -183,46 +183,8 @@ module.exports = {
                 await interaction.editReply({ embeds: [embed] });
             }
 
-            if (canHaveCargo) {
-                nonSelectedDice = getNonSelectedDice();
-                cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll
-                embed.addField('Your cargo: ', `${ cargo }`)
 
-                const row = new MessageActionRow()
-                    .addComponents(
-                        new MessageButton()
 
-                            .setLabel('End Turn')
-                            .setStyle('PRIMARY')
-                            .setCustomId(`ENDTURNSCC_` + uuidv4() + interaction.user.id))
-                const filter = async i => i.customId.endsWith(interaction.user.id)
-                const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
-
-                collector.once('collect', async i => {
-
-                    if (i.customId.startsWith('ENDTURNSCC_')) {
-                        console.log(i.customId)
-                        i.deferUpdate();
-                        // embed.fields = []
-                        // embed.setTitle('GAMEOVER')
-                        // await interaction.editReply({ embeds: [embed]})
-
-                        return
-                    }
-                    // if (i.user.id === userId) {
-                    ///put edit the embed message her
-                    // row.components[0].setDisabled(true)
-                    // row.components[1].setDisabled(true)
-                    //         await interaction.editReply({ components: [row] });
-                    //     }
-                });
-
-                await interaction.editReply({ embeds: [embed], components: [row], })
-
-            }
-
-            // console.log(numOfRolls)
-            // console.log(embed.fields)
             if (numOfRolls < 1) {
                 numOfRolls++;
                 const row = new MessageActionRow()
@@ -233,35 +195,46 @@ module.exports = {
                             .setStyle('PRIMARY')
                             .setCustomId(`2NDROLL_` + uuidv4() + interaction.user.id))
 
+                if (canHaveCargo) {
+                    nonSelectedDice = getNonSelectedDice();
+                    cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll
+                    embed.addField('Your cargo: ', `${ cargo }`)
+                    row.addComponents(
+                        new MessageButton()
+
+                            .setLabel('End Turn')
+                            .setStyle('PRIMARY')
+                            .setCustomId(`ENDTURNSCC_` + uuidv4() + interaction.user.id))
+                }
+
                 const filter = async i => i.customId.endsWith(interaction.user.id)
                 const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
                 collector.once('collect', async i => {
-
+                    if (i.user.id === userId) {
+                        row.components[0].setDisabled(true)
+                        if (canHaveCargo) {
+                            row.components[1].setDisabled(true)
+                        }
+                        await interaction.editReply({ components: [row] });
+                    }
                     if (i.customId.startsWith('2NDROLL_')) {
                         console.log(i.customId)
                         i.deferUpdate();
-                        ///put edit the embed message her
-
-                        // row.components[0].setDisabled(true)
-                        // interaction.editReply({ components: [row] });
-
                         return game()
                     }
+                    if (i.customId.startsWith('ENDTURNSCC_')) {
+                        console.log(i.customId)
+                        i.deferUpdate();
+                        return
+                    }
 
-
-                    // if (i.user.id === userId) {
-                    ///put edit the embed message her
-                    // row.components[0].setDisabled(true)
-                    // row.components[1].setDisabled(true)
-                    //         await interaction.editReply({ components: [row] });
-                    //     }
                 });
                 await interaction.editReply({ embeds: [embed], components: [row], })
-                // setTimeout(function () {
-                //     row.components[0].setDisabled(true);
-                //     interaction.editReply({ components: [row] });
-                // }, 60000);
+                setTimeout(function () {
+                    row.components[0].setDisabled(true);
+                    interaction.editReply({ components: [row] });
+                }, 60000);
 
             } else if (numOfRolls === 1) {
                 numOfRolls++;
@@ -275,35 +248,46 @@ module.exports = {
                             .setCustomId(`3RDROLL_` + uuidv4() + interaction.user.id)
 
                     );
+                if (canHaveCargo) {
+                    nonSelectedDice = getNonSelectedDice();
+                    cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll
+                    embed.addField('Your cargo: ', `${ cargo }`)
+                    row.addComponents(
+                        new MessageButton()
+
+                            .setLabel('End Turn')
+                            .setStyle('PRIMARY')
+                            .setCustomId(`ENDTURNSCC_` + uuidv4() + interaction.user.id))
+                }
 
                 const filter = async i => i.customId.endsWith(interaction.user.id)
                 const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
                 collector.once('collect', async i => {
-
+                    if (i.user.id === userId) {
+                        row.components[0].setDisabled(true)
+                        if (canHaveCargo) {
+                            row.components[1].setDisabled(true)
+                        }
+                        await interaction.editReply({ components: [row] });
+                    }
                     if (i.customId.startsWith('3RDROLL_')) {
                         console.log(i.customId)
                         i.deferUpdate();
-                        ///put edit the embed message her
-
-                        // row.components[0].setDisabled(true)
-                        // interaction.editReply({ components: [row] });
-
                         return game()
                     }
+                    if (i.customId.startsWith('ENDTURNSCC_')) {
+                        console.log(i.customId)
+                        i.deferUpdate();
+                        return
+                    }
 
-                    // if (i.user.id === userId) {
-                    ///put edit the embed message her
-                    // row.components[0].setDisabled(true)
-                    // row.components[1].setDisabled(true)
-                    // await interaction.editReply({ components: [row] });
-                    // }
                 });
                 await interaction.editReply({ embeds: [embed], components: [row], })
-                // setTimeout(async function () {
-                //     row.components[0].setDisabled(true);
-                //     await interaction.editReply({ components: [row] });
-                // }, 60000);
+                setTimeout(async function () {
+                    row.components[0].setDisabled(true);
+                    await interaction.editReply({ components: [row] });
+                }, 60000);
 
 
             } else if (!canHaveCargo && numOfRolls === 2) {
@@ -326,17 +310,11 @@ module.exports = {
                 collector.once('collect', async i => {
                     console.log(i.customId)
                     i.deferUpdate();
-                    // embed.fields = []
-
-                    // embed.setTitle('GAMEOVER')
-                    // await interaction.editReply({ embeds: [embed]})
-
-                    // if (i.user.id === userId) {
+                    if (i.user.id === userId) {
+                        row.components[0].setDisabled(true)
+                        await interaction.editReply({ components: [row] });
+                    }
                     return
-
-                    //     row.components[0].setDisabled(true)
-                    //     await interaction.editReply({ components: [row] });
-                    // }
                 });
                 await interaction.editReply({ embeds: [embed], components: [row], })
                 setTimeout(async function () {
@@ -345,12 +323,36 @@ module.exports = {
                 }, 60000);
 
 
-            }
+            } else if (canHaveCargo && numOfRolls === 2) {
+                nonSelectedDice = getNonSelectedDice();
+                cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll
+                embed.addField('Your cargo: ', `${ cargo }`)
 
+                const row = new MessageActionRow()
+                    .addComponents(
+                        new MessageButton()
 
+                            .setLabel('End Turn')
+                            .setStyle('PRIMARY')
+                            .setCustomId(`ENDTURNSCC_` + uuidv4() + interaction.user.id))
+                const filter = async i => i.customId.endsWith(interaction.user.id)
+                const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
+                collector.once('collect', async i => {
+                    if (i.user.id === userId) {
+                        row.components[0].setDisabled(true)
+                        await interaction.editReply({ components: [row] });
+                    }
+                    if (i.customId.startsWith('ENDTURNSCC_')) {
+                        console.log(i.customId)
+                        i.deferUpdate();
+                        return
+                    }
+                });
+                await interaction.editReply({ embeds: [embed], components: [row], })
 
-            return
+            } else return
+
         }
 
         game()

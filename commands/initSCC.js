@@ -54,16 +54,6 @@ module.exports = {
             interaction.editReply({ components: [row] });
         }, 60000);
 
-
-
-
-
-
-
-
-        // message.channel.send(`<@${ user }> level: ${ rank.level }  xp: ${ rank.xp } xp to next level: ${ rank.nextLevel } `)
-
-
     }
 }
 
