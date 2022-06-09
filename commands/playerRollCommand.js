@@ -6,6 +6,16 @@ const { MessageActionRow, MessageButton } = require('discord.js');
 const { botScore } = require('../utils/score');
 const events = require('../src/events/events')
 const { v4: uuidv4 } = require('uuid');
+const fs = require('fs')
+const path = require('path')
+
+
+
+const commandsPath = path.resolve(__dirname, '../commands');
+
+const commandFiles = fs.readdirSync(`${ commandsPath }`).filter(file => file.endsWith('.js'));
+
+
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('playerrollscc')
@@ -21,6 +31,16 @@ module.exports = {
         let guildId = interaction.guildId;
         let channelId = interaction.channelId;
         let timestamp = interaction.createdTimestamp;
+
+        client.commands = new Discord.Collection();
+        for (const file of commandFiles) {
+            const command = require(`${ commandsPath }/${ file }`);
+            // set a new item in the Collection
+            // with the key as the command name and the value as the exported module
+            client.commands.set(command.data.name, command);
+        }
+
+
 
 
         const mongoUser = await User.findOne({ userId: userId })
@@ -147,7 +167,7 @@ module.exports = {
         embed.setThumbnail(interaction.user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
         embed.setTitle(`${ username } is playing Ship, Captain & Crew!`)
         embed.setDescription(`${ username } is rolling!`)
-        await interaction.reply({ embeds: [embed] })
+        await interaction.reply({ embeds: [embed], ephemeral: true })
 
         async function game() {
 
@@ -211,7 +231,7 @@ module.exports = {
                     cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll
 
                     mongoUser.my_cargo = parseInt(cargo);
-
+                    await mongoUser.save()
                     embed.addField(`Your cargo:\n ${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =`, `${ cargo }`)
                     row.addComponents(
                         new MessageButton()
@@ -233,22 +253,30 @@ module.exports = {
                         await interaction.editReply({ components: [row] });
                     }
                     if (i.customId.startsWith('2NDROLL_')) {
-                        console.log(i.customId)
+
                         i.deferUpdate();
                         return game()
                     }
                     if (i.customId.startsWith('ENDTURNSCC_')) {
-                        await mongoUser.save()
-                        console.log(i.customId)
+
+
                         i.deferUpdate();
                         return
                     }
 
                 });
                 await interaction.editReply({ embeds: [embed], components: [row], })
-                setTimeout(function () {
+                setTimeout(async function () {
+                    if (!canHaveCargo) {
+                        cargo = 0;
+                        mongoUser.my_cargo = 0;
+                        await mongoUser.save()
+                    }
                     row.components[0].setDisabled(true);
-                    interaction.editReply({ components: [row] });
+                    await interaction.editReply({ components: [row] });
+                    const command = client.commands.get('endscc')
+                    await command.execute(interaction)
+                    return
                 }, 60000);
 
             } else if (numOfRolls === 1) {
@@ -267,6 +295,7 @@ module.exports = {
                     nonSelectedDice = getNonSelectedDice();
                     cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll;
                     mongoUser.my_cargo = parseInt(cargo);
+                    await mongoUser.save()
                     embed.addField(`Your cargo:\n ${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =`, `${ cargo }`)
                     row.addComponents(
                         new MessageButton()
@@ -288,13 +317,11 @@ module.exports = {
                         await interaction.editReply({ components: [row] });
                     }
                     if (i.customId.startsWith('3RDROLL_')) {
-                        console.log(i.customId)
                         i.deferUpdate();
                         return game()
                     }
                     if (i.customId.startsWith('ENDTURNSCC_')) {
-                        await mongoUser.save()
-                        console.log(i.customId)
+
                         i.deferUpdate();
                         return
                     }
@@ -302,14 +329,23 @@ module.exports = {
                 });
                 await interaction.editReply({ embeds: [embed], components: [row], })
                 setTimeout(async function () {
+                    if (!canHaveCargo) {
+                        cargo = 0;
+                        mongoUser.my_cargo = 0;
+                        await mongoUser.save()
+                    }
                     row.components[0].setDisabled(true);
                     await interaction.editReply({ components: [row] });
+                    const command = client.commands.get('endscc')
+                    await command.execute(interaction)
+                    return
                 }, 60000);
 
 
             } else if (!canHaveCargo && numOfRolls === 2) {
                 numOfRolls++;
                 mongoUser.my_cargo = 0;
+                await mongoUser.save()
                 embed.addField(`You did not score any cargo`, "0")
 
                 const row = new MessageActionRow()
@@ -325,8 +361,7 @@ module.exports = {
                 const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
                 collector.once('collect', async i => {
-                    await mongoUser.save()
-                    console.log(i.customId)
+
                     i.deferUpdate();
                     if (i.user.id === userId) {
                         row.components[0].setDisabled(true)
@@ -336,15 +371,22 @@ module.exports = {
                 });
                 await interaction.editReply({ embeds: [embed], components: [row], })
                 setTimeout(async function () {
+
                     row.components[0].setDisabled(true);
                     await interaction.editReply({ components: [row] });
-                }, 60000);
+                    const command = client.commands.get('endscc')
+                    await command.execute(interaction)
+
+                }, 3000);
 
 
             } else if (canHaveCargo && numOfRolls === 2) {
                 nonSelectedDice = getNonSelectedDice();
                 cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll
                 mongoUser.my_cargo = parseInt(cargo);
+
+                await mongoUser.save()
+
                 embed.addField(`Your cargo:\n ${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =`, `${ cargo }`)
 
                 const row = new MessageActionRow()
@@ -363,14 +405,20 @@ module.exports = {
                         await interaction.editReply({ components: [row] });
                     }
                     if (i.customId.startsWith('ENDTURNSCC_')) {
-                        await mongoUser.save()
-                        console.log(i.customId)
+
                         i.deferUpdate();
                         return
                     }
                 });
                 await interaction.editReply({ embeds: [embed], components: [row], })
+                setTimeout(async function () {
 
+                    row.components[0].setDisabled(true);
+                    await interaction.editReply({ components: [row] });
+                    const command = client.commands.get('endscc')
+                    await command.execute(interaction)
+
+                }, 3000);
             } else return
 
         }

@@ -6,6 +6,16 @@ const { MessageActionRow, MessageButton } = require('discord.js');
 const { botScore } = require('../utils/score');
 const events = require('../src/events/events')
 const { v4: uuidv4 } = require('uuid');
+const fs = require('fs')
+const path = require('path')
+
+
+const commandsPath = path.resolve(__dirname, '../commands');
+
+const commandFiles = fs.readdirSync(`${ commandsPath }`).filter(file => file.endsWith('.js'));
+
+
+
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('botscc')
@@ -21,6 +31,15 @@ module.exports = {
         let guildId = interaction.guildId;
         let channelId = interaction.channelId;
         let timestamp = interaction.createdTimestamp;
+
+        client.commands = new Discord.Collection();
+        for (const file of commandFiles) {
+            const command = require(`${ commandsPath }/${ file }`);
+            // set a new item in the Collection
+            // with the key as the command name and the value as the exported module
+            client.commands.set(command.data.name, command);
+        }
+
 
 
         let mongoUser = await User.findOne({ userId: userId })
@@ -148,7 +167,7 @@ module.exports = {
             .setDescription(`The Butler will roll first `)
 
 
-        await interaction.reply({ embeds: [embed] })
+        await interaction.reply({ embeds: [embed], ephemeral: true })
 
 
 
@@ -236,7 +255,7 @@ module.exports = {
                             await interaction.editReply({ components: [row] });
                         }
                         if (i.customId.startsWith('PLAYSCC_')) {
-                            console.log(i.customId)
+
 
                             return
                         }
@@ -244,9 +263,15 @@ module.exports = {
                     });
                     await interaction.editReply({ embeds: [embed], components: [row], })
                     setTimeout(async function () {
+                        //if user refuses to hit roll, auto game over
+                        mongoUser.my_cargo = 0;
+                        await mongoUser.save()
                         row.components[0].setDisabled(true);
                         await interaction.editReply({ components: [row] });
-                    }, 60000);
+                        const command = client.commands.get('endscc')
+                        await command.execute(interaction)
+                        return
+                    }, 90000);
 
                     await interaction.editReply({ embeds: [embed] });
                     return
@@ -290,7 +315,7 @@ module.exports = {
                         await interaction.editReply({ components: [row] });
                     }
                     if (i.customId.startsWith('PLAYSCC_')) {
-                        console.log(i.customId)
+
                         return
                     }
 
@@ -300,9 +325,15 @@ module.exports = {
                 await interaction.editReply({ embeds: [embed], components: [row], })
 
                 setTimeout(async function () {
+                    //if user refuses to hit roll, auto game over
+                    mongoUser.my_cargo = 0;
+                    await mongoUser.save()
                     row.components[0].setDisabled(true);
                     await interaction.editReply({ components: [row] });
-                }, 60000);
+                    const command = client.commands.get('endscc')
+                    await command.execute(interaction)
+                    return
+                }, 90000);
             }
 
             //IMPORTANT RETURN OUT OF GAME, ENDS GAME

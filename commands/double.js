@@ -122,7 +122,7 @@ module.exports = {
                             .setCustomId('primary')
                             .setLabel('Double or Nothing?')
                             .setStyle('PRIMARY')
-                            .setCustomId(interaction.user.id)
+                            .setCustomId("DICE_" + interaction.user.id)
                     );
                 const filter = async i => i.customId.endsWith(interaction.user.id)
                 const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
@@ -174,7 +174,7 @@ module.exports = {
                             .setCustomId('primary')
                             .setLabel('Double or Nothing?')
                             .setStyle('PRIMARY')
-                            .setCustomId(interaction.user.id)
+                            .setCustomId("DICE_" + interaction.user.id)
                     );
                 const filter = async i => i.customId.endsWith(interaction.user.id)
                 const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
