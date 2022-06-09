@@ -71,6 +71,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
             .setThumbnail(interaction.user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
             .setTitle(`Ship Captain Crew`)
+            .addField('Rules: ', "Please read the rules here: https://www.dicegamedepot.com/ship-captain-and-crew-dice-game-rules/")
             .setDescription('Wagering Stage')
             .addField(`Your current Gold is 🪙 ${ mongoUser.xpOverTime }`, 'You may select a wager when you\n issue the command, /shipcc + optional wager.\nThe default wager is your level x 10.')
             .addField("You have wagered:", `🪙 ${ wager }`)
@@ -99,7 +100,7 @@ module.exports = {
         setTimeout(function () {
             row.components[0].setDisabled(true);
             interaction.editReply({ components: [row] });
-        }, 60000);
+        }, 120000);
 
     }
 }

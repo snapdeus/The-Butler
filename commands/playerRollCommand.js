@@ -261,23 +261,23 @@ module.exports = {
 
 
                         i.deferUpdate();
-                        return
+                        // return
                     }
 
                 });
                 await interaction.editReply({ embeds: [embed], components: [row], })
-                setTimeout(async function () {
-                    if (!canHaveCargo) {
-                        cargo = 0;
-                        mongoUser.my_cargo = 0;
-                        await mongoUser.save()
-                    }
-                    row.components[0].setDisabled(true);
-                    await interaction.editReply({ components: [row] });
-                    const command = client.commands.get('endscc')
-                    await command.execute(interaction)
-                    return
-                }, 60000);
+                // setTimeout(async function () {
+                //     if (!canHaveCargo) {
+                //         cargo = 0;
+                //         mongoUser.my_cargo = 0;
+                //         await mongoUser.save()
+                //     }
+                //     row.components[0].setDisabled(true);
+                //     await interaction.editReply({ components: [row] });
+                //     const command = client.commands.get('endscc')
+                //     await command.execute(interaction)
+                //     return
+                // }, 60000);
 
             } else if (numOfRolls === 1) {
                 numOfRolls++;
@@ -323,23 +323,23 @@ module.exports = {
                     if (i.customId.startsWith('ENDTURNSCC_')) {
 
                         i.deferUpdate();
-                        return
+                        // return
                     }
 
                 });
                 await interaction.editReply({ embeds: [embed], components: [row], })
-                setTimeout(async function () {
-                    if (!canHaveCargo) {
-                        cargo = 0;
-                        mongoUser.my_cargo = 0;
-                        await mongoUser.save()
-                    }
-                    row.components[0].setDisabled(true);
-                    await interaction.editReply({ components: [row] });
-                    const command = client.commands.get('endscc')
-                    await command.execute(interaction)
-                    return
-                }, 60000);
+                // setTimeout(async function () {
+                //     if (!canHaveCargo) {
+                //         cargo = 0;
+                //         mongoUser.my_cargo = 0;
+                //         await mongoUser.save()
+                //     }
+                //     row.components[0].setDisabled(true);
+                //     await interaction.editReply({ components: [row] });
+                //     const command = client.commands.get('endscc')
+                //     await command.execute(interaction)
+                //     return
+                // }, 60000);
 
 
             } else if (!canHaveCargo && numOfRolls === 2) {
@@ -361,23 +361,25 @@ module.exports = {
                 const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
                 collector.once('collect', async i => {
-
-                    i.deferUpdate();
                     if (i.user.id === userId) {
                         row.components[0].setDisabled(true)
                         await interaction.editReply({ components: [row] });
                     }
-                    return
+                    if (i.customId.startsWith('ENDTURNSCC_')) {
+                        console.log(i.customId)
+                        i.deferUpdate();
+                        // return
+                    }
                 });
                 await interaction.editReply({ embeds: [embed], components: [row], })
-                setTimeout(async function () {
+                // setTimeout(async function () {
 
-                    row.components[0].setDisabled(true);
-                    await interaction.editReply({ components: [row] });
-                    const command = client.commands.get('endscc')
-                    await command.execute(interaction)
-
-                }, 3000);
+                //     row.components[0].setDisabled(true);
+                //     await interaction.editReply({ components: [row] });
+                //     const command = client.commands.get('endscc')
+                //     await command.execute(interaction)
+                //     return
+                // }, 3000);
 
 
             } else if (canHaveCargo && numOfRolls === 2) {
@@ -405,20 +407,20 @@ module.exports = {
                         await interaction.editReply({ components: [row] });
                     }
                     if (i.customId.startsWith('ENDTURNSCC_')) {
-
+                        console.log(i.customId)
                         i.deferUpdate();
-                        return
+                        // return
                     }
                 });
                 await interaction.editReply({ embeds: [embed], components: [row], })
-                setTimeout(async function () {
+                // setTimeout(async function () {
 
-                    row.components[0].setDisabled(true);
-                    await interaction.editReply({ components: [row] });
-                    const command = client.commands.get('endscc')
-                    await command.execute(interaction)
-
-                }, 3000);
+                //     row.components[0].setDisabled(true);
+                //     await interaction.editReply({ components: [row] });
+                //     const command = client.commands.get('endscc')
+                //     await command.execute(interaction)
+                //     return
+                // }, 3000);
             } else return
 
         }

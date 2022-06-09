@@ -262,16 +262,16 @@ module.exports = {
 
                     });
                     await interaction.editReply({ embeds: [embed], components: [row], })
-                    setTimeout(async function () {
-                        //if user refuses to hit roll, auto game over
-                        mongoUser.my_cargo = 0;
-                        await mongoUser.save()
-                        row.components[0].setDisabled(true);
-                        await interaction.editReply({ components: [row] });
-                        const command = client.commands.get('endscc')
-                        await command.execute(interaction)
-                        return
-                    }, 90000);
+                    // setTimeout(async function () {
+                    //     //if user refuses to hit roll, auto game over
+                    //     mongoUser.my_cargo = 0;
+                    //     await mongoUser.save()
+                    //     row.components[0].setDisabled(true);
+                    //     await interaction.editReply({ components: [row] });
+                    //     const command = client.commands.get('endscc')
+                    //     await command.execute(interaction)
+                    //     return
+                    // }, 90000);
 
                     await interaction.editReply({ embeds: [embed] });
                     return
@@ -324,16 +324,16 @@ module.exports = {
 
                 await interaction.editReply({ embeds: [embed], components: [row], })
 
-                setTimeout(async function () {
-                    //if user refuses to hit roll, auto game over
-                    mongoUser.my_cargo = 0;
-                    await mongoUser.save()
-                    row.components[0].setDisabled(true);
-                    await interaction.editReply({ components: [row] });
-                    const command = client.commands.get('endscc')
-                    await command.execute(interaction)
-                    return
-                }, 90000);
+                // setTimeout(async function () {
+                //     //if user refuses to hit roll, auto game over
+                //     mongoUser.my_cargo = 0;
+                //     await mongoUser.save()
+                //     row.components[0].setDisabled(true);
+                //     await interaction.editReply({ components: [row] });
+                //     const command = client.commands.get('endscc')
+                //     await command.execute(interaction)
+                //     return
+                // }, 90000);
             }
 
             //IMPORTANT RETURN OUT OF GAME, ENDS GAME
