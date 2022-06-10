@@ -121,7 +121,6 @@ client.on('interactionCreate', async (interaction) => {
 
         } else if (interaction.customId.startsWith('ENDTURNSCC_')) {
             // client.leveling.emit(events.endTurnSCC, interaction)
-            console.log("EXECUTE FUNCTION?! WHY?")
             const command = client.commands.get('endscc')
             await command.execute(interaction)
         }

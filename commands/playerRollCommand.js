@@ -165,7 +165,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
 
         embed.setThumbnail(interaction.user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
-        embed.setTitle(`${ username } is playing Ship, Captain & Crew!`)
+        embed.setTitle(`${ username } vs. The Butler\nShip, Captain & Crew!`)
         embed.setDescription(`${ username } is rolling!`)
         await interaction.reply({ embeds: [embed], ephemeral: true })
 
@@ -232,7 +232,7 @@ module.exports = {
 
                     mongoUser.my_cargo = parseInt(cargo);
                     await mongoUser.save()
-                    embed.addField(`Your cargo:\n ${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =`, `${ cargo }`)
+                    embed.addField(`Your cargo score:`, `${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =\n ${ cargo }`)
                     row.addComponents(
                         new MessageButton()
 
@@ -267,16 +267,10 @@ module.exports = {
                 });
                 await interaction.editReply({ embeds: [embed], components: [row], })
                 // setTimeout(async function () {
-                //     if (!canHaveCargo) {
-                //         cargo = 0;
-                //         mongoUser.my_cargo = 0;
-                //         await mongoUser.save()
-                //     }
+
                 //     row.components[0].setDisabled(true);
                 //     await interaction.editReply({ components: [row] });
-                //     const command = client.commands.get('endscc')
-                //     await command.execute(interaction)
-                //     return
+
                 // }, 60000);
 
             } else if (numOfRolls === 1) {
@@ -296,7 +290,7 @@ module.exports = {
                     cargo = nonSelectedDice[0].currentRoll + nonSelectedDice[1].currentRoll;
                     mongoUser.my_cargo = parseInt(cargo);
                     await mongoUser.save()
-                    embed.addField(`Your cargo:\n ${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =`, `${ cargo }`)
+                    embed.addField(`Your cargo score:`, `${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =\n ${ cargo }`)
                     row.addComponents(
                         new MessageButton()
 
@@ -346,7 +340,7 @@ module.exports = {
                 numOfRolls++;
                 mongoUser.my_cargo = 0;
                 await mongoUser.save()
-                // embed.addField(`You did not score any cargo`, "0")
+                embed.addField(`You did not score any cargo`, "0")
 
                 // const row = new MessageActionRow()
                 //     .addComponents(
@@ -393,7 +387,7 @@ module.exports = {
 
                 await mongoUser.save()
 
-                embed.addField(`Your cargo:\n ${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =`, `${ cargo }`)
+                embed.addField(`Your cargo score`, `${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =\n ${ cargo }`)
 
                 // const row = new MessageActionRow()
                 //     .addComponents(

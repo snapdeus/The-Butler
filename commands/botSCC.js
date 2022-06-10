@@ -163,8 +163,8 @@ module.exports = {
 
         const embed = new Discord.MessageEmbed()
             .setThumbnail(interaction.user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
-            .setTitle(`${ username } is playing Ship, Captain & Crew!`)
-            .setDescription(`The Butler will roll first `)
+            .setTitle(`${ username } vs. The Butler\nShip, Captain & Crew!`)
+            .setDescription(`The Butler is rolling!`)
 
 
         await interaction.reply({ embeds: [embed], ephemeral: true })
@@ -222,12 +222,14 @@ module.exports = {
 
                 if (numOfRolls < 1 && cargo < 8) {
                     numOfRolls++;
-                    embed.addField(`Not a high enough score! Cargo:\n ${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } = `, `${ cargo }`)
+                    embed.addField(`Cargo Score:`, `${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =\n ${ cargo }`)
+                    embed.addField("Not a high enough cargo score!", 'The Butler will roll again!')
                     await interaction.editReply({ embeds: [embed] });
                     return setTimeout(function () { game() }, 500);
                 }
                 if (numOfRolls < 2 && cargo < 6) {
-                    embed.addField(`Not a high enough score! Cargo:\n ${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } = `, `${ cargo }`)
+                    embed.addField(`Cargo Score`, `${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =\n ${ cargo }`)
+                    embed.addField("Not a high enough cargo score!", 'The Butler will roll again!')
                     await interaction.editReply({ embeds: [embed] });
                 }
 
@@ -235,7 +237,7 @@ module.exports = {
                 if (numOfRolls === 2 || cargo >= 6) {
                     mongoUser.bot_cargo = parseInt(cargo);
                     await mongoUser.save();
-                    embed.addField(`The final cargo score is:\n ${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =`, `${ cargo }`)
+                    embed.addField(`The Butler's final cargo score`, `${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =\n ${ cargo }`)
                     //BUTTON STUFF
                     const row = new MessageActionRow()
                         .addComponents(
@@ -263,14 +265,10 @@ module.exports = {
                     });
                     await interaction.editReply({ embeds: [embed], components: [row], })
                     // setTimeout(async function () {
-                    //     //if user refuses to hit roll, auto game over
-                    //     mongoUser.my_cargo = 0;
-                    //     await mongoUser.save()
+
                     //     row.components[0].setDisabled(true);
                     //     await interaction.editReply({ components: [row] });
-                    //     const command = client.commands.get('endscc')
-                    //     await command.execute(interaction)
-                    //     return
+
                     // }, 90000);
 
                     await interaction.editReply({ embeds: [embed] });
@@ -325,14 +323,10 @@ module.exports = {
                 await interaction.editReply({ embeds: [embed], components: [row], })
 
                 // setTimeout(async function () {
-                //     //if user refuses to hit roll, auto game over
-                //     mongoUser.my_cargo = 0;
-                //     await mongoUser.save()
+
                 //     row.components[0].setDisabled(true);
                 //     await interaction.editReply({ components: [row] });
-                //     const command = client.commands.get('endscc')
-                //     await command.execute(interaction)
-                //     return
+
                 // }, 90000);
             }
 

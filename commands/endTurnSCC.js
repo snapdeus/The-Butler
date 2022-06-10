@@ -34,14 +34,18 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
 
         embed.setThumbnail(interaction.user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
-        embed.setTitle(`GAMEOVER`)
-        embed.addField('Your score was: ', `${ mongoUser.my_cargo }`)
-        embed.addField("The Butler's score was: ", `${ mongoUser.bot_cargo }`)
+
+
+
         if (mongoUser.my_cargo === mongoUser.bot_cargo) {
+            embed.setTitle(`${ username } TIED!`)
+            embed.addField('The score was: ', `${ mongoUser.my_cargo } - ${ mongoUser.bot_cargo }`)
             embed.addField("TIE GAME", "Nothing lost nothing gained.\n Please play again.")
             mongoUser.scc_ties += 1;
         } else if (mongoUser.my_cargo > mongoUser.bot_cargo) {
-            embed.addField("You win!", `You won 🪙 ${ mongoUser.my_scc_wager }!\n You gained ${ xpStakes } XP!`)
+            embed.setTitle(`${ username } WON!`)
+            embed.addField('The score was: ', `${ mongoUser.my_cargo } - ${ mongoUser.bot_cargo }`)
+
             mongoUser.scc_wins += 1;
             mongoUser.xpOverTime += mongoUser.my_scc_wager
             //gain level and xp
@@ -51,16 +55,19 @@ module.exports = {
                 const nextLevel = 10 * (Math.pow(2, mongoUser.level) - 1)
                 mongoUser.xp = difference;
                 mongoUser.nextLevel = nextLevel
-                embed.addField("Level up!", `${ username } is now level ${ mongoUser.level }\nTotal XP is: ${ mongoUser.xp }`)
+                embed.addField("Congratulations!", `You won 🪙 ${ mongoUser.my_scc_wager }!\n You gained ${ xpStakes } XP!\n---\n${ username } is now\nLevel: ${ mongoUser.level }\n XP: ${ mongoUser.xp }`)
+                embed.addField("Level up!", `↗️↗️↗️`)
                 //just gain xp
             } else {
                 mongoUser.xp += xpStakes;
-                embed.addField("New XP", `${ username } is remained level ${ mongoUser.level }\nTotal XP increased to: ${ mongoUser.xp }`)
+                embed.addField("Good job!", `You won 🪙 ${ mongoUser.my_scc_wager }!\n You gained ${ xpStakes } XP!\n---\n${ username } is\nLevel: ${ mongoUser.level }\n XP: ${ mongoUser.xp }`)
             }
 
             embed.addField("New total balance: ", `🪙 ${ mongoUser.xpOverTime }`)
         } else {
-            embed.addField("You lost!", `You lost 🪙 ${ mongoUser.my_scc_wager }!\n You lost ${ xpStakes } XP!`)
+            embed.setTitle(`${ username } LOST!`)
+            embed.addField('The score was: ', `${ mongoUser.my_cargo } - ${ mongoUser.bot_cargo }`)
+
             mongoUser.scc_losses += 1;
             mongoUser.xpOverTime -= mongoUser.my_scc_wager
 
@@ -68,7 +75,8 @@ module.exports = {
             if (mongoUser.level === 1 && mongoUser.xp <= xpStakes) {
 
                 mongoUser.xp = 0
-
+                embed.addField("Sorry, but...", `You lost 🪙 ${ mongoUser.my_scc_wager }!\n You lost ${ xpStakes } XP!\n---\n${ username } is\nLevel: ${ mongoUser.level } XP: ${ mongoUser.xp }`)
+                embed.addField("New total balance: ", `🪙 ${ mongoUser.xpOverTime }`)
                 //lose level and xp
             } else if (mongoUser.xp < xpStakes) {
                 let negativeNumber = mongoUser.xp - xpStakes;
@@ -80,22 +88,23 @@ module.exports = {
                     total = 1;
                 }
                 mongoUser.xp = total
-                embed.addField("Level lost!", `${ username } is now level ${ mongoUser.level }\nTotal XP is: ${ mongoUser.xp }`)
+                embed.addField("Our Condolences...", `You lost 🪙 ${ mongoUser.my_scc_wager }!\n You lost ${ xpStakes } XP!\n---\n${ username } is now\nLevel: ${ mongoUser.level }\nXP: ${ mongoUser.xp }`)
+                embed.addField("Level lost!", `↘️↘️↘️`)
                 //lose level and xp if not level 1
             } else if (mongoUser.xp === xpStakes && mongoUser.level !== 1) {
                 mongoUser.level -= 1;
                 const nextLevel = 10 * (Math.pow(2, mongoUser.level) - 1)
                 mongoUser.nextLevel = nextLevel
                 mongoUser.xp = nextLevel
-                embed.addField("Level lost!", `${ username } is now level ${ mongoUser.level }\nTotal XP is: ${ mongoUser.xp }`)
+                embed.addField("Our Condolences...", `You lost 🪙 ${ mongoUser.my_scc_wager }!\n You lost ${ xpStakes } XP!\n---\n${ username } is now\nLevel: ${ mongoUser.level }\nxP: ${ mongoUser.xp }`)
+                embed.addField("Level lost!", `↘️↘️↘️`)
 
                 //just lose xp
             } else {
 
                 mongoUser.xp -= xpStakes
-                embed.addField("Xp decreased:", `Total XP is: ${ mongoUser.xp }`)
 
-
+                embed.addField("Sorry, but...", `You lost 🪙 ${ mongoUser.my_scc_wager }!\n You lost ${ xpStakes } XP!\n---\n${ username } is\nLevel: ${ mongoUser.level } XP: ${ mongoUser.xp }`)
                 embed.addField("New total balance: ", `🪙 ${ mongoUser.xpOverTime }`)
 
             }
