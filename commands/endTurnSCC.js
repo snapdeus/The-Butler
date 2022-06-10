@@ -11,9 +11,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('endscc')
         .setDescription('Play Ship, Captain & Crew'),
-    // .addNumberOption(option =>
-    //     option.setName('wager')
-    //         .setDescription('Play Ship, Captain, Crew')),
+
     async execute(interaction) {
 
 
@@ -43,7 +41,7 @@ module.exports = {
             embed.addField("TIE GAME", "Nothing lost nothing gained.\n Please play again.")
             mongoUser.scc_ties += 1;
         } else if (mongoUser.my_cargo > mongoUser.bot_cargo) {
-            embed.addField("You win!", `You won 🪙 ${ mongoUser.my_scc_wager }!\n You gained ${ mongoUser.my_scc_wager } XP!`)
+            embed.addField("You win!", `You won 🪙 ${ mongoUser.my_scc_wager }!\n You gained ${ xpStakes } XP!`)
             mongoUser.scc_wins += 1;
             mongoUser.xpOverTime += mongoUser.my_scc_wager
             //gain level and xp
@@ -57,11 +55,12 @@ module.exports = {
                 //just gain xp
             } else {
                 mongoUser.xp += xpStakes;
+                embed.addField("New XP", `${ username } is remained level ${ mongoUser.level }\nTotal XP increased to: ${ mongoUser.xp }`)
             }
 
             embed.addField("New total balance: ", `🪙 ${ mongoUser.xpOverTime }`)
         } else {
-            embed.addField("You lost!", `You lost 🪙 ${ mongoUser.my_scc_wager }!\n You lost ${ mongoUser.my_scc_wager } XP!`)
+            embed.addField("You lost!", `You lost 🪙 ${ mongoUser.my_scc_wager }!\n You lost ${ xpStakes } XP!`)
             mongoUser.scc_losses += 1;
             mongoUser.xpOverTime -= mongoUser.my_scc_wager
 
@@ -98,11 +97,10 @@ module.exports = {
 
 
                 embed.addField("New total balance: ", `🪙 ${ mongoUser.xpOverTime }`)
+
             }
-            await mongoUser.save()
-
-
-            await interaction.message.channel.send({ embeds: [embed] })
         }
+        await mongoUser.save()
+        await interaction.message.channel.send({ embeds: [embed] })
     }
 }

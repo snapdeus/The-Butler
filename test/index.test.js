@@ -86,9 +86,9 @@ client.on('interactionCreate', async (interaction) => {
         if (interaction.channel.id !== config.TESTXPCHANNEL) {
             return await interaction.reply('Please use this command in the Games channel')
         }
-        if (interaction.commandName === 'double' || interaction.commandName === 'botscc' || interaction.commandName === 'playerrollscc' || interaction.commandName === 'endscc') {
-            return await interaction.reply('You do not have permission')
-        }
+        // if (interaction.commandName === 'double' || interaction.commandName === 'botscc' || interaction.commandName === 'playerrollscc' || interaction.commandName === 'endscc') {
+        //     return await interaction.reply('You do not have permission')
+        // }
         const command = client.commands.get(interaction.commandName)
         try {
             await command.execute(interaction);
