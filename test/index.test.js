@@ -90,9 +90,9 @@ client.on('interactionCreate', async (interaction) => {
         if (interaction.commandName === 'double' || interaction.commandName === 'zzzbotscc' || interaction.commandName === 'zzzplayerrollscc' || interaction.commandName === 'zzzendscc') {
             return await interaction.reply('You do not have permission')
         }
-        if (interaction.commandName === 'shipcc') {
-            return await interaction.reply('bug detected, game down temporarily')
-        }
+        // if (interaction.commandName === 'shipcc') {
+        //     return await interaction.reply('bug detected, game down temporarily')
+        // }
         const command = client.commands.get(interaction.commandName)
         try {
             await command.execute(interaction);
