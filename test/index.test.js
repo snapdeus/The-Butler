@@ -84,7 +84,7 @@ client.on('ready', () => {
 client.on('interactionCreate', async (interaction) => {
     if (interaction.isCommand()) {
 
-        if (interaction.channel.id !== config.TESTXPCHANNEL) {
+        if (interaction.channel.id !== config.XPCHANNEL) {
             return await interaction.reply('Please use this command in the Games channel')
         }
         if (interaction.commandName === 'double' || interaction.commandName === 'zzzbotscc' || interaction.commandName === 'zzzplayerrollscc' || interaction.commandName === 'zzzendscc') {
@@ -154,13 +154,13 @@ client.leveling.on('UserLevelUp', (newLevel, lastLevel, userId, guildId, channel
         .setTitle('LEVEL UP!')
         .setDescription(`Congrats <@${ userId }>! You have advanced to level ${ newLevel }. Your old level was level ${ lastLevel }`)
         .setColor('RED');
-    client.channels.cache.get(config.TESTXPCHANNEL).send({ embeds: [embed] });
+    client.channels.cache.get(config.XPCHANNEL).send({ embeds: [embed] });
 });
 client.leveling.on('cooldownActive', (channelId, userId) => {
-    client.channels.cache.get(config.TESTXPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  You'll get more 🪙 in ${ options.cooldown / 1000 } seconds.`);
+    client.channels.cache.get(config.XPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  You'll get more 🪙 in ${ options.cooldown / 1000 } seconds.`);
 });
 client.leveling.on('diceCooldownActive', (channelId, userId) => {
-    client.channels.cache.get(config.TESTXPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  Roll again in ${ options.diceCooldown / 1000 } seconds.`);
+    client.channels.cache.get(config.XPCHANNEL).send(`Cooldown is still active, <@${ userId }>.  Roll again in ${ options.diceCooldown / 1000 } seconds.`);
 });
 
 
@@ -168,4 +168,4 @@ client.leveling.on('error', (e, functionName) => {
     console.log(`An error occured at the function ${ functionName }. The error is as follows`);
     console.log(e);
 });
-client.login(config.TESTTOKEN);
+client.login(config.TOKEN);

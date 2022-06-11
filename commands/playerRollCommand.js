@@ -225,7 +225,7 @@ module.exports = {
                     .addComponents(
                         new MessageButton()
 
-                            .setLabel('Roll again? (#2)')
+                            .setLabel('Roll again (#2)')
                             .setStyle('PRIMARY')
                             .setCustomId(`2NDROLL_` + uuidv4() + interaction.user.id))
 
@@ -302,7 +302,7 @@ module.exports = {
                     .addComponents(
                         new MessageButton()
 
-                            .setLabel('Roll Again? (#3)')
+                            .setLabel('Roll Again (#3)')
                             .setStyle('PRIMARY')
                             .setCustomId(`3RDROLL_` + uuidv4() + interaction.user.id)
 
@@ -383,8 +383,11 @@ module.exports = {
                     embeds: [embed]
                 })
 
-                const command = client.commands.get('zzzendscc')
-                await command.execute(interaction)
+                setTimeout(async function () {
+
+                    const command = client.commands.get('zzzendscc')
+                    await command.execute(interaction)
+                }, 1000);
 
             } else if (canHaveCargo && numOfRolls === 2) {
                 nonSelectedDice = getNonSelectedDice();
@@ -399,8 +402,13 @@ module.exports = {
                 await interaction.editReply({
                     embeds: [embed]
                 })
-                const command = client.commands.get('zzzendscc')
-                await command.execute(interaction)
+
+                setTimeout(async function () {
+
+                    const command = client.commands.get('zzzendscc')
+                    await command.execute(interaction)
+                }, 1000);
+
 
             } else return
 
