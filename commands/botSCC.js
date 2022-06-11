@@ -18,8 +18,8 @@ const commandFiles = fs.readdirSync(`${ commandsPath }`).filter(file => file.end
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('botscc')
-        .setDescription('Play Ship, Captain & Crew'),
+        .setName('zzzbotscc')
+        .setDescription('Not a usable command'),
     // .addNumberOption(option =>
     //     option.setName('wager')
     //         .setDescription('Play Ship, Captain, Crew')),
@@ -225,7 +225,7 @@ module.exports = {
                     embed.addField(`Cargo Score:`, `${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =\n ${ cargo }`)
                     embed.addField("Not a high enough cargo score!", 'The Butler will roll again!')
                     await interaction.editReply({ embeds: [embed] });
-                    return setTimeout(function () { game() }, 500);
+                    return setTimeout(function () { game() }, 1000);
                 }
                 if (numOfRolls < 2 && cargo < 6) {
                     embed.addField(`Cargo Score`, `${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =\n ${ cargo }`)
@@ -266,10 +266,10 @@ module.exports = {
                         if (checkUser.is_playing_scc) {
                             mongoUser.my_cargo = 0;
                             await mongoUser.save();
-                            const command = client.commands.get('endscc')
+                            const command = client.commands.get('zzzendscc')
                             await command.execute(interaction)
                         }
-                        console.log('ended')
+                        // console.log('ended')
                     })
 
                     await interaction.editReply({ embeds: [embed], components: [row], })
@@ -334,10 +334,10 @@ module.exports = {
                     if (checkUser.is_playing_scc) {
                         mongoUser.my_cargo = 0;
                         await mongoUser.save();
-                        const command = client.commands.get('endscc')
+                        const command = client.commands.get('zzzendscc')
                         await command.execute(interaction)
                     }
-                    console.log('ended')
+                    // console.log('ended')
                 })
 
                 await interaction.editReply({ embeds: [embed], components: [row], })
@@ -354,6 +354,6 @@ module.exports = {
             return
         }
         //RUN GAME
-        setTimeout(function () { game() }, 500);
+        setTimeout(function () { game() }, 1000);
     }
 }

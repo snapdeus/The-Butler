@@ -87,9 +87,9 @@ client.on('interactionCreate', async (interaction) => {
         if (interaction.channel.id !== config.TESTXPCHANNEL) {
             return await interaction.reply('Please use this command in the Games channel')
         }
-        // if (interaction.commandName === 'double' || interaction.commandName === 'botscc' || interaction.commandName === 'playerrollscc' || interaction.commandName === 'endscc') {
-        //     return await interaction.reply('You do not have permission')
-        // }
+        if (interaction.commandName === 'double' || interaction.commandName === 'zzzbotscc' || interaction.commandName === 'zzzplayerrollscc' || interaction.commandName === 'zzzendscc') {
+            return await interaction.reply('You do not have permission')
+        }
         const command = client.commands.get(interaction.commandName)
         try {
             await command.execute(interaction);
@@ -113,22 +113,24 @@ client.on('interactionCreate', async (interaction) => {
 
         } else if (interaction.customId.startsWith('INITSCC_')) {
 
-            const command = client.commands.get('botscc')
+            const command = client.commands.get('zzzbotscc')
             await command.execute(interaction)
         } else if (interaction.customId.startsWith('PLAYSCC_')) {
-
-
             const userId = interaction.user.id
-
             let mongoUser = await User.findOne({ userId: userId })
             mongoUser.is_playing_scc = false
             await mongoUser.save()
-            const command = client.commands.get('playerrollscc')
+
+            const command = client.commands.get('zzzplayerrollscc')
             await command.execute(interaction)
 
         } else if (interaction.customId.startsWith('ENDTURNSCC_')) {
+            const userId = interaction.user.id
+            let mongoUser = await User.findOne({ userId: userId })
+            mongoUser.is_playing_scc = false
+            await mongoUser.save()
 
-            const command = client.commands.get('endscc')
+            const command = client.commands.get('zzzendscc')
             await command.execute(interaction)
         }
 

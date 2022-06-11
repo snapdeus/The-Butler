@@ -49,11 +49,11 @@ module.exports = {
             await bag.save()
             user.bag = bag;
             await user.save()
-            return await interaction.reply(`Wow, first message is a Gamble? Try again sport!`)
+            return await interaction.reply(`Wow, first message is a Gamble? The Database needs to recognize you first. Try again.`)
         }
 
         if (mongoUser.my_cargo === undefined) {
-            mongoUser.is_playing_scc = True;
+            mongoUser.is_playing_scc = true;
             mongoUser.my_cargo = 0;
             mongoUser.bot_cargo = 0;
             mongoUser.my_scc_wager = 0;
@@ -87,13 +87,11 @@ module.exports = {
 
             );
         const filter = async i => i.customId.endsWith(interaction.user.id)
-        const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
+        const collector = interaction.channel.createMessageComponentCollector({ filter, time: 120000 });
 
         collector.on('collect', async i => {
 
             if (i.user.id === userId) {
-
-                ///put edit the embed message her
                 row.components[0].setDisabled(true)
                 interaction.editReply({ components: [row] });
             }

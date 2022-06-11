@@ -18,8 +18,8 @@ const commandFiles = fs.readdirSync(`${ commandsPath }`).filter(file => file.end
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('playerrollscc')
-        .setDescription('Play Ship, Captain & Crew'),
+        .setName('zzzplayerrollscc')
+        .setDescription('Not a usable command'),
     // .addNumberOption(option =>
     //     option.setName('wager')
     //         .setDescription('Play Ship, Captain, Crew')),
@@ -45,7 +45,7 @@ module.exports = {
 
         let mongoUser = await User.findOne({ userId: userId })
 
-        // console.log(mongoUser)
+
         const dice = ['⚀', '⚁', '⚂', '⚃', '⚄', '⚅']
         const diceText = {
             1: '⚀',
@@ -218,7 +218,8 @@ module.exports = {
 
 
             if (numOfRolls < 1) {
-
+                mongoUser.is_playing_scc = true;
+                await mongoUser.save()
                 numOfRolls++;
                 const row = new MessageActionRow()
                     .addComponents(
@@ -246,7 +247,7 @@ module.exports = {
                 const filter = async i => i.customId.endsWith(interaction.user.id)
                 const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
-                collector.once('collect', async i => {
+                collector.on('collect', async i => {
                     if (i.user.id === userId) {
                         row.components[0].setDisabled(true)
                         if (canHaveCargo) {
@@ -255,29 +256,48 @@ module.exports = {
                         await interaction.editReply({ components: [row] });
                     }
                     if (i.customId.startsWith('2NDROLL_')) {
-
+                        mongoUser.is_playing_scc = false;
+                        await mongoUser.save()
                         i.deferUpdate();
+                        collector.stop()
                         return game()
                     }
                     if (i.customId.startsWith('ENDTURNSCC_')) {
-
-
                         i.deferUpdate();
+                        collector.stop()
                         return
                     }
-
                 });
+                collector.on('end', async i => {
+                    let checkUser = await User.findOne({ userId: userId })
+
+                    if (checkUser.is_playing_scc) {
+                        if (!canHaveCargo) {
+                            mongoUser.my_cargo = 0;
+                            await mongoUser.save();
+                        }
+                        const command = client.commands.get('zzzendscc')
+                        await command.execute(interaction)
+                        return
+                    }
+                    // console.log(`collector 2 ended and isplaysing was ${ checkUser.is_playing_scc }`)
+                })
+
                 await interaction.editReply({ embeds: [embed], components: [row], })
-                // setTimeout(async function () {
+                setTimeout(async function () {
 
-                //     row.components[0].setDisabled(true);
-                //     await interaction.editReply({ components: [row] });
+                    row.components[0].setDisabled(true);
+                    if (row.components.length > 1) {
+                        row.components[1].setDisabled(true);
+                    }
+                    await interaction.editReply({ components: [row] });
 
-                // }, 60000);
+                }, 60000);
 
             } else if (numOfRolls === 1) {
                 numOfRolls++;
-
+                mongoUser.is_playing_scc = true;
+                await mongoUser.save()
                 const row = new MessageActionRow()
                     .addComponents(
                         new MessageButton()
@@ -303,8 +323,8 @@ module.exports = {
 
                 const filter = async i => i.customId.endsWith(interaction.user.id)
                 const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
-
-                collector.once('collect', async i => {
+                //change to collector.on for end
+                collector.on('collect', async i => {
                     if (i.user.id === userId) {
                         row.components[0].setDisabled(true)
                         if (canHaveCargo) {
@@ -313,29 +333,44 @@ module.exports = {
                         await interaction.editReply({ components: [row] });
                     }
                     if (i.customId.startsWith('3RDROLL_')) {
+                        mongoUser.is_playing_scc = false;
+                        await mongoUser.save()
                         i.deferUpdate();
+                        collector.stop()
                         return game()
                     }
                     if (i.customId.startsWith('ENDTURNSCC_')) {
 
                         i.deferUpdate();
+                        collector.stop()
                         return
                     }
 
                 });
+                collector.on('end', async i => {
+
+                    let checkUser = await User.findOne({ userId: userId })
+                    if (checkUser.is_playing_scc) {
+                        if (!canHaveCargo) {
+                            mongoUser.my_cargo = 0;
+                            await mongoUser.save();
+                        }
+                        const command = client.commands.get('zzzendscc')
+                        await command.execute(interaction)
+                        return
+                    }
+                    // console.log(`collector 3 ended and isplaysing was ${ checkUser.is_playing_scc }`)
+                })
                 await interaction.editReply({ embeds: [embed], components: [row], })
-                // setTimeout(async function () {
-                //     if (!canHaveCargo) {
-                //         cargo = 0;
-                //         mongoUser.my_cargo = 0;
-                //         await mongoUser.save()
-                //     }
-                //     row.components[0].setDisabled(true);
-                //     await interaction.editReply({ components: [row] });
-                //     const command = client.commands.get('endscc')
-                //     await command.execute(interaction)
-                //     return
-                // }, 60000);
+                setTimeout(async function () {
+
+                    row.components[0].setDisabled(true);
+                    if (row.components.length > 1) {
+                        row.components[1].setDisabled(true);
+                    }
+                    await interaction.editReply({ components: [row] });
+
+                }, 60000);
 
 
             } else if (!canHaveCargo && numOfRolls === 2) {
@@ -344,42 +379,11 @@ module.exports = {
                 await mongoUser.save()
                 embed.addField(`You did not score any cargo`, "0")
 
-                // const row = new MessageActionRow()
-                //     .addComponents(
-                //         new MessageButton()
-
-                //             .setLabel('End Turn')
-                //             .setStyle('PRIMARY')
-                //             .setCustomId(`ENDTURNSCC_` + uuidv4() + interaction.user.id)
-
-                //     );
-                // const filter = async i => i.customId.endsWith(interaction.user.id)
-                // const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
-
-                // collector.once('collect', async i => {
-                //     if (i.user.id === userId) {
-                //         row.components[0].setDisabled(true)
-                //         await interaction.editReply({ components: [row] });
-                //     }
-                //     if (i.customId.startsWith('ENDTURNSCC_')) {
-                //         // console.log(i.customId)
-                //         i.deferUpdate();
-                //         return
-                //     }
-                // });
                 await interaction.editReply({
-                    embeds: [embed],
-                    // components: [row],
+                    embeds: [embed]
                 })
-                // setTimeout(async function () {
 
-                //     row.components[0].setDisabled(true);
-                //     await interaction.editReply({ components: [row] });
-                //     const command = client.commands.get('endscc')
-                //     await command.execute(interaction)
-                //     return
-                // }, 3000);
-                const command = client.commands.get('endscc')
+                const command = client.commands.get('zzzendscc')
                 await command.execute(interaction)
 
             } else if (canHaveCargo && numOfRolls === 2) {
@@ -391,41 +395,13 @@ module.exports = {
 
                 embed.addField(`Your cargo score`, `${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =\n ${ cargo }`)
 
-                // const row = new MessageActionRow()
-                //     .addComponents(
-                //         new MessageButton()
 
-                //             .setLabel('End Turn')
-                //             .setStyle('PRIMARY')
-                //             .setCustomId(`ENDTURNSCC_` + uuidv4() + interaction.user.id))
-                // const filter = async i => i.customId.endsWith(interaction.user.id)
-                // const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
-
-                // collector.once('collect', async i => {
-                //     if (i.user.id === userId) {
-                //         row.components[0].setDisabled(true)
-                //         await interaction.editReply({ components: [row] });
-                //     }
-                //     if (i.customId.startsWith('ENDTURNSCC_')) {
-
-                //         i.deferUpdate();
-                //         return
-                //     }
-                // });
                 await interaction.editReply({
-                    embeds: [embed],
-                    // components: [row],
+                    embeds: [embed]
                 })
-                const command = client.commands.get('endscc')
+                const command = client.commands.get('zzzendscc')
                 await command.execute(interaction)
-                // setTimeout(async function () {
 
-                //     row.components[0].setDisabled(true);
-                //     await interaction.editReply({ components: [row] });
-                //     const command = client.commands.get('endscc')
-                //     await command.execute(interaction)
-                //     return
-                // }, 3000);
             } else return
 
         }
