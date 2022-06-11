@@ -225,7 +225,7 @@ module.exports = {
                     embed.addField(`Cargo Score:`, `${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =\n ${ cargo }`)
                     embed.addField("Not a high enough cargo score!", 'The Butler will roll again!')
                     await interaction.editReply({ embeds: [embed] });
-                    return setTimeout(function () { game() }, 2000);
+                    return setTimeout(function () { game() }, 1500);
                 }
                 if (numOfRolls < 2 && cargo < 6) {
                     embed.addField(`Cargo Score`, `${ diceText[nonSelectedDice[0].currentRoll] } + ${ diceText[nonSelectedDice[1].currentRoll] } =\n ${ cargo }`)
@@ -299,7 +299,7 @@ module.exports = {
 
 
             if (numOfRolls < 3) {
-                return setTimeout(function () { game() }, 2000);
+                return setTimeout(function () { game() }, 1500);
             } else {
                 //ADD BUTTON
                 const row = new MessageActionRow()
@@ -354,6 +354,6 @@ module.exports = {
             return
         }
         //RUN GAME
-        setTimeout(function () { game() }, 2000);
+        setTimeout(function () { game() }, 1500);
     }
 }
