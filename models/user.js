@@ -16,6 +16,7 @@ const UserSchema = new Schema({
     dice_wins: Number,
     dice_losses: Number,
     dice_ties: Number,
+    is_playing_scc: Boolean,
     my_cargo: Number,
     bot_cargo: Number,
     my_scc_wager: Number,

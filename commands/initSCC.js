@@ -53,6 +53,7 @@ module.exports = {
         }
 
         if (mongoUser.my_cargo === undefined) {
+            mongoUser.is_playing_scc = True;
             mongoUser.my_cargo = 0;
             mongoUser.bot_cargo = 0;
             mongoUser.my_scc_wager = 0;
@@ -65,7 +66,8 @@ module.exports = {
         if (!wager) {
             wager = parseInt(mongoUser.level * 10)
         }
-
+        mongoUser.is_playing_scc = true;
+        // console.log(mongoUser)
         mongoUser.my_scc_wager = parseInt(wager)
         await mongoUser.save()
         const embed = new Discord.MessageEmbed()

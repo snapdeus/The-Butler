@@ -5,6 +5,7 @@ const client = new DiscordClient({
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
 
+const User = require('../models/user')
 
 const events = require('../src/events/events')
 
@@ -111,23 +112,26 @@ client.on('interactionCreate', async (interaction) => {
             await command.execute(interaction, value)
 
         } else if (interaction.customId.startsWith('INITSCC_')) {
-            // client.leveling.emit(events.botRollSCC, interaction)
+
             const command = client.commands.get('botscc')
             await command.execute(interaction)
         } else if (interaction.customId.startsWith('PLAYSCC_')) {
-            // client.leveling.emit(events.playerRollSCC, interaction)
+
+
+            const userId = interaction.user.id
+
+            let mongoUser = await User.findOne({ userId: userId })
+            mongoUser.is_playing_scc = false
+            await mongoUser.save()
             const command = client.commands.get('playerrollscc')
             await command.execute(interaction)
 
         } else if (interaction.customId.startsWith('ENDTURNSCC_')) {
-            // client.leveling.emit(events.endTurnSCC, interaction)
+
             const command = client.commands.get('endscc')
             await command.execute(interaction)
         }
-        // } else if (interaction.customId.startsWith('2NDROLL_')) {
-        //     const value = parseInt(interaction.message.embeds[0].fields[0].value)
-        //     client.leveling.emit(events.secondPlayerRoll, interaction, value)
-        // }
+
     } else return
 })
 client.on('messageCreate', (message) => {

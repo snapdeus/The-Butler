@@ -24,7 +24,7 @@ module.exports = {
         let timestamp = interaction.createdTimestamp;
 
         const mongoUser = await User.findOne({ userId: userId })
-
+        // console.log(mongoUser)
         const xpStakes = mongoUser.level * 10;
         let curLevelUp = mongoUser.nextLevel;
 

@@ -197,7 +197,7 @@ module.exports = {
             }
 
             embed.addField(`Roll #${ numOfRolls + 1 }: `, `${ newDiceArray }\n${ visRepOfDice } `)
-            interaction.editReply({ embeds: [embed] });
+            await interaction.editReply({ embeds: [embed] });
             if (shipExist && !captExist) {
                 embed.addField("Result", `The Butler has <:ferry:982714449599299604>`)
                 await interaction.editReply({ embeds: [embed] });
@@ -251,27 +251,36 @@ module.exports = {
                     const filter = async i => i.customId.endsWith(interaction.user.id)
                     const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
-                    collector.once('collect', async i => {
+                    collector.on('collect', async i => {
                         if (i.user.id === userId) {
                             row.components[0].setDisabled(true)
                             await interaction.editReply({ components: [row] });
                         }
                         if (i.customId.startsWith('PLAYSCC_')) {
-
-
+                            collector.stop()
                             return
                         }
-
                     });
+                    collector.on('end', async i => {
+                        let checkUser = await User.findOne({ userId: userId })
+                        if (checkUser.is_playing_scc) {
+                            mongoUser.my_cargo = 0;
+                            await mongoUser.save();
+                            const command = client.commands.get('endscc')
+                            await command.execute(interaction)
+                        }
+                        console.log('ended')
+                    })
+
                     await interaction.editReply({ embeds: [embed], components: [row], })
-                    // setTimeout(async function () {
+                    setTimeout(async function () {
 
-                    //     row.components[0].setDisabled(true);
-                    //     await interaction.editReply({ components: [row] });
+                        row.components[0].setDisabled(true);
+                        await interaction.editReply({ components: [row] });
 
-                    // }, 90000);
+                    }, 60000);
 
-                    await interaction.editReply({ embeds: [embed] });
+
                     return
                 }
             }
@@ -305,29 +314,40 @@ module.exports = {
                 const filter = async i => i.customId.endsWith(interaction.user.id)
                 const collector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
-                collector.once('collect', async i => {
+                collector.on('collect', async i => {
                     // console.log(i)
                     // console.log(i.customId)
+
                     if (i.user.id === userId) {
+
                         row.components[0].setDisabled(true)
                         await interaction.editReply({ components: [row] });
                     }
                     if (i.customId.startsWith('PLAYSCC_')) {
-
+                        collector.stop()
                         return
                     }
 
                 });
-
+                collector.on('end', async i => {
+                    let checkUser = await User.findOne({ userId: userId })
+                    if (checkUser.is_playing_scc) {
+                        mongoUser.my_cargo = 0;
+                        await mongoUser.save();
+                        const command = client.commands.get('endscc')
+                        await command.execute(interaction)
+                    }
+                    console.log('ended')
+                })
 
                 await interaction.editReply({ embeds: [embed], components: [row], })
 
-                // setTimeout(async function () {
+                setTimeout(async function () {
 
-                //     row.components[0].setDisabled(true);
-                //     await interaction.editReply({ components: [row] });
+                    row.components[0].setDisabled(true);
+                    await interaction.editReply({ components: [row] });
 
-                // }, 90000);
+                }, 60000);
             }
 
             //IMPORTANT RETURN OUT OF GAME, ENDS GAME

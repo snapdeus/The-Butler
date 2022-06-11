@@ -43,8 +43,9 @@ module.exports = {
 
 
 
-        const mongoUser = await User.findOne({ userId: userId })
+        let mongoUser = await User.findOne({ userId: userId })
 
+        // console.log(mongoUser)
         const dice = ['⚀', '⚁', '⚂', '⚃', '⚄', '⚅']
         const diceText = {
             1: '⚀',
@@ -217,6 +218,7 @@ module.exports = {
 
 
             if (numOfRolls < 1) {
+
                 numOfRolls++;
                 const row = new MessageActionRow()
                     .addComponents(
