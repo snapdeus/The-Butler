@@ -17,6 +17,9 @@ module.exports = {
                 .setDescription('Optional amount to wager')),
     async execute(interaction) {
         let wager = Math.abs(interaction.options.getNumber("wager"))
+        if (wager > mongoUser.xpOverTime) {
+            wager = mongoUser.xpOverTime
+        }
         const client = interaction.client
         let userId = interaction.user.id
         let username = interaction.user.username
