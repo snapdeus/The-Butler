@@ -68,6 +68,7 @@ module.exports = {
 
 
         console.log(populatedBag)
+
         if (mealPoints >= 2) {
             haveMeal = true;
         }

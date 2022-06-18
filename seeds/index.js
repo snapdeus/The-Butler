@@ -47,9 +47,9 @@ const seedPasta = async () => {
 
 
 
-seedPasta().then(() => {
-    mongoose.connection.close();
-});
+// seedPasta().then(() => {
+//     mongoose.connection.close();
+// });
 
 
 const seedBread = async () => {
@@ -168,3 +168,16 @@ const seedSoup = async () => {
 // });
 
 
+
+async function empty() {
+    const mongoUser = await User.findOne({ 'username': 'snapdeus' })
+    const bag = await Bag.findOne({ user: mongoUser._id })
+
+    bag.pasta = [];
+
+    await bag.save()
+}
+
+empty().then(() => {
+    mongoose.connection.close();
+});
