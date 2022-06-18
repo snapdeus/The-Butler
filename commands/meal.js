@@ -67,7 +67,7 @@ module.exports = {
 
 
 
-        console.log(populatedBag)
+
 
         if (mealPoints >= 2) {
             haveMeal = true;
@@ -130,7 +130,7 @@ module.exports = {
         }
 
         for (let dish of whatsForDinner) {
-            console.log(dish)
+
             embed.addField(`${ dish.name }`, `${ dish.description }`)
         }
 
