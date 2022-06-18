@@ -1,3 +1,9 @@
+require('dotenv').config()
+
+const axios = require('axios')
+const apiKey = process.env.APININJA_API_KEY;
+const config = { headers: { 'X-Api-Key': apiKey } };
+
 
 const { breads } = require('../resources/breads')
 const Discord = require('discord.js')
@@ -6,6 +12,24 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const User = require('../models/user')
 const Bread = require('../models/bread')
 const Bag = require('../models/bag')
+
+const { veryBadMealEvents, badMealEvents, goodMealEvents, veryGoodMealEvents } = require('../resources/mealEvents')
+
+
+
+async function celeb() {
+    try {
+        const alphaArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+        const ranAlpha = alphaArray[Math.floor(Math.random() * alphaArray.length)];
+        const url = `https://api.api-ninjas.com/v1/celebrity?name=${ ranAlpha }`;
+        const res = await axios.get(url, config);
+        return res.data[Math.floor(Math.random() * res.data.length)].name;
+
+    } catch (e) {
+        console.log(e)
+    }
+}
+
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('meal')
@@ -24,7 +48,7 @@ module.exports = {
             const embed = new Discord.MessageEmbed()
                 .setTitle("Insufficient Funds")
                 .setColor("DARKER_GREY")
-                .addField('You do not have: ', ` 100 Haus Coin\n Reminder...You need AT LEAST TWO FOOD ITEMS to have a meal! :D\n Tip: use /bag to see what you already have or /rank to see your level`)
+                .addField('You do not have: ', ` 100 Haus Coin\n \n Reminder...You need AT LEAST TWO FOOD ITEMS to have a meal! :D\n  \nTip: use /bag to see what you already have or /rank to see your level`)
                 .addField(`Remaining Funds for ${ username }: `, `🪙 ${ mongoUser.xpOverTime } Haus Coin`)
 
             await interaction.reply({ embeds: [embed] })
@@ -34,7 +58,6 @@ module.exports = {
 
         const nonObjectBag = await Bag.findOne({ user: mongoUser._id }, { "_id": 0, '__v': 0, 'user': 0 })
         const bag = nonObjectBag.toObject()
-
 
 
 
@@ -79,7 +102,7 @@ module.exports = {
         if (!haveMeal) {
             const embed = new Discord.MessageEmbed()
                 .setTitle("Not a full meal")
-                .addField('You do enough food items', `Buy something with /bread, /soup, /pasta, /dairy\n You need AT LEAST FOOD TWO ITEMS to have a meal! :D\n Tip: use /bag to see what you already have or /rank to see your level`)
+                .addField('You do not have enough food items', `Buy something with /bread, /soup, /pasta, /dairy\n \n You need AT LEAST FOOD TWO ITEMS to have a meal! :D\n \n Tip: use /bag to see what you already have or /rank to see your level`)
                 .addField(`Remaining Funds for ${ username }: `, `🪙 ${ mongoUser.xpOverTime } Haus Coin`)
 
             await interaction.reply({ embeds: [embed] })
@@ -201,6 +224,57 @@ module.exports = {
         await interaction.reply({ embeds: [embed] })
 
 
+        let ranOne = Math.ceil(Math.random() * 10)
+        //THIS IS A 40% CHANCE, AVAILABLE NUMBERS ARE 1, 2, 3, 4
+        if (ranOne < 5) {
+
+            let ranTwo = Math.ceil(Math.random() * 10)
+
+            if (ranTwo < 6) {
+
+                if (ranTwo < 3) {
+                    let myEvent = veryBadMealEvents[Math.floor(Math.random() * veryBadMealEvents.length)]
+                    let randomEventEmbed = new Discord.MessageEmbed()
+                    randomEventEmbed.setTitle(`RANDOM EVENT!\n${ myEvent.name }`)
+                    randomEventEmbed.addField(`VERY BAD Event!`, `You have had a random event <@${ userId }>\n \n Big Penalty Taken...You lose 🪙 ${ myEvent.goldLoss }`)
+                    randomEventEmbed.setDescription(`${ myEvent.effect }`)
+                    await User.findOneAndUpdate({ userId: userId }, { $inc: { xpOverTime: -myEvent.goldLoss } })
+                    setTimeout(async () => await interaction.followUp({ embeds: [randomEventEmbed] }), 7000)
+                } else {
+                    let myEvent = badMealEvents[Math.floor(Math.random() * badMealEvents.length)]
+                    let randomEventEmbed = new Discord.MessageEmbed()
+                    randomEventEmbed.setTitle(`RANDOM EVENT!\n${ myEvent.name }`)
+                    randomEventEmbed.addField(`BAD Event!`, `You have had a random event <@${ userId }>\n \n Penalty Taken...You lose 🪙 ${ myEvent.goldLoss }`)
+                    randomEventEmbed.setDescription(`${ myEvent.effect }`)
+                    await User.findOneAndUpdate({ userId: userId }, { $inc: { xpOverTime: -myEvent.goldLoss } })
+                    setTimeout(async () => await interaction.followUp({ embeds: [randomEventEmbed] }), 7000)
+                }
+            } else {
+                if (ranTwo > 8) {
+                    const name = await celeb()
+                    veryGoodMealEvents[0].effect = `You saw ${ name } at the restaurant! omg`
+
+                    let myEvent = veryGoodMealEvents[Math.floor(Math.random() * veryGoodMealEvents.length)]
+
+                    let randomEventEmbed = new Discord.MessageEmbed()
+                    randomEventEmbed.setTitle(`RANDOM EVENT!\n${ myEvent.name }`)
+                    randomEventEmbed.addField(`VERY GOOD Event!`, `You have had a random event <@${ userId }>\n \n Big Bonus Gold! You gain 🪙 ${ myEvent.goldGain }`)
+                    randomEventEmbed.setDescription(`${ myEvent.effect }`)
+                    await User.findOneAndUpdate({ userId: userId }, { $inc: { xpOverTime: myEvent.goldGain } })
+                    setTimeout(async () => await interaction.followUp({ embeds: [randomEventEmbed] }), 7000)
+                } else {
+                    let myEvent = goodMealEvents[Math.floor(Math.random() * goodMealEvents.length)]
+                    let randomEventEmbed = new Discord.MessageEmbed()
+                    randomEventEmbed.setTitle(`RANDOM EVENT!\n${ myEvent.name }`)
+                    randomEventEmbed.addField(`GOOD Event!`, `You have had a random event <@${ userId }>\n \n Bonus Gold! You gain 🪙 ${ myEvent.goldGain }`)
+                    randomEventEmbed.setDescription(`${ myEvent.effect }`)
+                    await User.findOneAndUpdate({ userId: userId }, { $inc: { xpOverTime: myEvent.goldGain } })
+                    setTimeout(async () => await interaction.followUp({ embeds: [randomEventEmbed] }), 7000)
+                }
+            }
+
+        }
+
 
         await mongoUser.save()
         await User.findOneAndUpdate({ userId: userId }, { $inc: { xpOverTime: -100 } })
@@ -218,6 +292,8 @@ module.exports = {
 
 
 
+
     }
 }
+
 
