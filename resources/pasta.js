@@ -5,7 +5,7 @@ exports.pastas = [
         Description: "Thin strands, often coiled into nests",
         Translation: "Little beards",
         Synonyms: "Barbina",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Bavette_side.png/120px-Bavette_side.png",
@@ -85,15 +85,15 @@ exports.pastas = [
         Description: "Flattened spaghetti",
         Translation: "Little tongues",
         Synonyms: "Bavettine, bavette fini, radichini, linguettine",
-        Origin: " "
+        Origin: "Italy"
     },
     {
-        image: "blob:https://imgur.com/328bbbaa-0766-442e-9e55-78bd99c9bea3",
+        image: "https://imgur.com/328bbbaa-0766-442e-9e55-78bd99c9bea3",
         Type: "Lagane",
         Description: "Wide pasta",
         Translation: " ",
         Synonyms: "Lasagnoni, Bardele",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Lasagne.png/120px-Lasagne.png",
@@ -101,7 +101,7 @@ exports.pastas = [
         Description: "Square or rectangle sheets of pasta that sometimes have fluted edges (lasagne ricce). The square of pasta is lasagna while the dish is lasagne",
         Translation: "Possibly from Latin lasanum or Greek lasonon, \"Cooking pot\", or the Greco-Roman laganum, a flat piece of bread.",
         Synonyms: "bardele, lasagnoni (Veneto); capellasci (Liguria); sagne (Salento); lagana (Apulia); the fluted version can also be doppio festone, sciabo, sciablo",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Lasagnette_side.jpg/120px-Lasagnette_side.jpg",
@@ -109,7 +109,7 @@ exports.pastas = [
         Description: "Narrower version of Lasagna",
         Translation: "Little lasagna",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://i.imgur.com/iAoY8Wk.png",
@@ -117,7 +117,7 @@ exports.pastas = [
         Description: "Longer version of Lasagna",
         Translation: "Bigger lasagna",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mac_Molinara_Tomato_Sauce.JPG/120px-Mac_Molinara_Tomato_Sauce.JPG",
@@ -149,7 +149,7 @@ exports.pastas = [
         Description: "Similar to perciatelli, but folded over rather than hollowed out",
         Translation: " ",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Pappardelle3.jpg/120px-Pappardelle3.jpg",
@@ -197,7 +197,7 @@ exports.pastas = [
         Description: "Long tube formed of twisted ribbon",
         Translation: "Caned lasagne",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Scialatielli.jpg/120px-Scialatielli.jpg",
@@ -229,7 +229,7 @@ exports.pastas = [
         Description: "A slightly thinner version of spaghetti",
         Translation: "Thin spaghetti",
         Synonyms: "Thin spaghetti",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Spaghettoni.jpg/120px-Spaghettoni.jpg",
@@ -237,7 +237,7 @@ exports.pastas = [
         Description: "A slightly thicker version of spaghetti",
         Translation: " ",
         Synonyms: "Spaghetti spessi",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Stringozzi.jpg/120px-Stringozzi.jpg",
@@ -277,15 +277,15 @@ exports.pastas = [
         Description: "Thin ribbon ridged on one side. Slightly thicker than linguine.",
         Translation: " ",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
-        image: "blob:https://imgur.com/35e97f5d-6aca-4807-918c-ebdb6ab18263",
+        image: "https://imgur.com/35e97f5d-6aca-4807-918c-ebdb6ab18263",
         Type: "Tripoline",
         Description: "Thick ribbon ridged on one side",
         Translation: " ",
         Synonyms: "Signorine",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Rice_vermicelli.jpg",
@@ -333,7 +333,7 @@ exports.pastas = [
         Description: "Flattened bell-shaped pasta with a frilly edge on one end. Torchio are identical, with a smooth edge.",
         Translation: "Bellflower, gigli are lilies, torchio is a press (usually for olive or grapes, but also pasta).",
         Synonyms: "Gigli, cornetti, corni di bue",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Cappelli_da_chef.jpg/120px-Cappelli_da_chef.jpg",
@@ -341,7 +341,7 @@ exports.pastas = [
         Description: "Extruded pasta that looks like a chef's hat",
         Translation: "Chef hats",
         Synonyms: "Chef's hats",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Casarecce_closeup.jpg/120px-Casarecce_closeup.jpg",
@@ -365,7 +365,7 @@ exports.pastas = [
         Description: "Shell pasta coiled into a conical shape",
         Translation: "Translated as \"castle dweller\", for the shape of the pasta loosely resembles that of a long, flowing robe.",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Cavatappi2.jpg/120px-Cavatappi2.jpg",
@@ -373,7 +373,7 @@ exports.pastas = [
         Description: "Corkscrew-shaped macaroni.",
         Translation: "Corkscrews",
         Synonyms: "Cellentani, amori, spirali, tortiglioni, or fusilli rigati.",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Cavatelli.jpg/120px-Cavatelli.jpg",
@@ -389,7 +389,7 @@ exports.pastas = [
         Description: "Short and wide macaroni. Can be smooth (lisce) or furrowed (rigati).",
         Translation: "From the Austrian cookies Kipferl.",
         Synonyms: "Gomiti",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cicioneddos.jpg/120px-Cicioneddos.jpg",
@@ -405,7 +405,7 @@ exports.pastas = [
         Description: "Seashell-shaped, usually furrowed (rigate)",
         Translation: "Shells",
         Synonyms: "Arselle, abissini, coccioline, conchigliette, tofettine, cinesini, margaritine, cinesi rigati, mezzi cocci, margherite rigate, cappettine",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Creste_di_gallo.jpg/120px-Creste_di_gallo.jpg",
@@ -413,7 +413,7 @@ exports.pastas = [
         Description: "Short, curved, and ruffled",
         Translation: "Cock's comb",
         Synonyms: "Grui",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://i.imgur.com/142gShH.png",
@@ -421,7 +421,7 @@ exports.pastas = [
         Description: "Short narrow tube",
         Translation: "Large beans",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Farfalle_simple.png/120px-Farfalle_simple.png",
@@ -445,7 +445,7 @@ exports.pastas = [
         Description: "Thick ruffled helices",
         Translation: "Festoon",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Fiorentine.jpg/120px-Fiorentine.jpg",
@@ -453,7 +453,7 @@ exports.pastas = [
         Description: "Grooved cut tubes",
         Translation: "Florentine",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Fiori2.jpg/120px-Fiori2.jpg",
@@ -461,7 +461,7 @@ exports.pastas = [
         Description: "Shaped like a flower",
         Translation: "Flowers",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Fusilli.png/120px-Fusilli.png",
@@ -469,7 +469,7 @@ exports.pastas = [
         Description: "Long, thick, corkscrew-shaped pasta that may be solid or hollow.",
         Translation: "The word fusilli presumably comes from Italian: fuso, meaning \"spindle\".",
         Synonyms: "Eliche, girandole, rotini, tortiglioni, spirali",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Fusilli_bucati.jpg/120px-Fusilli_bucati.jpg",
@@ -493,7 +493,7 @@ exports.pastas = [
         Description: "A single S-shaped strand of pasta twisted in a loose spiral.",
         Translation: "The name derives from the Italian for twins.",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Barilla_gnocchi_03.jpg/120px-Barilla_gnocchi_03.jpg",
@@ -501,7 +501,7 @@ exports.pastas = [
         Description: "Lobed shells. Not to be confused with gnocchi dumplings.",
         Translation: "Possibly \"knots\" ",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Gomiti.jpg/120px-Gomiti.jpg",
@@ -509,7 +509,7 @@ exports.pastas = [
         Description: "Elbow maccheroni, furrowed.",
         Translation: "From gomito, \"elbow\".",
         Synonyms: "Chifferi",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Lanterne.jpg/120px-Lanterne.jpg",
@@ -517,7 +517,7 @@ exports.pastas = [
         Description: "Curved ridges",
         Translation: "Lanterns",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Lorighittas_sardi_%2836953461766%29.jpg/120px-Lorighittas_sardi_%2836953461766%29.jpg",
@@ -541,7 +541,7 @@ exports.pastas = [
         Description: "Hollow tube-shaped pasta that is slightly smaller than a pencil in thickness",
         Translation: "Small maccheroni",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Mafalde_corte.jpg/120px-Mafalde_corte.jpg",
@@ -549,7 +549,7 @@ exports.pastas = [
         Description: "Short ribbons with ruffled sides",
         Translation: "Little mafalde",
         Synonyms: "Mafalda corta, Biricci",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Maltagliati.jpg/120px-Maltagliati.jpg",
@@ -557,7 +557,7 @@ exports.pastas = [
         Description: "Irregular shapes of flat pasta formed from scraps of pasta production.",
         Translation: "Badly cut",
         Synonyms: "Strengozze, malmaritati, blecs; pizzocherini (Valtellina); straciamus/spruzzamusi (Mantua); gasse, martaliai (Liguria); begnamusi/sguazzabarbuz (Emilia-Romagna); strengozze (Marche); sagne 'mpezze (Latium); pizzelle (Apulia); foglie di salice (Piedmont)",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Malloredus2.jpg/120px-Malloredus2.jpg",
@@ -573,7 +573,7 @@ exports.pastas = [
         Description: "Designed by Philippe Starck in 1987 for French pasta maker Panzani, intended to compensate for overcooking.",
         Translation: "A reference to mandalas.",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://i.imgur.com/oCy5n02.png",
@@ -581,7 +581,7 @@ exports.pastas = [
         Description: "Designed by Giorgetto Giugiaro in 1983 – like a rolling ocean wave in cross-section with internal rugosities, but unsuccessful and no longer produced.",
         Translation: "From mare, \"sea\" ",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://i.imgur.com/l0NQdpG.png",
@@ -589,7 +589,7 @@ exports.pastas = [
         Description: "Short curved tube",
         Translation: "Half-size ones",
         Synonyms: "Perciatelloni, Mezze Zite, Regine, Scaloppi, Napoletani, Hoernli (wide-spread in Switzerland, in at least 3 sizes)",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Mezze_maniche2.jpg/120px-Mezze_maniche2.jpg",
@@ -597,7 +597,7 @@ exports.pastas = [
         Description: "About half the length of rigatoni",
         Translation: "Half-sleeves",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://i.imgur.com/t2Jr1qk.png",
@@ -605,7 +605,7 @@ exports.pastas = [
         Description: "Short version of penne",
         Translation: "Half-pens",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://i.imgur.com/wwzDrWV.png",
@@ -613,7 +613,7 @@ exports.pastas = [
         Description: "Wide short tubes",
         Translation: "Half-bombards",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nuvol3.jpg/120px-Nuvol3.jpg",
@@ -621,7 +621,7 @@ exports.pastas = [
         Description: "Short coiled pasta",
         Translation: "Clouds",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Paccheri3.jpg/120px-Paccheri3.jpg",
@@ -645,7 +645,7 @@ exports.pastas = [
         Description: "Sheet pasta that is similar in shape to a cinnamon stick",
         Translation: "Log-type pasta",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Pennelisce_closeup.png/120px-Pennelisce_closeup.png",
@@ -661,7 +661,7 @@ exports.pastas = [
         Description: "Curled penne variant, usually grooved.",
         Translation: "Curly penne.",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Picchiarelli.jpg/120px-Picchiarelli.jpg",
@@ -677,7 +677,7 @@ exports.pastas = [
         Description: "Very similar to Lumaconi but smaller has lines running the length of it",
         Translation: "Grooved pipes.",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Pizzochiero.jpg/120px-Pizzochiero.jpg",
@@ -693,7 +693,7 @@ exports.pastas = [
         Description: "Square with rippled edges",
         Translation: "From quadro, \"square\" and fiore, \"flower\" ",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Radiatori2.jpg/120px-Radiatori2.jpg",
@@ -701,7 +701,7 @@ exports.pastas = [
         Description: "Shaped like radiators, they were created between the First and Second World Wars. They are often used in similar dishes as rotelle or fusilli because their shape works well with thicker sauces.",
         Translation: "Radiator",
         Synonyms: "Marziani",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Riccioli.jpg/120px-Riccioli.jpg",
@@ -709,7 +709,7 @@ exports.pastas = [
         Description: "Hollow cut with cylindrical ridges.",
         Translation: "Curls.",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ricciolini.jpg/120px-Ricciolini.jpg",
@@ -717,7 +717,7 @@ exports.pastas = [
         Description: "Short wide pasta with a 90-degree twist",
         Translation: "Little curls",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Ricciutelli.jpg/120px-Ricciutelli.jpg",
@@ -725,7 +725,7 @@ exports.pastas = [
         Description: "Short spiralled pasta",
         Translation: "Little curls",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://i.imgur.com/SW7R3pr.png",
@@ -733,7 +733,7 @@ exports.pastas = [
         Description: "Smaller version of rigatoni",
         Translation: "Small lined ones",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Rigatoni_closeup.png/120px-Rigatoni_closeup.png",
@@ -749,7 +749,7 @@ exports.pastas = [
         Description: "Rhombus-shaped ribbons",
         Translation: " ",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Rotelle2.jpg/120px-Rotelle2.jpg",
@@ -757,7 +757,7 @@ exports.pastas = [
         Description: "Wagon wheel-shaped pasta",
         Translation: "Little wheels.",
         Synonyms: "Biciclette, ruotine, ruote, rotelline, ruotelline, rotine, rotini",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sagnette_pasta.jpg/120px-Sagnette_pasta.jpg",
@@ -765,7 +765,7 @@ exports.pastas = [
         Description: "Short thick ribbons from Abruzzo and Molise. Also called sagne or tagliolini.",
         Translation: " ",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://imgur.com/217b4121-e7f0-4ec3-bd18-70598c4e2b75",
@@ -773,7 +773,7 @@ exports.pastas = [
         Description: "Rectangular ribbons with fluted edges",
         Translation: " ",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Sedani_zoom.png/120px-Sedani_zoom.png",
@@ -789,7 +789,7 @@ exports.pastas = [
         Description: "Spiraled tubes",
         Translation: "Spirals",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://i.imgur.com/JqsMsaw.png",
@@ -797,7 +797,7 @@ exports.pastas = [
         Description: "Tightly coiled spirali",
         Translation: "Little spirals",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://imgur.com/12425a73-db37-4e06-a3f3-2af84ff8d6b7",
@@ -837,7 +837,7 @@ exports.pastas = [
         Description: "Coiled pasta.",
         Translation: "From treccia, \"braid\".",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Trenne_Carbonara_%283113690414%29.jpg/120px-Trenne_Carbonara_%283113690414%29.jpg",
@@ -845,7 +845,7 @@ exports.pastas = [
         Description: "Penne shaped as a triangle",
         Translation: " ",
         Synonyms: "Triangoli, penne triangolo",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Trofie2.jpg/120px-Trofie2.jpg",
@@ -861,7 +861,7 @@ exports.pastas = [
         Description: "Pasta in the shape of spinning tops",
         Translation: " ",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://i.imgur.com/Dfq047t.png",
@@ -869,7 +869,7 @@ exports.pastas = [
         Description: "Ridged rigatoni",
         Translation: " ",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Vesuvio_pasta.jpg/120px-Vesuvio_pasta.jpg",
@@ -925,7 +925,7 @@ exports.pastas = [
         Description: "Bead-like pasta",
         Translation: "Grains of pepper",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Buchstabensuppe.jpg/120px-Buchstabensuppe.jpg",
@@ -933,7 +933,7 @@ exports.pastas = [
         Description: "Pasta that has been mechanically cut or pressed into the letters of the alphabet",
         Translation: " ",
         Synonyms: "Alfabeto",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://i.imgur.com/JIS048Z.png",
@@ -957,7 +957,7 @@ exports.pastas = [
         Description: "Smaller version of anelli",
         Translation: "Little rings",
         Synonyms: "Anelline",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Conchigliette.jpg/120px-Conchigliette.jpg",
@@ -965,7 +965,7 @@ exports.pastas = [
         Description: "Small shell-shaped pasta",
         Translation: "Little shells",
         Synonyms: "Cocciolette",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Corallini.jpg/120px-Corallini.jpg",
@@ -973,7 +973,7 @@ exports.pastas = [
         Description: "Small short tubes of pasta",
         Translation: "Little corals",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Scucuzun.jpg/120px-Scucuzun.jpg",
@@ -997,7 +997,7 @@ exports.pastas = [
         Description: " ",
         Translation: " ",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Farfalloni.jpg/120px-Farfalloni.jpg",
@@ -1005,7 +1005,7 @@ exports.pastas = [
         Description: "Small bow tie-shaped pasta",
         Translation: "Little butterflies (\"bow tie\" in Italian is cravatta a farfalla, \"butterfly tie\")",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Fideo_%28coiled_vermicelli%29.JPG/120px-Fideo_%28coiled_vermicelli%29.JPG",
@@ -1013,7 +1013,7 @@ exports.pastas = [
         Description: "Pasta prepared with eggs, flour and water.",
         Translation: " ",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Filini.jpg/120px-Filini.jpg",
@@ -1021,7 +1021,7 @@ exports.pastas = [
         Description: "Smaller version of fideos, about 12–15 mm long before cooking",
         Translation: "Little threads.",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Fregule_closeup.jpg/120px-Fregule_closeup.jpg",
@@ -1029,7 +1029,7 @@ exports.pastas = [
         Description: "Bead-like pasta from Sardinia. Slightly toasted due to drying process.",
         Translation: "Little fragments",
         Synonyms: "Fregola, freula, fregua",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://i.imgur.com/w48Kkks.png",
@@ -1037,7 +1037,7 @@ exports.pastas = [
         Description: "Small mushroom-shaped pasta",
         Translation: "Little mushrooms",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Gramigne.jpg/120px-Gramigne.jpg",
@@ -1053,7 +1053,7 @@ exports.pastas = [
         Description: "Small granular, irregular shaped pasta (smaller version then Grattoni)",
         Translation: "Little grains",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Grattoni.jpg",
@@ -1061,7 +1061,7 @@ exports.pastas = [
         Description: "Large granular, irregular shaped pasta",
         Translation: "Grains",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Midolline.jpg",
@@ -1069,7 +1069,7 @@ exports.pastas = [
         Description: "Flat teardrop shaped pasta (similar to Orzo but wider)",
         Translation: " ",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Occhip.jpg/120px-Occhip.jpg",
@@ -1077,7 +1077,7 @@ exports.pastas = [
         Description: "Very small rings of pasta",
         Translation: "Partridge's eyes",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Risi_closeup.png/120px-Risi_closeup.png",
@@ -1085,7 +1085,7 @@ exports.pastas = [
         Description: "Rice shaped pasta. Risoni are slightly bigger.",
         Translation: "Barley, rice",
         Synonyms: "Puntine, punte d'ago, armelline, semi d'orzo, semi d'avena, semi di riso, occhi di giudeo, armellette, puntalette, semi di cicoria, cicorietta, risetto, chicchi di riso, semini, avena, avena grande, cicorie, semi di melone, semi di mela, midolline, semoni, risone, risoni riso",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Pastina.jpg/120px-Pastina.jpg",
@@ -1093,7 +1093,7 @@ exports.pastas = [
         Description: "Although pastina is the name for an entire family of miniature pasta shapes, it is also used to describe the most basic one in this family – small spheres, smaller than acini di pepe",
         Translation: "Little pasta",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Pearl_Pasta.jpg/120px-Pearl_Pasta.jpg",
@@ -1101,7 +1101,7 @@ exports.pastas = [
         Description: "Spheres slightly larger than acini di pepe",
         Translation: "\"Leads\" as in lead shot",
         Synonyms: "Pearl pasta",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Israeli_Couscous_%28140491483%29.jpeg/120px-Israeli_Couscous_%28140491483%29.jpeg",
@@ -1117,7 +1117,7 @@ exports.pastas = [
         Description: "Smaller version of Risi",
         Translation: " ",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Quadrettini.jpg/120px-Quadrettini.jpg",
@@ -1125,7 +1125,7 @@ exports.pastas = [
         Description: "Small flat squares of pasta",
         Translation: "Little squares",
         Synonyms: "Quadrucci, quadratini, quadretti, lucciole, quadrellini, quadrotti; quaternei (Emilia-Romagna); squadrucchetti (Umbria); ciciarchiola/cicerchiole (depending on size; Lazio).",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Sorprese2.jpg/120px-Sorprese2.jpg",
@@ -1133,7 +1133,7 @@ exports.pastas = [
         Description: "Small bell shaped pasta with a ruffled edge and a crease on one side. Can be ridged or smooth (lisce)",
         Translation: "Surprise",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Stelline2.jpg/120px-Stelline2.jpg",
@@ -1141,7 +1141,7 @@ exports.pastas = [
         Description: "Small star-shaped pasta.",
         Translation: "Stars, small or big (resp. stelline or stellette)",
         Synonyms: "anellini, avermarie, astri, fiori di sambuco, lentine, puntine, semini, stellettine, stellette",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Stortini_pasta.jpg/120px-Stortini_pasta.jpg",
@@ -1149,7 +1149,7 @@ exports.pastas = [
         Description: "Smaller version of elbow macaroni",
         Translation: "Little crooked ones",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Tripolini2.jpg/120px-Tripolini2.jpg",
@@ -1157,7 +1157,7 @@ exports.pastas = [
         Description: "In larger varieties these are sometimes called farfalle tonde. Small bow tie-shaped pasta with rounded edges.",
         Translation: "canestrini are small willow baskets.",
         Synonyms: "Signorine, canestri, canestrini, farfallini, galani, nastrini, nodini, stricchetti",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Agnolini_mantovani.jpg/121px-Agnolini_mantovani.jpg",
@@ -1245,7 +1245,7 @@ exports.pastas = [
         Description: "A 'purse' or bundle of pasta, made from a round of dough gathered into a ball-shaped bundle, often stuffed with ricotta and fresh pear",
         Translation: "Little cloth bundles",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Lumachoni.jpg/120px-Lumachoni.jpg",
@@ -1253,7 +1253,7 @@ exports.pastas = [
         Description: "Snailshell-shaped pieces. Larger than gomiti or pipe.",
         Translation: "Snails",
         Synonyms: "Lumachelle, lumachette, cirillini, chifferini, ciocchiolette, cirillini, gomitini, gozziti, lumachelle, lumachoni, pipe, pipette, tofarelle",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Mezzelune_di_mare_al_pesto_%282498933582%29.jpg/120px-Mezzelune_di_mare_al_pesto_%282498933582%29.jpg",
@@ -1261,7 +1261,7 @@ exports.pastas = [
         Description: "Semicircular pockets about 2.5 in. diameter",
         Translation: "Half-moons",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Pansoti_alla_salsa_di_noci.jpg/120px-Pansoti_alla_salsa_di_noci.jpg",
@@ -1277,7 +1277,7 @@ exports.pastas = [
         Description: "Two pieces of pasta on top of another, stuffed with cheese, ground meat, pureed vegetables, or mixtures thereof. Though commonly square, other forms are also used, including circular and semi-circular (Mezzelune)",
         Translation: "Many claimed origins: possibly from rapa, \"vegetable root\", or rabibole, \"cheap stuff\" in Ligurian dialect; or simply from ravolgere, \"to wrap\".",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://i.imgur.com/Bea2D3W.png",
@@ -1285,7 +1285,7 @@ exports.pastas = [
         Description: "A rolled pasta with filling; cooked roll is normally sliced, covered in sauce and broiled in the oven",
         Translation: "\"Stuffed roll\" ",
         Synonyms: "Rotoli imbotito; strudel (Trentino-Alto Adige); pasta al sacco (Marche)",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://i.imgur.com/ji2YI3w.png",
@@ -1293,7 +1293,7 @@ exports.pastas = [
         Description: "Round, similar to fagottini, but also may use ravioli stuffing. A small square of pasta brought around the stuffing and twisted.",
         Translation: "Little sacks",
         Synonyms: "Sacchetti, sacchetini depending on size",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tortelli.jpg/120px-Tortelli.jpg",
@@ -1301,7 +1301,7 @@ exports.pastas = [
         Description: "Square sheet of pasta folded into a triangle or discus folded into half-circle, with both extremities subsequently joined to form a ring shape. About 30x35 mm in size. Sweet variations can be found (tortelli cremaschi).",
         Translation: "Little pies",
         Synonyms: "Cappellacci, turtello (Emilia-Romagna), tordelli (Tuscany), casonsei (Bergame and Brescia)",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Tortellini_Bolognesi.jpg/120px-Tortellini_Bolognesi.jpg",
@@ -1309,7 +1309,7 @@ exports.pastas = [
         Description: "Ring-shaped, usually stuffed with a mixture of meat and cheese. About 25x20mm in size.",
         Translation: "Small tortelli",
         Synonyms: "Agnoli, presuner or prigioneri (Capri)",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pastasorten_Tortelloni.JPG/120px-Pastasorten_Tortelloni.JPG",
@@ -1317,7 +1317,7 @@ exports.pastas = [
         Description: "Round or rectangular, similar to tortelli but larger (38x45mm). Stuffing usually does not include meat.",
         Translation: " ",
         Synonyms: " ",
-        Origin: " "
+        Origin: "Italy"
     },
     {
         image: "https://i.imgur.com/KKyQGzd.png",
@@ -1325,6 +1325,6 @@ exports.pastas = [
         Description: "A pasta shell large enough for stuffing (as with meat or cheese). From a southern Italian dialect, plural of tufolo (tube), modification of Latin tubulus (tubule)",
         Translation: "Large tube",
         Synonyms: "Maniche, Gigantoni, Occhi di elefante, Elefante, Canneroni grandi, Occhi di bove",
-        Origin: " "
+        Origin: "Italy"
     }
 ]

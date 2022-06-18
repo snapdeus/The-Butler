@@ -47,9 +47,9 @@ const seedPasta = async () => {
 
 
 
-// seedPasta().then(() => {
-//     mongoose.connection.close();
-// });
+seedPasta().then(() => {
+    mongoose.connection.close();
+});
 
 
 const seedBread = async () => {
@@ -163,8 +163,8 @@ const seedSoup = async () => {
 //     mongoose.connection.close();
 // });
 
-Promise.all([seedUsers(), seedDairy(), seedSoup(), seedBread(), seedPasta(), seedBags()]).then(() => {
-    mongoose.connection.close();
-});
+// Promise.all([seedUsers(), seedDairy(), seedSoup(), seedBread(), seedPasta(), seedBags()]).then(() => {
+//     mongoose.connection.close();
+// });
 
 
