@@ -115,8 +115,8 @@ module.exports = {
 
 
         embed.setTitle('MEALTIME!');
-        embed.addField('YOU HAVE MEAL!!!! ', `Account charged 🪙 100`);
-
+        embed.addField(`${ username } IS EATING A MEAL!!!!`, `Account charged 🪙 100`);
+        embed.setThumbnail(interaction.user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
         const mealsString = mealCategories.join(" and ")
         if (mealPoints === 2) {
             embed.addField("TWO COURSE MEAL", `You've had a meal of ${ mealsString }`);
