@@ -67,9 +67,7 @@ module.exports = {
             wager = parseInt(mongoUser.level * 10)
         }
 
-        if (wager > mongoUser.xpOverTime) {
-            wager = mongoUser.xpOverTime
-        }
+
         mongoUser.is_playing_scc = true;
         // console.log(mongoUser)
         mongoUser.my_scc_wager = parseInt(wager)
