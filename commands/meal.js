@@ -24,7 +24,7 @@ module.exports = {
             const embed = new Discord.MessageEmbed()
                 .setTitle("Insufficient Funds")
                 .setColor("DARKER_GREY")
-                .addField('You do not have: ', ` 100 Haus Coin\n Reminder...You need AT LEAST TWO FOOD ITEMS to have a meal! :D`)
+                .addField('You do not have: ', ` 100 Haus Coin\n Reminder...You need AT LEAST TWO FOOD ITEMS to have a meal! :D\n Tip: use /bag to see what you already have or /rank to see your level`)
                 .addField(`Remaining Funds for ${ username }: `, `🪙 ${ mongoUser.xpOverTime } Haus Coin`)
 
             await interaction.reply({ embeds: [embed] })
@@ -78,8 +78,8 @@ module.exports = {
 
         if (!haveMeal) {
             const embed = new Discord.MessageEmbed()
-                .setTitle("Nothing to eat")
-                .addField('You do not have anything to eat!', `Buy something with /bread, /soup, /pasta, /dairy\n You need AT LEAST FOOD TWO ITEMS to have a meal! :D`)
+                .setTitle("Not a full meal")
+                .addField('You do enough food items', `Buy something with /bread, /soup, /pasta, /dairy\n You need AT LEAST FOOD TWO ITEMS to have a meal! :D\n Tip: use /bag to see what you already have or /rank to see your level`)
                 .addField(`Remaining Funds for ${ username }: `, `🪙 ${ mongoUser.xpOverTime } Haus Coin`)
 
             await interaction.reply({ embeds: [embed] })
