@@ -64,13 +64,16 @@ module.exports = {
 
         }
 
-        if (wager > mongoUser.xpOverTime) {
-            wager = mongoUser.xpOverTime
+        let currentGold = Math.abs(mongoUser.xpOverTime)
+
+        if (wager > currentGold) {
+            wager = currentGold
         }
         if (!wager) {
             wager = parseInt(mongoUser.level * 10)
         }
 
+        wager = Math.abs(wager)
 
         mongoUser.is_playing_scc = true;
         // console.log(mongoUser)
