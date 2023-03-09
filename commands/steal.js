@@ -86,7 +86,15 @@ module.exports = {
                 .addField('Amount stolen:', `🪙 ${ amount }`)
                 .addField('Victim of theft: ', `**<@${ victimId }>**`)
 
+            await interaction.member.roles.add(wantedrole);
 
+            async function removeRole() {
+                setTimeout(() => {
+                    interaction.member.roles.remove(wantedrole);
+                }, 60000 * 10);
+            }
+
+            await removeRole()
             await interaction.reply({ content: `**<@${ victimId }>** someone tried and failed to rob you!`, embeds: [embed] })
         }
 
