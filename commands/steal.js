@@ -64,7 +64,7 @@ module.exports = {
             async function removeRole() {
                 setTimeout(() => {
                     interaction.member.roles.remove(wantedrole);
-                }, 60000 * 10);
+                }, 600000);
             }
 
             await removeRole()
