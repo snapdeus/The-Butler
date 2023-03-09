@@ -81,10 +81,9 @@ module.exports = {
         } else {
 
             const embed = new Discord.MessageEmbed()
-
-                .setTitle(`**${ criminalUsername }** tried to steal but failed! \n ${ criminalUsername } is now Wanted!`)
-                .addField('Amount stolen:', `🪙 ${ amount }`)
-                .addField('Victim of theft: ', `**<@${ victimId }>**`)
+                .setTitle(`**${ criminalUsername }** is now wanted!`)
+                .addField(`**${ criminalUsername }** tried to steal but failed!`, "Try again in 10 minutes!")
+                .addField('Victim of attempted theft: ', `**<@${ victimId }>**`)
 
             await interaction.member.roles.add(wantedrole);
 
