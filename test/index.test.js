@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const { Client: DiscordClient, Intents } = require('discord.js');
 const client = new DiscordClient({
-    intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
+    intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS,],
 });
 
 const User = require('../models/user')
