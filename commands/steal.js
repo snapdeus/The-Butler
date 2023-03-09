@@ -42,7 +42,7 @@ module.exports = {
             }
         }
 
-        if (interaction.member.roles.cache.has('1083489063832670299')) {
+        if (interaction.member.roles.cache.has('1083503275447423146')) {
             return await interaction.reply('You are currently wanted! You may not steal again for 10 minutes.')
         }
 
