@@ -49,7 +49,7 @@ module.exports = {
 
         let randomNumber = Math.ceil(Math.random() * 10)
 
-        if (randomNumber > 5) {
+        if (randomNumber > 8) {
             let victimRank = await client.leveling.getUserLevel(victimId, guildId, victimUsername);
             let criminalRank = await client.leveling.getUserLevel(criminalId, guildId, criminalUsername);
             client.leveling.addXPoverTime(criminalId, guildId, amount)
