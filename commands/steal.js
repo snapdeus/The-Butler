@@ -1,4 +1,5 @@
 const Discord = require('discord.js')
+const { MessageActionRow, MessageButton } = require('discord.js')
 const { SlashCommandBuilder } = require('@discordjs/builders');
 module.exports = {
     data: new SlashCommandBuilder()
@@ -14,6 +15,10 @@ module.exports = {
     //         .setRequired(true)),
 
     async execute(interaction) {
+
+        const JAIL_ID = '1083788881624842280'
+        const WANTED_ROLE_ID = '1083503275447423146'
+
         // const amount = interaction.options.getNumber("amount")
         const amount = Math.ceil(Math.random() * 25)
         const mentionable = interaction.options.getMentionable('user');
@@ -24,78 +29,229 @@ module.exports = {
         let guildId = interaction.guild.id;
         let criminalId = interaction.user.id;
         let criminalUsername = interaction.user.username;
+        let victimRank = await client.leveling.getUserLevel(victimId, guildId, victimUsername);
+        let criminalRank = await client.leveling.getUserLevel(criminalId, guildId, criminalUsername);
 
 
+        async function removeRole(role, ms) {
+            setTimeout(() => {
+                interaction.member.roles.remove(role);
+            }, ms);
+        }
 
         let wantedrole = interaction.guild.roles.cache.find(x => x.name === "Wanted");
         if (!wantedrole) {
             try {
                 wantedrole = await interaction.guild.roles.create({
-
                     name: "Wanted",
                     reason: "You stole",
                     color: "#FF69B4",
-
                 })
             } catch (e) {
                 console.log(e.stack);
             }
         }
 
-        if (interaction.member.roles.cache.has('1083503275447423146')) {
+
+        let prisonerRole = interaction.guild.roles.cache.find(x => x.name === "Prisoner");
+        if (!prisonerRole) {
+            try {
+                prisonerRole = await interaction.guild.roles.create({
+
+                    name: "Prisoner",
+                    reason: "You stole",
+                    color: "#FFF",
+
+                })
+            } catch (e) {
+                console.log(e.stack);
+            }
+        }
+        if (interaction.member.roles.cache.has(WANTED_ROLE_ID)) {
             return await interaction.reply('You are currently wanted! You may not steal again for 10 minutes.')
         }
 
 
-        let randomNumber = Math.ceil(Math.random() * 10)
 
-        if (randomNumber > 6) {
-            let victimRank = await client.leveling.getUserLevel(victimId, guildId, victimUsername);
-            let criminalRank = await client.leveling.getUserLevel(criminalId, guildId, criminalUsername);
-            client.leveling.addXPoverTime(criminalId, guildId, amount)
-            client.leveling.addXPoverTime(victimId, guildId, -amount)
-
-
-
-            await interaction.member.roles.add(wantedrole);
-
-
-
-            async function removeRole() {
-                setTimeout(() => {
-                    interaction.member.roles.remove(wantedrole);
-                }, 600000);
-            }
-
-            await removeRole()
-
-            const embed = new Discord.MessageEmbed()
-
-                .setTitle(`**${ criminalUsername }** is now wanted!`)
-                .addField('Amount stolen:', `🪙 ${ amount }`)
-                .addField('Victim of theft: ', `**<@${ victimId }>**`)
-                .addField(`${ criminalUsername }'s New Total Balance: `, `🪙 ${ criminalRank.XPoverTime + amount }`)
-                .addField(`${ victimUsername }'s New Total Balance: `, `🪙 ${ victimRank.XPoverTime - amount }`)
-
-            await interaction.reply({ content: `**<@${ victimId }>** you have been robbed!`, embeds: [embed] })
-        } else {
-
-            const embed = new Discord.MessageEmbed()
-                .setTitle(`**${ criminalUsername }** is now wanted!`)
-                .addField(`**${ criminalUsername }** tried to steal but failed!`, "Try again in 10 minutes!")
-                .addField('Victim of attempted theft: ', `**<@${ victimId }>**`)
-
-            await interaction.member.roles.add(wantedrole);
-
-            async function removeRole() {
-                setTimeout(() => {
-                    interaction.member.roles.remove(wantedrole);
-                }, 60000 * 10);
-            }
-
-            await removeRole()
-            await interaction.reply({ content: `**<@${ victimId }>** someone tried and failed to rob you!`, embeds: [embed] })
+        if (interaction.user.id !== criminalId) {
+            return await interaction.reply({
+                content: "This button is not for you",
+                ephemeral: true
+            })
         }
 
+
+
+        const row = new MessageActionRow()
+            .addComponents(
+                new MessageButton()
+
+                    .setLabel('Steal')
+                    .setStyle('PRIMARY')
+                    .setCustomId("Steal" + interaction.user.id))
+
+        row.addComponents(
+            new MessageButton()
+                .setLabel('Block the steal!')
+                .setStyle('DANGER')
+                .setCustomId("Block" + victimId))
+
+
+        const filter = async i => i.customId.endsWith(interaction.user.id) || i.customId.endsWith(victimId)
+        const collector = interaction.channel.createMessageComponentCollector({ filter, time: 120000 });
+
+
+        let randomNumber = Math.ceil(Math.random() * 10)
+
+        const embed = new Discord.MessageEmbed()
+            .setThumbnail(interaction.user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
+            .setTitle(`**${ criminalUsername }** is attempting theft...`)
+            .addField('Attempted amount:', `🪙 ${ amount }`)
+            .addField('Victim of theft: ', `**<@${ victimId }>**`)
+
+
+
+        collector.on('collect', async i => {
+            if (i.user.id === victimId) {
+
+                const embed = new Discord.MessageEmbed()
+                    .setThumbnail('https://i.imgur.com/E0AR48O.png')
+                    .setTitle(`ROBBERY BLOCKED!`)
+
+                row.components[0].setDisabled(true);
+                row.components[1].setDisabled(true);
+                await i.deferUpdate();
+
+                return await interaction.editReply({ content: `ROBBERY BLOCKED!`, embeds: [embed], components: [row] })
+
+            }
+
+            if (i.user.id === criminalId) {
+
+                return await i.deferUpdate();
+
+            }
+
+            return await i.deferUpdate()
+        });
+
+        setTimeout(function () {
+            collector.stop()
+
+            row.components[0].setDisabled(true);
+            row.components[1].setDisabled(true);
+            interaction.editReply({ components: [row] })
+
+        }, 10000);
+
+
+
+        // client.channels.cache.get('884434543543726134').send({ content: `Hey **<@${ victimId }>** you are currently being robbed!`, embeds: [embed],components: [row] })
+
+        await interaction.reply({ content: `Hey **<@${ victimId }>** you are currently being robbed!`, embeds: [embed], components: [row] })
+
+        if (randomNumber >= 8) {
+            // if (randomNumber > 10) {
+            collector.on('collect', async i => {
+
+                if (i.user.id === criminalId && !i.customId.startsWith("Block")) {
+                    row.components[0].setDisabled(true)
+                    row.components[1].setDisabled(true);
+                    const embed = new Discord.MessageEmbed()
+                        .setThumbnail("https://i.imgur.com/EbN8M82.png")
+                        .setTitle(`***SUCESSFUL ROBBERY!***`)
+                        .addField('Amount stolen:', `🪙 ${ amount }`)
+                        .addField('Victim of theft: ', `**<@${ victimId }>**`)
+                        .addField(`${ criminalUsername }'s New Total Balance: `, `🪙 ${ criminalRank.XPoverTime + amount }`)
+                        .addField(`${ victimUsername }'s New Total Balance: `, `🪙 ${ victimRank.XPoverTime - amount }`)
+                        .setDescription(`**${ criminalUsername }** is now wanted!`)
+
+                    await interaction.editReply({ content: `**<@${ victimId }>** you have been robbed!`, embeds: [embed], components: [row] })
+
+
+                    await interaction.member.roles.add(wantedrole);
+                    await removeRole(wantedrole, 600000)
+
+                    client.leveling.addXPoverTime(criminalId, guildId, amount)
+                    client.leveling.addXPoverTime(victimId, guildId, -amount)
+
+                    collector.stop()
+                    return
+                }
+
+                i.deferUpdate()
+            });
+
+            setTimeout(function () {
+                row.components[0].setDisabled(true);
+                interaction.editReply({ components: [row] });
+            }, 10000);
+
+
+
+        } else if (randomNumber >= 4 && randomNumber < 8) {
+            // } else if (randomNumber > 10) {
+            collector.on('collect', async i => {
+
+                if (i.user.id === criminalId && !i.customId.startsWith("Block")) {
+                    row.components[0].setDisabled(true)
+                    row.components[1].setDisabled(true);
+                    const embed = new Discord.MessageEmbed()
+                        .setThumbnail("https://i.imgur.com/OWi98Od.png")
+                        .setTitle(`***ROBBERY FAILED!***`)
+                        .setDescription(`**${ criminalUsername }** is now wanted!`)
+                        .addField(`**${ criminalUsername }** tried to steal but failed!`, "Try again in 10 minutes!")
+                        .addField('Victim of attempted theft: ', `**<@${ victimId }>**`)
+                    await interaction.editReply({ content: `**<@${ victimId }>** someone tried and failed to rob you!`, embeds: [embed], components: [row] })
+
+
+                    await interaction.member.roles.add(wantedrole);
+                    await removeRole(wantedrole, 600000)
+                    collector.stop()
+                    return
+                }
+                i.deferUpdate()
+            });
+
+            setTimeout(function () {
+                row.components[0].setDisabled(true);
+                interaction.editReply({ components: [row] });
+            }, 10000);
+
+
+
+
+        } else if (randomNumber >= 1 && randomNumber < 4) {
+            // } else if (randomNumber > 0) {
+            let bail = amount * 10
+
+
+
+            collector.on('collect', async i => {
+
+                if (i.user.id === criminalId && !i.customId.startsWith("Block")) {
+                    row.components[0].setDisabled(true)
+                    row.components[1].setDisabled(true);
+                    const embed = new Discord.MessageEmbed()
+
+                        .setThumbnail("https://i.imgur.com/OWi98Od.png")
+                        .setTitle(`***SUSPECT APPREHENDED!***`)
+                        .setDescription(`**${ criminalUsername }** was captured while thieving and is now in Jail!`)
+                        .addField(`${ criminalUsername }'s Penalty is 🪙 ${ bail }`, `New total balance: 🪙 ${ criminalRank.XPoverTime - bail }`)
+                    await interaction.editReply({ content: `${ criminalUsername } went to jail...`, components: [row], embeds: [embed] })
+                    client.leveling.addXPoverTime(criminalId, guildId, -bail)
+
+                    await interaction.member.roles.add(prisonerRole);
+
+                    await removeRole(prisonerRole, 30000)
+
+                    collector.stop()
+                    client.channels.cache.get(JAIL_ID).send({ content: `Hello there, <@${ criminalId }>! Welcome to jail.`, embeds: [embed] })
+                    return
+                }
+                i.deferUpdate()
+            });
+
+        }
     }
 }

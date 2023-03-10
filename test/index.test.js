@@ -103,8 +103,27 @@ client.on('interactionCreate', async (interaction) => {
     } else if (interaction.isButton()) {
 
 
+        if (interaction.customId.startsWith('Block')) {
+            // const victimId = Array.from(interaction.message.mentions.users.values())[0].id
+            if (!interaction.customId.endsWith(interaction.user.id)) {
+                return await interaction.reply({
+                    content: "This button is not for you",
+                    ephemeral: true
+                })
+            }
+
+        }
+        if (interaction.customId.startsWith("Steal")) {
+            if (!interaction.customId.endsWith(interaction.user.id)) {
+                return await interaction.reply({
+                    content: "This button is not for you",
+                    ephemeral: true
+                })
+            }
+        }
+
         if (!interaction.customId.endsWith(interaction.user.id)) {
-            return interaction.reply({
+            return await interaction.reply({
                 content: "This button is not for you",
                 ephemeral: true
             })
@@ -171,4 +190,8 @@ client.leveling.on('error', (e, functionName) => {
     console.log(`An error occured at the function ${ functionName }. The error is as follows`);
     console.log(e);
 });
+
+process.on("uncaughtException", (err, origin,) => {
+    console.error(err, origin)
+})
 client.login(config.TOKEN);
