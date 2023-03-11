@@ -1,4 +1,4 @@
-const events = require('../src/events/events')
+const events = require('../src/events')
 
 const Discord = require('discord.js')
 const { SlashCommandBuilder } = require('@discordjs/builders');

@@ -7,7 +7,7 @@ const client = new DiscordClient({
 
 const User = require('../models/user')
 
-const events = require('../src/events/events')
+const events = require('../src/events')
 
 const mongoose = require('mongoose')
 
@@ -50,18 +50,18 @@ const path = require('path');
 
 
 
-// const eventsPath = path.join(__dirname, 'events');
-// const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
+const eventsPath = path.join(__dirname, 'events');
+const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
 
-// for (const file of eventFiles) {
-//     const filePath = path.join(eventsPath, file);
-//     const event = require(filePath);
-//     if (event.once) {
-//         client.once(event.name, (...args) => event.execute(...args));
-//     } else {
-//         client.on(event.name, (...args) => event.execute(...args));
-//     }
-// }
+for (const file of eventFiles) {
+    const filePath = path.join(eventsPath, file);
+    const event = require(filePath);
+    if (event.once) {
+        client.once(event.name, (...args) => event.execute(...args));
+    } else {
+        client.on(event.name, (...args) => event.execute(...args));
+    }
+}
 
 
 const commandsPath = path.resolve(__dirname, '../commands');
@@ -81,83 +81,8 @@ client.on('ready', () => {
     console.log(client.user.tag + ' is ready!');
 
 })
-client.on('interactionCreate', async (interaction) => {
-    if (interaction.isCommand()) {
-
-        if (interaction.channel.id !== config.XPCHANNEL) {
-            return await interaction.reply('Please use this command in the Games channel')
-        }
-        if (interaction.commandName === 'double' || interaction.commandName === 'zzzbotscc' || interaction.commandName === 'zzzplayerrollscc' || interaction.commandName === 'zzzendscc') {
-            return await interaction.reply('You do not have permission')
-        }
-        // if (interaction.commandName === 'shipcc') {
-        //     return await interaction.reply('bug detected, game down temporarily')
-        // }
-        const command = client.commands.get(interaction.commandName)
-        try {
-            await command.execute(interaction);
-        } catch (error) {
-            console.error(error);
-            // await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
-        }
-    } else if (interaction.isButton()) {
 
 
-        if (interaction.customId.startsWith('Block')) {
-            // const victimId = Array.from(interaction.message.mentions.users.values())[0].id
-            if (!interaction.customId.endsWith(interaction.user.id)) {
-                return await interaction.reply({
-                    content: "This button is not for you",
-                    ephemeral: true
-                })
-            }
-
-        }
-        if (interaction.customId.startsWith("Steal")) {
-            if (!interaction.customId.endsWith(interaction.user.id)) {
-                return await interaction.reply({
-                    content: "This button is not for you",
-                    ephemeral: true
-                })
-            }
-        }
-
-        if (!interaction.customId.endsWith(interaction.user.id)) {
-            return await interaction.reply({
-                content: "This button is not for you",
-                ephemeral: true
-            })
-        }
-        if (interaction.customId.startsWith('DICE_')) {
-            const command = client.commands.get('double')
-            const value = parseInt(interaction.message.embeds[0].fields[4].value)
-            await command.execute(interaction, value)
-
-        } else if (interaction.customId.startsWith('INITSCC_')) {
-
-            const command = client.commands.get('zzzbotscc')
-            await command.execute(interaction)
-        } else if (interaction.customId.startsWith('PLAYSCC_')) {
-            const userId = interaction.user.id
-            let mongoUser = await User.findOne({ userId: userId })
-            mongoUser.is_playing_scc = false
-            await mongoUser.save()
-
-            const command = client.commands.get('zzzplayerrollscc')
-            await command.execute(interaction)
-
-        } else if (interaction.customId.startsWith('ENDTURNSCC_')) {
-            const userId = interaction.user.id
-            let mongoUser = await User.findOne({ userId: userId })
-            mongoUser.is_playing_scc = false
-            await mongoUser.save()
-
-            const command = client.commands.get('zzzendscc')
-            await command.execute(interaction)
-        }
-
-    } else return
-})
 client.on('messageCreate', (message) => {
     if (message.author.bot) return;
 

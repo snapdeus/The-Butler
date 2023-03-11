@@ -20,13 +20,14 @@ module.exports = {
         const WANTED_ROLE_ID = '1083503275447423146'
 
         // const amount = interaction.options.getNumber("amount")
-        const amount = Math.ceil(Math.random() * 25)
+        const amount = Math.ceil(Math.random() * 30)
         const mentionable = interaction.options.getMentionable('user');
 
         const client = interaction.client;
         let victimId = mentionable.id;
         let victimUsername = mentionable.user.username;
         let guildId = interaction.guild.id;
+        let criminal = interaction.user
         let criminalId = interaction.user.id;
         let criminalUsername = interaction.user.username;
         let victimRank = await client.leveling.getUserLevel(victimId, guildId, victimUsername);
@@ -68,7 +69,7 @@ module.exports = {
             }
         }
         if (interaction.member.roles.cache.has(WANTED_ROLE_ID)) {
-            return await interaction.reply('You are currently wanted! You may not steal again for 10 minutes.')
+            return await interaction.reply('You are currently wanted! You may not steal again for 5 minutes since your last attempt.')
         }
 
 
@@ -80,6 +81,19 @@ module.exports = {
             })
         }
 
+        if (victimRank.XPoverTime < 0) {
+            const embed = new Discord.MessageEmbed()
+                .setThumbnail(interaction.user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
+                .setTitle(`***THEFT DENIED***`)
+                .setDescription(`*basic morality*`)
+                .addField('Attempted amount:', `🪙 ${ amount }`)
+                .addField('Victim of theft: ', `**<@${ victimId }>** who only has 🪙${ victimRank.XPoverTime } in the bank...`)
+
+            return await interaction.reply({
+                content: `Why are you attempting to steal from poor <@${ victimId }>? He's got no money!`,
+                embeds: [embed]
+            })
+        }
 
 
         const row = new MessageActionRow()
@@ -150,7 +164,7 @@ module.exports = {
 
         await interaction.reply({ content: `Hey **<@${ victimId }>** you are currently being robbed!`, embeds: [embed], components: [row] })
 
-        if (randomNumber >= 8) {
+        if (randomNumber >= 7) {
             // if (randomNumber > 10) {
             collector.on('collect', async i => {
 
@@ -158,19 +172,19 @@ module.exports = {
                     row.components[0].setDisabled(true)
                     row.components[1].setDisabled(true);
                     const embed = new Discord.MessageEmbed()
+                        .setFooter({ text: "*Have you seen this thief?*", iconURL: criminal.displayAvatarURL() })
                         .setThumbnail("https://i.imgur.com/EbN8M82.png")
                         .setTitle(`***SUCESSFUL ROBBERY!***`)
                         .addField('Amount stolen:', `🪙 ${ amount }`)
                         .addField('Victim of theft: ', `**<@${ victimId }>**`)
-                        .addField(`${ criminalUsername }'s New Total Balance: `, `🪙 ${ criminalRank.XPoverTime + amount }`)
-                        .addField(`${ victimUsername }'s New Total Balance: `, `🪙 ${ victimRank.XPoverTime - amount }`)
+                        .addField(`${ victimUsername }'s total balance decreased to: `, `🪙 ${ victimRank.XPoverTime - amount }`)
                         .setDescription(`**${ criminalUsername }** is now wanted!`)
-
+                        .addField(`Your total balance increased to: `, `🪙 ${ criminalRank.XPoverTime + amount }`)
                     await interaction.editReply({ content: `**<@${ victimId }>** you have been robbed!`, embeds: [embed], components: [row] })
 
 
                     await interaction.member.roles.add(wantedrole);
-                    await removeRole(wantedrole, 600000)
+                    await removeRole(wantedrole, 300000)
 
                     client.leveling.addXPoverTime(criminalId, guildId, amount)
                     client.leveling.addXPoverTime(victimId, guildId, -amount)
@@ -189,7 +203,7 @@ module.exports = {
 
 
 
-        } else if (randomNumber >= 4 && randomNumber < 8) {
+        } else if (randomNumber >= 4 && randomNumber < 7) {
             // } else if (randomNumber > 10) {
             collector.on('collect', async i => {
 
@@ -197,16 +211,17 @@ module.exports = {
                     row.components[0].setDisabled(true)
                     row.components[1].setDisabled(true);
                     const embed = new Discord.MessageEmbed()
+                        .setFooter({ text: "*Have you seen this thief?*", iconURL: criminal.displayAvatarURL() })
                         .setThumbnail("https://i.imgur.com/OWi98Od.png")
                         .setTitle(`***ROBBERY FAILED!***`)
                         .setDescription(`**${ criminalUsername }** is now wanted!`)
-                        .addField(`**${ criminalUsername }** tried to steal but failed!`, "Try again in 10 minutes!")
+                        .addField(`**${ criminalUsername }** tried to steal but failed!`, "Try again in 5 minutes!")
                         .addField('Victim of attempted theft: ', `**<@${ victimId }>**`)
                     await interaction.editReply({ content: `**<@${ victimId }>** someone tried and failed to rob you!`, embeds: [embed], components: [row] })
 
 
                     await interaction.member.roles.add(wantedrole);
-                    await removeRole(wantedrole, 600000)
+                    await removeRole(wantedrole, 300000)
                     collector.stop()
                     return
                 }
@@ -223,7 +238,7 @@ module.exports = {
 
         } else if (randomNumber >= 1 && randomNumber < 4) {
             // } else if (randomNumber > 0) {
-            let bail = amount * 10
+            let bail = amount * 5
 
 
 
@@ -233,11 +248,12 @@ module.exports = {
                     row.components[0].setDisabled(true)
                     row.components[1].setDisabled(true);
                     const embed = new Discord.MessageEmbed()
-
+                        .setFooter({ text: "*Have you seen this thief?*", iconURL: criminal.displayAvatarURL() })
                         .setThumbnail("https://i.imgur.com/OWi98Od.png")
                         .setTitle(`***SUSPECT APPREHENDED!***`)
                         .setDescription(`**${ criminalUsername }** was captured while thieving and is now in Jail!`)
-                        .addField(`${ criminalUsername }'s Penalty is 🪙 ${ bail }`, `New total balance: 🪙 ${ criminalRank.XPoverTime - bail }`)
+                        .addField(`${ criminalUsername }'s Penalty is: `, `🪙 ${ bail } `)
+                        .addField(`Your total balance decreased to: `, `🪙 ${ criminalRank.XPoverTime - bail }`)
                     await interaction.editReply({ content: `${ criminalUsername } went to jail...`, components: [row], embeds: [embed] })
                     client.leveling.addXPoverTime(criminalId, guildId, -bail)
 

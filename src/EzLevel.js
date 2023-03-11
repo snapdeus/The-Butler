@@ -1,6 +1,6 @@
 
 const { EventEmitter } = require("events")
-const events = require('./events/events.js')
+const events = require('./events.js')
 const deleteModule = require('./deletedb.js')
 const fs = require('fs')
 
