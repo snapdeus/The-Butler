@@ -23,7 +23,7 @@ module.exports = {
                 client.commands.set(command.data.name, command);
             }
 
-            if (interaction.channel.id !== config.TESTXPCHANNEL) {
+            if (interaction.channel.id !== config.XPCHANNEL) {
                 return await interaction.reply('Please use this command in the Games channel')
             }
             if (interaction.commandName === 'double' || interaction.commandName === 'zzzbotscc' || interaction.commandName === 'zzzplayerrollscc' || interaction.commandName === 'zzzendscc') {
