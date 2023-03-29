@@ -240,7 +240,7 @@ module.exports = {
 
         } else if (randomNumber >= 1 && randomNumber < 4) {
             // } else if (randomNumber > 0) {
-
+            let bail = amount * 5
 
 
 
@@ -250,15 +250,14 @@ module.exports = {
                     row.components[0].setDisabled(true)
                     row.components[1].setDisabled(true);
                     const embed = new Discord.MessageEmbed()
-                        .setFooter({ text: `*Have you seen this thief?*`, iconURL: criminal.displayAvatarURL() })
+                        .setFooter({ text: "*Have you seen this thief?*", iconURL: criminal.displayAvatarURL() })
                         .setThumbnail("https://i.imgur.com/OWi98Od.png")
                         .setTitle(`***SUSPECT APPREHENDED!***`)
                         .setDescription(`**${ criminalUsername }** was captured while thieving and is now in Jail!`)
-                        .addField(`${ criminalUsername }'s Penalty is: `, `🪙 ${ amount } `)
-                        .addField(`Your total balance decreased to: `, `🪙 ${ criminalRank.XPoverTime - amount }`)
-                        .addField(`Victim of attempted theft:`, `${ victimUsername }`)
+                        .addField(`${ criminalUsername }'s Penalty is: `, `🪙 ${ bail } `)
+                        .addField(`Your total balance decreased to: `, `🪙 ${ criminalRank.XPoverTime - bail }`)
                     await interaction.editReply({ content: `${ criminalUsername } went to jail...`, components: [row], embeds: [embed] })
-                    client.leveling.addXPoverTime(criminalId, guildId, -amount)
+                    client.leveling.addXPoverTime(criminalId, guildId, -bail)
 
                     await interaction.member.roles.add(prisonerRole);
 
