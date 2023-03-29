@@ -20,7 +20,7 @@ module.exports = {
         const WANTED_ROLE_ID = '1083503275447423146'
 
         // const amount = interaction.options.getNumber("amount")
-        const amount = Math.ceil(Math.random() * 30)
+        const amount = Math.ceil(Math.random() * 100) + 9
         const mentionable = interaction.options.getMentionable('user');
 
         const client = interaction.client;
@@ -84,13 +84,15 @@ module.exports = {
         if (victimRank.XPoverTime < 0) {
             const embed = new Discord.MessageEmbed()
                 .setThumbnail(interaction.user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
-                .setTitle(`***THEFT DENIED***`)
+                .setTitle(`***THEFT PARTIALLY DENIED***`)
                 .setDescription(`*basic morality*`)
-                .addField('Attempted amount:', `🪙 ${ amount }`)
+                .addField('Attempted total amount:', `🪙 ${ amount }`)
                 .addField('Victim of theft: ', `**<@${ victimId }>** who only has 🪙${ victimRank.XPoverTime } in the bank...`)
+                .addField('Amount stolen:', `🪙${ (amount / 2) } from the bank and 🪙0 from ${ victimUsername } `)
 
+            client.leveling.addXPoverTime(criminalId, guildId, amount)
             return await interaction.reply({
-                content: `Why are you attempting to steal from poor <@${ victimId }>? He's got no money!`,
+                content: `Why are you attempting to steal from poor <@${ victimId }>? They have no money!`,
                 embeds: [embed]
             })
         }
@@ -120,7 +122,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
             .setThumbnail(interaction.user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
             .setTitle(`**${ criminalUsername }** is attempting theft...`)
-            .addField('Attempted amount:', `🪙 ${ amount }`)
+            .addField('Attempted total amount:', `🪙 ${ amount }`)
             .addField('Victim of theft: ', `**<@${ victimId }>**`)
 
 
@@ -175,9 +177,9 @@ module.exports = {
                         .setFooter({ text: "*Have you seen this thief?*", iconURL: criminal.displayAvatarURL() })
                         .setThumbnail("https://i.imgur.com/EbN8M82.png")
                         .setTitle(`***SUCESSFUL ROBBERY!***`)
-                        .addField('Amount stolen:', `🪙 ${ amount }`)
+                        .addField('Amount stolen:', `🪙${ (amount / 2) } from the bank and 🪙${ (amount / 2) } from ${ victimUsername } `)
                         .addField('Victim of theft: ', `**<@${ victimId }>**`)
-                        .addField(`${ victimUsername }'s total balance decreased to: `, `🪙 ${ victimRank.XPoverTime - amount }`)
+                        .addField(`${ victimUsername }'s total balance decreased to: `, `🪙 ${ victimRank.XPoverTime - (amount / 2) }`)
                         .setDescription(`**${ criminalUsername }** is now wanted!`)
                         .addField(`Your total balance increased to: `, `🪙 ${ criminalRank.XPoverTime + amount }`)
                     await interaction.editReply({ content: `**<@${ victimId }>** you have been robbed!`, embeds: [embed], components: [row] })
@@ -187,7 +189,7 @@ module.exports = {
                     await removeRole(wantedrole, 300000)
 
                     client.leveling.addXPoverTime(criminalId, guildId, amount)
-                    client.leveling.addXPoverTime(victimId, guildId, -amount)
+                    client.leveling.addXPoverTime(victimId, guildId, -(amount / 2))
 
                     collector.stop()
                     return

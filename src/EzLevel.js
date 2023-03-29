@@ -306,7 +306,7 @@ class EasyLeveling extends EventEmitter {
         if (!guildId) throw new Error('Easy level Error: guildId must be a valid discord guild')
 
 
-        const allData = await this.User.find().sort({ level: -1, xp: -1 }).limit(5)
+        const allData = await this.User.find().sort({ level: -1, xp: -1 }).limit(10)
         // console.log(allData)
         const XPforGuild = []
         for (const key of allData) {
