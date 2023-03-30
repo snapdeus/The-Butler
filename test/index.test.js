@@ -1,6 +1,9 @@
 require('dotenv').config();
 
 const { Client: DiscordClient, Intents } = require('discord.js');
+const { EasyLeveling } = require('../index.js');
+const config = require('./config.json');
+
 const client = new DiscordClient({
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS,],
 });
@@ -29,8 +32,7 @@ db.once('open', () => {
 
 
 
-const { EasyLeveling } = require('../index.js');
-const config = require('./config.json');
+
 const options = {
     startingXP: 0,
     startingLevel: 1,

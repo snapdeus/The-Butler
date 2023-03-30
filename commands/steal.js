@@ -92,7 +92,7 @@ module.exports = {
 
             client.leveling.addXPoverTime(criminalId, guildId, amount)
             return await interaction.reply({
-                content: `Why are you attempting to steal from poor <@${ victimId }>? They have no money!`,
+                content: `Why are you attempting to steal from poor <@${ victimId }>? They have no money! But the bank did...`,
                 embeds: [embed]
             })
         }
