@@ -75,7 +75,7 @@ module.exports = {
 
 
         if (interaction.user.id !== criminalId) {
-            return await interaction.reply({
+            return await interaction.followUp({
                 content: "This button is not for you",
                 ephemeral: true
             })
