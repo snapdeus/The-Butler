@@ -2,7 +2,13 @@ require('dotenv').config();
 
 const { Client: DiscordClient, Intents } = require('discord.js');
 const { EasyLeveling } = require('../index.js');
-const config = require('./config.json');
+let config;
+
+if (process.env.NODE_ENV?.trim() === 'development') {
+    config = require('./config.test.json');
+} else {
+    config = require('./config.json');
+}
 
 const client = new DiscordClient({
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS,],

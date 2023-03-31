@@ -2,6 +2,7 @@
 node_modules/
 # config file for testing
 test/config.json
+test/config.test.json
 # database
 json.sqlite
 EasyLeveling.json

@@ -1,9 +1,17 @@
 const { Events } = require('discord.js');
 const Discord = require('discord.js');
 const path = require("path");
-const config = require('../config.json');
+
 const fs = require('fs');
 const User = require('../../models/user');
+
+let config;
+
+if (process.env.NODE_ENV?.trim() === 'development') {
+    config = require('../config.test.json');
+} else {
+    config = require('../config.json');
+}
 
 module.exports = {
     name: 'interactionCreate',

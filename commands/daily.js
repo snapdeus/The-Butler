@@ -12,17 +12,6 @@ module.exports = {
 
 
 
-        if (interaction.user.id !== userId) {
-
-
-            ///check this!!!!
-            ///check this!!!
-            interaction.deferUpate()
-            return await interaction.reply({
-                content: "This button is not for you",
-                ephemeral: true
-            })
-        }
 
 
         // const amount = interaction.options.getNumber("amount")
@@ -39,10 +28,18 @@ module.exports = {
         let username = interaction.user.username;
         let userRank = await client.leveling.getUserLevel(userId, guildId, username);
 
+
+
+
+
+
+
+
+
         let mongoUser = await User.findOne({ userId: userId })
         let timestamp = mongoUser.timestamp
         // const timeLimit = 86400000
-        const timeLimit = 86400000
+        const timeLimit = 864
 
         function msToTime(ms) {
             const days = Math.floor(ms / (24 * 60 * 60 * 1000));
@@ -115,6 +112,14 @@ module.exports = {
 
 
         collector.on('collect', async i => {
+
+            if (i.user.id !== userId) {
+                return await i.reply({
+                    content: "This button is not for you",
+                    ephemeral: true
+                })
+            }
+
             //when you click the button, it adds the timestamp
             mongoUser.timestamp = Date.now()
             await mongoUser.save();
