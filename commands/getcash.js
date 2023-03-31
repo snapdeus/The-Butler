@@ -38,8 +38,8 @@ module.exports = {
 
         let mongoUser = await User.findOne({ userId: userId })
         let timestamp = mongoUser.timestamp
-        // const timeLimit = 86400000
-        const timeLimit = 864
+        const timeLimit = 86400000
+        // const timeLimit = 864
 
         function msToTime(ms) {
             const days = Math.floor(ms / (24 * 60 * 60 * 1000));
