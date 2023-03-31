@@ -33,7 +33,7 @@ module.exports = {
 
         let timestamp = mongoUser.timestamp
         // const timeLimit = 86400000
-        const timeLimit = 864000000
+        const timeLimit = 86400000
 
         // function msToTime(ms) {
         //     const days = Math.floor(ms / (24 * 60 * 60 * 1000));
