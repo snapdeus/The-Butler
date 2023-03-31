@@ -11,6 +11,20 @@ module.exports = {
     async execute(interaction) {
 
 
+
+        if (interaction.user.id !== userId) {
+
+
+            ///check this!!!!
+            ///check this!!!
+            interaction.deferUpate()
+            return await interaction.reply({
+                content: "This button is not for you",
+                ephemeral: true
+            })
+        }
+
+
         // const amount = interaction.options.getNumber("amount")
         const amount = Math.ceil(Math.random() * 200) + 50
 
@@ -60,12 +74,6 @@ module.exports = {
 
 
 
-        if (interaction.user.id !== userId) {
-            return await interaction.reply({
-                content: "This button is not for you",
-                ephemeral: true
-            })
-        }
 
 
 
