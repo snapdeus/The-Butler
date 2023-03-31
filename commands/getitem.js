@@ -2,11 +2,11 @@ const Discord = require('discord.js')
 const { MessageActionRow, MessageButton } = require('discord.js')
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const User = require('../models/user')
-const msToTime = require('../utils/math')
+const { msToTime } = require('../utils/math')
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('getcash')
-        .setDescription('Win Cash Daily!'),
+        .setName('getitem')
+        .setDescription('Get item!!'),
 
     async execute(interaction) {
 
@@ -29,11 +29,17 @@ module.exports = {
         let userRank = await client.leveling.getUserLevel(userId, guildId, username);
 
 
-        let mongoUser = await User.findOne({ userId: userId })
 
+
+
+
+
+
+
+        let mongoUser = await User.findOne({ userId: userId })
         let timestamp = mongoUser.timestamp
         // const timeLimit = 86400000
-        const timeLimit = 864000000
+        const timeLimit = 864
 
         // function msToTime(ms) {
         //     const days = Math.floor(ms / (24 * 60 * 60 * 1000));
@@ -67,7 +73,7 @@ module.exports = {
             .addComponents(
                 new MessageButton()
 
-                    .setLabel('Blue Boobs')
+                    .setLabel('Blue Mystery')
                     .setStyle('PRIMARY')
                     .setCustomId("Daily1" + interaction.user.id))
 
@@ -179,7 +185,7 @@ module.exports = {
             row.components[1].setDisabled(true);
             row.components[2].setDisabled(true);
             interaction.editReply({ components: [row] });
-        }, 1000);
+        }, 120000);
 
 
 

@@ -63,3 +63,25 @@ const diceText = {
     6: '⚅'
 }
 
+module.exports = function msToTime(ms) {
+    const time = {
+        days: Math.floor(ms / (24 * 60 * 60 * 1000)),
+        hours: Math.floor((ms % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000)),
+        minutes: Math.floor((ms % (60 * 60 * 1000)) / (60 * 1000)),
+        seconds: Math.floor((ms % (60 * 1000)) / 1000),
+    };
+
+    let formattedTime = "";
+    if (time.days) {
+        formattedTime += `${ time.days } days, `;
+    }
+    if (time.hours || time.days) {
+        formattedTime += `${ time.hours } hours, `;
+    }
+    if (time.minutes || time.hours || time.days) {
+        formattedTime += `${ time.minutes } minutes, `;
+    }
+    formattedTime += `${ time.seconds } seconds`;
+
+    return formattedTime;
+}
