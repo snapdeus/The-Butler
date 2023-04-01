@@ -3,6 +3,8 @@ const { MessageActionRow, MessageButton } = require('discord.js')
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const User = require('../models/user')
 const { msToTime } = require('../utils/math')
+
+
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('getitem')
@@ -41,15 +43,6 @@ module.exports = {
         // const timeLimit = 86400000
         const timeLimit = 864
 
-        // function msToTime(ms) {
-        //     const days = Math.floor(ms / (24 * 60 * 60 * 1000));
-        //     const hours = Math.floor((ms % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
-        //     const minutes = Math.floor((ms % (60 * 60 * 1000)) / (60 * 1000));
-        //     const seconds = Math.floor((ms % (60 * 1000)) / 1000);
-
-        //     return `${ days } days, ${ hours } hours, ${ minutes } minutes, ${ seconds } seconds`;
-        // }
-
         //check date to see if you can use daily
         const thedate = Date.now()
         const timeDate = new Date(thedate)
@@ -73,20 +66,25 @@ module.exports = {
             .addComponents(
                 new MessageButton()
 
-                    .setLabel('Blue Mystery')
+                    .setLabel('Blue Item')
                     .setStyle('PRIMARY')
-                    .setCustomId("Daily1" + interaction.user.id))
+                    .setCustomId("Blue" + interaction.user.id))
 
         row.addComponents(
             new MessageButton()
-                .setLabel('Red Mystery')
+                .setLabel('Red Item')
                 .setStyle('DANGER')
-                .setCustomId("Daily2" + interaction.user.id))
+                .setCustomId("Red" + interaction.user.id))
         row.addComponents(
             new MessageButton()
-                .setLabel('Green Mystery')
+                .setLabel('Green Item')
                 .setStyle('SUCCESS')
-                .setCustomId("Daily3" + interaction.user.id))
+                .setCustomId("Green" + interaction.user.id))
+        row.addComponents(
+            new MessageButton()
+                .setLabel('Gray Item')
+                .setStyle('SECONDARY')
+                .setCustomId("Gray" + interaction.user.id))
 
 
         const filter = async i => i.customId.endsWith(interaction.user.id)
@@ -105,7 +103,9 @@ module.exports = {
 
         await interaction.reply({ content: `Hey **<@${ userId }>** let's get that cash!`, embeds: [embed], components: [row] })
 
-
+        let randomItem = 1;
+        // const file = new Discord.MessageAttachment(`/home/snapdeus/The-Butler/resources/rpgItems/${ randomItem }.png`);
+        const file = new Discord.MessageAttachment(`C:\\Users\\Stephen\\Documents\\codingProjects\\The-Butler\\resources\\rpgItems\\${ randomItem }.png`);
         collector.on('collect', async i => {
 
             if (i.user.id !== userId) {
@@ -119,7 +119,7 @@ module.exports = {
             mongoUser.timestamp = Date.now()
             await mongoUser.save();
             //process the different buttons
-            if (i.customId.startsWith("Daily1")) {
+            if (i.customId.startsWith("Blue")) {
                 row.components[0].setDisabled(true)
                 row.components[1].setDisabled(true);
                 row.components[2].setDisabled(true);
@@ -128,25 +128,8 @@ module.exports = {
                     .setTitle(`***DAILY CASH!!!***`)
                     .addField('Daily cash won:', `🪙${ (amount) }`)
                     .addField(`Your total balance increased to: `, `🪙 ${ userRank.XPoverTime + amount }`)
-
-                await interaction.editReply({ content: `**<@${ userId }>** you got that cash!`, embeds: [embed], components: [row] })
-
-                client.leveling.addXPoverTime(userId, guildId, amount)
-
-                collector.stop()
-                i.deferUpdate()
-                return
-            }
-            if (i.customId.startsWith("Daily2")) {
-                row.components[0].setDisabled(true)
-                row.components[1].setDisabled(true);
-                row.components[2].setDisabled(true);
-                const embed = new Discord.MessageEmbed()
-                    .setFooter({ text: "Look who won some cash!*", iconURL: user.displayAvatarURL() })
-                    .setTitle(`***DAILY CASH!!!***`)
-                    .addField('Daily cash won:', `🪙${ (amount) }`)
-                    .addField(`Your total balance increased to: `, `🪙 ${ userRank.XPoverTime + amount }`)
-                await interaction.editReply({ content: `**<@${ userId }>** you got that cash!`, embeds: [embed], components: [row] })
+                    .setThumbnail(`attachment://${ randomItem }.png`)
+                await interaction.editReply({ content: `**<@${ userId }>** you got that cash!`, embeds: [embed], components: [row], files: [file] })
 
                 client.leveling.addXPoverTime(userId, guildId, amount)
 
@@ -154,7 +137,7 @@ module.exports = {
                 i.deferUpdate()
                 return
             }
-            if (i.customId.startsWith("Daily3")) {
+            if (i.customId.startsWith("Red")) {
                 row.components[0].setDisabled(true)
                 row.components[1].setDisabled(true);
                 row.components[2].setDisabled(true);
@@ -171,7 +154,40 @@ module.exports = {
                 i.deferUpdate()
                 return
             }
+            if (i.customId.startsWith("Green")) {
+                row.components[0].setDisabled(true)
+                row.components[1].setDisabled(true);
+                row.components[2].setDisabled(true);
+                const embed = new Discord.MessageEmbed()
+                    .setFooter({ text: "Look who won some cash!*", iconURL: user.displayAvatarURL() })
+                    .setTitle(`***DAILY CASH!!!***`)
+                    .addField('Daily cash won:', `🪙${ (amount) }`)
+                    .addField(`Your total balance increased to: `, `🪙 ${ userRank.XPoverTime + amount }`)
+                await interaction.editReply({ content: `**<@${ userId }>** you got that cash!`, embeds: [embed], components: [row] })
 
+                client.leveling.addXPoverTime(userId, guildId, amount)
+
+                collector.stop()
+                i.deferUpdate()
+                return
+            }
+            if (i.customId.startsWith("Gray")) {
+                row.components[0].setDisabled(true)
+                row.components[1].setDisabled(true);
+                row.components[2].setDisabled(true);
+                const embed = new Discord.MessageEmbed()
+                    .setFooter({ text: "Look who won some cash!*", iconURL: user.displayAvatarURL() })
+                    .setTitle(`***DAILY CASH!!!***`)
+                    .addField('Daily cash won:', `🪙${ (amount) }`)
+                    .addField(`Your total balance increased to: `, `🪙 ${ userRank.XPoverTime + amount }`)
+                await interaction.editReply({ content: `**<@${ userId }>** you got that cash!`, embeds: [embed], components: [row] })
+
+                client.leveling.addXPoverTime(userId, guildId, amount)
+
+                collector.stop()
+                i.deferUpdate()
+                return
+            }
 
 
 

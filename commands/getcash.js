@@ -35,15 +35,6 @@ module.exports = {
         // const timeLimit = 86400000
         const timeLimit = 86400000
 
-        // function msToTime(ms) {
-        //     const days = Math.floor(ms / (24 * 60 * 60 * 1000));
-        //     const hours = Math.floor((ms % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
-        //     const minutes = Math.floor((ms % (60 * 60 * 1000)) / (60 * 1000));
-        //     const seconds = Math.floor((ms % (60 * 1000)) / 1000);
-
-        //     return `${ days } days, ${ hours } hours, ${ minutes } minutes, ${ seconds } seconds`;
-        // }
-
         //check date to see if you can use daily
         const thedate = Date.now()
         const timeDate = new Date(thedate)
