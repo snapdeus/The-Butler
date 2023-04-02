@@ -170,7 +170,7 @@ module.exports = {
             row.components[1].setDisabled(true);
             row.components[2].setDisabled(true);
             interaction.editReply({ components: [row] });
-        }, 1000);
+        }, 120000);
 
 
 

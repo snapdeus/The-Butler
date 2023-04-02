@@ -16,3 +16,10 @@ package-lock.json
 .github
 
 .env
+resources/rpgItems
+resources/rpgItems/
+resources/rpgItems/*
+resources/rpgItems/misc/
+resources/rpgItems/misc
+resources/rpgItems/weapons
+resources/rpgItems/weapons/
