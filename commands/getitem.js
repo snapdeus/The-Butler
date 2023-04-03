@@ -4,7 +4,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const User = require('../models/user')
 const { msToTime } = require('../utils/math')
 
-// const { createCanvas, loadImage, Image } = require('canvas')
+const { createCanvas, loadImage, Image } = require('canvas')
 
 
 
