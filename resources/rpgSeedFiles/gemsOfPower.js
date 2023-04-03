@@ -1,4 +1,3 @@
-const { countColors } = require('./utils')
 
 
 const gemsOfPower = [
@@ -61,6 +60,8 @@ const gemsOfPower = [
 ];
 
 
+const { countColors, mergeItemsCountsAndDescriptions } = require('./utils')
+
 const countGemColors = countColors(gemsOfPower)
 const totalGems = gemsOfPower.length
 
@@ -68,6 +69,18 @@ const gemsOfPowerMetaInfo = {
     totalGems,
     gemCounts: countGemColors
 };
+
+const gemsOfPowerDescripObj = {
+    Blue: "A deep blue gem imbued with the mystical energy of an ancient sorcerer, granting the bearer the understanding of forgotten arcane secrets.",
+    Aqua: "An aqua-colored gem that contains the essence of the deep ocean, allowing the wielder to control water and even manipulate it in various forms.",
+    Green: "A luminous green gem that harnesses the untamed power of nature. When held, it enhances the user's nature-based abilities and strengthens their connection to the Earth.",
+    Yellow: "A radiant yellow gem infused with the energy of the sun. Its bearer can emit intense light and warmth, banishing darkness and providing solace in harsh environments.",
+    Orange: "An orange gem imbued with the unstoppable force of volcanic fury. It grants the wielder power over fire and heat, unleashing devastating blazes and infernos.",
+    Red: "A blood-red gem filled with raw, primal energy. Its holder gains immense physical strength, speed, and endurance, pushing their abilities to superhuman levels.",
+    Purple: "A mysterious purple gem imbued with the power of the mind. It bestows upon its bearer heightened mental capacities, psychic powers, and an intuitive understanding of the universe.",
+}
+
+gemsOfPowerMetaInfo.gemCounts = mergeItemsCountsAndDescriptions(gemsOfPowerMetaInfo.gemCounts, gemsOfPowerDescripObj)
 
 module.exports = {
     gemsOfPower,

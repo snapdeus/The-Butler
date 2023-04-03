@@ -1,4 +1,3 @@
-const { countColors } = require('./utils')
 
 const potions = [
     {
@@ -976,6 +975,9 @@ const potions = [
 
 ];
 
+
+const { countColors, mergeItemsCountsAndDescriptions } = require('./utils')
+
 const countPotionColors = countColors(potions)
 
 const totalPotions = potions.length
@@ -993,23 +995,11 @@ const potionsDescripObj = {
     Purple: "Raise Physical Defense Potion: Temporarily enhance the user's physical defense, making them more resistant to physical attacks.",
     Orange: "Replenish AP Meter Potion: Replenish the user's action points (AP) meter, allowing them to perform more actions in combat.",
     Aqua: "Replenish HP Potion: Replenish the user's health points (HP), effectively healing them and improving their survivability.",
-    Pink: "Become Invincible Potion: Grant the user temporary invincibility, making them immune to all forms of damage for a short period."
+    Pink: "Raise Evade: Temporarily boost the user's evade, allowing them to dodge more attacks and effects.",
 };
 
 
-const mergePotionsCountsAndDescriptions = (potionCounts, potionsDescripObj) => {
-    const updatedPotionsCounts = Object.entries(potionCounts).map(([color, count]) => ({
-        [color]: {
-            count: count,
-            description: potionsDescripObj[color]
-        }
-    }));
-    const combinedPotionsCounts = Object.assign({}, ...updatedPotionsCounts);
-    return combinedPotionsCounts;
-};
-
-
-potionsMetaInfo.potionCounts = mergePotionsCountsAndDescriptions(potionsMetaInfo.potionCounts, potionsDescripObj);
+potionsMetaInfo.potionCounts = mergeItemsCountsAndDescriptions(potionsMetaInfo.potionCounts, potionsDescripObj);
 
 module.exports = {
     potions,

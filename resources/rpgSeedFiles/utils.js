@@ -11,4 +11,17 @@ function countColors(itemArray) {
 
 
 
-module.exports = { countColors }
+
+function mergeItemsCountsAndDescriptions(itemCounts, itemDescripObj) {
+    const updatedItemsCounts = Object.entries(itemCounts).map(([color, count]) => ({
+        [color]: {
+            count: count,
+            description: itemDescripObj[color]
+        }
+    }));
+    const combinedItemsCounts = Object.assign({}, ...updatedItemsCounts);
+    return combinedItemsCounts;
+};
+
+
+module.exports = { countColors, mergeItemsCountsAndDescriptions }

@@ -1,5 +1,3 @@
-const { countColors } = require('./utils')
-
 
 const scrolls = [
     {
@@ -483,79 +481,79 @@ const scrolls = [
         Type: "Scroll"
     },
     {
-        Name: "Mighty Strike Potion",
+        Name: "Mighty Strike Scroll",
         Color: "Red",
         Value: 125,
         Effect: {
             effectType: "Raise Self Physical Attack",
             amount: 48
         },
-        Description: "A potion imbued with the power to greatly enhance one's physical attack. Increases physical attack by 48 points.",
+        Description: "A scroll imbued with the power to greatly enhance one's physical attack. Increases physical attack by 48 points.",
         Filename: "0041_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Fierce Assault Potion",
+        Name: "Fierce Assault Scroll",
         Color: "Red",
         Value: 320,
         Effect: {
             effectType: "Raise Self Physical Attack",
             amount: 78
         },
-        Description: "This potion will significantly increase your physical attack power, adding 78 points to your damage output.",
+        Description: "This scroll will significantly increase your physical attack power, adding 78 points to your damage output.",
         Filename: "0042_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Savage Blow Potion",
+        Name: "Savage Blow Scroll",
         Color: "Red",
         Value: 275,
         Effect: {
             effectType: "Raise Self Physical Attack",
             amount: 70
         },
-        Description: "Unleash brutal attacks with this potion that raises your physical attack by 70 points.",
+        Description: "Unleash brutal attacks with this scroll that raises your physical attack by 70 points.",
         Filename: "0043_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Powerful Strike Potion",
+        Name: "Powerful Strike Scroll",
         Color: "Red",
         Value: 200,
         Effect: {
             effectType: "Raise Self Physical Attack",
             amount: 55
         },
-        Description: "This potion enhances your physical prowess, increasing your physical attack by 55 points.",
+        Description: "This scroll enhances your physical prowess, increasing your physical attack by 55 points.",
         Filename: "0044_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Potent Blow Potion",
+        Name: "Potent Blow Scroll",
         Color: "Red",
         Value: 420,
         Effect: {
             effectType: "Raise Self Physical Attack",
             amount: 95
         },
-        Description: "A potent potion that significantly bolsters your physical attack, granting an additional 95 points.",
+        Description: "A potent scroll that significantly bolsters your physical attack, granting an additional 95 points.",
         Filename: "0045_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Forceful Smash Potion",
+        Name: "Forceful Smash Scroll",
         Color: "Red",
         Value: 380,
         Effect: {
             effectType: "Raise Self Physical Attack",
             amount: 85
         },
-        Description: "This potion empowers your strikes with a mighty force, raising your physical attack by 85 points.",
+        Description: "This scroll empowers your strikes with a mighty force, raising your physical attack by 85 points.",
         Filename: "0046_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Intense Bash Potion",
+        Name: "Intense Bash Scroll",
         Color: "Red",
         Value: 50,
         Effect: {
@@ -567,43 +565,43 @@ const scrolls = [
         Type: "Scroll"
     },
     {
-        Name: "Ferocious Hit Potion",
+        Name: "Ferocious Hit Scroll",
         Color: "Red",
         Value: 90,
         Effect: {
             effectType: "Raise Self Physical Attack",
             amount: 40
         },
-        Description: "Unleash your inner beast with this potion, increasing your physical attack by 40 points.",
+        Description: "Unleash your inner beast with this scroll, increasing your physical attack by 40 points.",
         Filename: "0048_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Raging Thrust Potion",
+        Name: "Raging Thrust Scroll",
         Color: "Red",
         Value: 150,
         Effect: {
             effectType: "Raise Self Physical Attack",
             amount: 50
         },
-        Description: "Infused with the essence of rage, this potion enhances your physical attack by 50 points.",
+        Description: "Infused with the essence of rage, this scroll enhances your physical attack by 50 points.",
         Filename: "0049_scroll.png",
         Type: "Scroll"
     },
     {
-        Name: "Thunderous Strike Potion",
+        Name: "Thunderous Strike Scroll",
         Color: "Red",
         Value: 410,
         Effect: {
             effectType: "Raise Self Physical Attack",
             amount: 90
         },
-        Description: "Harness the power of thunder with this potion, increasing your physical attack by 90 points.",
+        Description: "Harness the power of thunder with this scroll, increasing your physical attack by 90 points.",
         Filename: "0050_scroll.png",
         Type: "Scroll"
     },
     {
-        Name: "Blazing Blow Potion",
+        Name: "Blazing Blow Scroll",
         Color: "Red",
         Value: 180,
         Effect: {
@@ -615,31 +613,31 @@ const scrolls = [
         Type: "Scroll"
     },
     {
-        Name: "Forceful Lunge Potion",
+        Name: "Forceful Lunge Scroll",
         Color: "Red",
         Value: 320,
         Effect: {
             effectType: "Raise Self Physical Attack",
             amount: 75
         },
-        Description: "With a burst of energy, this potion increases your physical attack by 75 points.",
+        Description: "With a burst of energy, this scroll increases your physical attack by 75 points.",
         Filename: "0052_scroll.png",
         Type: "Scroll"
     },
     {
-        Name: "Vigorous Slam Potion",
+        Name: "Vigorous Slam Scroll",
         Color: "Red",
         Value: 230,
         Effect: {
             effectType: "Raise Self Physical Attack",
             amount: 65
         },
-        Description: "Fortify your strength with this potion, raising your physical attack by 65 points.",
+        Description: "Fortify your strength with this scroll, raising your physical attack by 65 points.",
         Filename: "0053_scroll.png",
         Type: "Scroll"
     },
     {
-        Name: "Swift Impact Potion",
+        Name: "Swift Impact Scroll",
         Color: "Red",
         Value: 260,
         Effect: {
@@ -939,127 +937,127 @@ const scrolls = [
         Type: "Scroll"
     },
     {
-        Name: "Divine Dispel Potion",
+        Name: "Divine Dispel Scroll",
         Color: "Pink",
         Value: 320,
         Effect: {
-            effectType: "Remove Invincibility",
+            effectType: "Lower Evade",
             amount: 75
         },
-        Description: "This potion possesses divine powers that remove 75 points of invincibility or immunity from a target.",
+        Description: "This scroll possesses divine powers that lower a target's evade by 75 points.",
         Filename: "0079_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Barrier Break Potion",
+        Name: "Barrier Break Scroll",
         Color: "Pink",
         Value: 180,
         Effect: {
-            effectType: "Remove Invincibility",
+            effectType: "Lower Evade",
             amount: 40
         },
-        Description: "Shatter your enemy's defenses with this potion, stripping away 40 points of invincibility or immunity.",
+        Description: "Shatter your enemy's defenses with this scroll, decreasing their evade by 40 points.",
         Filename: "0080_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Veil Vanish Potion",
+        Name: "Veil Vanish Scroll",
         Color: "Pink",
         Value: 250,
         Effect: {
-            effectType: "Remove Invincibility",
+            effectType: "Lower Evade",
             amount: 60
         },
-        Description: "Dispel the protective veil from your foe, removing 60 points of invincibility or immunity.",
+        Description: "Dispel the protective veil from your foe, decreasing their evade by 60 points.",
         Filename: "0081_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Safeguard Shatter Potion",
+        Name: "Safeguard Shatter Scroll",
         Color: "Pink",
         Value: 420,
         Effect: {
-            effectType: "Remove Invincibility",
+            effectType: "Lower Evade",
             amount: 90
         },
-        Description: "Destroy your enemy's safeguard with this powerful potion, negating 90 points of invincibility or immunity.",
+        Description: "Destroy your enemy's safeguard with this powerful scroll, reducing their evade by 90 points.",
         Filename: "0082_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Aegis Annul Potion",
+        Name: "Aegis Annul Scroll",
         Color: "Pink",
         Value: 150,
         Effect: {
-            effectType: "Remove Invincibility",
+            effectType: "Lower Evade",
             amount: 35
         },
-        Description: "Annul your target's aegis with this potion, stripping away 35 points of invincibility or immunity.",
+        Description: "Annul your target's aegis with this scroll, decreasing their evade by 35 points.",
         Filename: "0083_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Ward Wipe Potion",
+        Name: "Ward Wipe Scroll",
         Color: "Pink",
         Value: 290,
         Effect: {
-            effectType: "Remove Invincibility",
+            effectType: "Lower Evade",
             amount: 70
         },
-        Description: "Wipe away your enemy's magical ward, eliminating 70 points of invincibility or immunity.",
+        Description: "Wipe away your enemy's magical ward, reducing their evade by 70 points.",
         Filename: "0084_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Shield Shred Potion",
+        Name: "Shield Shred Scroll",
         Color: "Pink",
         Value: 210,
         Effect: {
-            effectType: "Remove Invincibility",
+            effectType: "Lower Evade",
             amount: 50
         },
-        Description: "Tear through your foe's defenses with this potion, removing 50 points of invincibility or immunity.",
+        Description: "Tear through your foe's defenses with this scroll, decreasing their evade by 50 points.",
         Filename: "0085_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Guard Grind Potion",
+        Name: "Guard Grind Scroll",
         Color: "Pink",
         Value: 80,
         Effect: {
-            effectType: "Remove Invincibility",
+            effectType: "Lower Evade",
             amount: 20
         },
-        Description: "Grind down your enemy's guard, stripping away 20 points of invincibility or immunity.",
+        Description: "Grind down your enemy's guard, decreasing their evade by 20 points.",
         Filename: "0086_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Protection Purge Potion",
+        Name: "Protection Purge Scroll",
         Color: "Pink",
         Value: 110,
         Effect: {
-            effectType: "Remove Invincibility",
+            effectType: "Lower Evade",
             amount: 30
         },
-        Description: "Purge your enemy's protection with this potion, removing 30 points of invincibility or immunity.",
+        Description: "Purge your enemy's protection with this scroll, reducing their evade by 30 points.",
         Filename: "0087_scroll.png",
         Type: "Scroll"
     },
     {
-        Name: "Fortress Fissure Potion",
+        Name: "Fortress Fissure Scroll",
         Color: "Pink",
         Value: 230,
         Effect: {
-            effectType: "Remove Invincibility",
+            effectType: "Lower Evade",
             amount: 55
         },
-        Description: "Cause a fissure in your opponent's fortress-like defenses, stripping away 55 points of invincibility or immunity.",
-        Filename: "0088_scroll.png",
+        Description: "Cause a fissure in your opponent's fortress-like defenses, decreasing their evade by 55 points.",
+        Filename: "0088_scrolls.png",
         Type: "Scroll"
     },
     {
-        Name: "Bewildering Burst Potion",
+        Name: "Bewildering Burst Scroll",
         Color: "Black",
         Value: 180,
         Effect: {
@@ -1074,7 +1072,7 @@ const scrolls = [
         Type: "Scroll"
     },
     {
-        Name: "Mystifying Mist Potion",
+        Name: "Mystifying Mist Scroll",
         Color: "Black",
         Value: 350,
         Effect: {
@@ -1089,7 +1087,7 @@ const scrolls = [
         Type: "Scroll"
     },
     {
-        Name: "Perplexing Pulse Potion",
+        Name: "Perplexing Pulse Scroll",
         Color: "Black",
         Value: 100,
         Effect: {
@@ -1104,7 +1102,7 @@ const scrolls = [
         Type: "Scroll"
     },
     {
-        Name: "Disorienting Wave Potion",
+        Name: "Disorienting Wave Scroll",
         Color: "Black",
         Value: 250,
         Effect: {
@@ -1119,7 +1117,7 @@ const scrolls = [
         Type: "Scroll"
     },
     {
-        Name: "Confounding Cloud Potion",
+        Name: "Confounding Cloud Scroll",
         Color: "Black",
         Value: 400,
         Effect: {
@@ -1134,7 +1132,7 @@ const scrolls = [
         Type: "Scroll"
     },
     {
-        Name: "Baffling Beam Potion",
+        Name: "Baffling Beam Scroll",
         Color: "Black",
         Value: 150,
         Effect: {
@@ -1330,6 +1328,8 @@ const scrolls = [
     }
 ]
 
+const { countColors, mergeItemsCountsAndDescriptions } = require('./utils')
+
 
 
 const countScrollColors = countColors(scrolls)
@@ -1349,23 +1349,12 @@ const scrollsDescripObj = {
     Red: "Raise Self Physical Attack Scrolls: Temporarily increase the user's physical offense, allowing them to deal more damage with physical attacks.",
     Aqua: "Lower Opponents Physical Defense Scrolls: Temporarily weaken an opponent's physical defense, making them more susceptible to physical damage.",
     Orange: "Lower Opponents Magic Defense Scrolls: Temporarily diminish an opponent's magical defense, making them more vulnerable to magical attacks.",
-    Pink: "Remove Invincibility Scrolls: Strip a target of their invincibility or immunities, making them susceptible to damage and other effects.",
+    Pink: "Lower Opponents Evade: Temporarily weaken an opponent's evade, making them less likely to dodge damage and other effects.",
     Black: "Do Magic Attack Scrolls: Unleash a magical attack with specific effects based on the subcategory."
 };
 
-const mergeScrollCountsAndDescriptions = (scrollCounts, scrollsDescripObj) => {
-    const updatedScrollCounts = Object.entries(scrollCounts).map(([color, count]) => ({
-        [color]: {
-            count: count,
-            description: scrollsDescripObj[color]
-        }
-    }));
-    const combinedScrollCounts = Object.assign({}, ...updatedScrollCounts);
-    return combinedScrollCounts;
-};
 
-
-scrollsMetaInfo.scrollCounts = mergeScrollCountsAndDescriptions(scrollsMetaInfo.scrollCounts, scrollsDescripObj);
+scrollsMetaInfo.scrollCounts = mergeItemsCountsAndDescriptions(scrollsMetaInfo.scrollCounts, scrollsDescripObj);
 module.exports = {
     scrolls,
     scrollsMetaInfo

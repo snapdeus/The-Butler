@@ -166,7 +166,7 @@ module.exports = {
 
         await interaction.reply({ content: `Hey **<@${ victimId }>** you are currently being robbed!`, embeds: [embed], components: [row] })
 
-        if (randomNumber >= 7) {
+        if (randomNumber >= 6) {
             // if (randomNumber > 10) {
             collector.on('collect', async i => {
 
@@ -205,7 +205,7 @@ module.exports = {
 
 
 
-        } else if (randomNumber >= 4 && randomNumber < 7) {
+        } else if (randomNumber >= 3 && randomNumber < 6) {
             // } else if (randomNumber > 10) {
             collector.on('collect', async i => {
 
@@ -238,7 +238,7 @@ module.exports = {
 
 
 
-        } else if (randomNumber >= 1 && randomNumber < 4) {
+        } else if (randomNumber >= 1 && randomNumber < 3) {
             // } else if (randomNumber > 0) {
 
 
