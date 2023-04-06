@@ -1,0 +1,188 @@
+[
+    {
+        "Name": "Aqua Simple Tunic",
+        "Color": "Aqua",
+        "Value": 200,
+        "Description": "A plain aqua tunic, fit for a serf or peasant in a time of knights and nobles.",
+        "Filename": "0001_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 40
+    },
+    {
+        "Name": "Aqua Enchanted Tunic",
+        "Color": "Aqua",
+        "Value": 600,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 30
+        },
+        "Description": "A splendid aqua tunic, enchanted with a charm to boost your evade skills on the battlefield!",
+        "Filename": "0002_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 40
+    },
+    {
+        "Name": "Aqua Ornate Tunic",
+        "Color": "Aqua",
+        "Value": 400,
+        "Description": "A finely-crafted aqua tunic, adorned with exquisite embroidery fit for a noble warrior.",
+        "Filename": "0003_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 40
+    },
+    {
+        "Name": "Aqua Sturdy Tunic",
+        "Color": "Aqua",
+        "Value": 300,
+        "Description": "An aqua tunic built to last, made of high-quality fabric ideal for any yeoman.",
+        "Filename": "0004_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 40
+    },
+    {
+        "Name": "Aqua Regal Tunic",
+        "Color": "Aqua",
+        "Value": 500,
+        "Description": "A truly magnificent tunic, dyed in a rich aqua hue, worthy of a powerful lord or a high-ranking cleric.",
+        "Filename": "0005_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 40
+    },
+    {
+        "Name": "Aqua Reinforced Armored Tunic",
+        "Color": "Aqua",
+        "Value": 500,
+        "Description": "This sturdy aqua armored tunic is reinforced, offering a layer of extra protection to any brave soul.",
+        "Filename": "0006_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 60
+    },
+    {
+        "Name": "Aqua Dragonhide Armored Tunic",
+        "Color": "Aqua",
+        "Value": 700,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "Crafted using rare aqua dragonhide, a wearer of this armored tunic gains a significant increase in defense capabilities.",
+        "Filename": "0007_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 60
+    },
+    {
+        "Name": "Aqua Adorned Armored Tunic",
+        "Color": "Aqua",
+        "Value": 600,
+        "Description": "An magnificently adorned armored tunic, complete with aqua emblematic accents, fit for a distinguished knight.",
+        "Filename": "0008_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 60
+    },
+    {
+        "Name": "Aqua Bra",
+        "Color": "Aqua",
+        "Value": 100,
+        "Description": "A beautiful aqua bra.",
+        "Filename": "0009_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 20
+    },
+    {
+        "Name": "Aqua Mystical Robe",
+        "Color": "Aqua",
+        "Value": 320,
+        "Description": "A mystical robe in aqua hue, exuding an air of enraptured whispers from an arcane world.",
+        "Filename": "0010_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 30
+    },
+    {
+        "Name": "Aqua Valor Armor",
+        "Color": "Aqua",
+        "Value": 640,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A glorious set of aqua armor, reflecting the courageous heart of its master on the battlefield.",
+        "Filename": "0011_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 90
+    },
+    {
+        "Name": "Aqua Luminous Robe",
+        "Color": "Aqua",
+        "Value": 370,
+        "Description": "A finely woven luminous robe, shimmering with the brilliance of the aqua essence harbored within.",
+        "Filename": "0012_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 30
+    },
+    {
+        "Name": "Aqua Belted Coat",
+        "Color": "Aqua",
+        "Value": 420,
+        "Description": "A well-tailored aqua coat adorned with elegant belts, fit for a noble with a penchant for adventure.",
+        "Filename": "0013_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 60
+    },
+    {
+        "Name": "Aqua Guardian Armor",
+        "Color": "Aqua",
+        "Value": 550,
+        "Description": "A regal set of aqua armor, offering unmatched protection to those stalwart defenders of realms unknown.",
+        "Filename": "0014_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 90
+    },
+    {
+        "Name": "Aqua Battleplate Armor",
+        "Color": "Aqua",
+        "Value": 620,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 40
+        },
+        "Description": "A resilient aqua battleplate, imbued with the strength to crush foes and leave them quaking in fear.",
+        "Filename": "0015_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 100
+    },
+    {
+        "Name": "Aqua Arcanist Armor",
+        "Color": "Aqua",
+        "Value": 530,
+        "Description": "An elegant set of aqua armor, crafted to enhance the mystical prowess of a skilled arcanist.",
+        "Filename": "0016_clothing_torso_aqua.png",
+        "Type": "torso",
+        "Weight": 80
+    },
+    {
+        "Name": "Cerulean Aqua Warlock Robe",
+        "Color": "Aqua",
+        "Value": 635,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 45
+        },
+        "Description": "A mystifying green robe, woven with ancient enchantments to channel insurmountable magical power.",
+        "Filename": "0017_clothing_torso_green.png",
+        "Type": "torso",
+        "Weight": 50
+    },
+    {
+        "Name": "Burnt Ember Aqua Sorcerer Robe",
+        "Color": "Aqua",
+        "Value": 600,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 35
+        },
+        "Description": "An alluring orange robe, designed to ward off the most potent spells and protect the master of sorcery.",
+        "Filename": "0018_clothing_torso_orange.png",
+        "Type": "torso",
+        "Weight": 80
+    }
+]

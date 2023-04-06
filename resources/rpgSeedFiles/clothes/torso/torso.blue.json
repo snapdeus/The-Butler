@@ -1,0 +1,241 @@
+[
+    {
+        "Name": "Blue Sentinel Tunic",
+        "Color": "Blue",
+        "Value": 400,
+        "Description": "A steadfast blue tunic, empowering the wearer with unwavering resilience in the heat of battle.",
+        "Filename": "0001_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 45
+    },
+    {
+        "Name": "Blue Regal Robe",
+        "Color": "Blue",
+        "Value": 480,
+        "Description": "An exquisite blue robe, donned by majestic sorcerers who command the mystic arts with elegance.",
+        "Filename": "0002_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 42
+    },
+    {
+        "Name": "Blue Knight Tunic",
+        "Color": "Blue",
+        "Value": 410,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 18
+        },
+        "Description": "A robust blue tunic, forged to withstand the relentless onslaught of enemy forces.",
+        "Filename": "0003_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 50
+    },
+    {
+        "Name": "Blue Arcane Robe",
+        "Color": "Blue",
+        "Value": 450,
+        "Description": "A cryptic blue robe, wrapped in esoteric symbols that amplify the user's sorcerous might.",
+        "Filename": "0004_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 38
+    },
+    {
+        "Name": "Blue Wanderer Tunic",
+        "Color": "Blue",
+        "Value": 395,
+        "Description": "A durable blue tunic, tailored for the dauntless adventurer who braves treacherous lands and mythical creatures.",
+        "Filename": "0005_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 43
+    },
+    {
+        "Name": "Blue Enchanter Robe",
+        "Color": "Blue",
+        "Value": 465,
+        "Description": "A bewitching blue robe, permeated with the essence of a thousand ancient incantations.",
+        "Filename": "0006_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 41
+    },
+    {
+        "Name": "Blue Tempest Tunic",
+        "Color": "Blue",
+        "Value": 420,
+        "Description": "A turbulent blue tunic, infused with the unrelenting force of a raging storm.",
+        "Filename": "0007_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 48
+    },
+    {
+        "Name": "Blue Mystic Robe",
+        "Color": "Blue",
+        "Value": 430,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 22
+        },
+        "Description": "A mesmerizing blue robe, attuned to the cosmic energies that fuel the tapestry of magic.",
+        "Filename": "0008_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 40
+    },
+    {
+        "Name": "Blue Aegis Tunic",
+        "Color": "Blue",
+        "Value": 405,
+        "Description": "A stalwart blue tunic, designed to shield the bearer from even the deadliest of foes.",
+        "Filename": "0009_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 47
+    },
+    {
+        "Name": "Blue Lunar Robe",
+        "Color": "Blue",
+        "Value": 440,
+        "Description": "A celestial blue robe, interwoven with the serene essence of the moon's ethereal glow.",
+        "Filename": "0010_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 39
+    },
+    {
+        "Name": "Blue Warlord Tunic",
+        "Color": "Blue",
+        "Value": 425,
+        "Description": "An imposing blue tunic, worn by great conquerors who defy insurmountable odds.",
+        "Filename": "0011_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 46
+    },
+    {
+        "Name": "Blue Elemental Robe",
+        "Color": "Blue",
+        "Value": 455,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 26
+        },
+        "Description": "A volatile blue robe, bound to the primal forces that govern the elements of creation.",
+        "Filename": "0012_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 37
+    },
+    {
+        "Name": "Blue Valiant Tunic",
+        "Color": "Blue",
+        "Value": 415,
+        "Description": "A heroic blue tunic, emblematic of the valiant champions who protect the realm from darkness.",
+        "Filename": "0013_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 49
+    },
+    {
+        "Name": "Blue Guardian Armor",
+        "Color": "Blue",
+        "Value": 540,
+        "Description": "A regal set of blue armor, providing unwavering protection to stalwart defenders in their quest for glory.",
+        "Filename": "0014_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 85
+    },
+    {
+        "Name": "Blue Battleplate Armor",
+        "Color": "Blue",
+        "Value": 620,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A resilient blue battleplate, forged to withstand the mightiest of foes and imbued with the strength of a thousand warriors.",
+        "Filename": "0015_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 95
+    },
+    {
+        "Name": "Blue Arcanist Armor",
+        "Color": "Blue",
+        "Value": 535,
+        "Description": "A mystical set of blue armor, crafted for the skilled arcanist seeking mastery over the arcane arts.",
+        "Filename": "0016_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 75
+    },
+    {
+        "Name": "Blue Crusader Armor",
+        "Color": "Blue",
+        "Value": 560,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 25
+        },
+        "Description": "A formidable set of blue armor, worn by valiant crusaders who pledge to protect the realm from malevolent forces.",
+        "Filename": "0017_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 87
+    },
+    {
+        "Name": "Blue Warden Armor",
+        "Color": "Blue",
+        "Value": 525,
+        "Description": "An impenetrable set of blue armor, forged for steely wardens charged with the duty of safeguarding ancient secrets.",
+        "Filename": "0018_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 82
+    },
+    {
+        "Name": "Blue Vanguard Armor",
+        "Color": "Blue",
+        "Value": 585,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 18
+        },
+        "Description": "An audacious set of blue armor, embodying the ferocious spirit of the vangaurd who spearhead the battle.",
+        "Filename": "0019_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 92
+    },
+    {
+        "Name": "Blue Spellbound Armor",
+        "Color": "Blue",
+        "Value": 555,
+        "Description": "An enchanting set of blue armor, imbued with the power to protect its wearer from sorcerous adversaries.",
+        "Filename": "0020_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 79
+    },
+    {
+        "Name": "Blue Royal Armor",
+        "Color": "Blue",
+        "Value": 600,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 22
+        },
+        "Description": "A majestic set of blue armor, tailored for the royal elite who navigate treacherous landscapes and intrigue with ease.",
+        "Filename": "0021_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 89
+    },
+    {
+        "Name": "Blue Reaver Armor",
+        "Color": "Blue",
+        "Value": 570,
+        "Description": "A fierce set of blue armor, embodying the indomitable spirit of the reaver who fearlessly traverse uncharted territories.",
+        "Filename": "0022_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 81
+    },
+    {
+        "Name": "Blue Wizard's Armor",
+        "Color": "Blue",
+        "Value": 630,
+        "Buff": {
+            "buffType": "AP",
+            "amount": 28
+        },
+        "Description": "A commanding set of blue armor, forged for victorious wizards who seek to expand their dominion by raising AP by 28 points.",
+        "Filename": "0023_clothing_torso_blue.png",
+        "Type": "torso",
+        "Weight": 98
+    }
+]
