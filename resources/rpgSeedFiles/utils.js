@@ -1,3 +1,8 @@
+
+const fs = require('fs');
+const path = require('path');
+const dir = path.join(__dirname, 'clothes/torso');
+
 function countColors(itemArray) {
     return itemArray.reduce((acc, cur) => {
         if (acc[cur.Color]) {
@@ -24,4 +29,17 @@ function mergeItemsCountsAndDescriptions(itemCounts, itemDescripObj) {
 };
 
 
-module.exports = { countColors, mergeItemsCountsAndDescriptions }
+
+let finalContent = [];
+const read_directory = async dir =>
+    fs.readdirSync(dir).reduce((finalContent, file) => {
+        filePath = path.join(dir, file);
+        console.log(filePath);
+        let content = require(filePath);
+        finalContent.push(...content)
+        return finalContent;
+    }, []);
+
+
+module.exports = { countColors, mergeItemsCountsAndDescriptions, read_directory };
+

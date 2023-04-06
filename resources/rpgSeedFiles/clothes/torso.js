@@ -1,51 +1,42 @@
 
 
-const { countColors, mergeItemsCountsAndDescriptions } = require('../utils')
+const { countColors, mergeItemsCountsAndDescriptions, read_directory } = require('../utils')
+
 
 const fs = require('fs');
 const path = require('path');
 const dir = path.join(__dirname, 'torso');
 
 
-let finalContent = [];
-const read_directory = async dir =>
-    fs.readdirSync(dir).reduce((finalContent, file) => {
-        filePath = path.join(dir, file);
-        console.log(filePath);
-        let content = require(filePath);
-        finalContent.push(...content)
-        return finalContent;
-    }, []);
+// read_directory(dir).then(data => {
+//     fs.writeFileSync('./jsonSeedFiles/final.torso.json', JSON.stringify(data));
+// });
 
-read_directory(dir).then(data => {
-    fs.writeFileSync('./final.torso.json', JSON.stringify(data));
-});
+const torso = require('./jsonSeedFiles/final.torso.json')
 
+const countTorsoColors = countColors(torso)
 
-// const countScrollColors = countColors(scrolls)
+const totalTorso = torso.length
 
-// const totalScrolls = scrolls.length
-
-// const scrollsMetaInfo = {
-//     totalScrolls,
-//     scrollCounts: countScrollColors
-// };
+const torsoMetaInfo = {
+    totalTorso,
+    torsoCounts: countTorsoColors
+};
 
 
-// const scrollsDescripObj = {
-//     Purple: "Raise Self Physical Defense Scrolls: Temporarily enhance the user's physical defense, making them more resistant to physical attacks.",
-//     Blue: "Raise Self Magical Defense Scrolls: Temporarily increase the user's magical defense, improving their resistance to magic spells and abilities.",
-//     Green: "Raise Self Magical Attack Scrolls: Temporarily boost the user's magical attack power, allowing them to deal more damage with magic spells and abilities.",
-//     Red: "Raise Self Physical Attack Scrolls: Temporarily increase the user's physical offense, allowing them to deal more damage with physical attacks.",
-//     Aqua: "Lower Opponents Physical Defense Scrolls: Temporarily weaken an opponent's physical defense, making them more susceptible to physical damage.",
-//     Orange: "Lower Opponents Magic Defense Scrolls: Temporarily diminish an opponent's magical defense, making them more vulnerable to magical attacks.",
-//     Pink: "Lower Opponents Evade: Temporarily weaken an opponent's evade, making them less likely to dodge damage and other effects.",
-//     Black: "Do Magic Attack Scrolls: Unleash a magical attack with specific effects based on the subcategory."
-// };
+const torsoDescripObj = {
+    Aqua: "Aqua",
+    Blue: "Blue",
+    Green: "Green",
+    Orange: "Orange",
+    Pink: "Pink",
+    Purple: "Purple",
+    Red: "Red",
+    White: "White"
+};
 
-
-// scrollsMetaInfo.scrollCounts = mergeItemsCountsAndDescriptions(scrollsMetaInfo.scrollCounts, scrollsDescripObj);
-// module.exports = {
-//     scrolls,
-//     scrollsMetaInfo
-// };
+torsoMetaInfo.torsoCounts = mergeItemsCountsAndDescriptions(torsoMetaInfo.torsoCounts, torsoDescripObj);
+module.exports = {
+    torso,
+    torsoMetaInfo
+};

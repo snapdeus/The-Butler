@@ -1,8 +1,11 @@
 const { scrollsMetaInfo, scrolls } = require('./scrolls')
 const { potionsMetaInfo, potions } = require('./potions')
 const { gemsOfPowerMetaInfo } = require('./gemsOfPower')
+const { torsoMetaInfo, torso } = require('./clothes/torso')
+const { legsMetaInfo, legs } = require('./clothes/legs')
 
-console.log(potionsMetaInfo)
+
+console.log(legsMetaInfo)
 
 const fs = require('fs')
 
