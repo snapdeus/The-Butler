@@ -1,0 +1,239 @@
+[
+    {
+        "Name": "Orange Trews",
+        "Color": "orange",
+        "Value": 200,
+        "Description": "A pair of dashing orange trews that resembles a phoenix rising from the ashes.",
+        "Filename": "0001_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 25
+    },
+    {
+        "Name": "Orange Chausses",
+        "Color": "orange",
+        "Value": 400,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 30
+        },
+        "Description": "Finely crafted chausses adorned with intricate embroideries, granting the wearer added defense.",
+        "Filename": "0002_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 35
+    },
+    {
+        "Name": "Orange Breeches",
+        "Color": "orange",
+        "Value": 300,
+        "Description": "Elegant orange breeches made of luxurious fabric, bringing comfort and style to the wearer.",
+        "Filename": "0003_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 30
+    },
+    {
+        "Name": "Orange Pluderhose",
+        "Color": "orange",
+        "Value": 500,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 15
+        },
+        "Description": "Resilient orange pluderhose designed to aid fighters in combat, increasing their attack capabilities.",
+        "Filename": "0004_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 40
+    },
+    {
+        "Name": "Orange Hose",
+        "Color": "orange",
+        "Value": 275,
+        "Description": "Tailored orange hose suitable for knights, offering flexibility and easy movement.",
+        "Filename": "0005_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 26
+    },
+    {
+        "Name": "Orange Culottes",
+        "Color": "orange",
+        "Value": 380,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 20
+        },
+        "Description": "Durable orange culottes, enhancing the wearer's endurance in both battle and travel.",
+        "Filename": "0006_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 33
+    },
+    {
+        "Name": "Orange Trunkhose",
+        "Color": "orange",
+        "Value": 350,
+        "Description": "Elegant orange trunkhose that portrays the grace of courtly dances.",
+        "Filename": "0007_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 32
+    },
+    {
+        "Name": "Orange Shorts",
+        "Color": "orange",
+        "Value": 150,
+        "Description": "A comfortable pair of orange shorts ideal for warm climates and casual wear.",
+        "Filename": "0008_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Orange Gown",
+        "Color": "orange",
+        "Value": 500,
+        "Description": "A stunning orange gown, exuding an air of nobility and elegance.",
+        "Filename": "0009_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 45
+    },
+    {
+        "Name": "Orange Surcoat",
+        "Color": "orange",
+        "Value": 450,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "A flowing orange surcoat that provides the wearer with enchanted defense against magical attacks.",
+        "Filename": "0010_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 40
+    },
+    {
+        "Name": "Orange Kirtle",
+        "Color": "orange",
+        "Value": 400,
+        "Description": "A beautifully crafted orange kirtle, fit for a regal presence at court festivities.",
+        "Filename": "0011_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 42
+    },
+    {
+        "Name": "Orange Hennin",
+        "Color": "orange",
+        "Value": 480,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 28
+        },
+        "Description": "An ornate orange hennin boasting magical properties, enhancing the wearer's magical attack.",
+        "Filename": "0012_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 30
+    },
+    {
+        "Name": "Orange Brigandine",
+        "Color": "orange",
+        "Value": 550,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 20
+        },
+        "Description": "A durable orange brigandine, supporting the wearer's vitality with added health benefits.",
+        "Filename": "0013_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 70
+    },
+    {
+        "Name": "Orange Hauberk",
+        "Color": "orange",
+        "Value": 625,
+        "Description": "A legendary orange hauberk, symbolizing the chivalry and dedication of its wearer.",
+        "Filename": "0014_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 80
+    },
+    {
+        "Name": "Orange Cotehardie",
+        "Color": "orange",
+        "Value": 450,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 15
+        },
+        "Description": "An exquisite orange cotehardie that aids its wearer in evading incoming attacks with ease.",
+        "Filename": "0015_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 48
+    },
+    {
+        "Name": "Orange Chainmail",
+        "Color": "orange",
+        "Value": 650,
+        "Buff": {
+            "buffType": "AP",
+            "amount": 50
+        },
+        "Description": "A robust orange chainmail that bestows its wearer with an astonishing boost to their action points.",
+        "Filename": "0016_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 60
+    },
+    {
+        "Name": "Orange Plate Armor",
+        "Color": "orange",
+        "Value": 700,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A heavy orange plate armor offering unwavering defense and fortification for its wearer.",
+        "Filename": "0017_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 90
+    },
+    {
+        "Name": "Orange Scale Armor",
+        "Color": "orange",
+        "Value": 675,
+        "Description": "Versatile orange scale armor that provides a perfect balance of protection and agility.",
+        "Filename": "0018_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 75
+    },
+    {
+        "Name": "Orange Lamellar Armor",
+        "Color": "orange",
+        "Value": 680,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 30
+        },
+        "Description": "A suit of orange lamellar armor, enhancing the wearer's endurance in battle and strenuous activities.",
+        "Filename": "0019_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 85
+    },
+    {
+        "Name": "Orange Cuirass",
+        "Color": "orange",
+        "Value": 700,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 40
+        },
+        "Description": "A heavily reinforced orange cuirass, providing the ultimate defense for any warrior.",
+        "Filename": "0020_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 90
+    },
+    {
+        "Name": "Orange Gambeson",
+        "Color": "orange",
+        "Value": 600,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 35
+        },
+        "Description": "A robust orange gambeson providing exceptional protection and increasing the wearer's maximum health.",
+        "Filename": "0021_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 100
+    }
+]
