@@ -1,1 +1,240 @@
-[]
+[
+    {
+        "Name": "Blue Steel Gauntlets",
+        "Color": "Blue",
+        "Value": 500,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A sturdy pair of gauntlets made from blue steel, offering excellent protection to the hands.",
+        "Filename": "0001_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 75
+    },
+    {
+        "Name": "Azure Gauntlets",
+        "Color": "Blue",
+        "Value": 250,
+        "Description": "A pair of gauntlets with intricate patterns etched on the surface, made from azure metal.",
+        "Filename": "0002_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Sapphire Gauntlets",
+        "Color": "Blue",
+        "Value": 400,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 20
+        },
+        "Description": "A pair of gauntlets adorned with sapphire gems, providing magical protection to the wearer.",
+        "Filename": "0003_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 65
+    },
+    {
+        "Name": "Cobalt Gauntlets",
+        "Color": "Blue",
+        "Value": 300,
+        "Description": "A pair of gauntlets made from cobalt metal, providing solid defense without weighing down the wearer.",
+        "Filename": "0004_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 55
+    },
+    {
+        "Name": "Icy Gauntlets",
+        "Color": "Blue",
+        "Value": 450,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 25
+        },
+        "Description": "A pair of gauntlets imbued with the power of ice, increasing the wearer's magical attack.",
+        "Filename": "0005_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 70
+    },
+    {
+        "Name": "Frostbite Gauntlets",
+        "Color": "Blue",
+        "Value": 600,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 40
+        },
+        "Description": "A pair of gauntlets that freeze the air around them, increasing the wearer's physical attack power.",
+        "Filename": "0006_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 80
+    },
+    {
+        "Name": "Navy Gauntlets",
+        "Color": "Blue",
+        "Value": 200,
+        "Description": "A simple pair of navy blue gauntlets, offering basic protection to the wearer's hands.",
+        "Filename": "0007_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Cerulean Gauntlets",
+        "Color": "Blue",
+        "Value": 350,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 30
+        },
+        "Description": "A pair of gauntlets with a cerulean hue, increasing the wearer's endurance.",
+        "Filename": "0008_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 65
+    },
+    {
+        "Name": "Oceanic Gauntlets",
+        "Color": "Blue",
+        "Value": 550,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 45
+        },
+        "Description": "A pair of gauntlets that evoke the depths of the ocean, increasing the wearer's health points.",
+        "Filename": "0009_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 75
+    },
+    {
+        "Name": "Cyan Gauntlets",
+        "Color": "Blue",
+        "Value": 150,
+        "Description": "A pair of light cyan gauntlets, providing basic protection to the wearer's hands.",
+        "Filename": "0010_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 45
+    },
+    {
+        "Name": "Blue Silk Gloves",
+        "Color": "Blue",
+        "Value": 250,
+        "Description": "Soft and silky gloves, perfect for a nobleman's attire.",
+        "Filename": "0011_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 15
+    },
+    {
+        "Name": "Blue Leather Gloves",
+        "Color": "Blue",
+        "Value": 120,
+        "Description": "Well-crafted leather gloves, perfect for a warrior's attire.",
+        "Filename": "0012_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Blue Woolen Gloves",
+        "Color": "Blue",
+        "Value": 80,
+        "Description": "Warm woolen gloves, perfect for a traveler's attire.",
+        "Filename": "0013_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 10
+    },
+    {
+        "Name": "Blue Velvet Gloves",
+        "Color": "Blue",
+        "Value": 300,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 25
+        },
+        "Description": "Elegant velvet gloves, embroidered with golden thread.",
+        "Filename": "0014_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 12
+    },
+    {
+        "Name": "Blue Suede Gloves",
+        "Color": "Blue",
+        "Value": 150,
+        "Description": "Soft suede gloves, perfect for a ranger's attire.",
+        "Filename": "0015_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 18
+    },
+    {
+        "Name": "Blue Satin Gloves",
+        "Color": "Blue",
+        "Value": 350,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 30
+        },
+        "Description": "Luxurious satin gloves, embroidered with silver thread.",
+        "Filename": "0016_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 14
+    },
+    {
+        "Name": "Blue Wristguard",
+        "Color": "Blue",
+        "Value": 234,
+        "Description": "A sturdy wristguard crafted from hardened steel.",
+        "Filename": "0017_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 65
+    },
+    {
+        "Name": "Azure Bracer",
+        "Color": "Blue",
+        "Value": 167,
+        "Description": "A flexible bracer made from the hide of a sapphire dragon.",
+        "Filename": "0018_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 45
+    },
+    {
+        "Name": "Cobalt Vambrace",
+        "Color": "Blue",
+        "Value": 318,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 32
+        },
+        "Description": "A sturdy vambrace made from the finest cobalt steel, providing excellent defense.",
+        "Filename": "0019_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 85
+    },
+    {
+        "Name": "Sky Blue Gauntlet",
+        "Color": "Blue",
+        "Value": 189,
+        "Description": "A light and flexible gauntlet, perfect for archers or spellcasters.",
+        "Filename": "0020_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Sapphire Armguard",
+        "Color": "Blue",
+        "Value": 285,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "An elegant armguard made from the finest sapphires, providing excellent magic defense.",
+        "Filename": "0021_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Indigo Wristband",
+        "Color": "Blue",
+        "Value": 97,
+        "Description": "A simple yet sturdy wristband made from indigo-dyed leather.",
+        "Filename": "0022_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 25
+    }
+]

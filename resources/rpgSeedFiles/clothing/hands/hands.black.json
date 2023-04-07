@@ -1,1 +1,259 @@
-[]
+[
+    {
+        "Name": "Black Gauntlets",
+        "Color": "Black",
+        "Value": 250,
+        "Description": "Hardy gauntlets of black iron for a valiant knight!",
+        "Filename": "0001_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 75
+    },
+    {
+        "Name": "Midnight Gloves",
+        "Color": "Black",
+        "Value": 180,
+        "Description": "Silken gloves of midnight hue for a stealthy rogue!",
+        "Filename": "0002_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Shadow Bracers",
+        "Color": "Black",
+        "Value": 320,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "Sable bracers of shadowy metal for a vigilant defender!",
+        "Filename": "0003_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 90
+    },
+    {
+        "Name": "Obsidian Mitts",
+        "Color": "Black",
+        "Value": 200,
+        "Description": "Gloves of obsidian glass for a powerful sorcerer!",
+        "Filename": "0004_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Raven Fists",
+        "Color": "Black",
+        "Value": 150,
+        "Description": "Leather gloves of raven feathers for a nimble ranger!",
+        "Filename": "0005_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 15
+    },
+    {
+        "Name": "Onyx Gauntlets",
+        "Color": "Black",
+        "Value": 270,
+        "Description": "Gauntlets of black onyx for a mighty warrior!",
+        "Filename": "0006_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 80
+    },
+    {
+        "Name": "Nightfall Gloves",
+        "Color": "Black",
+        "Value": 200,
+        "Description": "Gloves of nightfall shade for a cunning thief!",
+        "Filename": "0007_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Black Leather Gloves",
+        "Color": "Black",
+        "Value": 60,
+        "Description": "Elegant gloves made of fine leather that provide comfort and protection.",
+        "Filename": "0008_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Black Gauntlets",
+        "Color": "Black",
+        "Value": 130,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Description": "Sturdy black gauntlets that provide excellent defense to the wearer.",
+        "Filename": "0009_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Shadowy Gloves",
+        "Color": "Black",
+        "Value": 200,
+        "Description": "Gloves that seem to absorb light and provide a stealthy advantage to the wearer.",
+        "Filename": "0010_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Blackened Iron Gauntlets",
+        "Color": "Black",
+        "Value": 250,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 30
+        },
+        "Description": "Heavy gauntlets made of blackened iron that provide excellent protection to the wearer.",
+        "Filename": "0011_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 80
+    },
+    {
+        "Name": "Black Diamond Gloves",
+        "Color": "Black",
+        "Value": 350,
+        "Description": "Gloves adorned with black diamonds that provide the wearer with a regal appearance.",
+        "Filename": "0012_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 15
+    },
+    {
+        "Name": "Nightfall Gauntlets",
+        "Color": "Black",
+        "Value": 420,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 40
+        },
+        "Description": "Gauntlets that seem to be made of the night sky itself, providing unparalleled defense to the wearer.",
+        "Filename": "0013_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 90
+    },
+    {
+        "Name": "Black Velvet Gloves",
+        "Color": "Black",
+        "Value": 500,
+        "Description": "Soft and luxurious gloves made of black velvet that provide warmth and comfort.",
+        "Filename": "0014_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 10
+    },
+    {
+        "Name": "Obsidian Gauntlets",
+        "Color": "Black",
+        "Value": 650,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 50
+        },
+        "Description": "Gauntlets made of obsidian that provide unparalleled defense to the wearer.",
+        "Filename": "0015_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 100
+    },
+    {
+        "Name": "Blackened Steel Gloves",
+        "Color": "Black",
+        "Value": 750,
+        "Description": "Gloves made of blackened steel that provide excellent protection and a menacing appearance.",
+        "Filename": "0016_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Shadowstrike Gauntlets",
+        "Color": "Black",
+        "Value": 900,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 30
+        },
+        "Description": "Gauntlets that enhance the wearer's striking ability with a shadowy aura.",
+        "Filename": "0017_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 70
+    },
+    {
+        "Name": "Black Steel Vambraces",
+        "Color": "Black",
+        "Value": 300,
+        "Description": "A pair of black steel vambraces, etched with ancient symbols of warding.",
+        "Filename": "0018_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Shadow Leather Vambraces",
+        "Color": "Black",
+        "Value": 120,
+        "Description": "A pair of shadow leather vambraces, perfect for sneaking around in the dark.",
+        "Filename": "0019_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 15
+    },
+    {
+        "Name": "Obsidian Wristguards",
+        "Color": "Black",
+        "Value": 400,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A pair of obsidian wristguards, imbued with powerful defensive magic.",
+        "Filename": "0020_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Nightshade Bracers",
+        "Color": "Black",
+        "Value": 220,
+        "Description": "A pair of nightshade bracers, perfect for blending into the shadows.",
+        "Filename": "0021_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Blackened Iron Armguards",
+        "Color": "Black",
+        "Value": 280,
+        "Description": "A pair of blackened iron armguards, perfect for deflecting blows in battle.",
+        "Filename": "0022_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 22
+    },
+    {
+        "Name": "Raven Feather Armlets",
+        "Color": "Black",
+        "Value": 180,
+        "Description": "A pair of raven feather armlets, imbued with the power of flight.",
+        "Filename": "0023_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 18
+    },
+    {
+        "Name": "Midnight Velvet Bracers",
+        "Color": "Black",
+        "Value": 250,
+        "Description": "A pair of midnight velvet bracers, imbued with the power of deception.",
+        "Filename": "0024_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 24
+    },
+    {
+        "Name": "Onyx Armguards",
+        "Color": "Black",
+        "Value": 350,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 40
+        },
+        "Description": "A pair of onyx armguards, imbued with the power of destruction.",
+        "Filename": "0025_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 28
+    }
+]
