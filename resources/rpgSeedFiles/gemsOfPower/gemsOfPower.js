@@ -60,7 +60,7 @@ const gemsOfPower = [
 ];
 
 
-const { countColors, mergeItemsCountsAndDescriptions } = require('./utils')
+const { countColors, mergeItemsCountsAndDescriptions } = require('../utils')
 
 const countGemColors = countColors(gemsOfPower)
 const totalGems = gemsOfPower.length

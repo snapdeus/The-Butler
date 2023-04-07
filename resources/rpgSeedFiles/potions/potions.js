@@ -1,7 +1,7 @@
 
 const potions = require('./potions.json')
 
-const { countColors, mergeItemsCountsAndDescriptions } = require('./utils')
+const { countColors, mergeItemsCountsAndDescriptions } = require('../utils')
 
 const countPotionColors = countColors(potions)
 

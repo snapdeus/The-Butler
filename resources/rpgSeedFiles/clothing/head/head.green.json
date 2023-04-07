@@ -1,0 +1,223 @@
+[
+    {
+        "Name": "Green Helmet",
+        "Color": "Green",
+        "Value": 300,
+        "Description": "A sturdy helmet made of green dragon scales, fit for a warrior.",
+        "Filename": "0001_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 80
+    },
+    {
+        "Name": "Green Steel Helm",
+        "Color": "Green",
+        "Value": 500,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A green steel helmet with a reinforced visor, providing extra protection in battle.",
+        "Filename": "0002_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 90
+    },
+    {
+        "Name": "Emerald Crown",
+        "Color": "Green",
+        "Value": 750,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 45
+        },
+        "Description": "A magnificent emerald crown, imbued with ancient magic to protect its wearer.",
+        "Filename": "0003_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 50
+    },
+    {
+        "Name": "Green Leather Cap",
+        "Color": "Green",
+        "Value": 80,
+        "Description": "A simple green leather cap, perfect for a rogue or hunter.",
+        "Filename": "0004_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 20
+    },
+    {
+        "Name": "Green Plumed Helmet",
+        "Color": "Green",
+        "Value": 200,
+        "Description": "A green metal helmet with a large green feather plume, worn by elite soldiers.",
+        "Filename": "0005_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 70
+    },
+    {
+        "Name": "Green Velvet Hat",
+        "Color": "Green",
+        "Value": 120,
+        "Description": "A stylish green velvet hat, perfect for a noble or bard.",
+        "Filename": "0006_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 10
+    },
+    {
+        "Name": "Green Horned Helmet",
+        "Color": "Green",
+        "Value": 400,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 25
+        },
+        "Description": "A fearsome green helmet with large horned protrusions, increasing the wearer's attack power.",
+        "Filename": "0007_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 100
+    },
+    {
+        "Name": "Green Crown",
+        "Color": "Green",
+        "Value": 500,
+        "Description": "A magnificent crown of emerald and gold fit for a king!",
+        "Filename": "0008_clothing_head_green.png",
+        "Type": "Head",
+        "Weight": 50
+    },
+    {
+        "Name": "Green Plumed Hat",
+        "Color": "Green",
+        "Value": 45,
+        "Description": "A stylish hat with a plume of emerald feathers, perfect for any adventurer.",
+        "Filename": "0009_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 15
+    },
+    {
+        "Name": "Verdant Hood",
+        "Color": "Green",
+        "Value": 32,
+        "Description": "A hood made of a lush green fabric, perfect for blending in with the forest.",
+        "Filename": "0010_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 12
+    },
+    {
+        "Name": "Forest Green Cap",
+        "Color": "Green",
+        "Value": 28,
+        "Description": "A simple yet sturdy cap in a deep forest green color.",
+        "Filename": "0011_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 10
+    },
+    {
+        "Name": "Mossy Green Beanie",
+        "Color": "Green",
+        "Value": 18,
+        "Description": "A cozy beanie made of a soft mossy green yarn.",
+        "Filename": "0012_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 8
+    },
+    {
+        "Name": "Olive Green Beret",
+        "Color": "Green",
+        "Value": 55,
+        "Description": "A chic beret in a sophisticated olive green shade, perfect for any occasion.",
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Filename": "0013_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 14
+    },
+    {
+        "Name": "Emerald Tiara",
+        "Color": "Green",
+        "Value": 120,
+        "Description": "A stunning tiara made of pure emerald, fit for a queen.",
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 30
+        },
+        "Filename": "0014_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 5
+    },
+    {
+        "Name": "Jade Headband",
+        "Color": "Green",
+        "Value": 65,
+        "Description": "A delicate headband made of jade beads, perfect for channeling your inner zen.",
+        "Filename": "0015_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 7
+    },
+    {
+        "Name": "Green Furry Headdress",
+        "Color": "Green",
+        "Value": 35,
+        "Description": "A cozy headdress made of green fur, perfect for a cold night in the woods.",
+        "Filename": "0016_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 20
+    },
+    {
+        "Name": "Green Feathered Headdress",
+        "Color": "Green",
+        "Value": 45,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 25
+        },
+        "Description": "A stunning headdress adorned with green feathers, it makes you feel as light as a bird.",
+        "Filename": "0017_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 15
+    },
+    {
+        "Name": "Green Leafy Headdress",
+        "Color": "Green",
+        "Value": 30,
+        "Description": "A headdress made of green leaves, perfect for blending in with the forest.",
+        "Filename": "0018_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 10
+    },
+    {
+        "Name": "Green Spiky Headdress",
+        "Color": "Green",
+        "Value": 50,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 35
+        },
+        "Description": "A fierce headdress adorned with green spikes, it makes you feel like a warrior.",
+        "Filename": "0019_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 25
+    },
+    {
+        "Name": "Green Flowery Headdress",
+        "Color": "Green",
+        "Value": 40,
+        "Description": "A beautiful headdress adorned with green flowers, perfect for a springtime festival.",
+        "Filename": "0020_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 15
+    },
+    {
+        "Name": "Green Horned Headdress",
+        "Color": "Green",
+        "Value": 55,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 40
+        },
+        "Description": "A majestic headdress adorned with green horns, it makes you feel like a forest spirit.",
+        "Filename": "0021_clothing_head_green.png",
+        "Type": "head",
+        "Weight": 30
+    }
+]

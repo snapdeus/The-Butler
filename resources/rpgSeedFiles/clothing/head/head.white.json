@@ -1,0 +1,183 @@
+[
+    {
+        "Name": "White Iron Helm",
+        "Color": "White",
+        "Value": 200,
+        "Description": "A sturdy iron helm with a pointed top and a hinged visor for protection in battle.",
+        "Filename": "0001_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 75
+    },
+    {
+        "Name": "Snowy Steel Helm",
+        "Color": "White",
+        "Value": 250,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Description": "A steel helm with a snowflake crest, imbued with extra defense to protect against foes.",
+        "Filename": "0002_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 80
+    },
+    {
+        "Name": "Frosty Plate Helm",
+        "Color": "White",
+        "Value": 300,
+        "Description": "A plate helm with intricate frost patterns etched into the metal, perfect for a winter campaign.",
+        "Filename": "0003_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 90
+    },
+    {
+        "Name": "White Regal Crown",
+        "Color": "White",
+        "Value": 750,
+        "Description": "A majestic crown adorned with precious gems and intricate engravings fit for a king.",
+        "Filename": "0004_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 30
+    },
+    {
+        "Name": "White Enchanted Crown",
+        "Color": "White",
+        "Value": 950,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "An enchanted crown that glows with a soft white light, imbuing the wearer with magical protection.",
+        "Filename": "0005_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 35
+    },
+    {
+        "Name": "White Gold-Plated Crown",
+        "Color": "White",
+        "Value": 500,
+        "Description": "A lavish crown adorned with gold plating and sparkling jewels, fit for a noble or wealthy merchant.",
+        "Filename": "0006_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 25
+    },
+    {
+        "Name": "Ivory Hat",
+        "Color": "White",
+        "Value": 65,
+        "Description": "A stylish ivory hat with intricate embroidery and a feather accent.",
+        "Filename": "0007_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 15
+    },
+    {
+        "Name": "Luminous Hat",
+        "Color": "White",
+        "Value": 190,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 20
+        },
+        "Description": "A luminous hat that glows in the dark and provides magical defense.",
+        "Filename": "0008_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 10
+    },
+    {
+        "Name": "Silken Hat",
+        "Color": "White",
+        "Value": 80,
+        "Description": "A soft and silky white hat that adds a touch of elegance to any outfit.",
+        "Filename": "0009_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 12
+    },
+    {
+        "Name": "Feathered Hat",
+        "Color": "White",
+        "Value": 45,
+        "Description": "A simple yet stylish white hat adorned with a small feather.",
+        "Filename": "0010_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 8
+    },
+    {
+        "Name": "Frost Hat",
+        "Color": "White",
+        "Value": 220,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 30
+        },
+        "Description": "A frosty white hat that imbues the wearer with powerful magic.",
+        "Filename": "0011_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 11
+    },
+    {
+        "Name": "Luminous Headdress",
+        "Color": "White",
+        "Value": 125,
+        "Description": "A dazzling headdress made of rare materials that radiates a powerful aura.",
+        "Filename": "0012_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 35
+    },
+    {
+        "Name": "Ethereal Headdress",
+        "Color": "White",
+        "Value": 85,
+        "Description": "A delicate headdress that seems to glow with a soft light. Perfect for a noble lady.",
+        "Filename": "0013_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 25
+    },
+    {
+        "Name": "Regal Headdress",
+        "Color": "White",
+        "Value": 150,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 30
+        },
+        "Description": "An imposing headdress that exudes an aura of power and authority. Boosts defense.",
+        "Filename": "0014_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 45
+    },
+    {
+        "Name": "Celestial Headdress",
+        "Color": "White",
+        "Value": 200,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 40
+        },
+        "Description": "A divine headdress that protects the wearer from magical attacks. A true masterpiece.",
+        "Filename": "0015_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 50
+    },
+    {
+        "Name": "Majestic Headdress",
+        "Color": "White",
+        "Value": 180,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 25
+        },
+        "Description": "A grand headdress that grants the wearer additional vitality. Fit for a queen.",
+        "Filename": "0016_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 55
+    },
+    {
+        "Name": "Enchanted Headdress",
+        "Color": "White",
+        "Value": 95,
+        "Description": "A mystical headdress that seems to be imbued with magical properties. A true wonder.",
+        "Filename": "0017_clothing_head_white.png",
+        "Type": "Head",
+        "Weight": 30
+    }
+]

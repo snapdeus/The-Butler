@@ -1,7 +1,7 @@
 
 const scrolls = require('./scrolls.json')
 
-const { countColors, mergeItemsCountsAndDescriptions } = require('./utils')
+const { countColors, mergeItemsCountsAndDescriptions } = require('../utils')
 
 
 

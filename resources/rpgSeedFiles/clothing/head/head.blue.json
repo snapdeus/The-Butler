@@ -1,0 +1,307 @@
+[
+    {
+        "Name": "Azure Helm",
+        "Color": "Blue",
+        "Value": 320,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 32
+        },
+        "Description": "A sturdy helm with intricate designs that enhances your magic defense.",
+        "Filename": "0001_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 65
+    },
+    {
+        "Name": "Sapphire Headguard",
+        "Color": "Blue",
+        "Value": 510,
+        "Buff": null,
+        "Description": "A headguard made of sapphire that is both stylish and protective.",
+        "Filename": "0002_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 80
+    },
+    {
+        "Name": "Cobalt Crown",
+        "Color": "Blue",
+        "Value": 650,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 25
+        },
+        "Description": "A regal crown made of cobalt that provides excellent defense.",
+        "Filename": "0003_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 70
+    },
+    {
+        "Name": "Indigo Headpiece",
+        "Color": "Blue",
+        "Value": 180,
+        "Buff": null,
+        "Description": "A simple yet elegant headpiece in a beautiful indigo color.",
+        "Filename": "0004_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 50
+    },
+    {
+        "Name": "Cerulean Helmet",
+        "Color": "Blue",
+        "Value": 420,
+        "Buff": null,
+        "Description": "A sturdy helmet in a calming cerulean color.",
+        "Filename": "0005_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 75
+    },
+    {
+        "Name": "Navy Headgear",
+        "Color": "Blue",
+        "Value": 290,
+        "Buff": null,
+        "Description": "A headgear in a deep navy color that provides decent protection.",
+        "Filename": "0006_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 60
+    },
+    {
+        "Name": "Royal Blue Helm",
+        "Color": "Blue",
+        "Value": 540,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 20
+        },
+        "Description": "A majestic blue helm that enhances your endurance.",
+        "Filename": "0007_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 85
+    },
+    {
+        "Name": "Teal Headpiece",
+        "Color": "Blue",
+        "Value": 200,
+        "Buff": null,
+        "Description": "A delicate headpiece in a refreshing teal color.",
+        "Filename": "0008_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 45
+    },
+    {
+        "Name": "Sky Blue Helmet",
+        "Color": "Blue",
+        "Value": 380,
+        "Buff": null,
+        "Description": "A helmet in a bright sky blue color that provides decent protection.",
+        "Filename": "0009_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 70
+    },
+    {
+        "Name": "Cyan Headguard",
+        "Color": "Blue",
+        "Value": 470,
+        "Buff": null,
+        "Description": "A headguard in a striking cyan color that provides good protection.",
+        "Filename": "0010_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 75
+    },
+    {
+        "Name": "Blue Hood",
+        "Color": "Blue",
+        "Value": 150,
+        "Buff": null,
+        "Description": "A comfortable hood in a classic blue color.",
+        "Filename": "0011_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 40
+    },
+    {
+        "Name": "Blue Crown",
+        "Color": "Blue",
+        "Value": 700,
+        "Description": "A magnificent crown adorned with sapphires and diamonds fit for a king.",
+        "Filename": "0012_clothing_head_blue.png",
+        "Type": "head",
+        "Weight": 10
+    },
+    {
+        "Name": "Cerulean Diadem",
+        "Color": "Blue",
+        "Value": 500,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 25
+        },
+        "Description": "A delicate diadem that enhances your magic attacks with its enchantments.",
+        "Filename": "0013_clothing_head_cerulean.png",
+        "Type": "head",
+        "Weight": 5
+    },
+    {
+        "Name": "Azure Circlet",
+        "Color": "Blue",
+        "Value": 300,
+        "Description": "A simple circlet made of blue gems that glimmers in the light.",
+        "Filename": "0014_clothing_head_azure.png",
+        "Type": "head",
+        "Weight": 3
+    },
+    {
+        "Name": "Azure Bonnet",
+        "Color": "Blue",
+        "Value": 56,
+        "Description": "A charming blue hat with a delicate lace trim.",
+        "Filename": "0015_clothing_hat_blue.png",
+        "Type": "Head",
+        "Weight": 20
+    },
+    {
+        "Name": "Cerulean Cap",
+        "Color": "Blue",
+        "Value": 30,
+        "Description": "A simple blue cap that provides basic protection from the elements.",
+        "Filename": "0016_clothing_hat_blue.png",
+        "Type": "Head",
+        "Weight": 15
+    },
+    {
+        "Name": "Sapphire Topper",
+        "Color": "Blue",
+        "Value": 180,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 15
+        },
+        "Description": "A magnificent blue hat adorned with sparkling jewels that enhances the wearer's defense.",
+        "Filename": "0017_clothing_hat_blue.png",
+        "Type": "Head",
+        "Weight": 25
+    },
+    {
+        "Name": "Indigo Beret",
+        "Color": "Blue",
+        "Value": 68,
+        "Description": "A stylish blue beret that adds a touch of sophistication to any outfit.",
+        "Filename": "0018_clothing_hat_blue.png",
+        "Type": "Head",
+        "Weight": 18
+    },
+    {
+        "Name": "Cobalt Hood",
+        "Color": "Blue",
+        "Value": 42,
+        "Description": "A cozy blue hood that keeps the wearer warm and protected from the wind.",
+        "Filename": "0019_clothing_hat_blue.png",
+        "Type": "Head",
+        "Weight": 22
+    },
+    {
+        "Name": "Navy Beanie",
+        "Color": "Blue",
+        "Value": 26,
+        "Description": "A snug blue beanie that provides warmth and comfort in cold weather.",
+        "Filename": "0020_clothing_hat_blue.png",
+        "Type": "Head",
+        "Weight": 12
+    },
+    {
+        "Name": "Royal Navy Chapeau",
+        "Color": "Blue",
+        "Value": 720,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 35
+        },
+        "Description": "A magnificent blue hat adorned with Holy Feathers that enhances the wearer's magic defense.",
+        "Filename": "0021_clothing_hat_blue.png",
+        "Type": "Head",
+        "Weight": 40
+    },
+    {
+        "Name": "Royal Army Hat",
+        "Color": "Blue",
+        "Value": 720,
+        "Description": "The standard hat of the Royal Army",
+        "Filename": "0022_clothing_hat_blue.png",
+        "Type": "Head",
+        "Weight": 20
+    },
+    {
+        "Name": "Blue Witch's Hat",
+        "Color": "Blue",
+        "Value": 720,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 35
+        },
+        "Description": "A witch's hat that boosts Magic Attack.",
+        "Filename": "0023_clothing_hat_blue.png",
+        "Type": "Head",
+        "Weight": 40
+    },
+    {
+        "Name": "Blue Wolf Headdress",
+        "Color": "Blue",
+        "Value": 90,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 25
+        },
+        "Description": "A wolf headdress of blue fur that grants additional defense in battle.",
+        "Filename": "0024_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 45
+    },
+    {
+        "Name": "Blue Do-rag",
+        "Color": "Blue",
+        "Value": 30,
+        "Buff": null,
+        "Description": "A simple blue do-rag for keeping hair out of the eyes.",
+        "Filename": "0025_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 15
+    },
+    {
+        "Name": "Blue Flower Headdress",
+        "Color": "Blue",
+        "Value": 80,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 20
+        },
+        "Description": "A headdress of blue flowers that enhances evasion in battle.",
+        "Filename": "0026_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 40
+    },
+    {
+        "Name": "Blue Shield Headdress",
+        "Color": "Blue",
+        "Value": 120,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A headdress of blue shields that provides additional defense in battle.",
+        "Filename": "0027_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 60
+    },
+    {
+        "Name": "Blue Do-rag of the Sea",
+        "Color": "Blue",
+        "Value": 60,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 15
+        },
+        "Description": "A blue do-rag that provides extra endurance when sailing the high seas.",
+        "Filename": "0028_clothing_head_blue.png",
+        "Type": "Head",
+        "Weight": 30
+    }
+]

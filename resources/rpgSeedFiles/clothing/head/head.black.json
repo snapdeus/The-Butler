@@ -1,0 +1,243 @@
+[
+    {
+        "Name": "Sable Helmet",
+        "Color": "Black",
+        "Value": 150,
+        "Description": "A sturdy helmet crafted from black steel. Protects your head from blows and looks intimidating.",
+        "Filename": "0001_clothing_head_black.png",
+        "Type": "head",
+        "Weight": 40
+    },
+    {
+        "Name": "Onyx Visor",
+        "Color": "Black",
+        "Value": 280,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Description": "A sleek visor made of black onyx. Grants extra protection to the wearer's head.",
+        "Filename": "0002_clothing_head_black.png",
+        "Type": "head",
+        "Weight": 25
+    },
+    {
+        "Name": "Shadow Hood",
+        "Color": "Black",
+        "Value": 400,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 30
+        },
+        "Description": "A hood made of black silk that seems to absorb light. Enhances the wearer's ability to dodge attacks.",
+        "Filename": "0003_clothing_head_black.png",
+        "Type": "head",
+        "Weight": 15
+    },
+    {
+        "Name": "Nightfall Crown",
+        "Color": "Black",
+        "Value": 700,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 50
+        },
+        "Description": "A crown made of black diamonds that glimmers in the moonlight. Grants the wearer exceptional endurance.",
+        "Filename": "0004_clothing_head_black.png",
+        "Type": "head",
+        "Weight": 60
+    },
+    {
+        "Name": "Raven Helm",
+        "Color": "Black",
+        "Value": 120,
+        "Description": "A helmet made of black leather and adorned with raven feathers. Provides basic protection and looks stylish.",
+        "Filename": "0005_clothing_head_black.png",
+        "Type": "head",
+        "Weight": 30
+    },
+    {
+        "Name": "Obsidian Mask",
+        "Color": "Black",
+        "Value": 350,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "A mask made of black obsidian that seems to absorb magical energy. Increases the wearer's resistance to spells.",
+        "Filename": "0006_clothing_head_black.png",
+        "Type": "head",
+        "Weight": 20
+    },
+    {
+        "Name": "Darkness Veil",
+        "Color": "Black",
+        "Value": 500,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 35
+        },
+        "Description": "A veil made of black lace that shimmers with dark magic. Enhances the wearer's ability to cast spells.",
+        "Filename": "0007_clothing_head_black.png",
+        "Type": "head",
+        "Weight": 10
+    },
+    {
+        "Name": "Nightshade Cap",
+        "Color": "Black",
+        "Value": 200,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 15
+        },
+        "Description": "A cap made of black wool that smells of nightshade. Restores the wearer's health.",
+        "Filename": "0008_clothing_head_black.png",
+        "Type": "head",
+        "Weight": 35
+    },
+    {
+        "Name": "Eclipse Helm",
+        "Color": "Black",
+        "Value": 600,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 40
+        },
+        "Description": "A helmet made of black iron that seems to absorb light. Increases the wearer's physical attack power.",
+        "Filename": "0009_clothing_head_black.png",
+        "Type": "head",
+        "Weight": 50
+    },
+    {
+        "Name": "Void Crown",
+        "Color": "Black",
+        "Value": 800,
+        "Buff": {
+            "buffType": "AP",
+            "amount": 50
+        },
+        "Description": "A crown made of black crystals that seems to warp space. Increases the wearer's ability to use special abilities.",
+        "Filename": "0010_clothing_head_black.png",
+        "Type": "head",
+        "Weight": 70
+    },
+    {
+        "Name": "Nightmare Mask",
+        "Color": "Black",
+        "Value": 450,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 30
+        },
+        "Description": "A mask made of black leather that seems to be alive. Grants the wearer exceptional endurance.",
+        "Filename": "0011_clothing_head_black.png",
+        "Type": "head",
+        "Weight": 25
+    },
+    {
+        "Name": "Dark Crown",
+        "Color": "Black",
+        "Value": 250,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 15
+        },
+        "Description": "A crown made of black metal that seems to radiate darkness. Provides extra protection to the wearer's head.",
+        "Filename": "0012_clothing_head_black.png",
+        "Type": "head",
+        "Weight": 45
+    },
+    {
+        "Name": "Black Velvet Hat",
+        "Color": "Black",
+        "Value": 45,
+        "Description": "A dashing hat reminiscent of a bygone era that raises your evade by 10 points!",
+        "Filename": "0013_clothing_hat_black.png",
+        "Type": "head",
+        "Weight": 25
+    },
+    {
+        "Name": "Black Leather Hood",
+        "Color": "Black",
+        "Value": 60,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Description": "A mysterious hood that provides extra defense in battle.",
+        "Filename": "0014_clothing_hood_black.png",
+        "Type": "head",
+        "Weight": 40
+    },
+    {
+        "Name": "Black Feathered Cap",
+        "Color": "Black",
+        "Value": 35,
+        "Description": "A stylish cap adorned with black feathers that makes you feel more agile.",
+        "Filename": "0015_clothing_hat_black.png",
+        "Type": "head",
+        "Weight": 20
+    },
+    {
+        "Name": "Black Wool Beret",
+        "Color": "Black",
+        "Value": 30,
+        "Description": "A warm beret made of black wool that provides comfort in harsh weather.",
+        "Filename": "0016_clothing_hat_black.png",
+        "Type": "head",
+        "Weight": 15
+    },
+    {
+        "Name": "Black Silk Top Hat",
+        "Color": "Black",
+        "Value": 80,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 30
+        },
+        "Description": "A magnificent top hat made of black silk that provides extra magic defense.",
+        "Filename": "0017_clothing_hat_black.png",
+        "Type": "head",
+        "Weight": 35
+    },
+    {
+        "Name": "Black Leather Cap",
+        "Color": "Black",
+        "Value": 40,
+        "Description": "A sturdy cap made of black leather that provides extra endurance.",
+        "Filename": "0018_clothing_hat_black.png",
+        "Type": "head",
+        "Weight": 25
+    },
+    {
+        "Name": "Black Pirate's Hat",
+        "Color": "Black",
+        "Value": 50,
+        "Description": "A stylish pirate made of black felt that provides extra self esteem!",
+        "Filename": "0019_clothing_hat_black.png",
+        "Type": "head",
+        "Weight": 30
+    },
+    {
+        "Name": "Black Woolen Cap",
+        "Color": "Black",
+        "Value": 25,
+        "Description": "A simple cap made of black wool that provides basic protection.",
+        "Filename": "0020_clothing_hat_black.png",
+        "Type": "head",
+        "Weight": 10
+    },
+    {
+        "Name": "Black Leather Tricorn Hat",
+        "Color": "Black",
+        "Value": 55,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 15
+        },
+        "Description": "A stylish tricorn hat made of black leather that makes you more evasive.",
+        "Filename": "0021_clothing_hat_black.png",
+        "Type": "head",
+        "Weight": 28
+    }
+]

@@ -1,0 +1,153 @@
+[
+    {
+        "Name": "Purple Steel Helm",
+        "Color": "Purple",
+        "Value": 320,
+        "Description": "A sturdy steel helm with a purple plume, fit for a noble knight.",
+        "Filename": "0001_clothing_head_purple.png",
+        "Type": "head",
+        "Weight": 75
+    },
+    {
+        "Name": "Amethyst Helm",
+        "Color": "Purple",
+        "Value": 470,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 25
+        },
+        "Description": "A beautiful amethyst helm with intricate silver designs, offering additional defense.",
+        "Filename": "0002_clothing_head_purple.png",
+        "Type": "head",
+        "Weight": 60
+    },
+    {
+        "Name": "Lavender Leather Helm",
+        "Color": "Purple",
+        "Value": 90,
+        "Description": "A simple but sturdy leather helm dyed in a soft lavender color.",
+        "Filename": "0003_clothing_head_purple.png",
+        "Type": "head",
+        "Weight": 40
+    },
+    {
+        "Name": "Royal Purple Helm",
+        "Color": "Purple",
+        "Value": 280,
+        "Description": "A regal purple helm adorned with gold filigree, fit for a king.",
+        "Filename": "0004_clothing_head_purple.png",
+        "Type": "head",
+        "Weight": 70
+    },
+    {
+        "Name": "Grape Iron Helm",
+        "Color": "Purple",
+        "Value": 150,
+        "Description": "A solid iron helm painted in a deep grape color.",
+        "Filename": "0005_clothing_head_purple.png",
+        "Type": "head",
+        "Weight": 80
+    },
+    {
+        "Name": "Mauve Horned Helm",
+        "Color": "Purple",
+        "Value": 200,
+        "Description": "A unique horned helm dyed in a muted mauve color.",
+        "Filename": "0006_clothing_head_purple.png",
+        "Type": "head",
+        "Weight": 65
+    },
+    {
+        "Name": "Violet Enchanted Helm",
+        "Color": "Purple",
+        "Value": 670,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 40
+        },
+        "Description": "A mystical violet helm imbued with powerful enchantments, offering increased magic defense.",
+        "Filename": "0007_clothing_head_purple.png",
+        "Type": "head",
+        "Weight": 50
+    },
+    {
+        "Name": "Lavender Cap",
+        "Color": "Purple",
+        "Value": 25,
+        "Description": "A charming cap of lavender wool, perfect for a springtime stroll.",
+        "Filename": "0008_clothing_head_purple.png",
+        "Type": "Head",
+        "Weight": 15
+    },
+    {
+        "Name": "Amethyst Hood",
+        "Color": "Purple",
+        "Value": 60,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 15
+        },
+        "Description": "A mystical hood of amethyst silk, woven with enchantments to ward off magical attacks.",
+        "Filename": "0009_clothing_head_purple.png",
+        "Type": "Head",
+        "Weight": 20
+    },
+    {
+        "Name": "Violet Beret",
+        "Color": "Purple",
+        "Value": 30,
+        "Description": "A chic beret of violet felt, perfect for adding a touch of sophistication to any outfit.",
+        "Filename": "0010_clothing_head_purple.png",
+        "Type": "Head",
+        "Weight": 12
+    },
+    {
+        "Name": "Grapevine Crown",
+        "Color": "Purple",
+        "Value": 70,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 20
+        },
+        "Description": "A regal crown of grapevine and amethyst, imbued with the power to enhance magical attacks.",
+        "Filename": "0011_clothing_head_purple.png",
+        "Type": "Head",
+        "Weight": 30
+    },
+    {
+        "Name": "Amethyst Crown",
+        "Color": "Purple",
+        "Value": 650,
+        "Description": "A majestic headdress adorned with amethyst stones fit for a queen.",
+        "Filename": "0012_clothing_head_purple.png",
+        "Type": "Head",
+        "Weight": 45
+    },
+    {
+        "Name": "Lavender Wreath",
+        "Color": "Purple",
+        "Value": 120,
+        "Description": "A delicate wreath made of lavender flowers, perfect for a spring festival.",
+        "Filename": "0013_clothing_head_purple.png",
+        "Type": "Head",
+        "Weight": 15
+    },
+    {
+        "Name": "Violet Veil",
+        "Color": "Purple",
+        "Value": 180,
+        "Description": "A sheer violet veil that adds a touch of mystery to your look.",
+        "Filename": "0014_clothing_head_purple.png",
+        "Type": "Head",
+        "Weight": 10
+    },
+    {
+        "Name": "Plum Fascinator",
+        "Color": "Purple",
+        "Value": 90,
+        "Description": "A stylish plum fascinator that adds a pop of color to any outfit.",
+        "Filename": "0015_clothing_head_purple.png",
+        "Type": "Head",
+        "Weight": 5
+    }
+]

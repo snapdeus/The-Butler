@@ -1,0 +1,236 @@
+[
+    {
+        "Name": "Crimson Helm",
+        "Color": "Red",
+        "Value": 120,
+        "Description": "A sturdy helmet made of red iron, fit for a knight.",
+        "Filename": "0001_clothing_head_red.png",
+        "Type": "Head",
+        "Weight": 70
+    },
+    {
+        "Name": "Bloodstone Helm",
+        "Color": "Red",
+        "Value": 320,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 25
+        },
+        "Description": "A magnificent helmet adorned with a bloodstone, providing extra protection in battle.",
+        "Filename": "0002_clothing_head_red.png",
+        "Type": "Head",
+        "Weight": 90
+    },
+    {
+        "Name": "Ruby Helm",
+        "Color": "Red",
+        "Value": 280,
+        "Description": "A beautifully crafted helmet made of ruby, fit for a noble warrior.",
+        "Filename": "0003_clothing_head_red.png",
+        "Type": "Head",
+        "Weight": 60
+    },
+    {
+        "Name": "Scarlet Helm",
+        "Color": "Red",
+        "Value": 150,
+        "Description": "A simple but sturdy helmet made of scarlet steel, perfect for a soldier.",
+        "Filename": "0004_clothing_head_red.png",
+        "Type": "Head",
+        "Weight": 80
+    },
+    {
+        "Name": "Garnet Helm",
+        "Color": "Red",
+        "Value": 200,
+        "Description": "A helmet made of garnet, said to provide the wearer with courage and strength.",
+        "Filename": "0005_clothing_head_red.png",
+        "Type": "Head",
+        "Weight": 70
+    },
+    {
+        "Name": "Crimson Visor",
+        "Color": "Red",
+        "Value": 100,
+        "Description": "A visor made of crimson steel, perfect for a knight on horseback.",
+        "Filename": "0006_clothing_head_red.png",
+        "Type": "Head",
+        "Weight": 50
+    },
+    {
+        "Name": "Fiery Helm",
+        "Color": "Red",
+        "Value": 400,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 35
+        },
+        "Description": "A fiery red helmet, said to protect the wearer from magical attacks.",
+        "Filename": "0007_clothing_head_red.png",
+        "Type": "Head",
+        "Weight": 100
+    },
+    {
+        "Name": "Cardinal Helm",
+        "Color": "Red",
+        "Value": 240,
+        "Description": "A helmet made of cardinal feathers, said to provide the wearer with protection and grace.",
+        "Filename": "0008_clothing_head_red.png",
+        "Type": "Head",
+        "Weight": 60
+    },
+    {
+        "Name": "Burgundy Helm",
+        "Color": "Red",
+        "Value": 180,
+        "Description": "A helmet made of burgundy leather, perfect for a rogue or thief.",
+        "Filename": "0009_clothing_head_red.png",
+        "Type": "Head",
+        "Weight": 40
+    },
+    {
+        "Name": "Flame Helm",
+        "Color": "Red",
+        "Value": 300,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 20
+        },
+        "Description": "A helmet with flames painted on it, said to increase the wearer's attack power.",
+        "Filename": "0010_clothing_head_red.png",
+        "Type": "Head",
+        "Weight": 80
+    },
+    {
+        "Name": "Crimson Beret",
+        "Color": "Red",
+        "Value": 26,
+        "Description": "A stylish beret made of fine velvet, perfect for any occasion.",
+        "Filename": "0011_clothing_head_red.png",
+        "Type": "Head",
+        "Weight": 12
+    },
+    {
+        "Name": "Scarlet Hood",
+        "Color": "Red",
+        "Value": 34,
+        "Description": "A hood made of enchanted silk, which grants its wearer increased magic resistance.",
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 28
+        },
+        "Filename": "0012_clothing_head_red.png",
+        "Type": "Head",
+        "Weight": 15
+    },
+    {
+        "Name": "Crimson Bandana",
+        "Color": "Red",
+        "Value": 22,
+        "Description": "A bandana made of sturdy cotton, perfect for keeping your hair out of your face during battle.",
+        "Filename": "0013_clothing_head_red.png",
+        "Type": "Head",
+        "Weight": 10
+    },
+    {
+        "Name": "Ruby Tiara",
+        "Color": "Red",
+        "Value": 68,
+        "Description": "A tiara made of pure ruby, which grants its wearer increased magical power.",
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 42
+        },
+        "Filename": "0014_clothing_head_red.png",
+        "Type": "Head",
+        "Weight": 20
+    },
+    {
+        "Name": "Red Eminent Headdress",
+        "Color": "Red",
+        "Value": 245,
+        "Description": "A magnificent headdress with intricate beadwork and feathers, fit for a chieftain.",
+        "Filename": "0015_clothing_head_red.png",
+        "Type": "head",
+        "Weight": 25
+    },
+    {
+        "Name": "Scarlet War Bonnet",
+        "Color": "Red",
+        "Value": 70,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 12
+        },
+        "Description": "A traditional war bonnet with bright red feathers that increase the wearer's defense.",
+        "Filename": "0016_clothing_head_red.png",
+        "Type": "head",
+        "Weight": 15
+    },
+    {
+        "Name": "Vermilion Headwrap",
+        "Color": "Red",
+        "Value": 40,
+        "Description": "A simple yet elegant headwrap in a striking shade of red.",
+        "Filename": "0017_clothing_head_red.png",
+        "Type": "head",
+        "Weight": 10
+    },
+    {
+        "Name": "Crimson Headdress",
+        "Color": "Red",
+        "Value": 150,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 20
+        },
+        "Description": "A regal headdress adorned with rubies that enhances the wearer's magic defense.",
+        "Filename": "0018_clothing_head_red.png",
+        "Type": "head",
+        "Weight": 20
+    },
+    {
+        "Name": "Burgundy Headband",
+        "Color": "Red",
+        "Value": 30,
+        "Description": "A simple headband in a deep shade of red that adds a touch of color to any outfit.",
+        "Filename": "0019_clothing_head_red.png",
+        "Type": "head",
+        "Weight": 5
+    },
+    {
+        "Name": "Maroon Turban",
+        "Color": "Red",
+        "Value": 60,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 15
+        },
+        "Description": "A luxurious turban in a rich shade of maroon that increases the wearer's endurance.",
+        "Filename": "0020_clothing_head_red.png",
+        "Type": "head",
+        "Weight": 12
+    },
+    {
+        "Name": "Ruby Crown",
+        "Color": "Red",
+        "Value": 400,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 40
+        },
+        "Description": "A majestic crown encrusted with rubies that greatly increases the wearer's HP.",
+        "Filename": "0021_clothing_head_red.png",
+        "Type": "head",
+        "Weight": 30
+    },
+    {
+        "Name": "Garnet Tiara",
+        "Color": "Red",
+        "Value": 120,
+        "Description": "A delicate tiara adorned with garnets that adds a touch of elegance to any outfit.",
+        "Filename": "0022_clothing_head_red.png",
+        "Type": "head",
+        "Weight": 8
+    }
+]

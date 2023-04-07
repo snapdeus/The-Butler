@@ -1,0 +1,205 @@
+[
+    {
+        "Name": "Yellow Helm",
+        "Color": "Yellow",
+        "Value": 250,
+        "Description": "A sturdy helm made of yellowed iron, perfect for any brave knight.",
+        "Filename": "0001_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 80
+    },
+    {
+        "Name": "Gilded Helmet",
+        "Color": "Yellow",
+        "Value": 550,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Description": "A magnificent gilded helmet with intricate designs, crafted by the finest armorers in the realm.",
+        "Filename": "0002_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 100
+    },
+    {
+        "Name": "Sunburst Helm",
+        "Color": "Yellow",
+        "Value": 150,
+        "Description": "A simple yet effective helm with a sunburst design, perfect for any aspiring adventurer.",
+        "Filename": "0003_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 70
+    },
+    {
+        "Name": "Lion's Mane Helm",
+        "Color": "Yellow",
+        "Value": 450,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 30
+        },
+        "Description": "A helm with a fierce lion's mane design, imbued with the power to boost your attack.",
+        "Filename": "0004_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 90
+    },
+    {
+        "Name": "Golden Crown",
+        "Color": "Yellow",
+        "Value": 750,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 40
+        },
+        "Description": "A regal golden crown, fit for a king or queen, with the power to enhance your magic defense.",
+        "Filename": "0005_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 120
+    },
+    {
+        "Name": "Bumblebee Helm",
+        "Color": "Yellow",
+        "Value": 180,
+        "Description": "A fun and quirky helm with a bumblebee design, perfect for those who don't take themselves too seriously.",
+        "Filename": "0006_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 60
+    },
+    {
+        "Name": "Yellow Regal Crown",
+        "Color": "Yellow",
+        "Value": 600,
+        "Description": "A gilded crown fit for a king, with intricate engravings and a large yellow gemstone at its front.",
+        "Filename": "0007_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 50
+    },
+    {
+        "Name": "Golden Diadem",
+        "Color": "Yellow",
+        "Value": 450,
+        "Description": "A golden diadem encrusted with small yellow gemstones, fit for a queen.",
+        "Filename": "0008_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 30
+    },
+    {
+        "Name": "Yellow Royal Crown",
+        "Color": "Yellow",
+        "Value": 700,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 20
+        },
+        "Description": "A majestic yellow crown, adorned with precious stones and imbued with magical endurance.",
+        "Filename": "0009_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 60
+    },
+    {
+        "Name": "Citrine Crown",
+        "Color": "Yellow",
+        "Value": 300,
+        "Description": "A simple yet elegant citrine crown, perfect for a noblewoman.",
+        "Filename": "0010_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 40
+    },
+    {
+        "Name": "Yellow Crown of the Sun",
+        "Color": "Yellow",
+        "Value": 800,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 30
+        },
+        "Description": "A dazzling yellow crown that shines like the sun, increasing the wearer's magical attack power.",
+        "Filename": "0011_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 70
+    },
+    {
+        "Name": "Yellow Circlet",
+        "Color": "Yellow",
+        "Value": 150,
+        "Description": "A delicate yellow circlet adorned with small gems, perfect for a princess.",
+        "Filename": "0012_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 20
+    },
+    {
+        "Name": "Yellow Tiara",
+        "Color": "Yellow",
+        "Value": 250,
+        "Description": "A beautiful yellow tiara, fit for a young queen.",
+        "Filename": "0013_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 30
+    },
+    {
+        "Name": "Golden Headdress",
+        "Color": "Yellow",
+        "Value": 240,
+        "Description": "A magnificent headdress of fine gold filigree and precious gems fit for a queen.",
+        "Filename": "0014_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 60
+    },
+    {
+        "Name": "Sunflower Crown",
+        "Color": "Yellow",
+        "Value": 120,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 15
+        },
+        "Description": "A charming crown of woven sunflowers that enhances your endurance.",
+        "Filename": "0015_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 20
+    },
+    {
+        "Name": "Braided Headdress",
+        "Color": "Yellow",
+        "Value": 80,
+        "Description": "A simple yet elegant headdress of braided yellow silk, perfect for a summer festival.",
+        "Filename": "0016_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 15
+    },
+    {
+        "Name": "Lion Headdress",
+        "Color": "Yellow",
+        "Value": 320,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 25
+        },
+        "Description": "A fierce headdress of a lion's mane, imbuing the wearer with increased attack power.",
+        "Filename": "0017_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 40
+    },
+    {
+        "Name": "Butterfly Headdress",
+        "Color": "Yellow",
+        "Value": 100,
+        "Description": "A delicate headdress adorned with fluttering butterfly wings, perfect for a woodland nymph.",
+        "Filename": "0018_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 10
+    },
+    {
+        "Name": "Golden Circlet",
+        "Color": "Yellow",
+        "Value": 200,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 20
+        },
+        "Description": "A regal circlet of polished gold that enhances the wearer's magic defense.",
+        "Filename": "0019_clothing_head_yellow.png",
+        "Type": "Head",
+        "Weight": 30
+    }
+]
