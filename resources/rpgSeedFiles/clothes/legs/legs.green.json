@@ -1,7 +1,7 @@
 [
     {
         "Name": "Green Brocade Shorts",
-        "Color": "green",
+        "Color": "Green",
         "Value": 300,
         "Description": "A finely woven pair of shorts made with luxurious brocade fabric.",
         "Filename": "0001_clothing_legs_green.png",
@@ -10,7 +10,7 @@
     },
     {
         "Name": "Green Tattersall Shorts",
-        "Color": "green",
+        "Color": "Green",
         "Value": 250,
         "Description": "Stylish knee-length shorts featuring a tattersall pattern.",
         "Filename": "0002_clothing_legs_green.png",
@@ -19,7 +19,7 @@
     },
     {
         "Name": "Green Pelt Breeches",
-        "Color": "green",
+        "Color": "Green",
         "Value": 330,
         "Buff": {
             "buffType": "Endurance",
@@ -32,7 +32,7 @@
     },
     {
         "Name": "Green Herringbone Pants",
-        "Color": "green",
+        "Color": "Green",
         "Value": 280,
         "Description": "Sturdy pants with traditional herringbone weave.",
         "Filename": "0004_clothing_legs_green.png",
@@ -41,7 +41,7 @@
     },
     {
         "Name": "Green Baize Pants",
-        "Color": "green",
+        "Color": "Green",
         "Value": 210,
         "Description": "Woolen pants made from soft and warm baize fabric.",
         "Filename": "0005_clothing_legs_green.png",
@@ -50,7 +50,7 @@
     },
     {
         "Name": "Green Velvet Pants",
-        "Color": "green",
+        "Color": "Green",
         "Value": 350,
         "Description": "Sophisticated trousers made from smooth, luxurious velvet.",
         "Filename": "0006_clothing_legs_green.png",
@@ -59,7 +59,7 @@
     },
     {
         "Name": "Green Gingham Pants",
-        "Color": "green",
+        "Color": "Green",
         "Value": 260,
         "Buff": {
             "buffType": "Magic Defense",
@@ -72,7 +72,7 @@
     },
     {
         "Name": "Green Crape Pants",
-        "Color": "green",
+        "Color": "Green",
         "Value": 230,
         "Description": "Subdued pants crafted from delicate crape fabric.",
         "Filename": "0008_clothing_legs_green.png",
@@ -81,7 +81,7 @@
     },
     {
         "Name": "Green Damask Dress",
-        "Color": "green",
+        "Color": "Green",
         "Value": 400,
         "Description": "Elegant full-length dress made from intricate damask fabric.",
         "Filename": "0009_clothing_legs_green.png",
@@ -90,7 +90,7 @@
     },
     {
         "Name": "Green Camisade Dress",
-        "Color": "green",
+        "Color": "Green",
         "Value": 380,
         "Description": "A flowing dress adorned with a camisade trim, flattering and graceful.",
         "Filename": "0010_clothing_legs_green.png",
@@ -99,7 +99,7 @@
     },
     {
         "Name": "Green Samite Dress",
-        "Color": "green",
+        "Color": "Green",
         "Value": 450,
         "Buff": {
             "buffType": "HP",
@@ -112,7 +112,7 @@
     },
     {
         "Name": "Green Corduroy Pants",
-        "Color": "green",
+        "Color": "Green",
         "Value": 290,
         "Description": "Durable corduroy pants perfect for any adventure.",
         "Filename": "0012_clothing_legs_green.png",
@@ -121,7 +121,7 @@
     },
     {
         "Name": "Green Tweed Pants",
-        "Color": "green",
+        "Color": "Green",
         "Value": 270,
         "Description": "Classic pants crafted from cozy tweed fabric.",
         "Filename": "0013_clothing_legs_green.png",
@@ -130,7 +130,7 @@
     },
     {
         "Name": "Green Nainsook Pants",
-        "Color": "green",
+        "Color": "Green",
         "Value": 240,
         "Description": "Light, breathable pants made from soft nainsook fabric.",
         "Filename": "0014_clothing_legs_green.png",
@@ -139,7 +139,7 @@
     },
     {
         "Name": "Green Sateen Pants",
-        "Color": "green",
+        "Color": "Green",
         "Value": 310,
         "Description": "Refined pants made from glossy sateen fabric.",
         "Filename": "0015_clothing_legs_green.png",
@@ -148,7 +148,7 @@
     },
     {
         "Name": "Green Linsey-Woolsey Pants",
-        "Color": "green",
+        "Color": "Green",
         "Value": 260,
         "Buff": {
             "buffType": "Attack",
@@ -161,7 +161,7 @@
     },
     {
         "Name": "Green Calico Pants",
-        "Color": "green",
+        "Color": "Green",
         "Value": 230,
         "Description": "Soft, printed pants made from versatile calico fabric.",
         "Filename": "0017_clothing_legs_green.png",
@@ -170,7 +170,7 @@
     },
     {
         "Name": "Green Chiffon Pants",
-        "Color": "green",
+        "Color": "Green",
         "Value": 220,
         "Description": "Graceful, lightweight pants made of sheer chiffon.",
         "Filename": "0018_clothing_legs_green.png",

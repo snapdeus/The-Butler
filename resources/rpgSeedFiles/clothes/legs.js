@@ -12,31 +12,33 @@ const dir = path.join(__dirname, 'legs');
 //     fs.writeFileSync('./jsonSeedFiles/final.legs.json', JSON.stringify(data));
 // });
 
-// const legs = require('./jsonSeedFiles/final.legs.json')
+const legs = require('./jsonSeedFiles/final.legs.json')
 
-// const countLegsColors = countColors(legs)
+const countLegsColors = countColors(legs)
+console.log(countLegsColors)
 
-// const totalLegs = legs.length
-
-// const legsMetaInfo = {
-//     totalLegs,
-//     legsCounts: countLegsColors
-// };
+const totalLegs = legs.length
 
 
-// const legsDescripObj = {
-//     Aqua: "Aqua",
-//     Blue: "Blue",
-//     Green: "Green",
-//     Orange: "Orange",
-//     Pink: "Pink",
-//     Purple: "Purple",
-//     Red: "Red",
-//     White: "White"
-// };
+const legsMetaInfo = {
+    totalLegs,
+    legsCounts: countLegsColors
+};
 
-// legsMetaInfo.legsCounts = mergeItemsCountsAndDescriptions(legsMetaInfo.legsCounts, legsDescripObj);
-// module.exports = {
-//     legs,
-//     legsMetaInfo
-// };
+
+const legsDescripObj = {
+    Black: "Black",
+    Blue: "Blue",
+    Green: "Green",
+    Orange: "Orange",
+    Pink: "Pink",
+    Purple: "Purple",
+    Red: "Red",
+    White: "White"
+};
+
+legsMetaInfo.legsCounts = mergeItemsCountsAndDescriptions(legsMetaInfo.legsCounts, legsDescripObj);
+module.exports = {
+    legs,
+    legsMetaInfo
+};

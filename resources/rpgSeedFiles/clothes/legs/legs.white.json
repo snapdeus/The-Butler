@@ -1,0 +1,277 @@
+[
+    {
+        "Name": "Luminous White Pants",
+        "Color": "White",
+        "Value": 50,
+        "Description": "A pair of pants that glows in the dark, perfect for sneaking around at night.",
+        "Filename": "0001_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 30
+    },
+    {
+        "Name": "Frosty White Pants",
+        "Color": "White",
+        "Value": 70,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Description": "A pair of pants that keeps you warm even in the coldest of winters.",
+        "Filename": "0002_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 35
+    },
+    {
+        "Name": "Ethereal White Pants",
+        "Color": "White",
+        "Value": 100,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 30
+        },
+        "Description": "A pair of pants that seems to shimmer with an otherworldly light.",
+        "Filename": "0003_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Silken White Pants",
+        "Color": "White",
+        "Value": 80,
+        "Description": "A pair of pants made from the finest silk, fit for a noble.",
+        "Filename": "0004_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 15
+    },
+    {
+        "Name": "Sturdy White Pants",
+        "Color": "White",
+        "Value": 60,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 15
+        },
+        "Description": "A pair of pants that can withstand even the toughest of battles.",
+        "Filename": "0005_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 40
+    },
+    {
+        "Name": "Enchanted White Pants",
+        "Color": "White",
+        "Value": 120,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 25
+        },
+        "Description": "A pair of pants imbued with powerful magic, perfect for any mage.",
+        "Filename": "0006_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 25
+    },
+    {
+        "Name": "Sleek White Pants",
+        "Color": "White",
+        "Value": 90,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 10
+        },
+        "Description": "A pair of pants that allows you to move swiftly and gracefully.",
+        "Filename": "0007_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Radiant White Pants",
+        "Color": "White",
+        "Value": 150,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 50
+        },
+        "Description": "A pair of pants that seems to emanate a healing aura, restoring your health.",
+        "Filename": "0008_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 30
+    },
+    {
+        "Name": "Divine White Pants",
+        "Color": "White",
+        "Value": 200,
+        "Buff": {
+            "buffType": "AP",
+            "amount": 50
+        },
+        "Description": "A pair of pants that grants you divine power, increasing your attack potential.",
+        "Filename": "0009_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 35
+    },
+    {
+        "Name": "Ancient White Pants",
+        "Color": "White",
+        "Value": 300,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 30
+        },
+        "Description": "A pair of pants that has survived the ages, imbued with ancient power.",
+        "Filename": "0010_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 40
+    },
+    {
+        "Name": "Lacy White Shorts",
+        "Color": "White",
+        "Value": 35,
+        "Description": "A breezy pair of shorts adorned with delicate lacework, perfect for a summer day.",
+        "Filename": "0011_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 15
+    },
+    {
+        "Name": "White Linen Shorts",
+        "Color": "White",
+        "Value": 25,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 10
+        },
+        "Description": "A pair of comfortable linen shorts, designed for ease of movement and agility.",
+        "Filename": "0012_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Embroidered White Shorts",
+        "Color": "White",
+        "Value": 45,
+        "Description": "A stylish pair of shorts with intricate embroidery, fit for a noble adventurer.",
+        "Filename": "0013_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 18
+    },
+    {
+        "Name": "Lacy White Skirt",
+        "Color": "White",
+        "Value": 35,
+        "Description": "A flowing skirt that enhances your agility in combat.",
+        "Filename": "0014_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 15
+    },
+    {
+        "Name": "Chiffon White Skirt",
+        "Color": "White",
+        "Value": 45,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 25
+        },
+        "Description": "A delicate skirt that shimmers in the light and increases your evasion.",
+        "Filename": "0015_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 12
+    },
+    {
+        "Name": "Embroidered White Skirt",
+        "Color": "White",
+        "Value": 60,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 35
+        },
+        "Description": "A beautifully crafted skirt that provides excellent magical defense.",
+        "Filename": "0016_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 18
+    },
+    {
+        "Name": "Ivory Petticoat",
+        "Color": "White",
+        "Value": 45,
+        "Description": "A delicate petticoat with intricate lacework, fit for a noble lady.",
+        "Filename": "0017_clothing_legs_white.png",
+        "Type": "legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Gleaming White Leg Armor",
+        "Color": "White",
+        "Value": 450,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Description": "Protective leg armor with intricate engravings and reinforced plates.",
+        "Filename": "0018_clothing_leg_armor_white.png",
+        "Type": "legs",
+        "Weight": 80
+    },
+    {
+        "Name": "Icy White Leg Armor",
+        "Color": "White",
+        "Value": 500,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "Leg armor crafted from enchanted ice that grants protection against magical attacks.",
+        "Filename": "0019_clothing_leg_armor_white.png",
+        "Type": "legs",
+        "Weight": 85
+    },
+    {
+        "Name": "White Steel Leg Armor",
+        "Color": "White",
+        "Value": 600,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 30
+        },
+        "Description": "Leg armor made from the finest steel, designed to protect against heavy blows.",
+        "Filename": "0020_clothing_leg_armor_white.png",
+        "Type": "legs",
+        "Weight": 90
+    },
+    {
+        "Name": "Luminous White Leg Armor",
+        "Color": "White",
+        "Value": 750,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 40
+        },
+        "Description": "Leg armor imbued with magical properties that glow in the dark and provide superior protection against spells.",
+        "Filename": "0021_clothing_leg_armor_white.png",
+        "Type": "legs",
+        "Weight": 95
+    },
+    {
+        "Name": "White Dragon Scale Leg Armor",
+        "Color": "White",
+        "Value": 900,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 50
+        },
+        "Description": "Leg armor crafted from the scales of a powerful white dragon, providing incredible defense against physical attacks.",
+        "Filename": "0022_clothing_leg_armor_white.png",
+        "Type": "legs",
+        "Weight": 100
+    },
+    {
+        "Name": "Divine White Leg Armor",
+        "Color": "White",
+        "Value": 1200,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 50
+        },
+        "Description": "Leg armor blessed by the gods themselves, granting unparalleled protection against all forms of attack.",
+        "Filename": "0023_clothing_leg_armor_white.png",
+        "Type": "legs",
+        "Weight": 110
+    }
+]

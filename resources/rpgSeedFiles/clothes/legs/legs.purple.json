@@ -1,0 +1,99 @@
+[
+    {
+        "Name": "Royal Purple Bottom",
+        "Color": "Purple",
+        "Value": 50,
+        "Description": "A regal bottom bathing suit that increases your endurance by 20 points!",
+        "Filename": "0001_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Lavender Leggings",
+        "Color": "Purple",
+        "Value": 35,
+        "Description": "A pair of soft, supple leggings that provide excellent mobility and comfort.",
+        "Filename": "0002_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 25
+    },
+    {
+        "Name": "Amethyst Trousers",
+        "Color": "Purple",
+        "Value": 70,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 15
+        },
+        "Description": "Trousers made from rare amethyst silk, providing excellent protection against physical attacks.",
+        "Filename": "0003_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 40
+    },
+    {
+        "Name": "Royal Purple Pants",
+        "Color": "Purple",
+        "Value": 55,
+        "Description": "A pair of pants made from high-quality purple fabric, perfect for formal occasions.",
+        "Filename": "0004_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 30
+    },
+    {
+        "Name": "Grimoire Leggings",
+        "Color": "Purple",
+        "Value": 120,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "Elegant leggings imbued with magical properties, providing excellent protection against magical attacks.",
+        "Filename": "0005_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 35
+    },
+    {
+        "Name": "Purple Stronghold",
+        "Color": "Purple",
+        "Value": 650,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A sturdy armor that protects the wearer from mortal wounds.",
+        "Filename": "0006_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 85
+    },
+    {
+        "Name": "Royal Purple Shorts",
+        "Color": "Purple",
+        "Value": 45,
+        "Description": "A pair of shorts made from the finest silk, with intricate embroidery along the hemline.",
+        "Filename": "0007_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Shadowy Purple Shorts",
+        "Color": "Purple",
+        "Value": 50,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 15
+        },
+        "Description": "A pair of shorts that seem to blend into the shadows, making it harder for enemies to hit you.",
+        "Filename": "0008_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 25
+    },
+    {
+        "Name": "Majestic Purple Skirt",
+        "Color": "Purple",
+        "Value": 80,
+        "Description": "A flowing skirt with intricate embroidery, fit for a queen.",
+        "Filename": "0009_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 15
+    }
+]

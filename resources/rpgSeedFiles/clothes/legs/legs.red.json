@@ -1,0 +1,161 @@
+[
+    {
+        "Name": "Red Cuisse",
+        "Color": "Red",
+        "Value": 350,
+        "Description": "Sturdy red cuisse, forged for those who seek formidable protection in arduous battles.",
+        "Filename": "0001_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 60
+    },
+    {
+        "Name": "Red Greave",
+        "Color": "Red",
+        "Value": 380,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Description": "Meticulously crafted red greave bestows unparalleled defense upon the unwavering warrior.",
+        "Filename": "0002_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 55
+    },
+    {
+        "Name": "Red Sabaton",
+        "Color": "Red",
+        "Value": 330,
+        "Description": "A robust red sabaton designed for relentless front-line combatants in the heat of battle.",
+        "Filename": "0003_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 50
+    },
+    {
+        "Name": "Red Poleyn",
+        "Color": "Red",
+        "Value": 425,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 15
+        },
+        "Description": "Imbued with power, these red poleyns grant immense endurance to withstand arduous trials.",
+        "Filename": "0004_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 52
+    },
+    {
+        "Name": "Red Schynbald",
+        "Color": "Red",
+        "Value": 410,
+        "Description": "Expertly forged red schynbald, perfect for a formidable presence on the battlefield.",
+        "Filename": "0005_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 46
+    },
+    {
+        "Name": "Red Jambeau",
+        "Color": "Red",
+        "Value": 450,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 10
+        },
+        "Description": "Enchanted red jambeau, providing steadfast protection with a boon to the wearer's vitality.",
+        "Filename": "0006_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 48
+    },
+    {
+        "Name": "Red Shorts with caped Skirt",
+        "Color": "Red",
+        "Value": 160,
+        "Description": "A pair of comfortable and flexible leg covering, ideal for agile moves and swift action during tense situations.",
+        "Filename": "0007_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 21
+    },
+    {
+        "Name": "Red Pelt Trunks",
+        "Color": "Red",
+        "Value": 205,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 10
+        },
+        "Description": "Stylish red trunks that increase evasive capabilities, aiding the wearer in gracefully dodging enemy attacks.",
+        "Filename": "0008_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 19
+    },
+    {
+        "Name": "Red Bikini Bottom",
+        "Color": "Red",
+        "Value": 120,
+        "Description": "A trendy red bikini bottom ensuring a comfortable and fashionable beach experience.",
+        "Filename": "0009_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 12
+    },
+    {
+        "Name": "Red Swim Trunks",
+        "Color": "Red",
+        "Value": 135,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 8
+        },
+        "Description": "Stylish red swim trunks designed to enhance mobility and fluidity in water-based activities.",
+        "Filename": "0010_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 11
+    },
+    {
+        "Name": "Red Denim Shorts",
+        "Color": "Red",
+        "Value": 150,
+        "Description": "Casual red denim shorts, perfect for a comfortable and relaxed outfit.",
+        "Filename": "0011_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Striped Board Shorts",
+        "Color": "Red",
+        "Value": 170,
+        "Description": "Vibrant striped red board shorts, providing a stylish and fun option for beach or leisure activities.",
+        "Filename": "0012_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 18
+    },
+    {
+        "Name": "Crimson Ruffle Skirt",
+        "Color": "Red",
+        "Value": 65,
+        "Description": "A flouncy skirt that adds a touch of elegance to your attire.",
+        "Filename": "0013_clothing_legs_red.png",
+        "Type": "Legs",
+        "Weight": 15
+    },
+    {
+        "Name": "Scarlet Maxi Skirt",
+        "Color": "Red",
+        "Value": 85,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 25
+        },
+        "Description": "A flowing skirt that allows for quick movements and nimble dodges.",
+        "Filename": "0014_clothing_legs_red.png",
+        "Type": "Legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Ruby Pencil Skirt",
+        "Color": "Red",
+        "Value": 75,
+        "Description": "A sleek and stylish skirt that exudes confidence and professionalism.",
+        "Filename": "0015_clothing_legs_red.png",
+        "Type": "Legs",
+        "Weight": 18
+    }
+]
