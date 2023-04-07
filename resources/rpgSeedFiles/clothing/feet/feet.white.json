@@ -10,7 +10,7 @@
     },
     {
         "Name": "Ivory Boots",
-        "Color": "Ivory",
+        "Color": "White",
         "Value": 700,
         "Description": "A pair of ivory boots that are as strong as they are stylish.",
         "Filename": "0002_clothing_feet_white.png",
@@ -19,7 +19,7 @@
     },
     {
         "Name": "Pearl Boots",
-        "Color": "Pearl",
+        "Color": "White",
         "Value": 900,
         "Description": "A pair of pearl boots that shimmer in the sunlight.",
         "Filename": "0003_clothing_feet_white.png",
@@ -28,7 +28,7 @@
     },
     {
         "Name": "Eggshell Boots",
-        "Color": "Eggshell",
+        "Color": "White",
         "Value": 600,
         "Description": "A pair of eggshell boots that are perfect for any occasion.",
         "Filename": "0004_clothing_feet_white.png",
@@ -37,7 +37,7 @@
     },
     {
         "Name": "Snow Boots",
-        "Color": "Snow",
+        "Color": "White",
         "Value": 800,
         "Description": "A pair of snow boots that keep your feet warm in the coldest of winters.",
         "Filename": "0005_clothing_feet_white.png",
@@ -46,7 +46,7 @@
     },
     {
         "Name": "Chalk Boots",
-        "Color": "Chalk",
+        "Color": "White",
         "Value": 550,
         "Description": "A pair of chalk boots that are as light as a feather.",
         "Filename": "0006_clothing_feet_white.png",
@@ -55,7 +55,7 @@
     },
     {
         "Name": "Porcelain Boots",
-        "Color": "Porcelain",
+        "Color": "White",
         "Value": 750,
         "Description": "A pair of porcelain boots that are delicate yet durable.",
         "Filename": "0007_clothing_feet_white.png",
@@ -64,7 +64,7 @@
     },
     {
         "Name": "Alabaster Boots",
-        "Color": "Alabaster",
+        "Color": "White",
         "Value": 850,
         "Description": "A pair of alabaster boots that are fit for a queen.",
         "Filename": "0008_clothing_feet_white.png",

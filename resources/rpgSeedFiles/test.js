@@ -4,8 +4,9 @@ const { gemsOfPowerMetaInfo } = require('./gemsOfPower/gemsOfPower')
 const { torsoMetaInfo, torso } = require('./clothing/torso')
 const { legsMetaInfo, legs } = require('./clothing/legs')
 const { headMetaInfo, head } = require('./clothing/head')
+const { feetMetaInfo, feet } = require('./clothing/feet')
 
-console.log(headMetaInfo)
+console.log(feetMetaInfo)
 
 const fs = require('fs')
 

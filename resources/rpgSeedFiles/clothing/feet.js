@@ -1,6 +1,6 @@
 
 
-const { countColors, mergeItemsCountsAndDescriptions, read_directory } = require('../utils')
+const { countColors, mergeItemsCountsAndDescriptions } = require('../utils')
 
 
 const fs = require('fs');
@@ -8,11 +8,8 @@ const path = require('path');
 const dir = path.join(__dirname, 'feet');
 
 
-// read_directory(dir).then(data => {
-//     fs.writeFileSync('./jsonSeedFiles/final.feet.json', JSON.stringify(data));
-// });
 
-const feet = require('./jsonSeedFiles/final.feet.json')
+const feet = require('../jsonSeedFiles/final.feet.json')
 
 const countFeetColors = countColors(feet)
 
@@ -25,11 +22,12 @@ const feetMetaInfo = {
 
 
 const feetDescripObj = {
-    Aqua: "Aqua",
+    Black: "Black",
     Blue: "Blue",
+    Brown: "Brown",
     Green: "Green",
     Orange: "Orange",
-    Pink: "Pink",
+    Yellow: "Yellow",
     Purple: "Purple",
     Red: "Red",
     White: "White"

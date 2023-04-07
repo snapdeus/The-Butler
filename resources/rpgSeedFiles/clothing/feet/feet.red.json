@@ -10,7 +10,7 @@
     },
     {
         "Name": "Scarlet Footwear",
-        "Color": "Scarlet",
+        "Color": "Red",
         "Value": 150,
         "Buff": {
             "buffType": "Evade",
@@ -23,7 +23,7 @@
     },
     {
         "Name": "Crimson Boots",
-        "Color": "Crimson",
+        "Color": "Red",
         "Value": 90,
         "Description": "These crimson boots are made from sturdy leather and provide great protection for the wearer's feet.",
         "Filename": "0003_clothing_feet_red.png",
@@ -32,7 +32,7 @@
     },
     {
         "Name": "Burgundy Boots",
-        "Color": "Burgundy",
+        "Color": "Red",
         "Value": 110,
         "Description": "These burgundy boots are crafted with care, providing both comfort and durability.",
         "Filename": "0004_clothing_feet_red.png",
@@ -41,7 +41,7 @@
     },
     {
         "Name": "Ruby Boots",
-        "Color": "Ruby",
+        "Color": "Red",
         "Value": 250,
         "Buff": {
             "buffType": "HP",
@@ -54,7 +54,7 @@
     },
     {
         "Name": "Garnet Boots",
-        "Color": "Garnet",
+        "Color": "Red",
         "Value": 120,
         "Description": "These garnet boots are both stylish and functional, perfect for any adventurer.",
         "Filename": "0006_clothing_feet_red.png",
@@ -63,7 +63,7 @@
     },
     {
         "Name": "Maroon Footwear",
-        "Color": "Maroon",
+        "Color": "Red",
         "Value": 200,
         "Buff": {
             "buffType": "Endurance",
@@ -76,7 +76,7 @@
     },
     {
         "Name": "Carmine Boots",
-        "Color": "Carmine",
+        "Color": "Red",
         "Value": 80,
         "Description": "These carmine boots are made from high quality leather and are perfect for any adventurer.",
         "Filename": "0008_clothing_feet_red.png",
@@ -85,7 +85,7 @@
     },
     {
         "Name": "Cherry Red Boots",
-        "Color": "Cherry Red",
+        "Color": "Red",
         "Value": 100,
         "Description": "These cherry red boots are both stylish and practical, perfect for any adventurer.",
         "Filename": "0009_clothing_feet_red.png",
@@ -94,7 +94,7 @@
     },
     {
         "Name": "Blood Red Boots",
-        "Color": "Blood Red",
+        "Color": "Red",
         "Value": 300,
         "Buff": {
             "buffType": "Defense",

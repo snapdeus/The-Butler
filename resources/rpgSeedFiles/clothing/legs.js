@@ -1,6 +1,6 @@
 
 
-const { countColors, mergeItemsCountsAndDescriptions, read_directory } = require('../utils')
+const { countColors, mergeItemsCountsAndDescriptions } = require('../utils')
 
 
 const fs = require('fs');
@@ -8,11 +8,7 @@ const path = require('path');
 const dir = path.join(__dirname, 'legs');
 
 
-// read_directory(dir).then(data => {
-//     fs.writeFileSync('./jsonSeedFiles/final.legs.json', JSON.stringify(data));
-// });
-
-const legs = require('./jsonSeedFiles/final.legs.json')
+const legs = require('../jsonSeedFiles/final.legs.json')
 
 const countLegsColors = countColors(legs)
 

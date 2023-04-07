@@ -1,6 +1,6 @@
 
 
-const { countColors, mergeItemsCountsAndDescriptions, read_directory } = require('../utils')
+const { countColors, mergeItemsCountsAndDescriptions } = require('../utils')
 
 
 const fs = require('fs');
@@ -8,11 +8,7 @@ const path = require('path');
 const dir = path.join(__dirname, 'head');
 
 
-// read_directory(dir).then(data => {
-//     fs.writeFileSync('./jsonSeedFiles/final.head.json', JSON.stringify(data));
-// });
-
-const head = require('./jsonSeedFiles/final.head.json')
+const head = require('../jsonSeedFiles/final.head.json')
 
 const countHeadColors = countColors(head)
 
