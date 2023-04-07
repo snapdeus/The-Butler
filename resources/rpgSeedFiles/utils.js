@@ -1,7 +1,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const dir = path.join(__dirname, 'clothes/torso');
+const dir = path.join(__dirname, 'clothing/torso');
 
 function countColors(itemArray) {
     return itemArray.reduce((acc, cur) => {

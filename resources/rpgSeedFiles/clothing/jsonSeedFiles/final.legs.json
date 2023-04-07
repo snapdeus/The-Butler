@@ -1,0 +1,1665 @@
+[
+    {
+        "Name": "Black Leggings",
+        "Color": "Black",
+        "Value": 45,
+        "Type": "legs",
+        "Weight": 15,
+        "Filename": "0001_clothing_legs_black.png",
+        "Description": "Classic black leggings suitable for travel and daily wear, providing comfort and freedom of movement."
+    },
+    {
+        "Name": "Black Greaves",
+        "Color": "Black",
+        "Value": 250,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 30
+        },
+        "Type": "legs",
+        "Weight": 70,
+        "Filename": "0002_clothing_legs_black.png",
+        "Description": "Sturdy black greaves adorned with intricate patterns, bolstering your defenses in harsh battles."
+    },
+    {
+        "Name": "Black Chaps",
+        "Color": "Black",
+        "Value": 65,
+        "Type": "legs",
+        "Weight": 40,
+        "Filename": "0003_clothing_legs_black.png",
+        "Description": "Wear-resistant black chaps designed for horse riding and long journeys in diverse terrains."
+    },
+    {
+        "Name": "Black Trousers",
+        "Color": "Black",
+        "Value": 40,
+        "Type": "legs",
+        "Weight": 25,
+        "Filename": "0004_clothing_legs_black.png",
+        "Description": "Plain yet dependable black trousers offering moderate protection and comfort for everyday use."
+    },
+    {
+        "Name": "Black Breeches",
+        "Color": "Black",
+        "Value": 85,
+        "Type": "legs",
+        "Weight": 30,
+        "Filename": "0005_clothing_legs_black.png",
+        "Description": "Elegant black breeches with fine embroidery, meant for courtly events and regal gatherings."
+    },
+    {
+        "Name": "Black Cuisses",
+        "Color": "Black",
+        "Value": 180,
+        "Type": "legs",
+        "Weight": 55,
+        "Filename": "0006_clothing_legs_black.png",
+        "Description": "Embellished black cuisses featuring metal reinforcements, providing superior defense during intense combat."
+    },
+    {
+        "Name": "Black Poulaines",
+        "Color": "Black",
+        "Value": 50,
+        "Type": "legs",
+        "Weight": 20,
+        "Filename": "0007_clothing_legs_black.png",
+        "Description": "Stylish black poulaines with pointed tips, showcasing a fashionable choice for noble occasions."
+    },
+    {
+        "Name": "Black Hose",
+        "Color": "Black",
+        "Value": 60,
+        "Type": "legs",
+        "Weight": 20,
+        "Filename": "0008_clothing_legs_black.png",
+        "Description": "Snug-fitting black hose tailored for flexibility and grace during ceremonial events and dances."
+    },
+    {
+        "Name": "Black Leg Guards",
+        "Color": "Black",
+        "Value": 120,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 15
+        },
+        "Type": "legs",
+        "Weight": 35,
+        "Filename": "0009_clothing_legs_black.png",
+        "Description": "Rugged black leg guards endowed with mystical properties, enhancing vitality and resilience."
+    },
+    {
+        "Name": "Black Leggings",
+        "Color": "Black",
+        "Value": 45,
+        "Type": "legs",
+        "Weight": 15,
+        "Filename": "0010_clothing_legs_black.png",
+        "Description": "Classic black leggings suitable for travel and daily wear, providing comfort and freedom of movement."
+    },
+    {
+        "Name": "Black Greaves",
+        "Color": "Black",
+        "Value": 250,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 30
+        },
+        "Type": "legs",
+        "Weight": 70,
+        "Filename": "0011_clothing_legs_black.png",
+        "Description": "Sturdy black greaves adorned with intricate patterns, bolstering your defenses in harsh battles."
+    },
+    {
+        "Name": "Black Chaps",
+        "Color": "Black",
+        "Value": 65,
+        "Type": "legs",
+        "Weight": 40,
+        "Filename": "0012_clothing_legs_black.png",
+        "Description": "Wear-resistant black chaps designed for horse riding and long journeys in diverse terrains."
+    },
+    {
+        "Name": "Black Trousers",
+        "Color": "Black",
+        "Value": 40,
+        "Type": "legs",
+        "Weight": 25,
+        "Filename": "0013_clothing_legs_black.png",
+        "Description": "Plain yet dependable black trousers offering moderate protection and comfort for everyday use."
+    },
+    {
+        "Name": "Black Breeches",
+        "Color": "Black",
+        "Value": 85,
+        "Type": "legs",
+        "Weight": 30,
+        "Filename": "0014_clothing_legs_black.png",
+        "Description": "Elegant black breeches with fine embroidery, meant for courtly events and regal gatherings."
+    },
+    {
+        "Name": "Black Cuisses",
+        "Color": "Black",
+        "Value": 180,
+        "Type": "legs",
+        "Weight": 55,
+        "Filename": "0015_clothing_legs_black.png",
+        "Description": "Embellished black cuisses featuring metal reinforcements, providing superior defense during intense combat."
+    },
+    {
+        "Name": "Black Poulaines",
+        "Color": "Black",
+        "Value": 50,
+        "Type": "legs",
+        "Weight": 20,
+        "Filename": "0016_clothing_legs_black.png",
+        "Description": "Stylish black poulaines with pointed tips, showcasing a fashionable choice for noble occasions."
+    },
+    {
+        "Name": "Black Hose",
+        "Color": "Black",
+        "Value": 60,
+        "Type": "legs",
+        "Weight": 20,
+        "Filename": "0017_clothing_legs_black.png",
+        "Description": "Snug-fitting black hose tailored for flexibility and grace during ceremonial events and dances."
+    },
+    {
+        "Name": "Black Leg Guards",
+        "Color": "Black",
+        "Value": 120,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 15
+        },
+        "Type": "legs",
+        "Weight": 35,
+        "Filename": "0018_clothing_legs_black.png",
+        "Description": "Rugged black leg guards endowed with mystical properties, enhancing vitality and resilience."
+    },
+    {
+        "Name": "Black Platelegs",
+        "Color": "Black",
+        "Value": 150,
+        "Type": "legs",
+        "Weight": 60,
+        "Filename": "0019_clothing_legs_black.png",
+        "Description": "Heavy black platelegs forged from strong metal, providing increased protection in challenging fights."
+    },
+    {
+        "Name": "Black Brigandine",
+        "Color": "Black",
+        "Value": 175,
+        "Type": "legs",
+        "Weight": 45,
+        "Filename": "0020_clothing_legs_black.png",
+        "Description": "A durable black brigandine designed for increased protection, combining multiple layers of fabric and metal rivets for added resilience."
+    },
+    {
+        "Name": "Black Breeches",
+        "Color": "Black",
+        "Value": 120,
+        "Type": "legs",
+        "Weight": 25,
+        "Filename": "0021_clothing_legs_black.png",
+        "Description": "Comfortable black breeches crafted for agility, allowing the wearer to execute swift movements while in combat."
+    },
+    {
+        "Name": "Black Tassets",
+        "Color": "Black",
+        "Value": 400,
+        "Type": "legs",
+        "Weight": 60,
+        "Filename": "0022_clothing_legs_black.png",
+        "Description": "Elegant black tassets forged with intricate patterns, providing the wearer a majestic appearance and enhanced endurance.",
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 20
+        }
+    },
+    {
+        "Name": "Black Cuisses",
+        "Color": "Black",
+        "Value": 260,
+        "Type": "legs",
+        "Weight": 50,
+        "Filename": "0023_clothing_legs_black.png",
+        "Description": "Sturdy black cuisses built for protection, offering superb defense against most physical attacks."
+    },
+    {
+        "Name": "Black Hosen",
+        "Color": "Black",
+        "Value": 180,
+        "Type": "legs",
+        "Weight": 35,
+        "Filename": "0024_clothing_legs_black.png",
+        "Description": "Finely woven black hosen providing excellent flexibility, designed for wearers who prefer to strike swiftly and evade incoming blows."
+    },
+    {
+        "Name": "Black Gown",
+        "Color": "Black",
+        "Value": 200,
+        "Type": "legs",
+        "Weight": 40,
+        "Filename": "0025_clothing_legs_black.png",
+        "Description": "An elegant black gown with intricate lacework, designed for both style and mobility in social or combat situations."
+    },
+    {
+        "Name": "Black Enchanted Dress",
+        "Color": "Black",
+        "Value": 600,
+        "Type": "legs",
+        "Weight": 45,
+        "Filename": "0026_clothing_legs_black.png",
+        "Description": "A bewitching black dress imbued with magical properties, enhancing the wearer's magical attack in the heat of battle.",
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 25
+        }
+    },
+    {
+        "Name": "Black Greaves",
+        "Color": "Black",
+        "Value": 150,
+        "Type": "legs",
+        "Weight": 60,
+        "Filename": "0027_clothing_legs_Black.png",
+        "Description": "Sturdy black greaves with solid protection, perfect for any warrior stepping into battle."
+    },
+    {
+        "Name": "Black Plated Leggings",
+        "Color": "Black",
+        "Value": 250,
+        "Type": "legs",
+        "Weight": 75,
+        "Filename": "0028_clothing_legs_Black.png",
+        "Description": "Impressive black leggings with steel plates, offering substantial defense without sacrificing mobility."
+    },
+    {
+        "Name": "Black Chainmail Leggings",
+        "Color": "Black",
+        "Value": 200,
+        "Type": "legs",
+        "Weight": 50,
+        "Filename": "0029_clothing_legs_Black.png",
+        "Description": "Flexible black chainmail leggings that allow for swift movements while shielding the wearer from harm."
+    },
+    {
+        "Name": "Black Studded Leggings",
+        "Color": "Black",
+        "Value": 100,
+        "Type": "legs",
+        "Weight": 40,
+        "Filename": "0030_clothing_legs_Black.png",
+        "Description": "Black leggings adorned with metal studs, offering a balance between protection and agility."
+    },
+    {
+        "Name": "Black Enchanted Greaves",
+        "Color": "Black",
+        "Value": 500,
+        "Type": "legs",
+        "Weight": 65,
+        "Filename": "0031_clothing_legs_Black.png",
+        "Description": "Mystical black greaves endowed with magical properties, empowering the wearer's defense in combat.",
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        }
+    },
+    {
+        "Name": "Black Knight's Leggings",
+        "Color": "Black",
+        "Value": 350,
+        "Type": "legs",
+        "Weight": 80,
+        "Filename": "0032_clothing_legs_Black.png",
+        "Description": "Sophisticated black leggings forged for a knight, boasting a perfect mix of unrivaled protection and finesse."
+    },
+    {
+        "Name": "Black Scale Leggings",
+        "Color": "Black",
+        "Value": 300,
+        "Type": "legs",
+        "Weight": 70,
+        "Filename": "0033_clothing_legs_Black.png",
+        "Description": "Formidable black leggings made from dragon scales, providing extraordinary resilience against magical attacks."
+    },
+    {
+        "Name": "Black Shadow Greaves",
+        "Color": "Black",
+        "Value": 400,
+        "Type": "legs",
+        "Weight": 55,
+        "Filename": "0034_clothing_legs_Black.png",
+        "Description": "Elusive black greaves with an aura of shadows, allowing the wearer to dodge attacks with ease.",
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 15
+        }
+    },
+    {
+        "Name": "Black Royal Leggings",
+        "Color": "Black",
+        "Value": 600,
+        "Type": "legs",
+        "Weight": 90,
+        "Filename": "0035_clothing_legs_Black.png",
+        "Description": "Regal black leggings adorned with gold filigree, offering unmatched elegance and preeminent protection."
+    },
+    {
+        "Name": "Black Warlord's Greaves",
+        "Color": "Black",
+        "Value": 450,
+        "Type": "legs",
+        "Weight": 95,
+        "Filename": "0036_clothing_legs_Black.png",
+        "Description": "Imposing black greaves worn by legendary warlords, bestowing incredible fortitude for the fiercest of battles."
+    },
+    {
+        "Name": "Blue Breeches",
+        "Color": "Blue",
+        "Value": 150,
+        "Type": "legs",
+        "Weight": 30,
+        "Filename": "0001_clothing_legs_Blue.png",
+        "Description": "Comfortable blue breeches, suitable for daily wear or casual adventures in the realm."
+    },
+    {
+        "Name": "Blue Trousers",
+        "Color": "Blue",
+        "Value": 200,
+        "Type": "legs",
+        "Weight": 45,
+        "Filename": "0002_clothing_legs_Blue.png",
+        "Description": "Well-crafted blue trousers, offering modest protection to anyone traversing the kingdom."
+    },
+    {
+        "Name": "Blue Enigmatic Leggings",
+        "Color": "Blue",
+        "Value": 300,
+        "Type": "legs",
+        "Weight": 35,
+        "Filename": "0003_clothing_legs_Blue.png",
+        "Description": "Inspired by otherworldly forces, these blue leggings provide those who wear them with magical defense.",
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 10
+        }
+    },
+    {
+        "Name": "Blue Satin Trousers",
+        "Color": "Blue",
+        "Value": 180,
+        "Type": "legs",
+        "Weight": 25,
+        "Filename": "0004_clothing_legs_Blue.png",
+        "Description": "Soft and elegant, these blue satin trousers are fit for any mage seeking elegance and charm."
+    },
+    {
+        "Name": "Blue Scale Pants",
+        "Color": "Blue",
+        "Value": 250,
+        "Type": "legs",
+        "Weight": 60,
+        "Filename": "0005_clothing_legs_Blue.png",
+        "Description": "Composed of rare blue scales, these pants provide the wearer with enhanced endurance."
+    },
+    {
+        "Name": "Blue Mysterious Leggings",
+        "Color": "Blue",
+        "Value": 400,
+        "Type": "legs",
+        "Weight": 40,
+        "Filename": "0006_clothing_legs_Blue.png",
+        "Description": "Enigmatic and powerful, these blue leggings bestow great magical attack to those who dare to wear them.",
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 30
+        }
+    },
+    {
+        "Name": "Blue Silk Pants",
+        "Color": "Blue",
+        "Value": 220,
+        "Type": "legs",
+        "Weight": 20,
+        "Filename": "0007_clothing_legs_Blue.png",
+        "Description": "Exquisite and luxurious, these blue silk pants ensure style and grace with every stride."
+    },
+    {
+        "Name": "Blue Padded Trousers",
+        "Color": "Blue",
+        "Value": 280,
+        "Type": "legs",
+        "Weight": 50,
+        "Filename": "0008_clothing_legs_Blue.png",
+        "Description": "Reinforced with padding, these blue trousers offer increased defense and agility for those who wear them."
+    },
+    {
+        "Name": "Blue Ornate Leggings",
+        "Color": "Blue",
+        "Value": 350,
+        "Type": "legs",
+        "Weight": 55,
+        "Filename": "0009_clothing_legs_Blue.png",
+        "Description": "Extravagant and decorative, these blue leggings display grand embellishments fit for the nobility."
+    },
+    {
+        "Name": "Blue Chainmail Pants",
+        "Color": "Blue",
+        "Value": 260,
+        "Type": "legs",
+        "Weight": 70,
+        "Filename": "0010_clothing_legs_Blue.png",
+        "Description": "Protective and flexible, these blue chainmail pants combine security with ease of movement."
+    },
+    {
+        "Name": "Blue Serpentine Leggings",
+        "Color": "Blue",
+        "Value": 320,
+        "Type": "legs",
+        "Weight": 45,
+        "Filename": "0011_clothing_legs_Blue.png",
+        "Description": "Imbued with the essence of serpent spirits, these blue leggings grant the wearer a boost in AP.",
+        "Buff": {
+            "buffType": "AP",
+            "amount": 15
+        }
+    },
+    {
+        "Name": "Blue Studded Trousers",
+        "Color": "Blue",
+        "Value": 240,
+        "Type": "legs",
+        "Weight": 65,
+        "Filename": "0012_clothing_legs_Blue.png",
+        "Description": "Adorned with metal studs, these blue trousers present a balance of both protection and agility."
+    },
+    {
+        "Name": "Blue Culottes",
+        "Color": "Blue",
+        "Value": 120,
+        "Type": "legs",
+        "Weight": 25,
+        "Filename": "0013_clothing_legs_Blue.png",
+        "Description": "Airy blue culottes granting comfort and freedom of movement for agile maneuvers in close combat."
+    },
+    {
+        "Name": "Blue Speedo",
+        "Color": "Blue",
+        "Value": 60,
+        "Type": "legs",
+        "Weight": 10,
+        "Filename": "0014_clothing_legs_Blue.png",
+        "Description": "A daring blue speedo offering minimal coverage but maximum mobility for daring adventurers."
+    },
+    {
+        "Name": "Blue Galligaskins",
+        "Color": "Blue",
+        "Value": 170,
+        "Type": "legs",
+        "Weight": 40,
+        "Filename": "0015_clothing_legs_Blue.png",
+        "Description": "Resilient blue galligaskins providing sturdy protection and durability for fierce skirmishes."
+    },
+    {
+        "Name": "Blue Auspicious Shorts",
+        "Color": "Blue",
+        "Value": 350,
+        "Type": "legs",
+        "Weight": 30,
+        "Filename": "0016_clothing_legs_Blue.png",
+        "Description": "Fortuitous blue shorts imbued with mystical properties, granting the wearer a significant boost in magic defense.",
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        }
+    },
+    {
+        "Name": "Blue Cerulean Dress",
+        "Color": "Blue",
+        "Value": 180,
+        "Type": "legs",
+        "Weight": 40,
+        "Filename": "0017_clothing_legs_Blue.png",
+        "Description": "A lavish cerulean dress woven with intricate patterns, perfect for enchanting audiences in regal courts."
+    },
+    {
+        "Name": "Blue Cascading Dress",
+        "Color": "Blue",
+        "Value": 260,
+        "Type": "legs",
+        "Weight": 45,
+        "Filename": "0018_clothing_legs_Blue.png",
+        "Description": "A flowing cascading dress exuding elegance and grace, allowing the wearer to move effortlessly through any gathering."
+    },
+    {
+        "Name": "Blue Embroidered Dress",
+        "Color": "Blue",
+        "Value": 220,
+        "Type": "legs",
+        "Weight": 50,
+        "Filename": "0019_clothing_legs_Blue.png",
+        "Description": "A splendid dress featuring exquisite embroidery, attracting awe and admiration from those who first lay eyes upon it."
+    },
+    {
+        "Name": "Blue Diaphanous Dress",
+        "Color": "Blue",
+        "Value": 290,
+        "Type": "legs",
+        "Weight": 35,
+        "Filename": "0020_clothing_legs_Blue.png",
+        "Description": "A captivating diaphanous dress both delicate and alluring, sure to beguile any who witness its ethereal beauty."
+    },
+    {
+        "Name": "Blue Cuisses",
+        "Color": "Blue",
+        "Value": 160,
+        "Type": "legs",
+        "Weight": 65,
+        "Filename": "0021_clothing_legs_Blue.png",
+        "Description": "Robust blue cuisses crafted for resilience in the face of adversity, bolstering the defenses of noble knights."
+    },
+    {
+        "Name": "Blue Greaves",
+        "Color": "Blue",
+        "Value": 190,
+        "Type": "legs",
+        "Weight": 75,
+        "Filename": "0022_clothing_legs_Blue.png",
+        "Description": "Sturdy blue greaves forged to protect the lower legs of formidable warriors in the heat of battle."
+    },
+    {
+        "Name": "Blue Poleyns",
+        "Color": "Blue",
+        "Value": 210,
+        "Type": "legs",
+        "Weight": 60,
+        "Filename": "0023_clothing_legs_Blue.png",
+        "Description": "Unyielding blue poleyns designed to shield the knees from the crushing blows of relentless adversaries."
+    },
+    {
+        "Name": "Blue Tassets",
+        "Color": "Blue",
+        "Value": 230,
+        "Type": "legs",
+        "Weight": 55,
+        "Filename": "0024_clothing_legs_Blue.png",
+        "Description": "Steely blue tassets engineered to fortify the upper legs from the advancement of enemy weaponry."
+    },
+    {
+        "Name": "Blue Sabatons",
+        "Color": "Blue",
+        "Value": 250,
+        "Type": "legs",
+        "Weight": 70,
+        "Filename": "0025_clothing_legs_Blue.png",
+        "Description": "Impervious blue sabatons skillfully shaped to safeguard the feet when navigating treacherous battlegrounds.",
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 15
+        }
+    },
+    {
+        "Name": "Blue Chausses",
+        "Color": "Blue",
+        "Value": 270,
+        "Type": "legs",
+        "Weight": 80,
+        "Filename": "0026_clothing_legs_Blue.png",
+        "Description": "Supple blue chausse, fashioned with chainmail, offering a felicitous balance between flexibility and sturdiness in combat situations."
+    },
+    {
+        "Name": "Blue Fauxbegine",
+        "Color": "Blue",
+        "Value": 200,
+        "Type": "legs",
+        "Weight": 60,
+        "Filename": "0027_clothing_legs_Blue.png",
+        "Description": "Blue and bold fauxbegine, intricately woven to provide an illusion of great strength while maintaining swift movements."
+    },
+    {
+        "Name": "Blue Brayette",
+        "Color": "Blue",
+        "Value": 220,
+        "Type": "legs",
+        "Weight": 45,
+        "Filename": "0028_clothing_legs_Blue.png",
+        "Description": "A protective blue brayette, crafted to defend delicate areas with its hardened plating, suitable for fierce combatants."
+    },
+    {
+        "Name": "Blue Cuisse-plate",
+        "Color": "Blue",
+        "Value": 240,
+        "Type": "legs",
+        "Weight": 70,
+        "Filename": "0029_clothing_legs_Blue.png",
+        "Description": "A resilient cuisse-plate, dyed a deep blue and reinforced with solid metal, offering durability and safety to its wearer."
+    },
+    {
+        "Name": "Blue Legharness",
+        "Color": "Blue",
+        "Value": 260,
+        "Type": "legs",
+        "Weight": 90,
+        "Filename": "0030_clothing_legs_Blue.png",
+        "Description": "The blue legharness provides comprehensive coverage, ensuring stability and support during arduous battles."
+    },
+    {
+        "Name": "Blue Warcallers",
+        "Color": "Blue",
+        "Value": 330,
+        "Type": "legs",
+        "Weight": 55,
+        "Filename": "0031_clothing_legs_Blue.png",
+        "Description": "These blue warcallers emanate confidence and strength, bolstering the wearer's endurance in the face of extreme adversity.",
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 20
+        }
+    },
+    {
+        "Name": "Blue Demiguards",
+        "Color": "Blue",
+        "Value": 280,
+        "Type": "legs",
+        "Weight": 65,
+        "Filename": "0032_clothing_legs_Blue.png",
+        "Description": "Crafted for dexterity, blue demiguards balance reliable defense with ease of movement to suit agile warriors."
+    },
+    {
+        "Name": "Blue Fauldplate",
+        "Color": "Blue",
+        "Value": 300,
+        "Type": "legs",
+        "Weight": 75,
+        "Filename": "0033_clothing_legs_Blue.png",
+        "Description": "Imposing blue fauldplate skilfully layers metal to cover the waist and thighs, offering steadfast protection to the wearer."
+    },
+    {
+        "Name": "Green Brocade Shorts",
+        "Color": "Green",
+        "Value": 300,
+        "Description": "A finely woven pair of shorts made with luxurious brocade fabric.",
+        "Filename": "0001_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 30
+    },
+    {
+        "Name": "Green Tattersall Shorts",
+        "Color": "Green",
+        "Value": 250,
+        "Description": "Stylish knee-length shorts featuring a tattersall pattern.",
+        "Filename": "0002_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 40
+    },
+    {
+        "Name": "Green Pelt Breeches",
+        "Color": "Green",
+        "Value": 330,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 12
+        },
+        "Description": "Breeches offering added protection made from thick, pelt fabric.",
+        "Filename": "0003_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 70
+    },
+    {
+        "Name": "Green Herringbone Pants",
+        "Color": "Green",
+        "Value": 280,
+        "Description": "Sturdy pants with traditional herringbone weave.",
+        "Filename": "0004_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 65
+    },
+    {
+        "Name": "Green Baize Pants",
+        "Color": "Green",
+        "Value": 210,
+        "Description": "Woolen pants made from soft and warm baize fabric.",
+        "Filename": "0005_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 60
+    },
+    {
+        "Name": "Green Velvet Pants",
+        "Color": "Green",
+        "Value": 350,
+        "Description": "Sophisticated trousers made from smooth, luxurious velvet.",
+        "Filename": "0006_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 50
+    },
+    {
+        "Name": "Green Gingham Pants",
+        "Color": "Green",
+        "Value": 260,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 30
+        },
+        "Description": "Patterned trousers exuding charm and providing increased magic defense.",
+        "Filename": "0007_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 45
+    },
+    {
+        "Name": "Green Crape Pants",
+        "Color": "Green",
+        "Value": 230,
+        "Description": "Subdued pants crafted from delicate crape fabric.",
+        "Filename": "0008_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 40
+    },
+    {
+        "Name": "Green Damask Dress",
+        "Color": "Green",
+        "Value": 400,
+        "Description": "Elegant full-length dress made from intricate damask fabric.",
+        "Filename": "0009_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 90
+    },
+    {
+        "Name": "Green Camisade Dress",
+        "Color": "Green",
+        "Value": 380,
+        "Description": "A flowing dress adorned with a camisade trim, flattering and graceful.",
+        "Filename": "0010_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 80
+    },
+    {
+        "Name": "Green Samite Dress",
+        "Color": "Green",
+        "Value": 450,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 25
+        },
+        "Description": "A sumptuous dress made from rich samite fabric, providing added health benefits.",
+        "Filename": "0011_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 70
+    },
+    {
+        "Name": "Green Corduroy Pants",
+        "Color": "Green",
+        "Value": 290,
+        "Description": "Durable corduroy pants perfect for any adventure.",
+        "Filename": "0012_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 55
+    },
+    {
+        "Name": "Green Tweed Pants",
+        "Color": "Green",
+        "Value": 270,
+        "Description": "Classic pants crafted from cozy tweed fabric.",
+        "Filename": "0013_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 60
+    },
+    {
+        "Name": "Green Nainsook Pants",
+        "Color": "Green",
+        "Value": 240,
+        "Description": "Light, breathable pants made from soft nainsook fabric.",
+        "Filename": "0014_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 35
+    },
+    {
+        "Name": "Green Sateen Pants",
+        "Color": "Green",
+        "Value": 310,
+        "Description": "Refined pants made from glossy sateen fabric.",
+        "Filename": "0015_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 45
+    },
+    {
+        "Name": "Green Linsey-Woolsey Pants",
+        "Color": "Green",
+        "Value": 260,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 15
+        },
+        "Description": "Comfortable pants made from sturdy linsey-woolsey fabric, enhancing physical attacks.",
+        "Filename": "0016_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 50
+    },
+    {
+        "Name": "Green Calico Pants",
+        "Color": "Green",
+        "Value": 230,
+        "Description": "Soft, printed pants made from versatile calico fabric.",
+        "Filename": "0017_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 35
+    },
+    {
+        "Name": "Green Chiffon Pants",
+        "Color": "Green",
+        "Value": 220,
+        "Description": "Graceful, lightweight pants made of sheer chiffon.",
+        "Filename": "0018_clothing_legs_green.png",
+        "Type": "legs",
+        "Weight": 25
+    },
+    {
+        "Name": "Orange Trews",
+        "Color": "Orange",
+        "Value": 200,
+        "Description": "A pair of dashing orange trews that resembles a phoenix rising from the ashes.",
+        "Filename": "0001_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 25
+    },
+    {
+        "Name": "Orange Chausses",
+        "Color": "Orange",
+        "Value": 400,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 30
+        },
+        "Description": "Finely crafted chausses adorned with intricate embroideries, granting the wearer added defense.",
+        "Filename": "0002_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 35
+    },
+    {
+        "Name": "Orange Breeches",
+        "Color": "Orange",
+        "Value": 300,
+        "Description": "Elegant orange breeches made of luxurious fabric, bringing comfort and style to the wearer.",
+        "Filename": "0003_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 30
+    },
+    {
+        "Name": "Orange Pluderhose",
+        "Color": "Orange",
+        "Value": 500,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 15
+        },
+        "Description": "Resilient orange pluderhose designed to aid fighters in combat, increasing their attack capabilities.",
+        "Filename": "0004_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 40
+    },
+    {
+        "Name": "Orange Hose",
+        "Color": "Orange",
+        "Value": 275,
+        "Description": "Tailored orange hose suitable for knights, offering flexibility and easy movement.",
+        "Filename": "0005_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 26
+    },
+    {
+        "Name": "Orange Culottes",
+        "Color": "Orange",
+        "Value": 380,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 20
+        },
+        "Description": "Durable orange culottes, enhancing the wearer's endurance in both battle and travel.",
+        "Filename": "0006_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 33
+    },
+    {
+        "Name": "Orange Trunkhose",
+        "Color": "Orange",
+        "Value": 350,
+        "Description": "Elegant orange trunkhose that portrays the grace of courtly dances.",
+        "Filename": "0007_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 32
+    },
+    {
+        "Name": "Orange Shorts",
+        "Color": "Orange",
+        "Value": 150,
+        "Description": "A comfortable pair of orange shorts ideal for warm climates and casual wear.",
+        "Filename": "0008_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Brown Orange Short",
+        "Color": "Orange",
+        "Value": 100,
+        "Description": "Regular Browny Orange shorts...",
+        "Filename": "0009_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Green Orange Shorts",
+        "Color": "Orange",
+        "Value": 100,
+        "Description": "Regular Greeny Orange shorts...",
+        "Filename": "0010_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Orange Kirtle",
+        "Color": "Orange",
+        "Value": 400,
+        "Description": "A beautifully crafted orange kirtle, fit for a regal presence at court festivities.",
+        "Filename": "0011_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 42
+    },
+    {
+        "Name": "Orange Hennin",
+        "Color": "Orange",
+        "Value": 480,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 28
+        },
+        "Description": "An ornate orange hennin boasting magical properties, enhancing the wearer's magical attack.",
+        "Filename": "0012_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 30
+    },
+    {
+        "Name": "Orange Dress of Fortunate Health",
+        "Color": "Orange",
+        "Value": 550,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 20
+        },
+        "Description": "A durable leather dress, supporting the wearer's vitality with added health benefits.",
+        "Filename": "0013_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 70
+    },
+    {
+        "Name": "Orange cotehardie",
+        "Color": "Orange",
+        "Value": 625,
+        "Description": "A legendary orange cotehardie, symbolizing the passion of its wearer.",
+        "Filename": "0014_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 80
+    },
+    {
+        "Name": "Orange Golden Leg Braces",
+        "Color": "Orange",
+        "Value": 450,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 15
+        },
+        "Description": "An exquisite set of Golden Leg Braces that aids its wearer in evading incoming attacks with ease.",
+        "Filename": "0015_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 48
+    },
+    {
+        "Name": "Orange Magic Legshield",
+        "Color": "Orange",
+        "Value": 650,
+        "Buff": {
+            "buffType": "AP",
+            "amount": 50
+        },
+        "Description": "A robust orange leg armor that bestows its wearer with an astonishing boost to their action points.",
+        "Filename": "0016_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 60
+    },
+    {
+        "Name": "Orange Plate Armor",
+        "Color": "Orange",
+        "Value": 700,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A heavy orange plate armor offering unwavering defense and fortification for its wearer.",
+        "Filename": "0017_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 90
+    },
+    {
+        "Name": "Orange Scale Armor",
+        "Color": "Orange",
+        "Value": 675,
+        "Description": "Versatile orange scale armor that provides a perfect balance of protection and agility.",
+        "Filename": "0018_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 75
+    },
+    {
+        "Name": "Orange Lamellar Armor",
+        "Color": "Orange",
+        "Value": 680,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 30
+        },
+        "Description": "A suit of orange lamellar armor, enhancing the wearer's endurance in battle and strenuous activities.",
+        "Filename": "0019_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 85
+    },
+    {
+        "Name": "Orange Cuirass",
+        "Color": "Orange",
+        "Value": 700,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 40
+        },
+        "Description": "A heavily reinforced orange cuirass, providing the ultimate defense for any warrior.",
+        "Filename": "0020_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 90
+    },
+    {
+        "Name": "Orange Gambeson",
+        "Color": "Orange",
+        "Value": 600,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 35
+        },
+        "Description": "A robust orange gambeson providing exceptional protection and increasing the wearer's maximum health.",
+        "Filename": "0021_clothing_legs_orange.png",
+        "Type": "legs",
+        "Weight": 100
+    },
+    {
+        "Name": "Pink Tulle Skirt",
+        "Color": "Pink",
+        "Value": 35,
+        "Description": "A light and airy tulle skirt, perfect for dancing through fields.",
+        "Filename": "0001_clothing_legs_pink.png",
+        "Type": "legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Pink Studded Armor",
+        "Color": "Pink",
+        "Value": 110,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 15
+        },
+        "Description": "This studded armor will protect you from any danger on your journey.",
+        "Filename": "0002_clothing_legs_pink.png",
+        "Type": "legs",
+        "Weight": 70
+    },
+    {
+        "Name": "Pink Silk Armor",
+        "Color": "Pink",
+        "Value": 420,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "This silk armor is finely crafted and imbued with powerful magic to protect you.",
+        "Filename": "0003_clothing_.png",
+        "Type": "legs",
+        "Weight": 50
+    },
+    {
+        "Name": "Pink Satin Pants",
+        "Color": "Pink",
+        "Value": 60,
+        "Description": "These silky smooth pants will make you feel like royalty.",
+        "Filename": "0004_clothing_legs_pink.png",
+        "Type": "legs",
+        "Weight": 30
+    },
+    {
+        "Name": "Royal Purple Bottom",
+        "Color": "Purple",
+        "Value": 50,
+        "Description": "A regal bottom bathing suit that increases your endurance by 20 points!",
+        "Filename": "0001_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Lavender Leggings",
+        "Color": "Purple",
+        "Value": 35,
+        "Description": "A pair of soft, supple leggings that provide excellent mobility and comfort.",
+        "Filename": "0002_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 25
+    },
+    {
+        "Name": "Amethyst Trousers",
+        "Color": "Purple",
+        "Value": 70,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 15
+        },
+        "Description": "Trousers made from rare amethyst silk, providing excellent protection against physical attacks.",
+        "Filename": "0003_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 40
+    },
+    {
+        "Name": "Royal Purple Pants",
+        "Color": "Purple",
+        "Value": 55,
+        "Description": "A pair of pants made from high-quality purple fabric, perfect for formal occasions.",
+        "Filename": "0004_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 30
+    },
+    {
+        "Name": "Grimoire Leggings",
+        "Color": "Purple",
+        "Value": 120,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "Elegant leggings imbued with magical properties, providing excellent protection against magical attacks.",
+        "Filename": "0005_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 35
+    },
+    {
+        "Name": "Purple Stronghold",
+        "Color": "Purple",
+        "Value": 650,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A sturdy armor that protects the wearer from mortal wounds.",
+        "Filename": "0006_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 85
+    },
+    {
+        "Name": "Royal Purple Shorts",
+        "Color": "Purple",
+        "Value": 45,
+        "Description": "A pair of shorts made from the finest silk, with intricate embroidery along the hemline.",
+        "Filename": "0007_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Shadowy Purple Shorts",
+        "Color": "Purple",
+        "Value": 50,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 15
+        },
+        "Description": "A pair of shorts that seem to blend into the shadows, making it harder for enemies to hit you.",
+        "Filename": "0008_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 25
+    },
+    {
+        "Name": "Majestic Purple Skirt",
+        "Color": "Purple",
+        "Value": 80,
+        "Description": "A flowing skirt with intricate embroidery, fit for a queen.",
+        "Filename": "0009_clothing_legs_purple.png",
+        "Type": "legs",
+        "Weight": 15
+    },
+    {
+        "Name": "Red Cuisse",
+        "Color": "Red",
+        "Value": 350,
+        "Description": "Sturdy red cuisse, forged for those who seek formidable protection in arduous battles.",
+        "Filename": "0001_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 60
+    },
+    {
+        "Name": "Red Greave",
+        "Color": "Red",
+        "Value": 380,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Description": "Meticulously crafted red greave bestows unparalleled defense upon the unwavering warrior.",
+        "Filename": "0002_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 55
+    },
+    {
+        "Name": "Red Sabaton",
+        "Color": "Red",
+        "Value": 330,
+        "Description": "A robust red sabaton designed for relentless front-line combatants in the heat of battle.",
+        "Filename": "0003_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 50
+    },
+    {
+        "Name": "Red Poleyn",
+        "Color": "Red",
+        "Value": 425,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 15
+        },
+        "Description": "Imbued with power, these red poleyns grant immense endurance to withstand arduous trials.",
+        "Filename": "0004_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 52
+    },
+    {
+        "Name": "Red Schynbald",
+        "Color": "Red",
+        "Value": 410,
+        "Description": "Expertly forged red schynbald, perfect for a formidable presence on the battlefield.",
+        "Filename": "0005_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 46
+    },
+    {
+        "Name": "Red Jambeau",
+        "Color": "Red",
+        "Value": 450,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 10
+        },
+        "Description": "Enchanted red jambeau, providing steadfast protection with a boon to the wearer's vitality.",
+        "Filename": "0006_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 48
+    },
+    {
+        "Name": "Red Shorts with caped Skirt",
+        "Color": "Red",
+        "Value": 160,
+        "Description": "A pair of comfortable and flexible leg covering, ideal for agile moves and swift action during tense situations.",
+        "Filename": "0007_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 21
+    },
+    {
+        "Name": "Red Pelt Trunks",
+        "Color": "Red",
+        "Value": 205,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 10
+        },
+        "Description": "Stylish red trunks that increase evasive capabilities, aiding the wearer in gracefully dodging enemy attacks.",
+        "Filename": "0008_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 19
+    },
+    {
+        "Name": "Red Bikini Bottom",
+        "Color": "Red",
+        "Value": 120,
+        "Description": "A trendy red bikini bottom ensuring a comfortable and fashionable beach experience.",
+        "Filename": "0009_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 12
+    },
+    {
+        "Name": "Red Swim Trunks",
+        "Color": "Red",
+        "Value": 135,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 8
+        },
+        "Description": "Stylish red swim trunks designed to enhance mobility and fluidity in water-based activities.",
+        "Filename": "0010_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 11
+    },
+    {
+        "Name": "Red Denim Shorts",
+        "Color": "Red",
+        "Value": 150,
+        "Description": "Casual red denim shorts, perfect for a comfortable and relaxed outfit.",
+        "Filename": "0011_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Striped Board Shorts",
+        "Color": "Red",
+        "Value": 170,
+        "Description": "Vibrant striped red board shorts, providing a stylish and fun option for beach or leisure activities.",
+        "Filename": "0012_clothing_legs_red.png",
+        "Type": "legs",
+        "Weight": 18
+    },
+    {
+        "Name": "Crimson Ruffle Skirt",
+        "Color": "Red",
+        "Value": 65,
+        "Description": "A flouncy skirt that adds a touch of elegance to your attire.",
+        "Filename": "0013_clothing_legs_red.png",
+        "Type": "Legs",
+        "Weight": 15
+    },
+    {
+        "Name": "Scarlet Maxi Skirt",
+        "Color": "Red",
+        "Value": 85,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 25
+        },
+        "Description": "A flowing skirt that allows for quick movements and nimble dodges.",
+        "Filename": "0014_clothing_legs_red.png",
+        "Type": "Legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Ruby Pencil Skirt",
+        "Color": "Red",
+        "Value": 75,
+        "Description": "A sleek and stylish skirt that exudes confidence and professionalism.",
+        "Filename": "0015_clothing_legs_red.png",
+        "Type": "Legs",
+        "Weight": 18
+    },
+    {
+        "Name": "Luminous White Pants",
+        "Color": "White",
+        "Value": 50,
+        "Description": "A pair of pants that glows in the dark, perfect for sneaking around at night.",
+        "Filename": "0001_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 30
+    },
+    {
+        "Name": "Frosty White Pants",
+        "Color": "White",
+        "Value": 70,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Description": "A pair of pants that keeps you warm even in the coldest of winters.",
+        "Filename": "0002_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 35
+    },
+    {
+        "Name": "Ethereal White Pants",
+        "Color": "White",
+        "Value": 100,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 30
+        },
+        "Description": "A pair of pants that seems to shimmer with an otherworldly light.",
+        "Filename": "0003_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Silken White Pants",
+        "Color": "White",
+        "Value": 80,
+        "Description": "A pair of pants made from the finest silk, fit for a noble.",
+        "Filename": "0004_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 15
+    },
+    {
+        "Name": "Sturdy White Pants",
+        "Color": "White",
+        "Value": 60,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 15
+        },
+        "Description": "A pair of pants that can withstand even the toughest of battles.",
+        "Filename": "0005_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 40
+    },
+    {
+        "Name": "Enchanted White Pants",
+        "Color": "White",
+        "Value": 120,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 25
+        },
+        "Description": "A pair of pants imbued with powerful magic, perfect for any mage.",
+        "Filename": "0006_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 25
+    },
+    {
+        "Name": "Sleek White Pants",
+        "Color": "White",
+        "Value": 90,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 10
+        },
+        "Description": "A pair of pants that allows you to move swiftly and gracefully.",
+        "Filename": "0007_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Radiant White Pants",
+        "Color": "White",
+        "Value": 150,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 50
+        },
+        "Description": "A pair of pants that seems to emanate a healing aura, restoring your health.",
+        "Filename": "0008_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 30
+    },
+    {
+        "Name": "Divine White Pants",
+        "Color": "White",
+        "Value": 200,
+        "Buff": {
+            "buffType": "AP",
+            "amount": 50
+        },
+        "Description": "A pair of pants that grants you divine power, increasing your attack potential.",
+        "Filename": "0009_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 35
+    },
+    {
+        "Name": "Ancient White Pants",
+        "Color": "White",
+        "Value": 300,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 30
+        },
+        "Description": "A pair of pants that has survived the ages, imbued with ancient power.",
+        "Filename": "0010_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 40
+    },
+    {
+        "Name": "Lacy White Shorts",
+        "Color": "White",
+        "Value": 35,
+        "Description": "A breezy pair of shorts adorned with delicate lacework, perfect for a summer day.",
+        "Filename": "0011_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 15
+    },
+    {
+        "Name": "White Linen Shorts",
+        "Color": "White",
+        "Value": 25,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 10
+        },
+        "Description": "A pair of comfortable linen shorts, designed for ease of movement and agility.",
+        "Filename": "0012_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Embroidered White Shorts",
+        "Color": "White",
+        "Value": 45,
+        "Description": "A stylish pair of shorts with intricate embroidery, fit for a noble adventurer.",
+        "Filename": "0013_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 18
+    },
+    {
+        "Name": "Lacy White Skirt",
+        "Color": "White",
+        "Value": 35,
+        "Description": "A flowing skirt that enhances your agility in combat.",
+        "Filename": "0014_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 15
+    },
+    {
+        "Name": "Chiffon White Skirt",
+        "Color": "White",
+        "Value": 45,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 25
+        },
+        "Description": "A delicate skirt that shimmers in the light and increases your evasion.",
+        "Filename": "0015_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 12
+    },
+    {
+        "Name": "Embroidered White Skirt",
+        "Color": "White",
+        "Value": 60,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 35
+        },
+        "Description": "A beautifully crafted skirt that provides excellent magical defense.",
+        "Filename": "0016_clothing_legs_white.png",
+        "Type": "Legs",
+        "Weight": 18
+    },
+    {
+        "Name": "Ivory Petticoat",
+        "Color": "White",
+        "Value": 45,
+        "Description": "A delicate petticoat with intricate lacework, fit for a noble lady.",
+        "Filename": "0017_clothing_legs_white.png",
+        "Type": "legs",
+        "Weight": 20
+    },
+    {
+        "Name": "Gleaming White Leg Armor",
+        "Color": "White",
+        "Value": 450,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Description": "Protective leg armor with intricate engravings and reinforced plates.",
+        "Filename": "0018_clothing_leg_armor_white.png",
+        "Type": "legs",
+        "Weight": 80
+    },
+    {
+        "Name": "Icy White Leg Armor",
+        "Color": "White",
+        "Value": 500,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "Leg armor crafted from enchanted ice that grants protection against magical attacks.",
+        "Filename": "0019_clothing_leg_armor_white.png",
+        "Type": "legs",
+        "Weight": 85
+    },
+    {
+        "Name": "White Steel Leg Armor",
+        "Color": "White",
+        "Value": 600,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 30
+        },
+        "Description": "Leg armor made from the finest steel, designed to protect against heavy blows.",
+        "Filename": "0020_clothing_leg_armor_white.png",
+        "Type": "legs",
+        "Weight": 90
+    },
+    {
+        "Name": "Luminous White Leg Armor",
+        "Color": "White",
+        "Value": 750,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 40
+        },
+        "Description": "Leg armor imbued with magical properties that glow in the dark and provide superior protection against spells.",
+        "Filename": "0021_clothing_leg_armor_white.png",
+        "Type": "legs",
+        "Weight": 95
+    },
+    {
+        "Name": "White Dragon Scale Leg Armor",
+        "Color": "White",
+        "Value": 900,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 50
+        },
+        "Description": "Leg armor crafted from the scales of a powerful white dragon, providing incredible defense against physical attacks.",
+        "Filename": "0022_clothing_leg_armor_white.png",
+        "Type": "legs",
+        "Weight": 100
+    },
+    {
+        "Name": "Divine White Leg Armor",
+        "Color": "White",
+        "Value": 1200,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 50
+        },
+        "Description": "Leg armor blessed by the gods themselves, granting unparalleled protection against all forms of attack.",
+        "Filename": "0023_clothing_leg_armor_white.png",
+        "Type": "legs",
+        "Weight": 110
+    }
+]
