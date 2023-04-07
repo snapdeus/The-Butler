@@ -1,0 +1,216 @@
+[
+    {
+        "Name": "Brown Hardy",
+        "Color": "Brown",
+        "Value": 245,
+        "Description": "A sturdy pair of boots made from the finest leather.",
+        "Filename": "0001_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 80
+    },
+    {
+        "Name": "Hiking Boots",
+        "Color": "Brown",
+        "Value": 75,
+        "Description": "Sturdy and durable boots with ankle support and waterproof coating, perfect for hiking and trekking.",
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 40
+        },
+        "Filename": "0002_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 50
+    },
+    {
+        "Name": "Brown Rugged",
+        "Color": "Brown",
+        "Value": 180,
+        "Description": "A pair of durable boots that can withstand even the toughest terrain.",
+        "Filename": "0003_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 90
+    },
+    {
+        "Name": "Combat Boots",
+        "Color": "Brown",
+        "Value": 80,
+        "Description": "Tough and rugged boots with steel toe and reinforced sole, perfect for military and tactical operations.",
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 35
+        },
+        "Filename": "0004_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 60
+    },
+    {
+        "Name": "Brown Leather",
+        "Color": "Brown",
+        "Value": 200,
+        "Description": "A classic pair of leather boots that never go out of style.",
+        "Filename": "0005_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 75
+    },
+    {
+        "Name": "Brown Hiking",
+        "Color": "Brown",
+        "Value": 150,
+        "Description": "A pair of boots designed for hiking and outdoor activities.",
+        "Filename": "0006_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 85
+    },
+    {
+        "Name": "Brown Riding",
+        "Color": "Brown",
+        "Value": 220,
+        "Description": "A pair of boots designed for horseback riding and equestrian sports.",
+        "Filename": "0007_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 95
+    },
+    {
+        "Name": "Brown Combat",
+        "Color": "Brown",
+        "Value": 180,
+        "Description": "A pair of boots designed for combat and military use.",
+        "Filename": "0008_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 100
+    },
+    {
+        "Name": "Brown Winter",
+        "Color": "Brown",
+        "Value": 280,
+        "Description": "A pair of boots designed for cold and snowy weather.",
+        "Filename": "0009_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 120
+    },
+    {
+        "Name": "Brown Work",
+        "Color": "Brown",
+        "Value": 100,
+        "Description": "A pair of boots designed for manual labor and construction work.",
+        "Filename": "0010_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 110
+    },
+    {
+        "Name": "Brown Greaves",
+        "Color": "Brown",
+        "Value": 150,
+        "Description": "Sturdy greaves to protect your shins during battle.",
+        "Filename": "0011_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 80
+    },
+    {
+        "Name": "Brown Armored Boots",
+        "Color": "Brown",
+        "Value": 250,
+        "Description": "Heavy armor to protect your legs during battle.",
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 15
+        },
+        "Filename": "0012_clothing_armor_brown.png",
+        "Type": "Feet",
+        "Weight": 120
+    },
+    {
+        "Name": "Brown Greaves",
+        "Color": "Brown",
+        "Value": 120,
+        "Description": "Lightweight greaves to protect your shins during battle.",
+        "Filename": "0013_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 60
+    },
+    {
+        "Name": "Brown Armor",
+        "Color": "Brown",
+        "Value": 200,
+        "Description": "Medium weight armor to protect your legs during battle.",
+        "Filename": "0014_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 100
+    },
+    {
+        "Name": "Brown Sneakers",
+        "Color": "Brown",
+        "Value": 45,
+        "Description": "Comfortable shoes made of soft leather, perfect for long walks and hikes.",
+        "Filename": "0015_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 25
+    },
+    {
+        "Name": "Moccasins",
+        "Color": "Brown",
+        "Value": 30,
+        "Description": "Traditional footwear made of soft and flexible leather, suitable for indoor and outdoor activities.",
+        "Filename": "0016_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Leather Sandals",
+        "Color": "Brown",
+        "Value": 25,
+        "Description": "Simple yet stylish sandals made of durable leather, perfect for summer days.",
+        "Filename": "0017_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Brogues",
+        "Color": "Brown",
+        "Value": 60,
+        "Description": "Elegant shoes with decorative perforations, suitable for formal occasions and business meetings.",
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 30
+        },
+        "Filename": "0018_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 30
+    },
+    {
+        "Name": "Loafers",
+        "Color": "Brown",
+        "Value": 50,
+        "Description": "Slip-on shoes made of soft leather, perfect for casual and semi-formal occasions.",
+        "Filename": "0019_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 25
+    },
+    {
+        "Name": "Boat Shoes",
+        "Color": "Brown",
+        "Value": 40,
+        "Description": "Stylish and comfortable shoes with non-slip soles, perfect for sailing and other outdoor activities.",
+        "Filename": "0020_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Brown Tattered",
+        "Color": "Brown",
+        "Value": 50,
+        "Description": "A pair of worn-out boots that have seen better days.",
+        "Filename": "0021_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 60
+    },
+    {
+        "Name": "Brown Suede",
+        "Color": "Brown",
+        "Value": 120,
+        "Description": "A stylish pair of suede boots that are perfect for a night out on the town.",
+        "Filename": "0022_clothing_feet_brown.png",
+        "Type": "Feet",
+        "Weight": 70
+    }
+]

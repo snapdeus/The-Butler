@@ -205,7 +205,7 @@
             "amount": 20
         },
         "Description": "Protective leg armor with intricate engravings and reinforced plates.",
-        "Filename": "0018_clothing_leg_armor_white.png",
+        "Filename": "0018_clothing_legs_white.png",
         "Type": "legs",
         "Weight": 80
     },
@@ -218,7 +218,7 @@
             "amount": 25
         },
         "Description": "Leg armor crafted from enchanted ice that grants protection against magical attacks.",
-        "Filename": "0019_clothing_leg_armor_white.png",
+        "Filename": "0019_clothing_legs_white.png",
         "Type": "legs",
         "Weight": 85
     },
@@ -231,7 +231,7 @@
             "amount": 30
         },
         "Description": "Leg armor made from the finest steel, designed to protect against heavy blows.",
-        "Filename": "0020_clothing_leg_armor_white.png",
+        "Filename": "0020_clothing_legs_white.png",
         "Type": "legs",
         "Weight": 90
     },
@@ -244,7 +244,7 @@
             "amount": 40
         },
         "Description": "Leg armor imbued with magical properties that glow in the dark and provide superior protection against spells.",
-        "Filename": "0021_clothing_leg_armor_white.png",
+        "Filename": "0021_clothing_legs_white.png",
         "Type": "legs",
         "Weight": 95
     },
@@ -257,7 +257,7 @@
             "amount": 50
         },
         "Description": "Leg armor crafted from the scales of a powerful white dragon, providing incredible defense against physical attacks.",
-        "Filename": "0022_clothing_leg_armor_white.png",
+        "Filename": "0022_clothing_legs_white.png",
         "Type": "legs",
         "Weight": 100
     },
@@ -270,7 +270,7 @@
             "amount": 50
         },
         "Description": "Leg armor blessed by the gods themselves, granting unparalleled protection against all forms of attack.",
-        "Filename": "0023_clothing_leg_armor_white.png",
+        "Filename": "0023_clothing_legs_white.png",
         "Type": "legs",
         "Weight": 110
     }

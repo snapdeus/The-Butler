@@ -1,0 +1,196 @@
+[
+    {
+        "Name": "Azure Hessian Boots",
+        "Color": "Blue",
+        "Value": 55,
+        "Description": "A pair of sturdy boots made from azure hessian, perfect for long journeys over rough terrain.",
+        "Filename": "0001_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 30
+    },
+    {
+        "Name": "Sapphire Winged Boots",
+        "Color": "Blue",
+        "Value": 290,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 35
+        },
+        "Description": "A pair of sapphire winged boots that allow the wearer to move with incredible agility and grace.",
+        "Filename": "0002_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Indigo Leather Boots",
+        "Color": "Blue",
+        "Value": 75,
+        "Description": "A pair of indigo leather boots that provide ample protection and comfort for long days on the road.",
+        "Filename": "0003_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 40
+    },
+    {
+        "Name": "Cobalt Combat Boots",
+        "Color": "Blue",
+        "Value": 125,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 20
+        },
+        "Description": "A pair of cobalt combat boots that grant the wearer increased strength and power in battle.",
+        "Filename": "0004_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 45
+    },
+    {
+        "Name": "Turquoise Traveler's Boots",
+        "Color": "Blue",
+        "Value": 90,
+        "Description": "A pair of turquoise traveler's boots that provide excellent support and comfort for long journeys.",
+        "Filename": "0005_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 35
+    },
+    {
+        "Name": "Navy Explorer's Boots",
+        "Color": "Blue",
+        "Value": 150,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 25
+        },
+        "Description": "A pair of navy explorer's boots that grant the wearer increased stamina and endurance for long treks through uncharted territories.",
+        "Filename": "0006_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 50
+    },
+    {
+        "Name": "Cerulean Mage Boots",
+        "Color": "Blue",
+        "Value": 200,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 30
+        },
+        "Description": "A pair of cerulean mage boots that enhance the wearer's magical defenses, allowing them to resist even the most powerful spells.",
+        "Filename": "0007_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 25
+    },
+    {
+        "Name": "Denim Riding Boots",
+        "Color": "Blue",
+        "Value": 100,
+        "Description": "A pair of denim riding boots that provide excellent grip and support for horseback riding.",
+        "Filename": "0008_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 40
+    },
+    {
+        "Name": "Teal Thief Boots",
+        "Color": "Blue",
+        "Value": 180,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 30
+        },
+        "Description": "A pair of teal thief boots that allow the wearer to move silently and evade detection.",
+        "Filename": "0009_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Royal Blue Knight's Boots",
+        "Color": "Blue",
+        "Value": 250,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 25
+        },
+        "Description": "A pair of royal blue knight's boots that provide excellent protection and defense in battle.",
+        "Filename": "0010_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 55
+    },
+    {
+        "Name": "Periwinkle Dancer's Boots",
+        "Color": "Blue",
+        "Value": 120,
+        "Description": "A pair of periwinkle dancer's boots that allow the wearer to move with grace and fluidity.",
+        "Filename": "0011_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Azure Plate Greaves",
+        "Color": "Blue",
+        "Value": 280,
+        "Description": "Heavy greaves crafted with an azure finish, fit for a knight.",
+        "Filename": "0012_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 80
+    },
+    {
+        "Name": "Cerulean Boots",
+        "Color": "Blue",
+        "Value": 45,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 12
+        },
+        "Description": "Lightweight boots made from cerulean leather, perfect for long journeys.",
+        "Filename": "0013_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 25
+    },
+    {
+        "Name": "Sapphire Leg Armor",
+        "Color": "Blue",
+        "Value": 410,
+        "Description": "Sturdy leg armor with a sapphire sheen, capable of withstanding heavy blows.",
+        "Filename": "0014_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 120
+    },
+    {
+        "Name": "Azure Moccasins",
+        "Color": "Blue",
+        "Value": 60,
+        "Description": "Soft soled shoes made of fine leather, perfect for silent movement.",
+        "Filename": "0015_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Cerulean Slippers",
+        "Color": "Blue",
+        "Value": 45,
+        "Description": "Comfortable and stylish slippers, perfect for lounging around the house.",
+        "Filename": "0016_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 10
+    },
+    {
+        "Name": "Sapphire Sandals",
+        "Color": "Blue",
+        "Value": 80,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 30
+        },
+        "Description": "Elegant sandals made of blue silk, imbued with the power to evade attacks.",
+        "Filename": "0017_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 12
+    },
+    {
+        "Name": "Indigo Boots",
+        "Color": "Blue",
+        "Value": 55,
+        "Description": "Sturdy boots made of blue leather, perfect for long travels.",
+        "Filename": "0018_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 20
+    }
+]

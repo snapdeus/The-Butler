@@ -1,0 +1,195 @@
+[
+    {
+        "Name": "Yellow Leather Boots",
+        "Color": "Yellow",
+        "Value": 350,
+        "Description": "A sturdy pair of yellow leather boots, perfect for traversing rough terrain.",
+        "Filename": "0001_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 35
+    },
+    {
+        "Name": "Yellow Suede Boots",
+        "Color": "Yellow",
+        "Value": 400,
+        "Description": "A soft and comfortable pair of yellow suede boots, perfect for a long journey.",
+        "Filename": "0002_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 30
+    },
+    {
+        "Name": "Yellow Fur Boots",
+        "Color": "Yellow",
+        "Value": 550,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 25
+        },
+        "Description": "A warm and cozy pair of yellow fur boots, perfect for braving the cold winter winds.",
+        "Filename": "0003_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 45
+    },
+    {
+        "Name": "Yellow Steel Greaves",
+        "Color": "Yellow",
+        "Value": 450,
+        "Description": "A sturdy pair of steel greaves that protect the wearer's legs from harm.",
+        "Filename": "0004_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 45
+    },
+    {
+        "Name": "Ivory Leg Guards",
+        "Color": "Yellow",
+        "Value": 350,
+        "Description": "Elegant ivory leg guards that provide excellent protection while also looking stylish.",
+        "Filename": "0005_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 35
+    },
+    {
+        "Name": "Pristine Yellow Legplates",
+        "Color": "Yellow",
+        "Value": 600,
+        "Description": "Beautifully crafted yellow legplates that offer superior protection and comfort.",
+        "Filename": "0006_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 60
+    },
+    {
+        "Name": "Snowy Sabatons",
+        "Color": "Yellow",
+        "Value": 300,
+        "Description": "A pair of sturdy sabatons designed to protect the feet and lower legs from harm.",
+        "Filename": "0007_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 30
+    },
+    {
+        "Name": "Frosty Shin Guards",
+        "Color": "Yellow",
+        "Value": 250,
+        "Description": "Lightweight yellow shin guards that offer basic protection against attacks.",
+        "Filename": "0008_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 25
+    },
+    {
+        "Name": "Yellow Knight's Greaves",
+        "Color": "Yellow",
+        "Value": 700,
+        "Description": "Heavy-duty yellow greaves worn by knights to protect their legs in battle.",
+        "Filename": "0009_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 70
+    },
+    {
+        "Name": "Silk Leg Wraps",
+        "Color": "Yellow",
+        "Value": 150,
+        "Description": "Soft and comfortable yellow silk leg wraps that provide minimal protection.",
+        "Filename": "0010_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Alabaster Shin Plates",
+        "Color": "Yellow",
+        "Value": 400,
+        "Description": "Durable yellow shin plates that offer excellent protection against attacks.",
+        "Filename": "0011_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 40
+    },
+    {
+        "Name": "Icy Leggings",
+        "Color": "Yellow",
+        "Value": 500,
+        "Description": "A pair of icy leggings that provide superior protection and keep the legs cool in hot environments.",
+        "Filename": "0012_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 50
+    },
+    {
+        "Name": "Soft-Soled Shoes",
+        "Color": "Yellow",
+        "Value": 35,
+        "Description": "Comfortable shoes made of soft leather.",
+        "Filename": "0004_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Silk Slippers",
+        "Color": "Yellow",
+        "Value": 60,
+        "Description": "Delicate slippers made of luxurious silk.",
+        "Filename": "0005_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 10
+    },
+    {
+        "Name": "Linen Sandals",
+        "Color": "Yellow",
+        "Value": 25,
+        "Description": "Simple sandals made of sturdy linen.",
+        "Filename": "0006_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Woolen Socks",
+        "Color": "Yellow",
+        "Value": 20,
+        "Description": "Warm socks made of soft wool.",
+        "Filename": "0007_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 5
+    },
+    {
+        "Name": "Cotton Espadrilles",
+        "Color": "Yellow",
+        "Value": 30,
+        "Description": "Breathable shoes with a rope sole.",
+        "Filename": "0008_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Leather Sandals",
+        "Color": "Yellow",
+        "Value": 40,
+        "Description": "Stylish sandals made of high-quality leather.",
+        "Filename": "0009_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Canvas Sneakers",
+        "Color": "Yellow",
+        "Value": 50,
+        "Description": "Sporty shoes made of durable canvas.",
+        "Filename": "0010_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 10
+    },
+    {
+        "Name": "Ballet Flats",
+        "Color": "Yellow",
+        "Value": 55,
+        "Description": "Elegant shoes with a low heel.",
+        "Filename": "0011_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 10
+    },
+    {
+        "Name": "Rubber Flip Flops",
+        "Color": "Yellow",
+        "Value": 15,
+        "Description": "Simple sandals with a rubber sole.",
+        "Filename": "0012_clothing_feet_yellow.png",
+        "Type": "Feet",
+        "Weight": 5
+    }
+]

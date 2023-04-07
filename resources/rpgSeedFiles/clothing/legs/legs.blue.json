@@ -5,7 +5,7 @@
         "Value": 150,
         "Type": "legs",
         "Weight": 30,
-        "Filename": "0001_clothing_legs_Blue.png",
+        "Filename": "0001_clothing_legs_blue.png",
         "Description": "Comfortable blue breeches, suitable for daily wear or casual adventures in the realm."
     },
     {
@@ -14,7 +14,7 @@
         "Value": 200,
         "Type": "legs",
         "Weight": 45,
-        "Filename": "0002_clothing_legs_Blue.png",
+        "Filename": "0002_clothing_legs_blue.png",
         "Description": "Well-crafted blue trousers, offering modest protection to anyone traversing the kingdom."
     },
     {
@@ -23,7 +23,7 @@
         "Value": 300,
         "Type": "legs",
         "Weight": 35,
-        "Filename": "0003_clothing_legs_Blue.png",
+        "Filename": "0003_clothing_legs_blue.png",
         "Description": "Inspired by otherworldly forces, these blue leggings provide those who wear them with magical defense.",
         "Buff": {
             "buffType": "Magic Defense",
@@ -36,7 +36,7 @@
         "Value": 180,
         "Type": "legs",
         "Weight": 25,
-        "Filename": "0004_clothing_legs_Blue.png",
+        "Filename": "0004_clothing_legs_blue.png",
         "Description": "Soft and elegant, these blue satin trousers are fit for any mage seeking elegance and charm."
     },
     {
@@ -45,7 +45,7 @@
         "Value": 250,
         "Type": "legs",
         "Weight": 60,
-        "Filename": "0005_clothing_legs_Blue.png",
+        "Filename": "0005_clothing_legs_blue.png",
         "Description": "Composed of rare blue scales, these pants provide the wearer with enhanced endurance."
     },
     {
@@ -54,7 +54,7 @@
         "Value": 400,
         "Type": "legs",
         "Weight": 40,
-        "Filename": "0006_clothing_legs_Blue.png",
+        "Filename": "0006_clothing_legs_blue.png",
         "Description": "Enigmatic and powerful, these blue leggings bestow great magical attack to those who dare to wear them.",
         "Buff": {
             "buffType": "Magic Attack",
@@ -67,7 +67,7 @@
         "Value": 220,
         "Type": "legs",
         "Weight": 20,
-        "Filename": "0007_clothing_legs_Blue.png",
+        "Filename": "0007_clothing_legs_blue.png",
         "Description": "Exquisite and luxurious, these blue silk pants ensure style and grace with every stride."
     },
     {
@@ -76,7 +76,7 @@
         "Value": 280,
         "Type": "legs",
         "Weight": 50,
-        "Filename": "0008_clothing_legs_Blue.png",
+        "Filename": "0008_clothing_legs_blue.png",
         "Description": "Reinforced with padding, these blue trousers offer increased defense and agility for those who wear them."
     },
     {
@@ -85,7 +85,7 @@
         "Value": 350,
         "Type": "legs",
         "Weight": 55,
-        "Filename": "0009_clothing_legs_Blue.png",
+        "Filename": "0009_clothing_legs_blue.png",
         "Description": "Extravagant and decorative, these blue leggings display grand embellishments fit for the nobility."
     },
     {
@@ -94,7 +94,7 @@
         "Value": 260,
         "Type": "legs",
         "Weight": 70,
-        "Filename": "0010_clothing_legs_Blue.png",
+        "Filename": "0010_clothing_legs_blue.png",
         "Description": "Protective and flexible, these blue chainmail pants combine security with ease of movement."
     },
     {
@@ -103,7 +103,7 @@
         "Value": 320,
         "Type": "legs",
         "Weight": 45,
-        "Filename": "0011_clothing_legs_Blue.png",
+        "Filename": "0011_clothing_legs_blue.png",
         "Description": "Imbued with the essence of serpent spirits, these blue leggings grant the wearer a boost in AP.",
         "Buff": {
             "buffType": "AP",
@@ -116,7 +116,7 @@
         "Value": 240,
         "Type": "legs",
         "Weight": 65,
-        "Filename": "0012_clothing_legs_Blue.png",
+        "Filename": "0012_clothing_legs_blue.png",
         "Description": "Adorned with metal studs, these blue trousers present a balance of both protection and agility."
     },
     {
@@ -125,7 +125,7 @@
         "Value": 120,
         "Type": "legs",
         "Weight": 25,
-        "Filename": "0013_clothing_legs_Blue.png",
+        "Filename": "0013_clothing_legs_blue.png",
         "Description": "Airy blue culottes granting comfort and freedom of movement for agile maneuvers in close combat."
     },
     {
@@ -134,7 +134,7 @@
         "Value": 60,
         "Type": "legs",
         "Weight": 10,
-        "Filename": "0014_clothing_legs_Blue.png",
+        "Filename": "0014_clothing_legs_blue.png",
         "Description": "A daring blue speedo offering minimal coverage but maximum mobility for daring adventurers."
     },
     {
@@ -143,7 +143,7 @@
         "Value": 170,
         "Type": "legs",
         "Weight": 40,
-        "Filename": "0015_clothing_legs_Blue.png",
+        "Filename": "0015_clothing_legs_blue.png",
         "Description": "Resilient blue galligaskins providing sturdy protection and durability for fierce skirmishes."
     },
     {
@@ -152,7 +152,7 @@
         "Value": 350,
         "Type": "legs",
         "Weight": 30,
-        "Filename": "0016_clothing_legs_Blue.png",
+        "Filename": "0016_clothing_legs_blue.png",
         "Description": "Fortuitous blue shorts imbued with mystical properties, granting the wearer a significant boost in magic defense.",
         "Buff": {
             "buffType": "Magic Defense",
@@ -165,7 +165,7 @@
         "Value": 180,
         "Type": "legs",
         "Weight": 40,
-        "Filename": "0017_clothing_legs_Blue.png",
+        "Filename": "0017_clothing_legs_blue.png",
         "Description": "A lavish cerulean dress woven with intricate patterns, perfect for enchanting audiences in regal courts."
     },
     {
@@ -174,7 +174,7 @@
         "Value": 260,
         "Type": "legs",
         "Weight": 45,
-        "Filename": "0018_clothing_legs_Blue.png",
+        "Filename": "0018_clothing_legs_blue.png",
         "Description": "A flowing cascading dress exuding elegance and grace, allowing the wearer to move effortlessly through any gathering."
     },
     {
@@ -183,7 +183,7 @@
         "Value": 220,
         "Type": "legs",
         "Weight": 50,
-        "Filename": "0019_clothing_legs_Blue.png",
+        "Filename": "0019_clothing_legs_blue.png",
         "Description": "A splendid dress featuring exquisite embroidery, attracting awe and admiration from those who first lay eyes upon it."
     },
     {
@@ -192,7 +192,7 @@
         "Value": 290,
         "Type": "legs",
         "Weight": 35,
-        "Filename": "0020_clothing_legs_Blue.png",
+        "Filename": "0020_clothing_legs_blue.png",
         "Description": "A captivating diaphanous dress both delicate and alluring, sure to beguile any who witness its ethereal beauty."
     },
     {
@@ -201,7 +201,7 @@
         "Value": 160,
         "Type": "legs",
         "Weight": 65,
-        "Filename": "0021_clothing_legs_Blue.png",
+        "Filename": "0021_clothing_legs_blue.png",
         "Description": "Robust blue cuisses crafted for resilience in the face of adversity, bolstering the defenses of noble knights."
     },
     {
@@ -210,7 +210,7 @@
         "Value": 190,
         "Type": "legs",
         "Weight": 75,
-        "Filename": "0022_clothing_legs_Blue.png",
+        "Filename": "0022_clothing_legs_blue.png",
         "Description": "Sturdy blue greaves forged to protect the lower legs of formidable warriors in the heat of battle."
     },
     {
@@ -219,7 +219,7 @@
         "Value": 210,
         "Type": "legs",
         "Weight": 60,
-        "Filename": "0023_clothing_legs_Blue.png",
+        "Filename": "0023_clothing_legs_blue.png",
         "Description": "Unyielding blue poleyns designed to shield the knees from the crushing blows of relentless adversaries."
     },
     {
@@ -228,7 +228,7 @@
         "Value": 230,
         "Type": "legs",
         "Weight": 55,
-        "Filename": "0024_clothing_legs_Blue.png",
+        "Filename": "0024_clothing_legs_blue.png",
         "Description": "Steely blue tassets engineered to fortify the upper legs from the advancement of enemy weaponry."
     },
     {
@@ -237,7 +237,7 @@
         "Value": 250,
         "Type": "legs",
         "Weight": 70,
-        "Filename": "0025_clothing_legs_Blue.png",
+        "Filename": "0025_clothing_legs_blue.png",
         "Description": "Impervious blue sabatons skillfully shaped to safeguard the feet when navigating treacherous battlegrounds.",
         "Buff": {
             "buffType": "Defense",
@@ -250,7 +250,7 @@
         "Value": 270,
         "Type": "legs",
         "Weight": 80,
-        "Filename": "0026_clothing_legs_Blue.png",
+        "Filename": "0026_clothing_legs_blue.png",
         "Description": "Supple blue chausse, fashioned with chainmail, offering a felicitous balance between flexibility and sturdiness in combat situations."
     },
     {
@@ -259,7 +259,7 @@
         "Value": 200,
         "Type": "legs",
         "Weight": 60,
-        "Filename": "0027_clothing_legs_Blue.png",
+        "Filename": "0027_clothing_legs_blue.png",
         "Description": "Blue and bold fauxbegine, intricately woven to provide an illusion of great strength while maintaining swift movements."
     },
     {
@@ -268,7 +268,7 @@
         "Value": 220,
         "Type": "legs",
         "Weight": 45,
-        "Filename": "0028_clothing_legs_Blue.png",
+        "Filename": "0028_clothing_legs_blue.png",
         "Description": "A protective blue brayette, crafted to defend delicate areas with its hardened plating, suitable for fierce combatants."
     },
     {
@@ -277,7 +277,7 @@
         "Value": 240,
         "Type": "legs",
         "Weight": 70,
-        "Filename": "0029_clothing_legs_Blue.png",
+        "Filename": "0029_clothing_legs_blue.png",
         "Description": "A resilient cuisse-plate, dyed a deep blue and reinforced with solid metal, offering durability and safety to its wearer."
     },
     {
@@ -286,7 +286,7 @@
         "Value": 260,
         "Type": "legs",
         "Weight": 90,
-        "Filename": "0030_clothing_legs_Blue.png",
+        "Filename": "0030_clothing_legs_blue.png",
         "Description": "The blue legharness provides comprehensive coverage, ensuring stability and support during arduous battles."
     },
     {
@@ -295,7 +295,7 @@
         "Value": 330,
         "Type": "legs",
         "Weight": 55,
-        "Filename": "0031_clothing_legs_Blue.png",
+        "Filename": "0031_clothing_legs_blue.png",
         "Description": "These blue warcallers emanate confidence and strength, bolstering the wearer's endurance in the face of extreme adversity.",
         "Buff": {
             "buffType": "Endurance",
@@ -308,7 +308,7 @@
         "Value": 280,
         "Type": "legs",
         "Weight": 65,
-        "Filename": "0032_clothing_legs_Blue.png",
+        "Filename": "0032_clothing_legs_blue.png",
         "Description": "Crafted for dexterity, blue demiguards balance reliable defense with ease of movement to suit agile warriors."
     },
     {
@@ -317,7 +317,7 @@
         "Value": 300,
         "Type": "legs",
         "Weight": 75,
-        "Filename": "0033_clothing_legs_Blue.png",
+        "Filename": "0033_clothing_legs_blue.png",
         "Description": "Imposing blue fauldplate skilfully layers metal to cover the waist and thighs, offering steadfast protection to the wearer."
     }
 ]

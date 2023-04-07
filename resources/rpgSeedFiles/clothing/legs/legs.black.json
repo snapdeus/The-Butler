@@ -263,7 +263,7 @@
         "Value": 150,
         "Type": "legs",
         "Weight": 60,
-        "Filename": "0027_clothing_legs_Black.png",
+        "Filename": "0027_clothing_legs_black.png",
         "Description": "Sturdy black greaves with solid protection, perfect for any warrior stepping into battle."
     },
     {
@@ -272,7 +272,7 @@
         "Value": 250,
         "Type": "legs",
         "Weight": 75,
-        "Filename": "0028_clothing_legs_Black.png",
+        "Filename": "0028_clothing_legs_black.png",
         "Description": "Impressive black leggings with steel plates, offering substantial defense without sacrificing mobility."
     },
     {
@@ -281,7 +281,7 @@
         "Value": 200,
         "Type": "legs",
         "Weight": 50,
-        "Filename": "0029_clothing_legs_Black.png",
+        "Filename": "0029_clothing_legs_black.png",
         "Description": "Flexible black chainmail leggings that allow for swift movements while shielding the wearer from harm."
     },
     {
@@ -290,7 +290,7 @@
         "Value": 100,
         "Type": "legs",
         "Weight": 40,
-        "Filename": "0030_clothing_legs_Black.png",
+        "Filename": "0030_clothing_legs_black.png",
         "Description": "Black leggings adorned with metal studs, offering a balance between protection and agility."
     },
     {
@@ -299,7 +299,7 @@
         "Value": 500,
         "Type": "legs",
         "Weight": 65,
-        "Filename": "0031_clothing_legs_Black.png",
+        "Filename": "0031_clothing_legs_black.png",
         "Description": "Mystical black greaves endowed with magical properties, empowering the wearer's defense in combat.",
         "Buff": {
             "buffType": "Defense",
@@ -312,7 +312,7 @@
         "Value": 350,
         "Type": "legs",
         "Weight": 80,
-        "Filename": "0032_clothing_legs_Black.png",
+        "Filename": "0032_clothing_legs_black.png",
         "Description": "Sophisticated black leggings forged for a knight, boasting a perfect mix of unrivaled protection and finesse."
     },
     {
@@ -321,7 +321,7 @@
         "Value": 300,
         "Type": "legs",
         "Weight": 70,
-        "Filename": "0033_clothing_legs_Black.png",
+        "Filename": "0033_clothing_legs_black.png",
         "Description": "Formidable black leggings made from dragon scales, providing extraordinary resilience against magical attacks."
     },
     {
@@ -330,7 +330,7 @@
         "Value": 400,
         "Type": "legs",
         "Weight": 55,
-        "Filename": "0034_clothing_legs_Black.png",
+        "Filename": "0034_clothing_legs_black.png",
         "Description": "Elusive black greaves with an aura of shadows, allowing the wearer to dodge attacks with ease.",
         "Buff": {
             "buffType": "Evade",
@@ -343,7 +343,7 @@
         "Value": 600,
         "Type": "legs",
         "Weight": 90,
-        "Filename": "0035_clothing_legs_Black.png",
+        "Filename": "0035_clothing_legs_black.png",
         "Description": "Regal black leggings adorned with gold filigree, offering unmatched elegance and preeminent protection."
     },
     {
@@ -352,7 +352,7 @@
         "Value": 450,
         "Type": "legs",
         "Weight": 95,
-        "Filename": "0036_clothing_legs_Black.png",
+        "Filename": "0036_clothing_legs_black.png",
         "Description": "Imposing black greaves worn by legendary warlords, bestowing incredible fortitude for the fiercest of battles."
     }
 ]

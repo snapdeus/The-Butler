@@ -152,7 +152,7 @@
         "Color": "Black",
         "Value": 45,
         "Description": "A dashing hat reminiscent of a bygone era that raises your evade by 10 points!",
-        "Filename": "0013_clothing_hat_black.png",
+        "Filename": "0013_clothing_head_black.png",
         "Type": "head",
         "Weight": 25
     },
@@ -165,7 +165,7 @@
             "amount": 20
         },
         "Description": "A mysterious hood that provides extra defense in battle.",
-        "Filename": "0014_clothing_hood_black.png",
+        "Filename": "0014_clothing_head_black.png",
         "Type": "head",
         "Weight": 40
     },
@@ -174,7 +174,7 @@
         "Color": "Black",
         "Value": 35,
         "Description": "A stylish cap adorned with black feathers that makes you feel more agile.",
-        "Filename": "0015_clothing_hat_black.png",
+        "Filename": "0015_clothing_head_black.png",
         "Type": "head",
         "Weight": 20
     },
@@ -183,7 +183,7 @@
         "Color": "Black",
         "Value": 30,
         "Description": "A warm beret made of black wool that provides comfort in harsh weather.",
-        "Filename": "0016_clothing_hat_black.png",
+        "Filename": "0016_clothing_head_black.png",
         "Type": "head",
         "Weight": 15
     },
@@ -196,7 +196,7 @@
             "amount": 30
         },
         "Description": "A magnificent top hat made of black silk that provides extra magic defense.",
-        "Filename": "0017_clothing_hat_black.png",
+        "Filename": "0017_clothing_head_black.png",
         "Type": "head",
         "Weight": 35
     },
@@ -205,7 +205,7 @@
         "Color": "Black",
         "Value": 40,
         "Description": "A sturdy cap made of black leather that provides extra endurance.",
-        "Filename": "0018_clothing_hat_black.png",
+        "Filename": "0018_clothing_head_black.png",
         "Type": "head",
         "Weight": 25
     },
@@ -214,7 +214,7 @@
         "Color": "Black",
         "Value": 50,
         "Description": "A stylish pirate made of black felt that provides extra self esteem!",
-        "Filename": "0019_clothing_hat_black.png",
+        "Filename": "0019_clothing_head_black.png",
         "Type": "head",
         "Weight": 30
     },
@@ -223,7 +223,7 @@
         "Color": "Black",
         "Value": 25,
         "Description": "A simple cap made of black wool that provides basic protection.",
-        "Filename": "0020_clothing_hat_black.png",
+        "Filename": "0020_clothing_head_black.png",
         "Type": "head",
         "Weight": 10
     },
@@ -236,7 +236,7 @@
             "amount": 15
         },
         "Description": "A stylish tricorn hat made of black leather that makes you more evasive.",
-        "Filename": "0021_clothing_hat_black.png",
+        "Filename": "0021_clothing_head_black.png",
         "Type": "head",
         "Weight": 28
     }

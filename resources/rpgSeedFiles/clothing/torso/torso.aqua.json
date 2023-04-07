@@ -167,8 +167,8 @@
             "buffType": "Magic Attack",
             "amount": 45
         },
-        "Description": "A mystifying green robe, woven with ancient enchantments to channel insurmountable magical power.",
-        "Filename": "0017_clothing_torso_green.png",
+        "Description": "A mystifying aqua robe, woven with ancient enchantments to channel insurmountable magical power.",
+        "Filename": "0017_clothing_torso_aqua.png",
         "Type": "torso",
         "Weight": 50
     },
@@ -180,8 +180,8 @@
             "buffType": "Magic Defense",
             "amount": 35
         },
-        "Description": "An alluring orange robe, designed to ward off the most potent spells and protect the master of sorcery.",
-        "Filename": "0018_clothing_torso_orange.png",
+        "Description": "An alluring aqua robe, designed to ward off the most potent spells and protect the master of sorcery.",
+        "Filename": "0018_clothing_torso_aqua.png",
         "Type": "torso",
         "Weight": 80
     }

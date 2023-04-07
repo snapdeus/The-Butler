@@ -1,0 +1,167 @@
+[
+    {
+        "Name": "Purple Luminous",
+        "Color": "Purple",
+        "Value": 590,
+        "Description": "A dashing pair of boots made from the finest purple leather that glows in the dark!",
+        "Filename": "0001_clothing_feet_purple.png",
+        "Type": "feet",
+        "Weight": 48
+    },
+    {
+        "Name": "Ethereal Plumage",
+        "Color": "Purple",
+        "Value": 238,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 8
+        },
+        "Description": "A pair of boots adorned with ethereal plumage that grants the wearer extra defense!",
+        "Filename": "0002_clothing_feet_purple.png",
+        "Type": "feet",
+        "Weight": 58
+    },
+    {
+        "Name": "Amethyst Striders",
+        "Color": "Purple",
+        "Value": 405,
+        "Description": "A pair of boots made from the rarest amethyst that make the wearer feel like they're walking on clouds!",
+        "Filename": "0003_clothing_feet_purple.png",
+        "Type": "feet",
+        "Weight": 42
+    },
+    {
+        "Name": "Royal Regalia",
+        "Color": "Purple",
+        "Value": 710,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 24
+        },
+        "Description": "A pair of boots fit for a king or queen that grants the wearer extra endurance!",
+        "Filename": "0004_clothing_feet_purple.png",
+        "Type": "feet",
+        "Weight": 52
+    },
+    {
+        "Name": "Lavender Loafers",
+        "Color": "Purple",
+        "Value": 120,
+        "Description": "A comfortable pair of lavender loafers that are perfect for a night out on the town!",
+        "Filename": "0005_clothing_feet_purple.png",
+        "Type": "feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Violet Vagabonds",
+        "Color": "Purple",
+        "Value": 298,
+        "Description": "A pair of violet boots that are perfect for the wandering adventurer!",
+        "Filename": "0006_clothing_feet_purple.png",
+        "Type": "feet",
+        "Weight": 35
+    },
+    {
+        "Name": "Plum Pumps",
+        "Color": "Purple",
+        "Value": 85,
+        "Description": "A pair of stylish plum pumps that are perfect for a night out on the town!",
+        "Filename": "0007_clothing_feet_purple.png",
+        "Type": "feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Grape Galoshes",
+        "Color": "Purple",
+        "Value": 180,
+        "Description": "A pair of grape galoshes that are perfect for keeping your feet dry on a rainy day!",
+        "Filename": "0008_clothing_feet_purple.png",
+        "Type": "feet",
+        "Weight": 30
+    },
+    {
+        "Name": "Mauve Moccasins",
+        "Color": "Purple",
+        "Value": 65,
+        "Description": "A pair of comfortable mauve moccasins that are perfect for a relaxing day at home!",
+        "Filename": "0009_clothing_feet_purple.png",
+        "Type": "feet",
+        "Weight": 10
+    },
+    {
+        "Name": "Lilac Laced Boots",
+        "Color": "Purple",
+        "Value": 325,
+        "Description": "A pair of lilac laced boots that are perfect for any adventurer!",
+        "Filename": "0010_clothing_feet_purple.png",
+        "Type": "feet",
+        "Weight": 40
+    },
+    {
+        "Name": "Regal Periwinkle",
+        "Color": "Purple",
+        "Value": 845,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 45
+        },
+        "Description": "A pair of regal periwinkle boots that grants the wearer extra HP!",
+        "Filename": "0011_clothing_feet_purple.png",
+        "Type": "feet",
+        "Weight": 55
+    },
+    {
+        "Name": "Amethyst Moccasin",
+        "Color": "Purple",
+        "Value": 45,
+        "Description": "A soft soled moccasin made of amethyst leather.",
+        "Filename": "0012_clothing_feet_purple.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Lavender Slipper",
+        "Color": "Purple",
+        "Value": 30,
+        "Description": "A cozy slipper made of lavender wool.",
+        "Filename": "0013_clothing_feet_purple.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Violet Loafer",
+        "Color": "Purple",
+        "Value": 25,
+        "Description": "A comfortable loafer made of violet suede.",
+        "Filename": "0014_clothing_feet_purple.png",
+        "Type": "Feet",
+        "Weight": 18
+    },
+    {
+        "Name": "Plum Ballet Flat",
+        "Color": "Purple",
+        "Value": 35,
+        "Description": "A stylish ballet flat made of plum velvet.",
+        "Filename": "0015_clothing_feet_purple.png",
+        "Type": "Feet",
+        "Weight": 12
+    },
+    {
+        "Name": "Eggplant Sandal",
+        "Color": "Purple",
+        "Value": 20,
+        "Description": "A lightweight sandal made of eggplant-colored leather.",
+        "Filename": "0016_clothing_feet_purple.png",
+        "Type": "Feet",
+        "Weight": 10
+    },
+    {
+        "Name": "Mauve Espadrille",
+        "Color": "Purple",
+        "Value": 40,
+        "Description": "A trendy espadrille made of mauve canvas.",
+        "Filename": "0017_clothing_feet_purple.png",
+        "Type": "Feet",
+        "Weight": 14
+    }
+]

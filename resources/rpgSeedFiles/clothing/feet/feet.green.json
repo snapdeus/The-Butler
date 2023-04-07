@@ -1,0 +1,207 @@
+[
+    {
+        "Name": "Green Swift",
+        "Color": "Green",
+        "Value": 68,
+        "Description": "A pair of swift boots that allows you to run faster than the wind.",
+        "Filename": "0001_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 30
+    },
+    {
+        "Name": "Green Guardian",
+        "Color": "Green",
+        "Value": 123,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Description": "A pair of sturdy boots that protect the wearer from harm.",
+        "Filename": "0002_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 50
+    },
+    {
+        "Name": "Green Enchanter",
+        "Color": "Green",
+        "Value": 207,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 30
+        },
+        "Description": "A pair of enchanted boots that protect the wearer from magical attacks.",
+        "Filename": "0003_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 40
+    },
+    {
+        "Name": "Green Traveler",
+        "Color": "Green",
+        "Value": 87,
+        "Description": "A pair of comfortable boots that make long journeys easier.",
+        "Filename": "0004_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Green Hunter",
+        "Color": "Green",
+        "Value": 98,
+        "Description": "A pair of boots that help the wearer move silently through the forest.",
+        "Filename": "0005_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 35
+    },
+    {
+        "Name": "Green Strider",
+        "Color": "Green",
+        "Value": 55,
+        "Description": "A pair of boots that make the wearer more agile and nimble.",
+        "Filename": "0006_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 25
+    },
+    {
+        "Name": "Green Sprinter",
+        "Color": "Green",
+        "Value": 79,
+        "Description": "A pair of boots that increase the wearer's running speed.",
+        "Filename": "0007_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 30
+    },
+    {
+        "Name": "Green Climber",
+        "Color": "Green",
+        "Value": 111,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 40
+        },
+        "Description": "A pair of boots that help the wearer climb steep surfaces with ease.",
+        "Filename": "0008_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 45
+    },
+    {
+        "Name": "Green Greaves",
+        "Color": "Green",
+        "Value": 400,
+        "Description": "A sturdy pair of greaves made of green dragon scales.",
+        "Filename": "0009_clothing_feet_green.png",
+        "Type": "feet",
+        "Weight": 80
+    },
+    {
+        "Name": "Green Boots",
+        "Color": "Green",
+        "Value": 200,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 25
+        },
+        "Description": "A pair of green boots that make you feel light on your feet and harder to hit.",
+        "Filename": "0010_clothing_feet_green.png",
+        "Type": "feet",
+        "Weight": 50
+    },
+    {
+        "Name": "Green Greaves",
+        "Color": "Green",
+        "Value": 350,
+        "Description": "A pair of sturdy greaves made of green steel, perfect for any warrior.",
+        "Filename": "0011_clothing_feet_green.png",
+        "Type": "feet",
+        "Weight": 70
+    },
+    {
+        "Name": "Green Boots",
+        "Color": "Green",
+        "Value": 150,
+        "Description": "A pair of green boots made of soft leather, perfect for a long journey.",
+        "Filename": "0012_clothing_feet_green.png",
+        "Type": "feet",
+        "Weight": 40
+    },
+    {
+        "Name": "Green Moccasin",
+        "Color": "Green",
+        "Value": 50,
+        "Description": "A soft soled moccasin, perfect for stealthy movements.",
+        "Filename": "0013_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Sage Slipper",
+        "Color": "Green",
+        "Value": 40,
+        "Description": "A comfortable and flexible slipper, ideal for long travels.",
+        "Filename": "0014_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 12
+    },
+    {
+        "Name": "Emerald Espadrille",
+        "Color": "Green",
+        "Value": 60,
+        "Description": "A light and airy espadrille, perfect for hot summer days.",
+        "Filename": "0015_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 10
+    },
+    {
+        "Name": "Olive Loafer",
+        "Color": "Green",
+        "Value": 45,
+        "Description": "A stylish and comfortable loafer, suitable for any occasion.",
+        "Filename": "0016_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 14
+    },
+    {
+        "Name": "Jade Sandal",
+        "Color": "Green",
+        "Value": 35,
+        "Description": "A simple yet elegant sandal, perfect for a casual day out.",
+        "Filename": "0017_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 8
+    },
+    {
+        "Name": "Forest Flip-Flop",
+        "Color": "Green",
+        "Value": 25,
+        "Description": "A basic flip-flop, suitable for a quick trip to the beach.",
+        "Filename": "0018_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 5
+    },
+    {
+        "Name": "Mint Slip-On",
+        "Color": "Green",
+        "Value": 30,
+        "Description": "A comfortable and easy-to-wear slip-on, perfect for a lazy day.",
+        "Filename": "0019_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 9
+    },
+    {
+        "Name": "Lime Sneaker",
+        "Color": "Green",
+        "Value": 55,
+        "Description": "A sturdy and reliable sneaker, suitable for any outdoor activity.",
+        "Filename": "0020_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 18
+    },
+    {
+        "Name": "Teal Ballet Flat",
+        "Color": "Green",
+        "Value": 65,
+        "Description": "A graceful and feminine ballet flat, perfect for a night out.",
+        "Filename": "0021_clothing_feet_green.png",
+        "Type": "Feet",
+        "Weight": 11
+    }
+]

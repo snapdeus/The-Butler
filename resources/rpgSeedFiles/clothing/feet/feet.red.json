@@ -1,0 +1,153 @@
+[
+    {
+        "Name": "Red Boots",
+        "Color": "Red",
+        "Value": 75,
+        "Description": "A sturdy pair of boots made from the finest leather, perfect for any adventurer.",
+        "Filename": "0001_clothing_feet_red.png",
+        "Type": "Feet",
+        "Weight": 30
+    },
+    {
+        "Name": "Scarlet Footwear",
+        "Color": "Scarlet",
+        "Value": 150,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 25
+        },
+        "Description": "These scarlet boots are lightweight and comfortable, giving the wearer a boost in agility.",
+        "Filename": "0002_clothing_feet_red.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Crimson Boots",
+        "Color": "Crimson",
+        "Value": 90,
+        "Description": "These crimson boots are made from sturdy leather and provide great protection for the wearer's feet.",
+        "Filename": "0003_clothing_feet_red.png",
+        "Type": "Feet",
+        "Weight": 35
+    },
+    {
+        "Name": "Burgundy Boots",
+        "Color": "Burgundy",
+        "Value": 110,
+        "Description": "These burgundy boots are crafted with care, providing both comfort and durability.",
+        "Filename": "0004_clothing_feet_red.png",
+        "Type": "Feet",
+        "Weight": 25
+    },
+    {
+        "Name": "Ruby Boots",
+        "Color": "Ruby",
+        "Value": 250,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 35
+        },
+        "Description": "These ruby boots are a rare find, said to have magical properties that boost the wearer's health.",
+        "Filename": "0005_clothing_feet_red.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Garnet Boots",
+        "Color": "Garnet",
+        "Value": 120,
+        "Description": "These garnet boots are both stylish and functional, perfect for any adventurer.",
+        "Filename": "0006_clothing_feet_red.png",
+        "Type": "Feet",
+        "Weight": 30
+    },
+    {
+        "Name": "Maroon Footwear",
+        "Color": "Maroon",
+        "Value": 200,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 45
+        },
+        "Description": "These maroon boots are said to have been crafted by a legendary blacksmith, providing the wearer with extraordinary endurance.",
+        "Filename": "0007_clothing_feet_redn.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Carmine Boots",
+        "Color": "Carmine",
+        "Value": 80,
+        "Description": "These carmine boots are made from high quality leather and are perfect for any adventurer.",
+        "Filename": "0008_clothing_feet_red.png",
+        "Type": "Feet",
+        "Weight": 35
+    },
+    {
+        "Name": "Cherry Red Boots",
+        "Color": "Cherry Red",
+        "Value": 100,
+        "Description": "These cherry red boots are both stylish and practical, perfect for any adventurer.",
+        "Filename": "0009_clothing_feet_red.png",
+        "Type": "Feet",
+        "Weight": 30
+    },
+    {
+        "Name": "Blood Red Boots",
+        "Color": "Blood Red",
+        "Value": 300,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 40
+        },
+        "Description": "These blood red boots are said to have been imbued with powerful magic, providing the wearer with exceptional defense.",
+        "Filename": "0010_clothing_feet_red.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Red Slippers",
+        "Color": "Red",
+        "Value": 35,
+        "Description": "Comfortable and cozy slippers for a relaxing evening at home.",
+        "Filename": "0011_clothing_feet_red.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Red Sandals",
+        "Color": "Red",
+        "Value": 25,
+        "Description": "Simple yet elegant sandals for a casual day out.",
+        "Filename": "0012_clothing_feet_red.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Red Loafers",
+        "Color": "Red",
+        "Value": 45,
+        "Description": "Sophisticated loafers for a formal occasion.",
+        "Filename": "0013_clothing_feet_red.png",
+        "Type": "Feet",
+        "Weight": 25
+    },
+    {
+        "Name": "Red Ballet Flats",
+        "Color": "Red",
+        "Value": 55,
+        "Description": "Elegant ballet flats for a night at the opera.",
+        "Filename": "0014_clothing_feet_red.png",
+        "Type": "Feet",
+        "Weight": 18
+    },
+    {
+        "Name": "Red Espadrilles",
+        "Color": "Red",
+        "Value": 30,
+        "Description": "Light and airy espadrilles for a summer day.",
+        "Filename": "0015_clothing_feet_red.png",
+        "Type": "Feet",
+        "Weight": 12
+    }
+]

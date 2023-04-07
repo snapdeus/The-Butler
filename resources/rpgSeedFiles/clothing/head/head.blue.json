@@ -136,7 +136,7 @@
             "amount": 25
         },
         "Description": "A delicate diadem that enhances your magic attacks with its enchantments.",
-        "Filename": "0013_clothing_head_cerulean.png",
+        "Filename": "0013_clothing_head_blue.png",
         "Type": "head",
         "Weight": 5
     },
@@ -145,7 +145,7 @@
         "Color": "Blue",
         "Value": 300,
         "Description": "A simple circlet made of blue gems that glimmers in the light.",
-        "Filename": "0014_clothing_head_azure.png",
+        "Filename": "0014_clothing_head_blue.png",
         "Type": "head",
         "Weight": 3
     },
@@ -154,7 +154,7 @@
         "Color": "Blue",
         "Value": 56,
         "Description": "A charming blue hat with a delicate lace trim.",
-        "Filename": "0015_clothing_hat_blue.png",
+        "Filename": "0015_clothing_head_blue.png",
         "Type": "Head",
         "Weight": 20
     },
@@ -163,7 +163,7 @@
         "Color": "Blue",
         "Value": 30,
         "Description": "A simple blue cap that provides basic protection from the elements.",
-        "Filename": "0016_clothing_hat_blue.png",
+        "Filename": "0016_clothing_head_blue.png",
         "Type": "Head",
         "Weight": 15
     },
@@ -176,7 +176,7 @@
             "amount": 15
         },
         "Description": "A magnificent blue hat adorned with sparkling jewels that enhances the wearer's defense.",
-        "Filename": "0017_clothing_hat_blue.png",
+        "Filename": "0017_clothing_head_blue.png",
         "Type": "Head",
         "Weight": 25
     },
@@ -185,7 +185,7 @@
         "Color": "Blue",
         "Value": 68,
         "Description": "A stylish blue beret that adds a touch of sophistication to any outfit.",
-        "Filename": "0018_clothing_hat_blue.png",
+        "Filename": "0018_clothing_head_blue.png",
         "Type": "Head",
         "Weight": 18
     },
@@ -194,7 +194,7 @@
         "Color": "Blue",
         "Value": 42,
         "Description": "A cozy blue hood that keeps the wearer warm and protected from the wind.",
-        "Filename": "0019_clothing_hat_blue.png",
+        "Filename": "0019_clothing_head_blue.png",
         "Type": "Head",
         "Weight": 22
     },
@@ -203,7 +203,7 @@
         "Color": "Blue",
         "Value": 26,
         "Description": "A snug blue beanie that provides warmth and comfort in cold weather.",
-        "Filename": "0020_clothing_hat_blue.png",
+        "Filename": "0020_clothing_head_blue.png",
         "Type": "Head",
         "Weight": 12
     },
@@ -216,7 +216,7 @@
             "amount": 35
         },
         "Description": "A magnificent blue hat adorned with Holy Feathers that enhances the wearer's magic defense.",
-        "Filename": "0021_clothing_hat_blue.png",
+        "Filename": "0021_clothing_head_blue.png",
         "Type": "Head",
         "Weight": 40
     },
@@ -225,7 +225,7 @@
         "Color": "Blue",
         "Value": 720,
         "Description": "The standard hat of the Royal Army",
-        "Filename": "0022_clothing_hat_blue.png",
+        "Filename": "0022_clothing_head_blue.png",
         "Type": "Head",
         "Weight": 20
     },
@@ -238,7 +238,7 @@
             "amount": 35
         },
         "Description": "A witch's hat that boosts Magic Attack.",
-        "Filename": "0023_clothing_hat_blue.png",
+        "Filename": "0023_clothing_head_blue.png",
         "Type": "Head",
         "Weight": 40
     },

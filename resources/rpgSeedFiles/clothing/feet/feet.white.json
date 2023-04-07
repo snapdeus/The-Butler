@@ -1,0 +1,137 @@
+[
+    {
+        "Name": "White Boots",
+        "Color": "White",
+        "Value": 500,
+        "Description": "A pair of white boots that make you feel like you're walking on clouds.",
+        "Filename": "0001_clothing_feet_white.png",
+        "Type": "Feet",
+        "Weight": 30
+    },
+    {
+        "Name": "Ivory Boots",
+        "Color": "Ivory",
+        "Value": 700,
+        "Description": "A pair of ivory boots that are as strong as they are stylish.",
+        "Filename": "0002_clothing_feet_white.png",
+        "Type": "Feet",
+        "Weight": 35
+    },
+    {
+        "Name": "Pearl Boots",
+        "Color": "Pearl",
+        "Value": 900,
+        "Description": "A pair of pearl boots that shimmer in the sunlight.",
+        "Filename": "0003_clothing_feet_white.png",
+        "Type": "Feet",
+        "Weight": 40
+    },
+    {
+        "Name": "Eggshell Boots",
+        "Color": "Eggshell",
+        "Value": 600,
+        "Description": "A pair of eggshell boots that are perfect for any occasion.",
+        "Filename": "0004_clothing_feet_white.png",
+        "Type": "Feet",
+        "Weight": 32
+    },
+    {
+        "Name": "Snow Boots",
+        "Color": "Snow",
+        "Value": 800,
+        "Description": "A pair of snow boots that keep your feet warm in the coldest of winters.",
+        "Filename": "0005_clothing_feet_white.png",
+        "Type": "Feet",
+        "Weight": 38
+    },
+    {
+        "Name": "Chalk Boots",
+        "Color": "Chalk",
+        "Value": 550,
+        "Description": "A pair of chalk boots that are as light as a feather.",
+        "Filename": "0006_clothing_feet_white.png",
+        "Type": "Feet",
+        "Weight": 28
+    },
+    {
+        "Name": "Porcelain Boots",
+        "Color": "Porcelain",
+        "Value": 750,
+        "Description": "A pair of porcelain boots that are delicate yet durable.",
+        "Filename": "0007_clothing_feet_white.png",
+        "Type": "Feet",
+        "Weight": 36
+    },
+    {
+        "Name": "Alabaster Boots",
+        "Color": "Alabaster",
+        "Value": 850,
+        "Description": "A pair of alabaster boots that are fit for a queen.",
+        "Filename": "0008_clothing_feet_white.png",
+        "Type": "Feet",
+        "Weight": 42
+    },
+    {
+        "Name": "White Runners",
+        "Color": "White",
+        "Value": 35,
+        "Description": "Lightweight and comfortable shoes for the agile adventurer.",
+        "Filename": "0009_clothing_feet_white.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Soft-Soled White Shoes",
+        "Color": "White",
+        "Value": 25,
+        "Description": "Soft-soled white shoes that provide stealth and agility.",
+        "Filename": "0010_clothing_feet_white.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "White Leather Sandals",
+        "Color": "White",
+        "Value": 30,
+        "Description": "Sturdy sandals made of white leather for the adventurous traveler.",
+        "Filename": "0011_clothing_feet_white.png",
+        "Type": "Feet",
+        "Weight": 25
+    },
+    {
+        "Name": "White Sneakers",
+        "Color": "White",
+        "Value": 40,
+        "Description": "Sneakers made of white cloth with a non-slip sole for the athletic adventurer.",
+        "Filename": "0012_clothing_feet_white.png",
+        "Type": "Feet",
+        "Weight": 18
+    },
+    {
+        "Name": "White Canvas Shoes",
+        "Color": "White",
+        "Value": 30,
+        "Description": "Canvas shoes that are both comfortable and durable for the adventurer on-the-go.",
+        "Filename": "0013_clothing_feet_white.png",
+        "Type": "Feet",
+        "Weight": 22
+    },
+    {
+        "Name": "White Slippers",
+        "Color": "White",
+        "Value": 20,
+        "Description": "Soft and cozy white slippers for the adventurer who needs a break.",
+        "Filename": "0014_clothing_feet_white.png",
+        "Type": "Feet",
+        "Weight": 12
+    },
+    {
+        "Name": "White Loafers",
+        "Color": "White",
+        "Value": 35,
+        "Description": "Elegant white loafers for the sophisticated adventurer.",
+        "Filename": "0015_clothing_feet_white.png",
+        "Type": "Feet",
+        "Weight": 20
+    }
+]

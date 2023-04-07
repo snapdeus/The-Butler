@@ -1,0 +1,243 @@
+[
+    {
+        "Name": "Black Boots",
+        "Color": "Black",
+        "Value": 45,
+        "Description": "A sturdy pair of black boots made for adventurers.",
+        "Filename": "0001_clothing_feet_black.png",
+        "Type": "Feet",
+        "Weight": 35
+    },
+    {
+        "Name": "Midnight Shoes",
+        "Color": "Black",
+        "Value": 70,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 20
+        },
+        "Description": "Sleek midnight shoes that make you move faster and more nimble.",
+        "Filename": "0002_clothing_feet_black.png",
+        "Type": "Feet",
+        "Weight": 25
+    },
+    {
+        "Name": "Shadow Walkers",
+        "Color": "Black",
+        "Value": 90,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 35
+        },
+        "Description": "Boots that make you feel like you can walk forever without getting tired.",
+        "Filename": "0003_clothing_feet_black.png",
+        "Type": "Feet",
+        "Weight": 40
+    },
+    {
+        "Name": "Nightfall Boots",
+        "Color": "Black",
+        "Value": 60,
+        "Description": "A pair of black boots that are perfect for sneaking around in the dark.",
+        "Filename": "0004_clothing_feet_black.png",
+        "Type": "Feet",
+        "Weight": 30
+    },
+    {
+        "Name": "Blackout Boots",
+        "Color": "Black",
+        "Value": 80,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 30
+        },
+        "Description": "Boots that make you feel like you're invincible to any attack.",
+        "Filename": "0005_clothing_feet_black.png",
+        "Type": "Feet",
+        "Weight": 45
+    },
+    {
+        "Name": "Nightshade Boots",
+        "Color": "Black",
+        "Value": 55,
+        "Description": "A pair of black boots that are perfect for blending in with the shadows.",
+        "Filename": "0006_clothing_feet_black.png",
+        "Type": "Feet",
+        "Weight": 25
+    },
+    {
+        "Name": "Black Knight Boots",
+        "Color": "Black",
+        "Value": 100,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 50
+        },
+        "Description": "Boots that make you feel like you're a powerful black knight.",
+        "Filename": "0007_clothing_feet_black.png",
+        "Type": "Feet",
+        "Weight": 55
+    },
+    {
+        "Name": "Black Iron Greaves",
+        "Color": "Black",
+        "Value": 240,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "Sturdy and reliable greaves, crafted from black iron.",
+        "Filename": "0008_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 80
+    },
+    {
+        "Name": "Black Dragon Scale Boots",
+        "Color": "Black",
+        "Value": 420,
+        "Buff": null,
+        "Description": "Boots made from the scales of a black dragon, providing excellent protection.",
+        "Filename": "0009_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 60
+    },
+    {
+        "Name": "Shadow Leather Armor",
+        "Color": "Black",
+        "Value": 580,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 25
+        },
+        "Description": "Light and flexible armor made from the hide of a shadow beast.",
+        "Filename": "0010_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 100
+    },
+    {
+        "Name": "Black Sable Shoes",
+        "Color": "Black",
+        "Value": 60,
+        "Description": "A pair of sable shoes, soft and comfortable for the feet of a lord.",
+        "Filename": "0011_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Black Leather Boots",
+        "Color": "Black",
+        "Value": 40,
+        "Description": "A sturdy pair of leather boots, perfect for a long journey.",
+        "Filename": "0012_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 30
+    },
+    {
+        "Name": "Black Velvet Slippers",
+        "Color": "Black",
+        "Value": 80,
+        "Description": "A luxurious pair of velvet slippers, fit for a king.",
+        "Filename": "0013_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Black Ankle Boots",
+        "Color": "Black",
+        "Value": 35,
+        "Description": "A pair of ankle boots, simple yet durable.",
+        "Filename": "0014_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 25
+    },
+    {
+        "Name": "Black Leather Sandals",
+        "Color": "Black",
+        "Value": 30,
+        "Description": "A pair of leather sandals, perfect for a hot summer day.",
+        "Filename": "0015_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Black Buckled Shoes",
+        "Color": "Black",
+        "Value": 50,
+        "Description": "A pair of buckled shoes, sturdy and fashionable.",
+        "Filename": "0016_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Black Riding Boots",
+        "Color": "Black",
+        "Value": 70,
+        "Description": "A pair of riding boots, perfect for a knight.",
+        "Filename": "0017_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 35
+    },
+    {
+        "Name": "Black Pointed Shoes",
+        "Color": "Black",
+        "Value": 45,
+        "Description": "A pair of pointed shoes, perfect for a courtier.",
+        "Filename": "0018_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Black Leather Loafers",
+        "Color": "Black",
+        "Value": 55,
+        "Description": "A pair of leather loafers, comfortable and stylish.",
+        "Filename": "0019_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Black Combat Boots",
+        "Color": "Black",
+        "Value": 65,
+        "Description": "A pair of combat boots, perfect for a soldier.",
+        "Filename": "0020_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 30
+    },
+    {
+        "Name": "Black Leather Moccasins",
+        "Color": "Black",
+        "Value": 50,
+        "Description": "A pair of leather moccasins, perfect for a hunter.",
+        "Filename": "0021_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Black High Heels",
+        "Color": "Black",
+        "Value": 75,
+        "Description": "A pair of high heels, perfect for a lady.",
+        "Filename": "0022_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 10
+    },
+    {
+        "Name": "Black Wingtip Shoes",
+        "Color": "Black",
+        "Value": 85,
+        "Description": "A pair of wingtip shoes, perfect for a gentleman.",
+        "Filename": "0023_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Black Leather Oxfords",
+        "Color": "Black",
+        "Value": 90,
+        "Description": "A pair of leather oxfords, perfect for a scholar.",
+        "Filename": "0024_clothing_feet_blue.png",
+        "Type": "Feet",
+        "Weight": 20
+    }
+]

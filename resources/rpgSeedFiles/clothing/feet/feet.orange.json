@@ -1,0 +1,162 @@
+[
+    {
+        "Name": "Orange Buckled Boots",
+        "Color": "Orange",
+        "Value": 75,
+        "Description": "A sturdy pair of boots with brass buckles, perfect for long treks through rugged terrain.",
+        "Filename": "0001_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 70
+    },
+    {
+        "Name": "Amber-Laced Boots",
+        "Color": "Orange",
+        "Value": 110,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 20
+        },
+        "Description": "These boots are laced with amber, giving the wearer a slight boost in their ability to dodge incoming attacks.",
+        "Filename": "0002_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 75
+    },
+    {
+        "Name": "Tangerine Suede Boots",
+        "Color": "Orange",
+        "Value": 85,
+        "Description": "A stylish pair of suede boots, perfect for a night out on the town.",
+        "Filename": "0003_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 60
+    },
+    {
+        "Name": "Copper-Plated Boots",
+        "Color": "Orange",
+        "Value": 95,
+        "Description": "These boots are plated with copper, providing additional protection against electrical attacks.",
+        "Filename": "0004_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 80
+    },
+    {
+        "Name": "Orange Leather Boots",
+        "Color": "Orange",
+        "Value": 65,
+        "Description": "A simple yet durable pair of leather boots, perfect for everyday wear.",
+        "Filename": "0005_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 55
+    },
+    {
+        "Name": "Pumpkin-Trimmed Boots",
+        "Color": "Orange",
+        "Value": 100,
+        "Description": "These boots are trimmed with pumpkin-colored fabric, making them perfect for autumn adventures.",
+        "Filename": "0006_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 70
+    },
+    {
+        "Name": "Sunset-Hued Boots",
+        "Color": "Orange",
+        "Value": 80,
+        "Description": "These boots are the color of a beautiful sunset, making them a fashionable choice for any occasion.",
+        "Filename": "0007_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 65
+    },
+    {
+        "Name": "Fiery Boots",
+        "Color": "Orange",
+        "Value": 120,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 30
+        },
+        "Description": "These boots radiate an intense heat, increasing the wearer's magical attack power.",
+        "Filename": "0008_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 75
+    },
+    {
+        "Name": "Spice-Hued Boots",
+        "Color": "Orange",
+        "Value": 90,
+        "Description": "These boots are the color of warm spices, making them a cozy choice for colder weather.",
+        "Filename": "0009_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 70
+    },
+    {
+        "Name": "Orange Greaves",
+        "Color": "Orange",
+        "Value": 450,
+        "Description": "A pair of sturdy greaves made of enchanted steel, for the most daring knights.",
+        "Filename": "0010_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 70
+    },
+    {
+        "Name": "Orange Steel Boots",
+        "Color": "Orange",
+        "Value": 650,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 25
+        },
+        "Description": "A pair of sturdy boots made of enchanted steel, for the most daring knights.",
+        "Filename": "0011_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 90
+    },
+    {
+        "Name": "Orange Leather Boots",
+        "Color": "Orange",
+        "Value": 250,
+        "Description": "A pair of soft leather boots, perfect for a long journey.",
+        "Filename": "0012_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 40
+    },
+    {
+        "Name": "Orange Steel Greaves",
+        "Color": "Orange",
+        "Value": 550,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 35
+        },
+        "Description": "A pair of sturdy greaves made of enchanted steel, for the most daring knights.",
+        "Filename": "0013_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 80
+    },
+    {
+        "Name": "Orange Slippers",
+        "Color": "Orange",
+        "Value": 30,
+        "Description": "Comfortable soft soled shoes for a long journey.",
+        "Filename": "0014_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 20
+    },
+    {
+        "Name": "Amber Sandals",
+        "Color": "Orange",
+        "Value": 40,
+        "Description": "Light and breezy sandals perfect for a hot summer day.",
+        "Filename": "0015_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 15
+    },
+    {
+        "Name": "Tangerine Loafers",
+        "Color": "Orange",
+        "Value": 25,
+        "Description": "Stylish and comfortable loafers for a casual day out.",
+        "Filename": "0016_clothing_feet_orange.png",
+        "Type": "Feet",
+        "Weight": 30
+    }
+]
