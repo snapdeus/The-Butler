@@ -1,1 +1,55 @@
-[]
+[
+    {
+        "Name": "Pink Stronghold",
+        "Color": "Pink",
+        "Value": 270,
+        "Description": "A sturdy gauntlet of pink leather that provides excellent protection in battle.",
+        "Filename": "0001_clothing_gauntlets_pink.png",
+        "Type": "Hands",
+        "Weight": 70
+    },
+    {
+        "Name": "Pink Finesse",
+        "Color": "Pink",
+        "Value": 340,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 40
+        },
+        "Description": "A graceful gauntlet of pink silk that enhances your ability to dodge attacks.",
+        "Filename": "0002_clothing_gauntlets_pink.png",
+        "Type": "Hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Pink Fury",
+        "Color": "Pink",
+        "Value": 360,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 30
+        },
+        "Description": "A fierce gauntlet of pink steel that increases your damage output in combat.",
+        "Filename": "0003_clothing_gauntlets_pink.png",
+        "Type": "Hands",
+        "Weight": 90
+    },
+    {
+        "Name": "Pink Vambraces",
+        "Color": "Pink",
+        "Value": 60,
+        "Description": "A pair of sturdy vambraces made of pink leather, perfect for protecting your arms in battle.",
+        "Filename": "0004_clothing_vambraces_pink.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Pink Gloves",
+        "Color": "Pink",
+        "Value": 75,
+        "Description": "A pair of soft gloves made from the finest silk.",
+        "Filename": "0005_clothing_hands_pink.png",
+        "Type": "Hands",
+        "Weight": 20
+    }
+]

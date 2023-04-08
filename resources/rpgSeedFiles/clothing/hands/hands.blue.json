@@ -236,5 +236,14 @@
         "Filename": "0022_clothing_hands_blue.png",
         "Type": "Hands",
         "Weight": 25
+    },
+    {
+        "Name": "Blue Steel ",
+        "Color": "Blue",
+        "Value": 97,
+        "Description": "A simple yet sturdy wristband made from indigo-dyed leather.",
+        "Filename": "0022_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 25
     }
 ]

@@ -1,1 +1,288 @@
-[]
+[
+    {
+        "Name": "Orange Hardy Gauntlets",
+        "Color": "Orange",
+        "Value": 127,
+        "Description": "Protective gauntlets made of sturdy leather and metal.",
+        "Filename": "0001_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 70
+    },
+    {
+        "Name": "Orange Fiery Gauntlets",
+        "Color": "Orange",
+        "Value": 231,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 25
+        },
+        "Description": "Gauntlets infused with the power of flames that increase your attack.",
+        "Filename": "0002_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 72
+    },
+    {
+        "Name": "Orange Spiked Gauntlets",
+        "Color": "Orange",
+        "Value": 98,
+        "Description": "Gauntlets with sharp spikes that can intimidate your enemies.",
+        "Filename": "0003_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 68
+    },
+    {
+        "Name": "Orange Shadow Gauntlets",
+        "Color": "Orange",
+        "Value": 211,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 35
+        },
+        "Description": "Gauntlets that allow you to blend in with the shadows, increasing your evade.",
+        "Filename": "0004_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 75
+    },
+    {
+        "Name": "Orange Thunder Gauntlets",
+        "Color": "Orange",
+        "Value": 288,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 40
+        },
+        "Description": "Gauntlets that channel the power of thunder, increasing your magic attack.",
+        "Filename": "0005_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 80
+    },
+    {
+        "Name": "Orange Heavy Gauntlets",
+        "Color": "Orange",
+        "Value": 174,
+        "Description": "Heavy gauntlets that provide excellent defense.",
+        "Filename": "0006_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 85
+    },
+    {
+        "Name": "Orange Elegant Gauntlets",
+        "Color": "Orange",
+        "Value": 345,
+        "Description": "Elegant gauntlets made of the finest materials.",
+        "Filename": "0007_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Orange Enchanted Gauntlets",
+        "Color": "Orange",
+        "Value": 420,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 50
+        },
+        "Description": "Gauntlets that have been enchanted to increase your endurance.",
+        "Filename": "0008_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 72
+    },
+    {
+        "Name": "Orange Dragon Gauntlets",
+        "Color": "Orange",
+        "Value": 501,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 45
+        },
+        "Description": "Gauntlets made from the scales of a dragon that provide excellent defense.",
+        "Filename": "0009_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 78
+    },
+    {
+        "Name": "Orange Iron Gauntlets",
+        "Color": "Orange",
+        "Value": 176,
+        "Description": "Gauntlets made of heavy iron that provide excellent protection.",
+        "Filename": "0010_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 90
+    },
+    {
+        "Name": "Orange Swift Gauntlets",
+        "Color": "Orange",
+        "Value": 287,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 30
+        },
+        "Description": "Gauntlets that increase your speed and agility, making it easier to dodge attacks.",
+        "Filename": "0011_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 65
+    },
+    {
+        "Name": "Orange Blessed Gauntlets",
+        "Color": "Orange",
+        "Value": 389,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 30
+        },
+        "Description": "Gauntlets that have been blessed by a holy priest, increasing your maximum health.",
+        "Filename": "0012_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 70
+    },
+    {
+        "Name": "Orange Night Gauntlets",
+        "Color": "Orange",
+        "Value": 239,
+        "Description": "Gauntlets that allow you to see in the dark and strike your enemies with precision.",
+        "Filename": "0013_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 75
+    },
+    {
+        "Name": "Orange Leather Gloves",
+        "Color": "Orange",
+        "Value": 75,
+        "Description": "Soft and supple, these gloves provide excellent dexterity and comfort.",
+        "Filename": "0014_clothing_hands_orange.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Burnished Orange Gauntlets",
+        "Color": "Burnished Orange",
+        "Value": 90,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 25
+        },
+        "Description": "Crafted by skilled artisans, these gauntlets offer superior protection and durability.",
+        "Filename": "0015_clothing_hands_burnishedorange.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Vibrant Orange Vambraces",
+        "Color": "Vibrant Orange",
+        "Value": 120,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 35
+        },
+        "Description": "A striking pair of vambraces that provide both protection and endurance.",
+        "Filename": "0016_clothing_hands_vibrantorange.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Orange Suede Gloves",
+        "Color": "Orange",
+        "Value": 60,
+        "Description": "These gloves are made from soft suede, providing warmth and comfort in cold weather.",
+        "Filename": "0017_clothing_hands_orange.png",
+        "Type": "Hands",
+        "Weight": 15
+    },
+    {
+        "Name": "Bright Orange Gauntlets",
+        "Color": "Bright Orange",
+        "Value": 80,
+        "Description": "These gauntlets are brightly colored and provide solid protection for the hands.",
+        "Filename": "0018_clothing_hands_brightorange.png",
+        "Type": "Hands",
+        "Weight": 35
+    },
+    {
+        "Name": "Tangerine Leather Gloves",
+        "Color": "Tangerine",
+        "Value": 65,
+        "Description": "These gloves are made from high-quality leather and provide excellent grip and dexterity.",
+        "Filename": "0019_clothing_hands_tangerine.png",
+        "Type": "Hands",
+        "Weight": 18
+    },
+    {
+        "Name": "Dark Orange Gauntlets",
+        "Color": "Dark Orange",
+        "Value": 85,
+        "Description": "These gauntlets are made from sturdy leather and provide solid protection for the hands.",
+        "Filename": "0020_clothing_hands_darkorange.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Orange Scale Vambraces",
+        "Color": "Orange Scale",
+        "Value": 150,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 45
+        },
+        "Description": "These vambraces are made from dragon scales and provide excellent protection against magic attacks.",
+        "Filename": "0021_clothing_hands_orangescale.png",
+        "Type": "Hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Light Orange Gloves",
+        "Color": "Light Orange",
+        "Value": 70,
+        "Description": "These gloves are lightweight and provide excellent dexterity and comfort.",
+        "Filename": "0022_clothing_hands_lightorange.png",
+        "Type": "Hands",
+        "Weight": 12
+    },
+    {
+        "Name": "Orange Leather Vambraces",
+        "Color": "Orange",
+        "Value": 120,
+        "Description": "Protective vambraces crafted from supple leather.",
+        "Filename": "0023_clothing_vambraces_orange.png",
+        "Type": "Hands",
+        "Weight": 35
+    },
+    {
+        "Name": "Orange Steel Vambraces",
+        "Color": "Orange",
+        "Value": 250,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 25
+        },
+        "Description": "Sturdy steel vambraces with intricate etchings for added protection.",
+        "Filename": "0024_clothing_vambraces_orange.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Orange Silk Vambraces",
+        "Color": "Orange",
+        "Value": 500,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 30
+        },
+        "Description": "Luxurious silk vambraces embroidered with gold thread, providing magical resistance.",
+        "Filename": "0025_clothing_vambraces_orange.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Orange Dragonhide Vambraces",
+        "Color": "Orange",
+        "Value": 800,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 40
+        },
+        "Description": "Vambraces made from the hide of a dragon, granting the wearer incredible endurance.",
+        "Filename": "0026_clothing_vambraces_orange.png",
+        "Type": "Hands",
+        "Weight": 45
+    }
+]

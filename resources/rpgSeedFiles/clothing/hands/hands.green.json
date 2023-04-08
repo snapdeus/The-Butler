@@ -1,1 +1,152 @@
-[]
+[
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 50,
+        "Description": "A pair of sturdy gauntlets made of green-tinted steel.",
+        "Filename": "0001_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 70,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A pair of exquisite gauntlets made of green-tinted steel, imbued with a defensive enchantment.",
+        "Filename": "0002_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 30,
+        "Description": "A pair of rough gauntlets made of green-tinted leather.",
+        "Filename": "0003_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 80,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 40
+        },
+        "Description": "A pair of expertly crafted gauntlets made of green-tinted steel, increasing the wearer's endurance.",
+        "Filename": "0004_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 25,
+        "Description": "A pair of worn gauntlets made of green-tinted iron.",
+        "Filename": "0005_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 60,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 30
+        },
+        "Description": "A pair of finely crafted gauntlets made of green-tinted steel, enhancing the wearer's attack power.",
+        "Filename": "0006_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 40,
+        "Description": "A pair of simple gauntlets made of green-tinted metal.",
+        "Filename": "0007_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 65,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "A pair of intricately designed gauntlets made of green-tinted steel, providing magical defense.",
+        "Filename": "0008_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 45
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 45,
+        "Description": "A pair of rugged gauntlets made of green-tinted leather and metal.",
+        "Filename": "0009_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 35
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 75,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 50
+        },
+        "Description": "A pair of magnificent gauntlets made of green-tinted steel, increasing the wearer's health.",
+        "Filename": "0010_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 35,
+        "Description": "A pair of scratched gauntlets made of green-tinted metal.",
+        "Filename": "0011_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 55,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 20
+        },
+        "Description": "A pair of sleek gauntlets made of green-tinted steel, increasing the wearer's evasion.",
+        "Filename": "0012_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Green Wrist Guards",
+        "Color": "Green",
+        "Value": 75,
+        "Description": "A pair of sturdy wrist guards designed to protect the wearer's forearms from injury.",
+        "Filename": "0013_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Green Wrist Guards",
+        "Color": "Green",
+        "Value": 60,
+        "Description": "A pair of wrist guards designed to provide extra support to the wearer's wrists during combat.",
+        "Filename": "0014_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 20
+    }
+]

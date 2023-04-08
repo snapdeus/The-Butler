@@ -1,1 +1,157 @@
-[]
+[
+    {
+        "Name": "Crimson Fistwraps",
+        "Color": "Red",
+        "Value": 230,
+        "Description": "Protective gauntlets of fine red silk adorned with gold filigree.",
+        "Filename": "0001_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 35
+    },
+    {
+        "Name": "Bloodstained Bracers",
+        "Color": "Red",
+        "Value": 140,
+        "Description": "Sturdy gauntlets with red leather padding and iron plating.",
+        "Filename": "0002_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Scarlet Scalemail Gloves",
+        "Color": "Red",
+        "Value": 320,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Description": "Gloves made from the scales of a red dragon that provide extra defense.",
+        "Filename": "0003_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 75
+    },
+    {
+        "Name": "Ruby Plated Gauntlets",
+        "Color": "Red",
+        "Value": 420,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 35
+        },
+        "Description": "Heavy gauntlets with ruby inlays that increase attack power.",
+        "Filename": "0004_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 110
+    },
+    {
+        "Name": "Carmine Leather Gloves",
+        "Color": "Red",
+        "Value": 90,
+        "Description": "Soft leather gloves dyed a rich shade of red.",
+        "Filename": "0005_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Garnet Encrusted Bracers",
+        "Color": "Red",
+        "Value": 310,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "Bracers with garnet studs that provide protection against magic attacks.",
+        "Filename": "0006_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 65
+    },
+    {
+        "Name": "Vermilion Chainmail Gloves",
+        "Color": "Red",
+        "Value": 270,
+        "Description": "Chainmail gloves with a red enamel finish.",
+        "Filename": "0007_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Scarlet Silk Mitts",
+        "Color": "Red",
+        "Value": 120,
+        "Description": "Lightweight mitts made from fine red silk.",
+        "Filename": "0008_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 15
+    },
+    {
+        "Name": "Blood Red Plate Gauntlets",
+        "Color": "Red",
+        "Value": 360,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 45
+        },
+        "Description": "Heavy plate gauntlets that increase maximum hit points.",
+        "Filename": "0009_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 95
+    },
+    {
+        "Name": "Crimson Leather Bracers",
+        "Color": "Red",
+        "Value": 80,
+        "Description": "Red leather bracers with gold buckle accents.",
+        "Filename": "0010_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Red Gloves",
+        "Color": "Red",
+        "Value": 50,
+        "Description": "A pair of finely crafted gloves, perfect for any adventurer.",
+        "Filename": "0011_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Red Iron Vambraces",
+        "Color": "Red",
+        "Value": 350,
+        "Description": "A pair of sturdy iron vambraces, perfect for deflecting blows in battle.",
+        "Filename": "0012_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Crimson Leather Vambraces",
+        "Color": "Red",
+        "Value": 150,
+        "Description": "A pair of supple leather vambraces, ideal for agile fighters looking for protection without sacrificing mobility.",
+        "Filename": "0013_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Scarlet Steel Vambraces",
+        "Color": "Red",
+        "Value": 550,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A pair of expertly crafted steel vambraces, imbued with protective enchantments that make them nearly impenetrable.",
+        "Filename": "0014_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 80
+    },
+    {
+        "Name": "Bloodstained Vambraces",
+        "Color": "Red",
+        "Value": 80,
+        "Description": "A pair of worn and battered vambraces, their previous owner's bloodstains still visible on the leather.",
+        "Filename": "0015_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 10
+    }
+]
