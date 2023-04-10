@@ -16,7 +16,7 @@ const totalTorso = torso.length
 
 const torsoMetaInfo = {
     totalTorso,
-    torsoCounts: countTorsoColors
+    data: countTorsoColors
 };
 
 
@@ -31,7 +31,7 @@ const torsoDescripObj = {
     White: "White"
 };
 
-torsoMetaInfo.torsoCounts = mergeItemsCountsAndDescriptions(torsoMetaInfo.torsoCounts, torsoDescripObj);
+torsoMetaInfo.data = mergeItemsCountsAndDescriptions(torsoMetaInfo.data, torsoDescripObj);
 module.exports = {
     torso,
     torsoMetaInfo

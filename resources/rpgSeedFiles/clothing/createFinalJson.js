@@ -3,6 +3,8 @@ const path = require('path');
 const { countColors, mergeItemsCountsAndDescriptions, read_directory } = require('../utils')
 const dir = path.join(__dirname);
 
+//NOTE, IT MATTERS WHERE THIS FILE IS
+
 const getDirNames = function (dir) {
     const dirNames = fs.readdirSync(dir, { withFileTypes: true });
     return dirNames.filter(dirent => dirent.isDirectory())

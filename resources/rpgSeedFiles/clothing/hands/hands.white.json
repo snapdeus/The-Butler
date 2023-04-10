@@ -1,1 +1,178 @@
-[]
+[
+    {
+        "Name": "White Iron Gauntlets",
+        "Color": "White",
+        "Value": 300,
+        "Description": "Sturdy gauntlets forged from white iron, fit for any warrior.",
+        "Filename": "0001_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 80
+    },
+    {
+        "Name": "Frostbitten Gauntlets",
+        "Color": "White",
+        "Value": 500,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 25
+        },
+        "Description": "Gauntlets that have been imbued with the power of the frost, providing additional defense.",
+        "Filename": "0002_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 70
+    },
+    {
+        "Name": "Ivory Knight Gauntlets",
+        "Color": "White",
+        "Value": 700,
+        "Description": "Exquisite gauntlets made from ivory, worn by the knights of old.",
+        "Filename": "0003_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 90
+    },
+    {
+        "Name": "Radiant Gauntlets",
+        "Color": "White",
+        "Value": 1000,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 40
+        },
+        "Description": "Gauntlets that emit a radiant aura, providing additional magic defense to the wearer.",
+        "Filename": "0004_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Ivory Gauntlets",
+        "Color": "White",
+        "Value": 280,
+        "Description": "Elegant vambraces with intricate carvings that reflect the light beautifully.",
+        "Filename": "0014_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Luminous Bracers",
+        "Color": "White",
+        "Value": 450,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "Glistening vambraces that seem to radiate with protective magic.",
+        "Filename": "0015_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Silken Armguards",
+        "Color": "White",
+        "Value": 180,
+        "Description": "Soft and lightweight vambraces that provide a comfortable fit.",
+        "Filename": "0016_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "White Winged Gauntlets",
+        "Color": "White",
+        "Value": 80,
+        "Description": "Soft and supple, these gloves are crafted from the finest lambskin and imbued with the power of flight.",
+        "Filename": "0005_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Ivory Handguards",
+        "Color": "White",
+        "Value": 30,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 12
+        },
+        "Description": "These gloves are made from the hide of a rare albino crocodile, granting the wearer added protection.",
+        "Filename": "0006_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 15
+    },
+    {
+        "Name": "Snowdrift Mittens",
+        "Color": "White",
+        "Value": 45,
+        "Description": "These gloves are woven from the finest wool, and imbued with a chill that can freeze the most heated of battles.",
+        "Filename": "0007_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Frostbitten Handwraps",
+        "Color": "White",
+        "Value": 60,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "These gloves are enchanted with the power of winter, providing protection against the most powerful of spells.",
+        "Filename": "0008_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 18
+    },
+    {
+        "Name": "Silk Gloves",
+        "Color": "White",
+        "Value": 25,
+        "Description": "These gloves are made from the finest silk, providing comfort and style to the most discerning of wearers.",
+        "Filename": "0009_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 10
+    },
+    {
+        "Name": "Alabaster Mitts",
+        "Color": "White",
+        "Value": 40,
+        "Description": "These gloves are crafted from the purest of white marble, providing a unique and elegant look to any outfit.",
+        "Filename": "0010_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Guardian Bracers",
+        "Color": "White",
+        "Value": 75,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 40
+        },
+        "Description": "These gloves are imbued with the protective power of the most powerful guardians, providing added endurance to the wearer.",
+        "Filename": "0011_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 22
+    },
+    {
+        "Name": "Luminous Mitts",
+        "Color": "White",
+        "Value": 55,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 20
+        },
+        "Description": "These gloves glow with a powerful light, enhancing the wearer's magical abilities.",
+        "Filename": "0012_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 16
+    },
+    {
+        "Name": "Diamond Gauntlets",
+        "Color": "White",
+        "Value": 100,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 50
+        },
+        "Description": "These gloves are encrusted with diamonds, providing the wearer with added strength in battle.",
+        "Filename": "0013_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 35
+    }
+]

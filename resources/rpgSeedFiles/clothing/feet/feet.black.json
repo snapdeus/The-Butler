@@ -87,7 +87,7 @@
             "amount": 35
         },
         "Description": "Sturdy and reliable greaves, crafted from black iron.",
-        "Filename": "0008_clothing_feet_blue.png",
+        "Filename": "0008_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 80
     },
@@ -97,7 +97,7 @@
         "Value": 420,
         "Buff": null,
         "Description": "Boots made from the scales of a black dragon, providing excellent protection.",
-        "Filename": "0009_clothing_feet_blue.png",
+        "Filename": "0009_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 60
     },
@@ -110,7 +110,7 @@
             "amount": 25
         },
         "Description": "Light and flexible armor made from the hide of a shadow beast.",
-        "Filename": "0010_clothing_feet_blue.png",
+        "Filename": "0010_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 100
     },
@@ -119,7 +119,7 @@
         "Color": "Black",
         "Value": 60,
         "Description": "A pair of sable shoes, soft and comfortable for the feet of a lord.",
-        "Filename": "0011_clothing_feet_blue.png",
+        "Filename": "0011_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 20
     },
@@ -128,7 +128,7 @@
         "Color": "Black",
         "Value": 40,
         "Description": "A sturdy pair of leather boots, perfect for a long journey.",
-        "Filename": "0012_clothing_feet_blue.png",
+        "Filename": "0012_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 30
     },
@@ -137,7 +137,7 @@
         "Color": "Black",
         "Value": 80,
         "Description": "A luxurious pair of velvet slippers, fit for a king.",
-        "Filename": "0013_clothing_feet_blue.png",
+        "Filename": "0013_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 15
     },
@@ -146,7 +146,7 @@
         "Color": "Black",
         "Value": 35,
         "Description": "A pair of ankle boots, simple yet durable.",
-        "Filename": "0014_clothing_feet_blue.png",
+        "Filename": "0014_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 25
     },
@@ -155,7 +155,7 @@
         "Color": "Black",
         "Value": 30,
         "Description": "A pair of leather sandals, perfect for a hot summer day.",
-        "Filename": "0015_clothing_feet_blue.png",
+        "Filename": "0015_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 15
     },
@@ -164,7 +164,7 @@
         "Color": "Black",
         "Value": 50,
         "Description": "A pair of buckled shoes, sturdy and fashionable.",
-        "Filename": "0016_clothing_feet_blue.png",
+        "Filename": "0016_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 20
     },
@@ -173,7 +173,7 @@
         "Color": "Black",
         "Value": 70,
         "Description": "A pair of riding boots, perfect for a knight.",
-        "Filename": "0017_clothing_feet_blue.png",
+        "Filename": "0017_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 35
     },
@@ -182,7 +182,7 @@
         "Color": "Black",
         "Value": 45,
         "Description": "A pair of pointed shoes, perfect for a courtier.",
-        "Filename": "0018_clothing_feet_blue.png",
+        "Filename": "0018_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 15
     },
@@ -191,7 +191,7 @@
         "Color": "Black",
         "Value": 55,
         "Description": "A pair of leather loafers, comfortable and stylish.",
-        "Filename": "0019_clothing_feet_blue.png",
+        "Filename": "0019_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 20
     },
@@ -200,7 +200,7 @@
         "Color": "Black",
         "Value": 65,
         "Description": "A pair of combat boots, perfect for a soldier.",
-        "Filename": "0020_clothing_feet_blue.png",
+        "Filename": "0020_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 30
     },
@@ -209,7 +209,7 @@
         "Color": "Black",
         "Value": 50,
         "Description": "A pair of leather moccasins, perfect for a hunter.",
-        "Filename": "0021_clothing_feet_blue.png",
+        "Filename": "0021_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 15
     },
@@ -218,7 +218,7 @@
         "Color": "Black",
         "Value": 75,
         "Description": "A pair of high heels, perfect for a lady.",
-        "Filename": "0022_clothing_feet_blue.png",
+        "Filename": "0022_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 10
     },
@@ -227,7 +227,7 @@
         "Color": "Black",
         "Value": 85,
         "Description": "A pair of wingtip shoes, perfect for a gentleman.",
-        "Filename": "0023_clothing_feet_blue.png",
+        "Filename": "0023_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 20
     },
@@ -236,7 +236,7 @@
         "Color": "Black",
         "Value": 90,
         "Description": "A pair of leather oxfords, perfect for a scholar.",
-        "Filename": "0024_clothing_feet_blue.png",
+        "Filename": "0024_clothing_feet_black.png",
         "Type": "Feet",
         "Weight": 20
     }

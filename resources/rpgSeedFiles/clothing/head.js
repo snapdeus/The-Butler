@@ -18,7 +18,7 @@ const totalHead = head.length
 
 const headMetaInfo = {
     totalHead,
-    headCounts: countHeadColors
+    data: countHeadColors
 };
 
 
@@ -33,7 +33,7 @@ const headDescripObj = {
     White: "White"
 };
 
-headMetaInfo.headCounts = mergeItemsCountsAndDescriptions(headMetaInfo.headCounts, headDescripObj);
+headMetaInfo.data = mergeItemsCountsAndDescriptions(headMetaInfo.data, headDescripObj);
 module.exports = {
     head,
     headMetaInfo

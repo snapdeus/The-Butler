@@ -155,27 +155,27 @@
     },
     {
         "Name": "Burnished Orange Gauntlets",
-        "Color": "Burnished Orange",
+        "Color": "Orange",
         "Value": 90,
         "Buff": {
             "buffType": "Defense",
             "amount": 25
         },
         "Description": "Crafted by skilled artisans, these gauntlets offer superior protection and durability.",
-        "Filename": "0015_clothing_hands_burnishedorange.png",
+        "Filename": "0015_clothing_hands_orange.png",
         "Type": "Hands",
         "Weight": 40
     },
     {
         "Name": "Vibrant Orange Vambraces",
-        "Color": "Vibrant Orange",
+        "Color": "Orange",
         "Value": 120,
         "Buff": {
             "buffType": "Endurance",
             "amount": 35
         },
         "Description": "A striking pair of vambraces that provide both protection and endurance.",
-        "Filename": "0016_clothing_hands_vibrantorange.png",
+        "Filename": "0016_clothing_hands_orange.png",
         "Type": "Hands",
         "Weight": 30
     },
@@ -190,50 +190,50 @@
     },
     {
         "Name": "Bright Orange Gauntlets",
-        "Color": "Bright Orange",
+        "Color": "Orange",
         "Value": 80,
         "Description": "These gauntlets are brightly colored and provide solid protection for the hands.",
-        "Filename": "0018_clothing_hands_brightorange.png",
+        "Filename": "0018_clothing_hands_orange.png",
         "Type": "Hands",
         "Weight": 35
     },
     {
         "Name": "Tangerine Leather Gloves",
-        "Color": "Tangerine",
+        "Color": "Orange",
         "Value": 65,
         "Description": "These gloves are made from high-quality leather and provide excellent grip and dexterity.",
-        "Filename": "0019_clothing_hands_tangerine.png",
+        "Filename": "0019_clothing_hands_orange.png",
         "Type": "Hands",
         "Weight": 18
     },
     {
         "Name": "Dark Orange Gauntlets",
-        "Color": "Dark Orange",
+        "Color": "Orange",
         "Value": 85,
         "Description": "These gauntlets are made from sturdy leather and provide solid protection for the hands.",
-        "Filename": "0020_clothing_hands_darkorange.png",
+        "Filename": "0020_clothing_hands_orange.png",
         "Type": "Hands",
         "Weight": 40
     },
     {
         "Name": "Orange Scale Vambraces",
-        "Color": "Orange Scale",
+        "Color": "Orange",
         "Value": 150,
         "Buff": {
             "buffType": "Magic Defense",
             "amount": 45
         },
         "Description": "These vambraces are made from dragon scales and provide excellent protection against magic attacks.",
-        "Filename": "0021_clothing_hands_orangescale.png",
+        "Filename": "0021_clothing_hands_orange.png",
         "Type": "Hands",
         "Weight": 50
     },
     {
         "Name": "Light Orange Gloves",
-        "Color": "Light Orange",
+        "Color": "Orange",
         "Value": 70,
         "Description": "These gloves are lightweight and provide excellent dexterity and comfort.",
-        "Filename": "0022_clothing_hands_lightorange.png",
+        "Filename": "0022_clothing_hands_orange.png",
         "Type": "Hands",
         "Weight": 12
     },
@@ -242,7 +242,7 @@
         "Color": "Orange",
         "Value": 120,
         "Description": "Protective vambraces crafted from supple leather.",
-        "Filename": "0023_clothing_vambraces_orange.png",
+        "Filename": "0023_clothing_hands_orange.png",
         "Type": "Hands",
         "Weight": 35
     },
@@ -255,7 +255,7 @@
             "amount": 25
         },
         "Description": "Sturdy steel vambraces with intricate etchings for added protection.",
-        "Filename": "0024_clothing_vambraces_orange.png",
+        "Filename": "0024_clothing_hands_orange.png",
         "Type": "Hands",
         "Weight": 60
     },
@@ -268,7 +268,7 @@
             "amount": 30
         },
         "Description": "Luxurious silk vambraces embroidered with gold thread, providing magical resistance.",
-        "Filename": "0025_clothing_vambraces_orange.png",
+        "Filename": "0025_clothing_hands_orange.png",
         "Type": "Hands",
         "Weight": 20
     },
@@ -281,7 +281,7 @@
             "amount": 40
         },
         "Description": "Vambraces made from the hide of a dragon, granting the wearer incredible endurance.",
-        "Filename": "0026_clothing_vambraces_orange.png",
+        "Filename": "0026_clothing_hands_orange.png",
         "Type": "Hands",
         "Weight": 45
     }

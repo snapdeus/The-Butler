@@ -17,7 +17,7 @@ const totalFeet = feet.length
 
 const feetMetaInfo = {
     totalFeet,
-    feetCounts: countFeetColors
+    data: countFeetColors
 };
 
 
@@ -33,7 +33,7 @@ const feetDescripObj = {
     White: "White"
 };
 
-feetMetaInfo.feetCounts = mergeItemsCountsAndDescriptions(feetMetaInfo.feetCounts, feetDescripObj);
+feetMetaInfo.data = mergeItemsCountsAndDescriptions(feetMetaInfo.data, feetDescripObj);
 module.exports = {
     feet,
     feetMetaInfo

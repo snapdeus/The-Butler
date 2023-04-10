@@ -632,7 +632,7 @@
             "amount": 50
         },
         "Description": "Infused with the essence of rage, this scroll enhances your physical attack by 50 points.",
-        "Filename": "0049_scroll.png",
+        "Filename": "0049_scrolls.png",
         "Type": "Scroll",
         "Weight": 5
     },
@@ -645,7 +645,7 @@
             "amount": 90
         },
         "Description": "Harness the power of thunder with this scroll, increasing your physical attack by 90 points.",
-        "Filename": "0050_scroll.png",
+        "Filename": "0050_scrolls.png",
         "Type": "Scroll",
         "Weight": 5
     },
@@ -658,7 +658,7 @@
             "amount": 60
         },
         "Description": "Empower your weapon with blazing energy, boosting your physical attack by 60 points.",
-        "Filename": "0051_scroll.png",
+        "Filename": "0051_scrolls.png",
         "Type": "Scroll",
         "Weight": 5
     },
@@ -671,7 +671,7 @@
             "amount": 75
         },
         "Description": "With a burst of energy, this scroll increases your physical attack by 75 points.",
-        "Filename": "0052_scroll.png",
+        "Filename": "0052_scrolls.png",
         "Type": "Scroll",
         "Weight": 5
     },
@@ -684,7 +684,7 @@
             "amount": 65
         },
         "Description": "Fortify your strength with this scroll, raising your physical attack by 65 points.",
-        "Filename": "0053_scroll.png",
+        "Filename": "0053_scrolls.png",
         "Type": "Scroll",
         "Weight": 5
     },
@@ -697,7 +697,7 @@
             "amount": 70
         },
         "Description": "Increase your attack speed and power, boosting your physical attack by 70 points.",
-        "Filename": "0054_scroll.png",
+        "Filename": "0054_scrolls.png",
         "Type": "Scroll",
         "Weight": 5
     },
@@ -1126,7 +1126,7 @@
             "amount": 30
         },
         "Description": "Purge your enemy's protection with this scroll, reducing their evade by 30 points.",
-        "Filename": "0087_scroll.png",
+        "Filename": "0087_scrolls.png",
         "Type": "Scroll",
         "Weight": 5
     },

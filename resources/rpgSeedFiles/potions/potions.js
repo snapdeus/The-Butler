@@ -9,7 +9,7 @@ const totalPotions = potions.length
 
 const potionsMetaInfo = {
     totalPotions,
-    potionCounts: countPotionColors
+    data: countPotionColors
 };
 
 
@@ -24,7 +24,7 @@ const potionsDescripObj = {
 };
 
 
-potionsMetaInfo.potionCounts = mergeItemsCountsAndDescriptions(potionsMetaInfo.potionCounts, potionsDescripObj);
+potionsMetaInfo.data = mergeItemsCountsAndDescriptions(potionsMetaInfo.data, potionsDescripObj);
 
 module.exports = {
     potions,

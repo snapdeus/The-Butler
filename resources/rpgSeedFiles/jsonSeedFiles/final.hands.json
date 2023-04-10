@@ -1,1 +1,1540 @@
-[]
+[
+    {
+        "Name": "Black Gauntlets",
+        "Color": "Black",
+        "Value": 250,
+        "Description": "Hardy gauntlets of black iron for a valiant knight!",
+        "Filename": "0001_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 75
+    },
+    {
+        "Name": "Midnight Gloves",
+        "Color": "Black",
+        "Value": 180,
+        "Description": "Silken gloves of midnight hue for a stealthy rogue!",
+        "Filename": "0002_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Shadow Bracers",
+        "Color": "Black",
+        "Value": 320,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "Sable bracers of shadowy metal for a vigilant defender!",
+        "Filename": "0003_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 90
+    },
+    {
+        "Name": "Obsidian Mitts",
+        "Color": "Black",
+        "Value": 200,
+        "Description": "Gloves of obsidian glass for a powerful sorcerer!",
+        "Filename": "0004_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Raven Fists",
+        "Color": "Black",
+        "Value": 150,
+        "Description": "Leather gloves of raven feathers for a nimble ranger!",
+        "Filename": "0005_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 15
+    },
+    {
+        "Name": "Onyx Gauntlets",
+        "Color": "Black",
+        "Value": 270,
+        "Description": "Gauntlets of black onyx for a mighty warrior!",
+        "Filename": "0006_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 80
+    },
+    {
+        "Name": "Nightfall Gloves",
+        "Color": "Black",
+        "Value": 200,
+        "Description": "Gloves of nightfall shade for a cunning thief!",
+        "Filename": "0007_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Black Leather Gloves",
+        "Color": "Black",
+        "Value": 60,
+        "Description": "Elegant gloves made of fine leather that provide comfort and protection.",
+        "Filename": "0008_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Black Gauntlets",
+        "Color": "Black",
+        "Value": 130,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Description": "Sturdy black gauntlets that provide excellent defense to the wearer.",
+        "Filename": "0009_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Shadowy Gloves",
+        "Color": "Black",
+        "Value": 200,
+        "Description": "Gloves that seem to absorb light and provide a stealthy advantage to the wearer.",
+        "Filename": "0010_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Blackened Iron Gauntlets",
+        "Color": "Black",
+        "Value": 250,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 30
+        },
+        "Description": "Heavy gauntlets made of blackened iron that provide excellent protection to the wearer.",
+        "Filename": "0011_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 80
+    },
+    {
+        "Name": "Black Diamond Gloves",
+        "Color": "Black",
+        "Value": 350,
+        "Description": "Gloves adorned with black diamonds that provide the wearer with a regal appearance.",
+        "Filename": "0012_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 15
+    },
+    {
+        "Name": "Nightfall Gauntlets",
+        "Color": "Black",
+        "Value": 420,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 40
+        },
+        "Description": "Gauntlets that seem to be made of the night sky itself, providing unparalleled defense to the wearer.",
+        "Filename": "0013_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 90
+    },
+    {
+        "Name": "Black Velvet Gloves",
+        "Color": "Black",
+        "Value": 500,
+        "Description": "Soft and luxurious gloves made of black velvet that provide warmth and comfort.",
+        "Filename": "0014_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 10
+    },
+    {
+        "Name": "Obsidian Gauntlets",
+        "Color": "Black",
+        "Value": 650,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 50
+        },
+        "Description": "Gauntlets made of obsidian that provide unparalleled defense to the wearer.",
+        "Filename": "0015_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 100
+    },
+    {
+        "Name": "Blackened Steel Gloves",
+        "Color": "Black",
+        "Value": 750,
+        "Description": "Gloves made of blackened steel that provide excellent protection and a menacing appearance.",
+        "Filename": "0016_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Shadowstrike Gauntlets",
+        "Color": "Black",
+        "Value": 900,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 30
+        },
+        "Description": "Gauntlets that enhance the wearer's striking ability with a shadowy aura.",
+        "Filename": "0017_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 70
+    },
+    {
+        "Name": "Black Steel Vambraces",
+        "Color": "Black",
+        "Value": 300,
+        "Description": "A pair of black steel vambraces, etched with ancient symbols of warding.",
+        "Filename": "0018_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Shadow Leather Vambraces",
+        "Color": "Black",
+        "Value": 120,
+        "Description": "A pair of shadow leather vambraces, perfect for sneaking around in the dark.",
+        "Filename": "0019_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 15
+    },
+    {
+        "Name": "Obsidian Wristguards",
+        "Color": "Black",
+        "Value": 400,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A pair of obsidian wristguards, imbued with powerful defensive magic.",
+        "Filename": "0020_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Nightshade Bracers",
+        "Color": "Black",
+        "Value": 220,
+        "Description": "A pair of nightshade bracers, perfect for blending into the shadows.",
+        "Filename": "0021_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Blackened Iron Armguards",
+        "Color": "Black",
+        "Value": 280,
+        "Description": "A pair of blackened iron armguards, perfect for deflecting blows in battle.",
+        "Filename": "0022_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 22
+    },
+    {
+        "Name": "Raven Feather Armlets",
+        "Color": "Black",
+        "Value": 180,
+        "Description": "A pair of raven feather armlets, imbued with the power of flight.",
+        "Filename": "0023_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 18
+    },
+    {
+        "Name": "Midnight Velvet Bracers",
+        "Color": "Black",
+        "Value": 250,
+        "Description": "A pair of midnight velvet bracers, imbued with the power of deception.",
+        "Filename": "0024_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 24
+    },
+    {
+        "Name": "Onyx Armguards",
+        "Color": "Black",
+        "Value": 350,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 40
+        },
+        "Description": "A pair of onyx armguards, imbued with the power of destruction.",
+        "Filename": "0025_clothing_hands_black.png",
+        "Type": "Hands",
+        "Weight": 28
+    },
+    {
+        "Name": "Blue Steel Gauntlets",
+        "Color": "Blue",
+        "Value": 500,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A sturdy pair of gauntlets made from blue steel, offering excellent protection to the hands.",
+        "Filename": "0001_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 75
+    },
+    {
+        "Name": "Azure Gauntlets",
+        "Color": "Blue",
+        "Value": 250,
+        "Description": "A pair of gauntlets with intricate patterns etched on the surface, made from azure metal.",
+        "Filename": "0002_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Sapphire Gauntlets",
+        "Color": "Blue",
+        "Value": 400,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 20
+        },
+        "Description": "A pair of gauntlets adorned with sapphire gems, providing magical protection to the wearer.",
+        "Filename": "0003_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 65
+    },
+    {
+        "Name": "Cobalt Gauntlets",
+        "Color": "Blue",
+        "Value": 300,
+        "Description": "A pair of gauntlets made from cobalt metal, providing solid defense without weighing down the wearer.",
+        "Filename": "0004_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 55
+    },
+    {
+        "Name": "Icy Gauntlets",
+        "Color": "Blue",
+        "Value": 450,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 25
+        },
+        "Description": "A pair of gauntlets imbued with the power of ice, increasing the wearer's magical attack.",
+        "Filename": "0005_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 70
+    },
+    {
+        "Name": "Frostbite Gauntlets",
+        "Color": "Blue",
+        "Value": 600,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 40
+        },
+        "Description": "A pair of gauntlets that freeze the air around them, increasing the wearer's physical attack power.",
+        "Filename": "0006_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 80
+    },
+    {
+        "Name": "Navy Gauntlets",
+        "Color": "Blue",
+        "Value": 200,
+        "Description": "A simple pair of navy blue gauntlets, offering basic protection to the wearer's hands.",
+        "Filename": "0007_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Cerulean Gauntlets",
+        "Color": "Blue",
+        "Value": 350,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 30
+        },
+        "Description": "A pair of gauntlets with a cerulean hue, increasing the wearer's endurance.",
+        "Filename": "0008_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 65
+    },
+    {
+        "Name": "Oceanic Gauntlets",
+        "Color": "Blue",
+        "Value": 550,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 45
+        },
+        "Description": "A pair of gauntlets that evoke the depths of the ocean, increasing the wearer's health points.",
+        "Filename": "0009_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 75
+    },
+    {
+        "Name": "Cyan Gauntlets",
+        "Color": "Blue",
+        "Value": 150,
+        "Description": "A pair of light cyan gauntlets, providing basic protection to the wearer's hands.",
+        "Filename": "0010_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 45
+    },
+    {
+        "Name": "Blue Silk Gloves",
+        "Color": "Blue",
+        "Value": 250,
+        "Description": "Soft and silky gloves, perfect for a nobleman's attire.",
+        "Filename": "0011_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 15
+    },
+    {
+        "Name": "Blue Leather Gloves",
+        "Color": "Blue",
+        "Value": 120,
+        "Description": "Well-crafted leather gloves, perfect for a warrior's attire.",
+        "Filename": "0012_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Blue Woolen Gloves",
+        "Color": "Blue",
+        "Value": 80,
+        "Description": "Warm woolen gloves, perfect for a traveler's attire.",
+        "Filename": "0013_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 10
+    },
+    {
+        "Name": "Blue Velvet Gloves",
+        "Color": "Blue",
+        "Value": 300,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 25
+        },
+        "Description": "Elegant velvet gloves, embroidered with golden thread.",
+        "Filename": "0014_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 12
+    },
+    {
+        "Name": "Blue Suede Gloves",
+        "Color": "Blue",
+        "Value": 150,
+        "Description": "Soft suede gloves, perfect for a ranger's attire.",
+        "Filename": "0015_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 18
+    },
+    {
+        "Name": "Blue Satin Gloves",
+        "Color": "Blue",
+        "Value": 350,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 30
+        },
+        "Description": "Luxurious satin gloves, embroidered with silver thread.",
+        "Filename": "0016_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 14
+    },
+    {
+        "Name": "Blue Wristguard",
+        "Color": "Blue",
+        "Value": 234,
+        "Description": "A sturdy wristguard crafted from hardened steel.",
+        "Filename": "0017_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 65
+    },
+    {
+        "Name": "Azure Bracer",
+        "Color": "Blue",
+        "Value": 167,
+        "Description": "A flexible bracer made from the hide of a sapphire dragon.",
+        "Filename": "0018_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 45
+    },
+    {
+        "Name": "Cobalt Vambrace",
+        "Color": "Blue",
+        "Value": 318,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 32
+        },
+        "Description": "A sturdy vambrace made from the finest cobalt steel, providing excellent defense.",
+        "Filename": "0019_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 85
+    },
+    {
+        "Name": "Sky Blue Gauntlet",
+        "Color": "Blue",
+        "Value": 189,
+        "Description": "A light and flexible gauntlet, perfect for archers or spellcasters.",
+        "Filename": "0020_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Sapphire Armguard",
+        "Color": "Blue",
+        "Value": 285,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "An elegant armguard made from the finest sapphires, providing excellent magic defense.",
+        "Filename": "0021_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Indigo Wristband",
+        "Color": "Blue",
+        "Value": 97,
+        "Description": "A simple yet sturdy wristband made from indigo-dyed leather.",
+        "Filename": "0022_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Blue Steel ",
+        "Color": "Blue",
+        "Value": 97,
+        "Description": "A simple yet sturdy wristband made from indigo-dyed leather.",
+        "Filename": "0022_clothing_hands_blue.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 50,
+        "Description": "A pair of sturdy gauntlets made of green-tinted steel.",
+        "Filename": "0001_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 70,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A pair of exquisite gauntlets made of green-tinted steel, imbued with a defensive enchantment.",
+        "Filename": "0002_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 30,
+        "Description": "A pair of rough gauntlets made of green-tinted leather.",
+        "Filename": "0003_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 80,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 40
+        },
+        "Description": "A pair of expertly crafted gauntlets made of green-tinted steel, increasing the wearer's endurance.",
+        "Filename": "0004_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 25,
+        "Description": "A pair of worn gauntlets made of green-tinted iron.",
+        "Filename": "0005_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 60,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 30
+        },
+        "Description": "A pair of finely crafted gauntlets made of green-tinted steel, enhancing the wearer's attack power.",
+        "Filename": "0006_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 40,
+        "Description": "A pair of simple gauntlets made of green-tinted metal.",
+        "Filename": "0007_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 65,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "A pair of intricately designed gauntlets made of green-tinted steel, providing magical defense.",
+        "Filename": "0008_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 45
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 45,
+        "Description": "A pair of rugged gauntlets made of green-tinted leather and metal.",
+        "Filename": "0009_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 35
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 75,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 50
+        },
+        "Description": "A pair of magnificent gauntlets made of green-tinted steel, increasing the wearer's health.",
+        "Filename": "0010_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 35,
+        "Description": "A pair of scratched gauntlets made of green-tinted metal.",
+        "Filename": "0011_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Green Gauntlets",
+        "Color": "Green",
+        "Value": 55,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 20
+        },
+        "Description": "A pair of sleek gauntlets made of green-tinted steel, increasing the wearer's evasion.",
+        "Filename": "0012_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Green Wrist Guards",
+        "Color": "Green",
+        "Value": 75,
+        "Description": "A pair of sturdy wrist guards designed to protect the wearer's forearms from injury.",
+        "Filename": "0013_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Green Wrist Guards",
+        "Color": "Green",
+        "Value": 60,
+        "Description": "A pair of wrist guards designed to provide extra support to the wearer's wrists during combat.",
+        "Filename": "0014_clothing_hands_green.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Orange Hardy Gauntlets",
+        "Color": "Orange",
+        "Value": 127,
+        "Description": "Protective gauntlets made of sturdy leather and metal.",
+        "Filename": "0001_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 70
+    },
+    {
+        "Name": "Orange Fiery Gauntlets",
+        "Color": "Orange",
+        "Value": 231,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 25
+        },
+        "Description": "Gauntlets infused with the power of flames that increase your attack.",
+        "Filename": "0002_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 72
+    },
+    {
+        "Name": "Orange Spiked Gauntlets",
+        "Color": "Orange",
+        "Value": 98,
+        "Description": "Gauntlets with sharp spikes that can intimidate your enemies.",
+        "Filename": "0003_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 68
+    },
+    {
+        "Name": "Orange Shadow Gauntlets",
+        "Color": "Orange",
+        "Value": 211,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 35
+        },
+        "Description": "Gauntlets that allow you to blend in with the shadows, increasing your evade.",
+        "Filename": "0004_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 75
+    },
+    {
+        "Name": "Orange Thunder Gauntlets",
+        "Color": "Orange",
+        "Value": 288,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 40
+        },
+        "Description": "Gauntlets that channel the power of thunder, increasing your magic attack.",
+        "Filename": "0005_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 80
+    },
+    {
+        "Name": "Orange Heavy Gauntlets",
+        "Color": "Orange",
+        "Value": 174,
+        "Description": "Heavy gauntlets that provide excellent defense.",
+        "Filename": "0006_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 85
+    },
+    {
+        "Name": "Orange Elegant Gauntlets",
+        "Color": "Orange",
+        "Value": 345,
+        "Description": "Elegant gauntlets made of the finest materials.",
+        "Filename": "0007_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Orange Enchanted Gauntlets",
+        "Color": "Orange",
+        "Value": 420,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 50
+        },
+        "Description": "Gauntlets that have been enchanted to increase your endurance.",
+        "Filename": "0008_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 72
+    },
+    {
+        "Name": "Orange Dragon Gauntlets",
+        "Color": "Orange",
+        "Value": 501,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 45
+        },
+        "Description": "Gauntlets made from the scales of a dragon that provide excellent defense.",
+        "Filename": "0009_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 78
+    },
+    {
+        "Name": "Orange Iron Gauntlets",
+        "Color": "Orange",
+        "Value": 176,
+        "Description": "Gauntlets made of heavy iron that provide excellent protection.",
+        "Filename": "0010_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 90
+    },
+    {
+        "Name": "Orange Swift Gauntlets",
+        "Color": "Orange",
+        "Value": 287,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 30
+        },
+        "Description": "Gauntlets that increase your speed and agility, making it easier to dodge attacks.",
+        "Filename": "0011_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 65
+    },
+    {
+        "Name": "Orange Blessed Gauntlets",
+        "Color": "Orange",
+        "Value": 389,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 30
+        },
+        "Description": "Gauntlets that have been blessed by a holy priest, increasing your maximum health.",
+        "Filename": "0012_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 70
+    },
+    {
+        "Name": "Orange Night Gauntlets",
+        "Color": "Orange",
+        "Value": 239,
+        "Description": "Gauntlets that allow you to see in the dark and strike your enemies with precision.",
+        "Filename": "0013_clothing_hands_orange.png",
+        "Type": "hands",
+        "Weight": 75
+    },
+    {
+        "Name": "Orange Leather Gloves",
+        "Color": "Orange",
+        "Value": 75,
+        "Description": "Soft and supple, these gloves provide excellent dexterity and comfort.",
+        "Filename": "0014_clothing_hands_orange.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Burnished Orange Gauntlets",
+        "Color": "Orange",
+        "Value": 90,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 25
+        },
+        "Description": "Crafted by skilled artisans, these gauntlets offer superior protection and durability.",
+        "Filename": "0015_clothing_hands_orange.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Vibrant Orange Vambraces",
+        "Color": "Orange",
+        "Value": 120,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 35
+        },
+        "Description": "A striking pair of vambraces that provide both protection and endurance.",
+        "Filename": "0016_clothing_hands_orange.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Orange Suede Gloves",
+        "Color": "Orange",
+        "Value": 60,
+        "Description": "These gloves are made from soft suede, providing warmth and comfort in cold weather.",
+        "Filename": "0017_clothing_hands_orange.png",
+        "Type": "Hands",
+        "Weight": 15
+    },
+    {
+        "Name": "Bright Orange Gauntlets",
+        "Color": "Orange",
+        "Value": 80,
+        "Description": "These gauntlets are brightly colored and provide solid protection for the hands.",
+        "Filename": "0018_clothing_hands_orange.png",
+        "Type": "Hands",
+        "Weight": 35
+    },
+    {
+        "Name": "Tangerine Leather Gloves",
+        "Color": "Orange",
+        "Value": 65,
+        "Description": "These gloves are made from high-quality leather and provide excellent grip and dexterity.",
+        "Filename": "0019_clothing_hands_orange.png",
+        "Type": "Hands",
+        "Weight": 18
+    },
+    {
+        "Name": "Dark Orange Gauntlets",
+        "Color": "Orange",
+        "Value": 85,
+        "Description": "These gauntlets are made from sturdy leather and provide solid protection for the hands.",
+        "Filename": "0020_clothing_hands_orange.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Orange Scale Vambraces",
+        "Color": "Orange",
+        "Value": 150,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 45
+        },
+        "Description": "These vambraces are made from dragon scales and provide excellent protection against magic attacks.",
+        "Filename": "0021_clothing_hands_orange.png",
+        "Type": "Hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Light Orange Gloves",
+        "Color": "Orange",
+        "Value": 70,
+        "Description": "These gloves are lightweight and provide excellent dexterity and comfort.",
+        "Filename": "0022_clothing_hands_orange.png",
+        "Type": "Hands",
+        "Weight": 12
+    },
+    {
+        "Name": "Orange Leather Vambraces",
+        "Color": "Orange",
+        "Value": 120,
+        "Description": "Protective vambraces crafted from supple leather.",
+        "Filename": "0023_clothing_hands_orange.png",
+        "Type": "Hands",
+        "Weight": 35
+    },
+    {
+        "Name": "Orange Steel Vambraces",
+        "Color": "Orange",
+        "Value": 250,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 25
+        },
+        "Description": "Sturdy steel vambraces with intricate etchings for added protection.",
+        "Filename": "0024_clothing_hands_orange.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Orange Silk Vambraces",
+        "Color": "Orange",
+        "Value": 500,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 30
+        },
+        "Description": "Luxurious silk vambraces embroidered with gold thread, providing magical resistance.",
+        "Filename": "0025_clothing_hands_orange.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Orange Dragonhide Vambraces",
+        "Color": "Orange",
+        "Value": 800,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 40
+        },
+        "Description": "Vambraces made from the hide of a dragon, granting the wearer incredible endurance.",
+        "Filename": "0026_clothing_hands_orange.png",
+        "Type": "Hands",
+        "Weight": 45
+    },
+    {
+        "Name": "Pink Stronghold",
+        "Color": "Pink",
+        "Value": 270,
+        "Description": "A sturdy gauntlet of pink leather that provides excellent protection in battle.",
+        "Filename": "0001_clothing_hands_pink.png",
+        "Type": "Hands",
+        "Weight": 70
+    },
+    {
+        "Name": "Pink Finesse",
+        "Color": "Pink",
+        "Value": 340,
+        "Buff": {
+            "buffType": "Evade",
+            "amount": 40
+        },
+        "Description": "A graceful gauntlet of pink silk that enhances your ability to dodge attacks.",
+        "Filename": "0002_clothing_hands_pink.png",
+        "Type": "Hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Pink Fury",
+        "Color": "Pink",
+        "Value": 360,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 30
+        },
+        "Description": "A fierce gauntlet of pink steel that increases your damage output in combat.",
+        "Filename": "0003_clothing_hands_pink.png",
+        "Type": "Hands",
+        "Weight": 90
+    },
+    {
+        "Name": "Pink Vambraces",
+        "Color": "Pink",
+        "Value": 60,
+        "Description": "A pair of sturdy vambraces made of pink leather, perfect for protecting your arms in battle.",
+        "Filename": "0004_clothing_hands_pink.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Pink Gloves",
+        "Color": "Pink",
+        "Value": 75,
+        "Description": "A pair of soft gloves made from the finest silk.",
+        "Filename": "0005_clothing_hands_pink.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Purple Vambraces",
+        "Color": "Purple",
+        "Value": 250,
+        "Description": "Sturdy vambraces crafted by a skilled blacksmith.",
+        "Filename": "0001_clothing_hands_purple.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Purple Gauntlets",
+        "Color": "Purple",
+        "Value": 78,
+        "Description": "A pair of sturdy gauntlets that provide excellent protection for your hands.",
+        "Filename": "0002_clothing_hands_purple.png",
+        "Type": "hands",
+        "Weight": 45
+    },
+    {
+        "Name": "Crimson Fistwraps",
+        "Color": "Red",
+        "Value": 230,
+        "Description": "Protective gauntlets of fine red silk adorned with gold filigree.",
+        "Filename": "0001_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 35
+    },
+    {
+        "Name": "Bloodstained Bracers",
+        "Color": "Red",
+        "Value": 140,
+        "Description": "Sturdy gauntlets with red leather padding and iron plating.",
+        "Filename": "0002_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Scarlet Scalemail Gloves",
+        "Color": "Red",
+        "Value": 320,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 20
+        },
+        "Description": "Gloves made from the scales of a red dragon that provide extra defense.",
+        "Filename": "0003_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 75
+    },
+    {
+        "Name": "Ruby Plated Gauntlets",
+        "Color": "Red",
+        "Value": 420,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 35
+        },
+        "Description": "Heavy gauntlets with ruby inlays that increase attack power.",
+        "Filename": "0004_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 110
+    },
+    {
+        "Name": "Carmine Leather Gloves",
+        "Color": "Red",
+        "Value": 90,
+        "Description": "Soft leather gloves dyed a rich shade of red.",
+        "Filename": "0005_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Garnet Encrusted Bracers",
+        "Color": "Red",
+        "Value": 310,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "Bracers with garnet studs that provide protection against magic attacks.",
+        "Filename": "0006_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 65
+    },
+    {
+        "Name": "Vermilion Chainmail Gloves",
+        "Color": "Red",
+        "Value": 270,
+        "Description": "Chainmail gloves with a red enamel finish.",
+        "Filename": "0007_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Scarlet Silk Mitts",
+        "Color": "Red",
+        "Value": 120,
+        "Description": "Lightweight mitts made from fine red silk.",
+        "Filename": "0008_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 15
+    },
+    {
+        "Name": "Blood Red Plate Gauntlets",
+        "Color": "Red",
+        "Value": 360,
+        "Buff": {
+            "buffType": "HP",
+            "amount": 45
+        },
+        "Description": "Heavy plate gauntlets that increase maximum hit points.",
+        "Filename": "0009_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 95
+    },
+    {
+        "Name": "Crimson Leather Bracers",
+        "Color": "Red",
+        "Value": 80,
+        "Description": "Red leather bracers with gold buckle accents.",
+        "Filename": "0010_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Red Gloves",
+        "Color": "Red",
+        "Value": 50,
+        "Description": "A pair of finely crafted gloves, perfect for any adventurer.",
+        "Filename": "0011_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Red Iron Vambraces",
+        "Color": "Red",
+        "Value": 350,
+        "Description": "A pair of sturdy iron vambraces, perfect for deflecting blows in battle.",
+        "Filename": "0012_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Crimson Leather Vambraces",
+        "Color": "Red",
+        "Value": 150,
+        "Description": "A pair of supple leather vambraces, ideal for agile fighters looking for protection without sacrificing mobility.",
+        "Filename": "0013_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Scarlet Steel Vambraces",
+        "Color": "Red",
+        "Value": 550,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A pair of expertly crafted steel vambraces, imbued with protective enchantments that make them nearly impenetrable.",
+        "Filename": "0014_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 80
+    },
+    {
+        "Name": "Bloodstained Vambraces",
+        "Color": "Red",
+        "Value": 80,
+        "Description": "A pair of worn and battered vambraces, their previous owner's bloodstains still visible on the leather.",
+        "Filename": "0015_clothing_hands_red.png",
+        "Type": "Hands",
+        "Weight": 10
+    },
+    {
+        "Name": "White Iron Gauntlets",
+        "Color": "White",
+        "Value": 300,
+        "Description": "Sturdy gauntlets forged from white iron, fit for any warrior.",
+        "Filename": "0001_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 80
+    },
+    {
+        "Name": "Frostbitten Gauntlets",
+        "Color": "White",
+        "Value": 500,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 25
+        },
+        "Description": "Gauntlets that have been imbued with the power of the frost, providing additional defense.",
+        "Filename": "0002_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 70
+    },
+    {
+        "Name": "Ivory Knight Gauntlets",
+        "Color": "White",
+        "Value": 700,
+        "Description": "Exquisite gauntlets made from ivory, worn by the knights of old.",
+        "Filename": "0003_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 90
+    },
+    {
+        "Name": "Radiant Gauntlets",
+        "Color": "White",
+        "Value": 1000,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 40
+        },
+        "Description": "Gauntlets that emit a radiant aura, providing additional magic defense to the wearer.",
+        "Filename": "0004_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Ivory Gauntlets",
+        "Color": "White",
+        "Value": 280,
+        "Description": "Elegant vambraces with intricate carvings that reflect the light beautifully.",
+        "Filename": "0014_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Luminous Bracers",
+        "Color": "White",
+        "Value": 450,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "Glistening vambraces that seem to radiate with protective magic.",
+        "Filename": "0015_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Silken Armguards",
+        "Color": "White",
+        "Value": 180,
+        "Description": "Soft and lightweight vambraces that provide a comfortable fit.",
+        "Filename": "0016_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "White Winged Gauntlets",
+        "Color": "White",
+        "Value": 80,
+        "Description": "Soft and supple, these gloves are crafted from the finest lambskin and imbued with the power of flight.",
+        "Filename": "0005_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 20
+    },
+    {
+        "Name": "Ivory Handguards",
+        "Color": "White",
+        "Value": 30,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 12
+        },
+        "Description": "These gloves are made from the hide of a rare albino crocodile, granting the wearer added protection.",
+        "Filename": "0006_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 15
+    },
+    {
+        "Name": "Snowdrift Mittens",
+        "Color": "White",
+        "Value": 45,
+        "Description": "These gloves are woven from the finest wool, and imbued with a chill that can freeze the most heated of battles.",
+        "Filename": "0007_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Frostbitten Handwraps",
+        "Color": "White",
+        "Value": 60,
+        "Buff": {
+            "buffType": "Magic Defense",
+            "amount": 25
+        },
+        "Description": "These gloves are enchanted with the power of winter, providing protection against the most powerful of spells.",
+        "Filename": "0008_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 18
+    },
+    {
+        "Name": "Silk Gloves",
+        "Color": "White",
+        "Value": 25,
+        "Description": "These gloves are made from the finest silk, providing comfort and style to the most discerning of wearers.",
+        "Filename": "0009_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 10
+    },
+    {
+        "Name": "Alabaster Mitts",
+        "Color": "White",
+        "Value": 40,
+        "Description": "These gloves are crafted from the purest of white marble, providing a unique and elegant look to any outfit.",
+        "Filename": "0010_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Guardian Bracers",
+        "Color": "White",
+        "Value": 75,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 40
+        },
+        "Description": "These gloves are imbued with the protective power of the most powerful guardians, providing added endurance to the wearer.",
+        "Filename": "0011_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 22
+    },
+    {
+        "Name": "Luminous Mitts",
+        "Color": "White",
+        "Value": 55,
+        "Buff": {
+            "buffType": "Magic Attack",
+            "amount": 20
+        },
+        "Description": "These gloves glow with a powerful light, enhancing the wearer's magical abilities.",
+        "Filename": "0012_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 16
+    },
+    {
+        "Name": "Diamond Gauntlets",
+        "Color": "White",
+        "Value": 100,
+        "Buff": {
+            "buffType": "Attack",
+            "amount": 50
+        },
+        "Description": "These gloves are encrusted with diamonds, providing the wearer with added strength in battle.",
+        "Filename": "0013_clothing_hands_white.png",
+        "Type": "Hands",
+        "Weight": 35
+    },
+    {
+        "Name": "Yellow Flamescale Gauntlets",
+        "Color": "Yellow",
+        "Value": 450,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 12
+        },
+        "Description": "These gauntlets are made of flamescale, a rare metal that is said to be impervious to fire.",
+        "Filename": "0001_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Sunflower Plated Gauntlets",
+        "Color": "Yellow",
+        "Value": 280,
+        "Buff": null,
+        "Description": "These gauntlets are adorned with sunflower motifs, a symbol of hope and strength.",
+        "Filename": "0002_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 45
+    },
+    {
+        "Name": "Golden Scalemail Gauntlets",
+        "Color": "Yellow",
+        "Value": 620,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 20
+        },
+        "Description": "These gauntlets are made of golden scales, a material that is both lightweight and durable.",
+        "Filename": "0003_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 75
+    },
+    {
+        "Name": "Honeycomb Plated Gauntlets",
+        "Color": "Yellow",
+        "Value": 320,
+        "Buff": null,
+        "Description": "These gauntlets are decorated with honeycomb patterns, a symbol of hard work and perseverance.",
+        "Filename": "0004_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Yellowjacket Leather Gloves",
+        "Color": "Yellow",
+        "Value": 180,
+        "Buff": null,
+        "Description": "These gloves are made of yellowjacket leather, a material that is both soft and durable.",
+        "Filename": "0005_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Amber Chainmail Gauntlets",
+        "Color": "Yellow",
+        "Value": 520,
+        "Buff": null,
+        "Description": "These gauntlets are made of amber chains, a material that is both flexible and strong.",
+        "Filename": "0006_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 70
+    },
+    {
+        "Name": "Yellow Dragonhide Gloves",
+        "Color": "Yellow",
+        "Value": 240,
+        "Buff": null,
+        "Description": "These gloves are made of dragonhide, a material that is both lightweight and resistant to damage.",
+        "Filename": "0007_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Canary Plate Gauntlets",
+        "Color": "Yellow",
+        "Value": 580,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 18
+        },
+        "Description": "These gauntlets are made of canary plates, a material that is both lightweight and sturdy.",
+        "Filename": "0008_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 80
+    },
+    {
+        "Name": "Saffron Leather Gauntlets",
+        "Color": "Yellow",
+        "Value": 200,
+        "Buff": null,
+        "Description": "These gauntlets are made of saffron leather, a material that is both soft and durable.",
+        "Filename": "0009_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 35
+    },
+    {
+        "Name": "Yellowjacket Scalemail Gauntlets",
+        "Color": "Yellow",
+        "Value": 480,
+        "Buff": null,
+        "Description": "These gauntlets are made of yellowjacket scales, a material that is both lightweight and tough.",
+        "Filename": "0010_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 65
+    },
+    {
+        "Name": "Marigold Plated Gauntlets",
+        "Color": "Yellow",
+        "Value": 340,
+        "Buff": null,
+        "Description": "These gauntlets are adorned with marigold motifs, a symbol of courage and determination.",
+        "Filename": "0011_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 55
+    },
+    {
+        "Name": "Yellow Dragonhide Gauntlets",
+        "Color": "Yellow",
+        "Value": 280,
+        "Buff": null,
+        "Description": "These gauntlets are made of dragonhide, a material that is both lightweight and resistant to damage.",
+        "Filename": "0012_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 45
+    },
+    {
+        "Name": "Lemon Chainmail Gauntlets",
+        "Color": "Yellow",
+        "Value": 400,
+        "Buff": null,
+        "Description": "These gauntlets are made of lemon chains, a material that is both flexible and strong.",
+        "Filename": "0013_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Yellowjacket Plate Gauntlets",
+        "Color": "Yellow",
+        "Value": 540,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 15
+        },
+        "Description": "These gauntlets are made of yellowjacketplates, a material that is both lightweight and durable.",
+        "Filename": "0014_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 85
+    },
+    {
+        "Name": "Yellow Mitts",
+        "Color": "Yellow",
+        "Value": 65,
+        "Description": "A pair of sturdy mitts made of the finest leather, perfect for any adventurer.",
+        "Filename": "0015_clothing_hands_yellow.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Sunrise Gauntlets",
+        "Color": "Yellow",
+        "Value": 215,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A pair of gauntlets that gleam like the rising sun, providing extra protection in battle.",
+        "Filename": "0016_clothing_hands_yellow.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Golden Sunburst Wrist Guards",
+        "Color": "Yellow",
+        "Value": 125,
+        "Description": "A pair of wrist guards with intricate sunburst patterns, crafted by skilled artisans.",
+        "Filename": "0017_clothing_hands_yellow.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Yellow Sapphire Wrist Guards",
+        "Color": "Yellow",
+        "Value": 300,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 30
+        },
+        "Description": "A pair of wrist guards adorned with yellow sapphires, said to have protective properties.",
+        "Filename": "0018_clothing_hands_yellow.png",
+        "Type": "Hands",
+        "Weight": 30
+    }
+]

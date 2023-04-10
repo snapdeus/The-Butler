@@ -18,7 +18,7 @@ const totalLegs = legs.length
 
 const legsMetaInfo = {
     totalLegs,
-    legsCounts: countLegsColors
+    data: countLegsColors
 };
 
 
@@ -33,7 +33,7 @@ const legsDescripObj = {
     White: "White"
 };
 
-legsMetaInfo.legsCounts = mergeItemsCountsAndDescriptions(legsMetaInfo.legsCounts, legsDescripObj);
+legsMetaInfo.data = mergeItemsCountsAndDescriptions(legsMetaInfo.data, legsDescripObj);
 module.exports = {
     legs,
     legsMetaInfo

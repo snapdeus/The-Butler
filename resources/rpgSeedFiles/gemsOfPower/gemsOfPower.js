@@ -67,7 +67,7 @@ const totalGems = gemsOfPower.length
 
 const gemsOfPowerMetaInfo = {
     totalGems,
-    gemCounts: countGemColors
+    data: countGemColors
 };
 
 const gemsOfPowerDescripObj = {
@@ -80,7 +80,7 @@ const gemsOfPowerDescripObj = {
     Purple: "A mysterious purple gem imbued with the power of the mind. It bestows upon its bearer heightened mental capacities, psychic powers, and an intuitive understanding of the universe.",
 }
 
-gemsOfPowerMetaInfo.gemCounts = mergeItemsCountsAndDescriptions(gemsOfPowerMetaInfo.gemCounts, gemsOfPowerDescripObj)
+gemsOfPowerMetaInfo.data = mergeItemsCountsAndDescriptions(gemsOfPowerMetaInfo.data, gemsOfPowerDescripObj)
 
 module.exports = {
     gemsOfPower,

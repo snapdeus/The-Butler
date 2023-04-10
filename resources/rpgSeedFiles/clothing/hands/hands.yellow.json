@@ -1,1 +1,198 @@
-[]
+[
+    {
+        "Name": "Yellow Flamescale Gauntlets",
+        "Color": "Yellow",
+        "Value": 450,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 12
+        },
+        "Description": "These gauntlets are made of flamescale, a rare metal that is said to be impervious to fire.",
+        "Filename": "0001_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Sunflower Plated Gauntlets",
+        "Color": "Yellow",
+        "Value": 280,
+        "Buff": null,
+        "Description": "These gauntlets are adorned with sunflower motifs, a symbol of hope and strength.",
+        "Filename": "0002_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 45
+    },
+    {
+        "Name": "Golden Scalemail Gauntlets",
+        "Color": "Yellow",
+        "Value": 620,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 20
+        },
+        "Description": "These gauntlets are made of golden scales, a material that is both lightweight and durable.",
+        "Filename": "0003_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 75
+    },
+    {
+        "Name": "Honeycomb Plated Gauntlets",
+        "Color": "Yellow",
+        "Value": 320,
+        "Buff": null,
+        "Description": "These gauntlets are decorated with honeycomb patterns, a symbol of hard work and perseverance.",
+        "Filename": "0004_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 50
+    },
+    {
+        "Name": "Yellowjacket Leather Gloves",
+        "Color": "Yellow",
+        "Value": 180,
+        "Buff": null,
+        "Description": "These gloves are made of yellowjacket leather, a material that is both soft and durable.",
+        "Filename": "0005_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 30
+    },
+    {
+        "Name": "Amber Chainmail Gauntlets",
+        "Color": "Yellow",
+        "Value": 520,
+        "Buff": null,
+        "Description": "These gauntlets are made of amber chains, a material that is both flexible and strong.",
+        "Filename": "0006_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 70
+    },
+    {
+        "Name": "Yellow Dragonhide Gloves",
+        "Color": "Yellow",
+        "Value": 240,
+        "Buff": null,
+        "Description": "These gloves are made of dragonhide, a material that is both lightweight and resistant to damage.",
+        "Filename": "0007_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Canary Plate Gauntlets",
+        "Color": "Yellow",
+        "Value": 580,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 18
+        },
+        "Description": "These gauntlets are made of canary plates, a material that is both lightweight and sturdy.",
+        "Filename": "0008_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 80
+    },
+    {
+        "Name": "Saffron Leather Gauntlets",
+        "Color": "Yellow",
+        "Value": 200,
+        "Buff": null,
+        "Description": "These gauntlets are made of saffron leather, a material that is both soft and durable.",
+        "Filename": "0009_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 35
+    },
+    {
+        "Name": "Yellowjacket Scalemail Gauntlets",
+        "Color": "Yellow",
+        "Value": 480,
+        "Buff": null,
+        "Description": "These gauntlets are made of yellowjacket scales, a material that is both lightweight and tough.",
+        "Filename": "0010_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 65
+    },
+    {
+        "Name": "Marigold Plated Gauntlets",
+        "Color": "Yellow",
+        "Value": 340,
+        "Buff": null,
+        "Description": "These gauntlets are adorned with marigold motifs, a symbol of courage and determination.",
+        "Filename": "0011_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 55
+    },
+    {
+        "Name": "Yellow Dragonhide Gauntlets",
+        "Color": "Yellow",
+        "Value": 280,
+        "Buff": null,
+        "Description": "These gauntlets are made of dragonhide, a material that is both lightweight and resistant to damage.",
+        "Filename": "0012_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 45
+    },
+    {
+        "Name": "Lemon Chainmail Gauntlets",
+        "Color": "Yellow",
+        "Value": 400,
+        "Buff": null,
+        "Description": "These gauntlets are made of lemon chains, a material that is both flexible and strong.",
+        "Filename": "0013_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 60
+    },
+    {
+        "Name": "Yellowjacket Plate Gauntlets",
+        "Color": "Yellow",
+        "Value": 540,
+        "Buff": {
+            "buffType": "Endurance",
+            "amount": 15
+        },
+        "Description": "These gauntlets are made of yellowjacketplates, a material that is both lightweight and durable.",
+        "Filename": "0014_clothing_hands_yellow.png",
+        "Type": "hands",
+        "Weight": 85
+    },
+    {
+        "Name": "Yellow Mitts",
+        "Color": "Yellow",
+        "Value": 65,
+        "Description": "A pair of sturdy mitts made of the finest leather, perfect for any adventurer.",
+        "Filename": "0015_clothing_hands_yellow.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Sunrise Gauntlets",
+        "Color": "Yellow",
+        "Value": 215,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 35
+        },
+        "Description": "A pair of gauntlets that gleam like the rising sun, providing extra protection in battle.",
+        "Filename": "0016_clothing_hands_yellow.png",
+        "Type": "Hands",
+        "Weight": 40
+    },
+    {
+        "Name": "Golden Sunburst Wrist Guards",
+        "Color": "Yellow",
+        "Value": 125,
+        "Description": "A pair of wrist guards with intricate sunburst patterns, crafted by skilled artisans.",
+        "Filename": "0017_clothing_hands_yellow.png",
+        "Type": "Hands",
+        "Weight": 25
+    },
+    {
+        "Name": "Yellow Sapphire Wrist Guards",
+        "Color": "Yellow",
+        "Value": 300,
+        "Buff": {
+            "buffType": "Defense",
+            "amount": 30
+        },
+        "Description": "A pair of wrist guards adorned with yellow sapphires, said to have protective properties.",
+        "Filename": "0018_clothing_hands_yellow.png",
+        "Type": "Hands",
+        "Weight": 30
+    }
+]

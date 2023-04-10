@@ -11,7 +11,7 @@ const totalScrolls = scrolls.length
 
 const scrollsMetaInfo = {
     totalScrolls,
-    scrollCounts: countScrollColors
+    data: countScrollColors
 };
 
 
@@ -27,7 +27,7 @@ const scrollsDescripObj = {
 };
 
 
-scrollsMetaInfo.scrollCounts = mergeItemsCountsAndDescriptions(scrollsMetaInfo.scrollCounts, scrollsDescripObj);
+scrollsMetaInfo.data = mergeItemsCountsAndDescriptions(scrollsMetaInfo.data, scrollsDescripObj);
 module.exports = {
     scrolls,
     scrollsMetaInfo
