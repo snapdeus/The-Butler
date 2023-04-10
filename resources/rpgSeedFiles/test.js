@@ -13,11 +13,7 @@ function testJsonFile(metaInfo) {
     let errorN = [];
     let i = 0
     for (let object in itemSet) {
-        // console.log(object)
-        if (!itemSet[object].description) {
-            errorN.push(itemSet[object])
-            itemSet[object].errorDet = true
-        } else if (itemSet[object].metaInfo.AllErrors > 0) {
+        if (itemSet[object].metaInfo.AllErrors > 0) {
             errorN.push(itemSet[object].metaInfo.ErrorArray)
             itemSet[object].errorDet = true
         } else {
@@ -34,7 +30,7 @@ function testJsonFile(metaInfo) {
     console.log("Looking Good")
 }
 
-testJsonFile(clothingMetaInfo[2])
+// testJsonFile(clothingMetaInfo[2])
 
 function testJsonFileForObject(genInfo) {
     // console.log(metaInfo)

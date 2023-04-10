@@ -26,6 +26,7 @@ function countColors(itemArray) {
             };
         }
         return acc;
+
     }, {});
 }
 
@@ -47,15 +48,29 @@ function countColors(itemArray) {
 function mergeItemsCountsAndDescriptions(itemCounts, itemDescripObj) {
     // console.log(Object.entries(itemCounts))
 
-    const updatedItemsCounts = Object.entries(itemCounts).map(([object, count]) => ({
+    const updatedItemsCounts = Object.entries(itemCounts).map(([object, count]) => {
+        if (!itemDescripObj[object]) {
+            count.AllErrors += 1
+            count.ErrorArray.push(object)
+            return {
+                [object]: {
+                    description: itemDescripObj[object],
+                    metaInfo: count,
 
-        [object]: {
-            description: itemDescripObj[object],
-            metaInfo: count,
+                }
+            }
 
+        } else {
+
+            return {
+                [object]: {
+                    description: itemDescripObj[object],
+                    metaInfo: count,
+
+                }
+            }
         }
-
-    }));
+    });
 
     const combinedItemsCounts = Object.assign({}, ...updatedItemsCounts);
     return combinedItemsCounts;

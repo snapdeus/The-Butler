@@ -22,6 +22,7 @@ const headMetaInfo = {
 };
 
 
+
 const headDescripObj = {
     Black: "Black",
     Blue: "Blue",
@@ -34,6 +35,7 @@ const headDescripObj = {
 };
 
 headMetaInfo.data = mergeItemsCountsAndDescriptions(headMetaInfo.data, headDescripObj);
+// console.dir(headMetaInfo.data, { depth: 4 })
 module.exports = {
     head,
     headMetaInfo
