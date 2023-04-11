@@ -9,17 +9,16 @@
         },
         "Description": "These gauntlets are made of flamescale, a rare metal that is said to be impervious to fire.",
         "Filename": "0001_clothing_hands_yellow.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 60
     },
     {
         "Name": "Sunflower Plated Gauntlets",
         "Color": "Yellow",
         "Value": 280,
-        "Buff": null,
         "Description": "These gauntlets are adorned with sunflower motifs, a symbol of hope and strength.",
         "Filename": "0002_clothing_hands_yellow.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 45
     },
     {
@@ -32,47 +31,43 @@
         },
         "Description": "These gauntlets are made of golden scales, a material that is both lightweight and durable.",
         "Filename": "0003_clothing_hands_yellow.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 75
     },
     {
         "Name": "Honeycomb Plated Gauntlets",
         "Color": "Yellow",
         "Value": 320,
-        "Buff": null,
         "Description": "These gauntlets are decorated with honeycomb patterns, a symbol of hard work and perseverance.",
         "Filename": "0004_clothing_hands_yellow.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 50
     },
     {
         "Name": "Yellowjacket Leather Gloves",
         "Color": "Yellow",
         "Value": 180,
-        "Buff": null,
         "Description": "These gloves are made of yellowjacket leather, a material that is both soft and durable.",
         "Filename": "0005_clothing_hands_yellow.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 30
     },
     {
         "Name": "Amber Chainmail Gauntlets",
         "Color": "Yellow",
         "Value": 520,
-        "Buff": null,
         "Description": "These gauntlets are made of amber chains, a material that is both flexible and strong.",
         "Filename": "0006_clothing_hands_yellow.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 70
     },
     {
         "Name": "Yellow Dragonhide Gloves",
         "Color": "Yellow",
         "Value": 240,
-        "Buff": null,
         "Description": "These gloves are made of dragonhide, a material that is both lightweight and resistant to damage.",
         "Filename": "0007_clothing_hands_yellow.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 40
     },
     {
@@ -85,57 +80,52 @@
         },
         "Description": "These gauntlets are made of canary plates, a material that is both lightweight and sturdy.",
         "Filename": "0008_clothing_hands_yellow.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 80
     },
     {
         "Name": "Saffron Leather Gauntlets",
         "Color": "Yellow",
         "Value": 200,
-        "Buff": null,
         "Description": "These gauntlets are made of saffron leather, a material that is both soft and durable.",
         "Filename": "0009_clothing_hands_yellow.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 35
     },
     {
         "Name": "Yellowjacket Scalemail Gauntlets",
         "Color": "Yellow",
         "Value": 480,
-        "Buff": null,
         "Description": "These gauntlets are made of yellowjacket scales, a material that is both lightweight and tough.",
         "Filename": "0010_clothing_hands_yellow.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 65
     },
     {
         "Name": "Marigold Plated Gauntlets",
         "Color": "Yellow",
         "Value": 340,
-        "Buff": null,
         "Description": "These gauntlets are adorned with marigold motifs, a symbol of courage and determination.",
         "Filename": "0011_clothing_hands_yellow.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 55
     },
     {
         "Name": "Yellow Dragonhide Gauntlets",
         "Color": "Yellow",
         "Value": 280,
-        "Buff": null,
         "Description": "These gauntlets are made of dragonhide, a material that is both lightweight and resistant to damage.",
         "Filename": "0012_clothing_hands_yellow.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 45
     },
     {
         "Name": "Lemon Chainmail Gauntlets",
         "Color": "Yellow",
         "Value": 400,
-        "Buff": null,
         "Description": "These gauntlets are made of lemon chains, a material that is both flexible and strong.",
         "Filename": "0013_clothing_hands_yellow.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 60
     },
     {
@@ -148,7 +138,7 @@
         },
         "Description": "These gauntlets are made of yellowjacketplates, a material that is both lightweight and durable.",
         "Filename": "0014_clothing_hands_yellow.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 85
     },
     {

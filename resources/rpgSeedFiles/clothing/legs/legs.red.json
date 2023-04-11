@@ -5,7 +5,7 @@
         "Value": 350,
         "Description": "Sturdy red cuisse, forged for those who seek formidable protection in arduous battles.",
         "Filename": "0001_clothing_legs_red.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 60
     },
     {
@@ -18,7 +18,7 @@
         },
         "Description": "Meticulously crafted red greave bestows unparalleled defense upon the unwavering warrior.",
         "Filename": "0002_clothing_legs_red.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 55
     },
     {
@@ -27,7 +27,7 @@
         "Value": 330,
         "Description": "A robust red sabaton designed for relentless front-line combatants in the heat of battle.",
         "Filename": "0003_clothing_legs_red.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 50
     },
     {
@@ -40,7 +40,7 @@
         },
         "Description": "Imbued with power, these red poleyns grant immense endurance to withstand arduous trials.",
         "Filename": "0004_clothing_legs_red.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 52
     },
     {
@@ -49,7 +49,7 @@
         "Value": 410,
         "Description": "Expertly forged red schynbald, perfect for a formidable presence on the battlefield.",
         "Filename": "0005_clothing_legs_red.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 46
     },
     {
@@ -62,7 +62,7 @@
         },
         "Description": "Enchanted red jambeau, providing steadfast protection with a boon to the wearer's vitality.",
         "Filename": "0006_clothing_legs_red.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 48
     },
     {
@@ -71,7 +71,7 @@
         "Value": 160,
         "Description": "A pair of comfortable and flexible leg covering, ideal for agile moves and swift action during tense situations.",
         "Filename": "0007_clothing_legs_red.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 21
     },
     {
@@ -84,7 +84,7 @@
         },
         "Description": "Stylish red trunks that increase evasive capabilities, aiding the wearer in gracefully dodging enemy attacks.",
         "Filename": "0008_clothing_legs_red.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 19
     },
     {
@@ -93,7 +93,7 @@
         "Value": 120,
         "Description": "A trendy red bikini bottom ensuring a comfortable and fashionable beach experience.",
         "Filename": "0009_clothing_legs_red.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 12
     },
     {
@@ -106,7 +106,7 @@
         },
         "Description": "Stylish red swim trunks designed to enhance mobility and fluidity in water-based activities.",
         "Filename": "0010_clothing_legs_red.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 11
     },
     {
@@ -115,7 +115,7 @@
         "Value": 150,
         "Description": "Casual red denim shorts, perfect for a comfortable and relaxed outfit.",
         "Filename": "0011_clothing_legs_red.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 20
     },
     {
@@ -124,7 +124,7 @@
         "Value": 170,
         "Description": "Vibrant striped red board shorts, providing a stylish and fun option for beach or leisure activities.",
         "Filename": "0012_clothing_legs_red.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 18
     },
     {

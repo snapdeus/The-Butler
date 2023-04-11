@@ -5,7 +5,7 @@
         "Value": 50,
         "Description": "A regal bottom bathing suit that increases your endurance by 20 points!",
         "Filename": "0001_clothing_legs_purple.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 20
     },
     {
@@ -14,7 +14,7 @@
         "Value": 35,
         "Description": "A pair of soft, supple leggings that provide excellent mobility and comfort.",
         "Filename": "0002_clothing_legs_purple.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 25
     },
     {
@@ -27,7 +27,7 @@
         },
         "Description": "Trousers made from rare amethyst silk, providing excellent protection against physical attacks.",
         "Filename": "0003_clothing_legs_purple.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 40
     },
     {
@@ -36,7 +36,7 @@
         "Value": 55,
         "Description": "A pair of pants made from high-quality purple fabric, perfect for formal occasions.",
         "Filename": "0004_clothing_legs_purple.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 30
     },
     {
@@ -49,7 +49,7 @@
         },
         "Description": "Elegant leggings imbued with magical properties, providing excellent protection against magical attacks.",
         "Filename": "0005_clothing_legs_purple.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 35
     },
     {
@@ -62,7 +62,7 @@
         },
         "Description": "A sturdy armor that protects the wearer from mortal wounds.",
         "Filename": "0006_clothing_legs_purple.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 85
     },
     {
@@ -71,7 +71,7 @@
         "Value": 45,
         "Description": "A pair of shorts made from the finest silk, with intricate embroidery along the hemline.",
         "Filename": "0007_clothing_legs_purple.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 20
     },
     {
@@ -84,7 +84,7 @@
         },
         "Description": "A pair of shorts that seem to blend into the shadows, making it harder for enemies to hit you.",
         "Filename": "0008_clothing_legs_purple.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 25
     },
     {
@@ -93,7 +93,7 @@
         "Value": 80,
         "Description": "A flowing skirt with intricate embroidery, fit for a queen.",
         "Filename": "0009_clothing_legs_purple.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 15
     }
 ]

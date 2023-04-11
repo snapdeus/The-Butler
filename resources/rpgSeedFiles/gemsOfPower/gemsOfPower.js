@@ -61,8 +61,10 @@ const gemsOfPower = [
 
 
 const { countColors, mergeItemsCountsAndDescriptions } = require('../utils')
-
-const countGemColors = countColors(gemsOfPower)
+const config = {
+    type: "Gem"
+}
+const countGemColors = countColors(gemsOfPower, config)
 const totalGems = gemsOfPower.length
 
 const gemsOfPowerMetaInfo = {

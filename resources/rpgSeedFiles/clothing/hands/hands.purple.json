@@ -14,7 +14,7 @@
         "Value": 78,
         "Description": "A pair of sturdy gauntlets that provide excellent protection for your hands.",
         "Filename": "0002_clothing_hands_purple.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 45
     }
 ]

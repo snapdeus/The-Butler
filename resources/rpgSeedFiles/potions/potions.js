@@ -2,8 +2,10 @@
 const potions = require('./potions.json')
 
 const { countColors, mergeItemsCountsAndDescriptions } = require('../utils')
-
-const countPotionColors = countColors(potions)
+const config = {
+    type: "Potion"
+}
+const countPotionColors = countColors(potions, config)
 
 const totalPotions = potions.length
 

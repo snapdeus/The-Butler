@@ -9,8 +9,10 @@ const dir = path.join(__dirname, 'torso');
 
 
 const torso = require('../jsonSeedFiles/final.torso.json')
-
-const countTorsoColors = countColors(torso)
+const config = {
+    type: "Torso"
+}
+const countTorsoColors = countColors(torso, config)
 
 const totalTorso = torso.length
 

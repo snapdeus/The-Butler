@@ -5,7 +5,7 @@
         "Value": 300,
         "Description": "A finely woven pair of shorts made with luxurious brocade fabric.",
         "Filename": "0001_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 30
     },
     {
@@ -14,7 +14,7 @@
         "Value": 250,
         "Description": "Stylish knee-length shorts featuring a tattersall pattern.",
         "Filename": "0002_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 40
     },
     {
@@ -27,7 +27,7 @@
         },
         "Description": "Breeches offering added protection made from thick, pelt fabric.",
         "Filename": "0003_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 70
     },
     {
@@ -36,7 +36,7 @@
         "Value": 280,
         "Description": "Sturdy pants with traditional herringbone weave.",
         "Filename": "0004_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 65
     },
     {
@@ -45,7 +45,7 @@
         "Value": 210,
         "Description": "Woolen pants made from soft and warm baize fabric.",
         "Filename": "0005_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 60
     },
     {
@@ -54,7 +54,7 @@
         "Value": 350,
         "Description": "Sophisticated trousers made from smooth, luxurious velvet.",
         "Filename": "0006_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 50
     },
     {
@@ -67,7 +67,7 @@
         },
         "Description": "Patterned trousers exuding charm and providing increased magic defense.",
         "Filename": "0007_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 45
     },
     {
@@ -76,7 +76,7 @@
         "Value": 230,
         "Description": "Subdued pants crafted from delicate crape fabric.",
         "Filename": "0008_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 40
     },
     {
@@ -85,7 +85,7 @@
         "Value": 400,
         "Description": "Elegant full-length dress made from intricate damask fabric.",
         "Filename": "0009_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 90
     },
     {
@@ -94,7 +94,7 @@
         "Value": 380,
         "Description": "A flowing dress adorned with a camisade trim, flattering and graceful.",
         "Filename": "0010_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 80
     },
     {
@@ -107,7 +107,7 @@
         },
         "Description": "A sumptuous dress made from rich samite fabric, providing added health benefits.",
         "Filename": "0011_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 70
     },
     {
@@ -116,7 +116,7 @@
         "Value": 290,
         "Description": "Durable corduroy pants perfect for any adventure.",
         "Filename": "0012_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 55
     },
     {
@@ -125,7 +125,7 @@
         "Value": 270,
         "Description": "Classic pants crafted from cozy tweed fabric.",
         "Filename": "0013_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 60
     },
     {
@@ -134,7 +134,7 @@
         "Value": 240,
         "Description": "Light, breathable pants made from soft nainsook fabric.",
         "Filename": "0014_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 35
     },
     {
@@ -143,7 +143,7 @@
         "Value": 310,
         "Description": "Refined pants made from glossy sateen fabric.",
         "Filename": "0015_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 45
     },
     {
@@ -156,7 +156,7 @@
         },
         "Description": "Comfortable pants made from sturdy linsey-woolsey fabric, enhancing physical attacks.",
         "Filename": "0016_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 50
     },
     {
@@ -165,7 +165,7 @@
         "Value": 230,
         "Description": "Soft, printed pants made from versatile calico fabric.",
         "Filename": "0017_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 35
     },
     {
@@ -174,7 +174,7 @@
         "Value": 220,
         "Description": "Graceful, lightweight pants made of sheer chiffon.",
         "Filename": "0018_clothing_legs_green.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 25
     }
 ]

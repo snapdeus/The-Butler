@@ -3,9 +3,11 @@ const scrolls = require('./scrolls.json')
 
 const { countColors, mergeItemsCountsAndDescriptions } = require('../utils')
 
+const config = {
+    type: "Scroll"
+}
 
-
-const countScrollColors = countColors(scrolls)
+const countScrollColors = countColors(scrolls, config)
 
 const totalScrolls = scrolls.length
 

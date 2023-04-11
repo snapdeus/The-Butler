@@ -5,7 +5,7 @@
         "Value": 245,
         "Description": "An elegant pink kimono that carries the grace and poise of its wearer, embodying an air of tranquility.",
         "Filename": "0001_clothing_torso_pink.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 27
     },
     {
@@ -14,7 +14,7 @@
         "Value": 290,
         "Description": "A stylish robe worn by cunning pillagers, enhancing stealth and agility on their ventures.",
         "Filename": "0002_clothing_torso_pink.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 29
     },
     {
@@ -23,7 +23,7 @@
         "Value": 330,
         "Description": "A soft pink tunic adorned with beautiful elven patterns, exuding elegance and forest splendor.",
         "Filename": "0003_clothing_torso_pink.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 24
     },
     {
@@ -32,7 +32,7 @@
         "Value": 210,
         "Description": "A cozy pink sweatshirt for languid Sundays, balancing comfort with a touch of medieval flair.",
         "Filename": "0004_clothing_torso_pink.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 22
     },
     {
@@ -45,7 +45,7 @@
         },
         "Description": "Celestial pink wings that embrace their bearer, bestowing divine blessings and enhanced vitality.",
         "Filename": "0005_clothing_torso_pink.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 34
     },
     {
@@ -58,7 +58,7 @@
         },
         "Description": "A clairvoyant's robe infused with the arcane, unleashing the mystic potential of its wearer.",
         "Filename": "0006_clothing_torso_pink.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 37
     },
     {
@@ -67,7 +67,7 @@
         "Value": 315,
         "Description": "A travelling tunic, crafted for those who traverse the lands, seeking knowledge and adventure.",
         "Filename": "0007_clothing_torso_pink.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 30
     },
     {
@@ -80,7 +80,7 @@
         },
         "Description": "A mystical pink robe that encases its beholder in an ethereal aura, safeguarding against magical assaults.",
         "Filename": "0008_clothing_torso_pink.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 42
     },
     {
@@ -89,7 +89,7 @@
         "Value": 299,
         "Description": "A vibrant tunic that embodies the first light of dawn, illuminating the paths of righteous crusaders.",
         "Filename": "0009_clothing_torso_pink.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 39
     },
     {
@@ -98,7 +98,7 @@
         "Value": 650,
         "Description": "A splendid enchanted plate that glows with a rosy hue, imbuing its wearer with strength.",
         "Filename": "0010_clothing_torso_pink.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 90
     },
     {
@@ -111,7 +111,7 @@
         },
         "Description": "A tight pink breastplate designed to withstand harsh attacks.",
         "Filename": "0011_clothing_torso_pink.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 30
     },
     {
@@ -120,7 +120,7 @@
         "Value": 430,
         "Description": "A sturdy plate armor that shines with a rosy glow, fit for the bravest knights.",
         "Filename": "0012_clothing_torso_pink.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 100
     },
     {
@@ -133,7 +133,7 @@
         },
         "Description": "A dazzling scaled mail armor that shimmers in shades of pink, enhancing its wearer's agility.",
         "Filename": "0013_clothing_torso_pink.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 80
     }
 ]

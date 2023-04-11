@@ -5,7 +5,7 @@
         "Value": 265,
         "Description": "A ethereal robe that imbues its wearer with the enigmatic knowledge of the arcane arts.",
         "Filename": "0001_clothing_torso_white.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 28
     },
     {
@@ -14,7 +14,7 @@
         "Value": 310,
         "Description": "A noble tunic, worn by the valiant templars who combat darkness and protect the realm.",
         "Filename": "0002_clothing_torso_white.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 33
     },
     {
@@ -27,7 +27,7 @@
         },
         "Description": "A wise robe that emanates a calm aura, offering its wearer protection from magical harm.",
         "Filename": "0003_clothing_torso_white.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 29
     },
     {
@@ -36,7 +36,7 @@
         "Value": 325,
         "Description": "A divine tunic, donned by those with unwavering faith, guiding souls through perilous trials.",
         "Filename": "0004_clothing_torso_white.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 31
     },
     {
@@ -49,7 +49,7 @@
         },
         "Description": "A harmonious robe that reverberates with the strength of the earth, fortifying its wearer's resilience.",
         "Filename": "0005_clothing_torso_white.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 35
     },
     {
@@ -62,7 +62,7 @@
         },
         "Description": "An exquisite robe adorned with pristine flowers, amplifying the mystic might of its divine possessor.",
         "Filename": "0006_clothing_torso_white.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 34
     },
     {
@@ -71,7 +71,7 @@
         "Value": 295,
         "Description": "A modest tunic tailored for wandering souls, who roam the world in pursuit of greater truths.",
         "Filename": "0007_clothing_torso_white.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 32
     },
     {
@@ -84,7 +84,7 @@
         },
         "Description": "A gossamer robe that grants its bearer the fleet-footed grace of a spirit borne upon the winds.",
         "Filename": "0008_clothing_torso_white.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 22
     },
     {
@@ -93,7 +93,7 @@
         "Value": 335,
         "Description": "A pristine white pelt that exudes warmth and comfort, molding to the body of a seasoned adventurer.",
         "Filename": "0009_clothing_torso_white.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 42
     },
     {
@@ -106,7 +106,7 @@
         },
         "Description": "An awe-inspiring armor, festooned with white feathered wings, granting supernatural agility to evade adversaries.",
         "Filename": "0010_clothing_torso_white.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 64
     },
     {
@@ -114,8 +114,8 @@
         "Color": "White",
         "Value": 320,
         "Description": "A luxurious white fur pelt that enwraps the body, shielding its wearer from the harsh elements.",
-        "Filename": "0011_clothingtorso_white.png",
-        "Type": "torso",
+        "Filename": "0011_clothing_torso_white.png",
+        "Type": "Torso",
         "Weight": 58
     },
     {
@@ -128,17 +128,16 @@
         },
         "Description": "A splendid leather breastplate embellished with fine silverwork.",
         "Filename": "0012_clothing_torso_white.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 70
     },
     {
         "Name": "Ivory Chainmail",
         "Color": "White",
         "Value": 210,
-        "Buff": null,
         "Description": "A well-crafted chainmail vest decorated with delicate engravings.",
         "Filename": "0013_clothing_torso_white.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 85
     },
     {
@@ -151,7 +150,7 @@
         },
         "Description": "A glittering scalemail tunic made of gleaming mother-of-pearl plates.",
         "Filename": "0014_clothing_torso_white.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 95
     },
     {
@@ -164,17 +163,16 @@
         },
         "Description": "A sturdy platemail cuirass crafted from the finest steel and enchanted with frigid magic.",
         "Filename": "0015_clothing_torso_white.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 100
     },
     {
         "Name": "Frosty Brigandine",
         "Color": "White",
         "Value": 150,
-        "Buff": null,
         "Description": "A rough brigandine jerkin made of thick wool and lined with frostbitten leather.",
         "Filename": "0016_clothing_torso_white.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 65
     }
 ]

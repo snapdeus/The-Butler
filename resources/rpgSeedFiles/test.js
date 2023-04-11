@@ -28,9 +28,10 @@ function testJsonFile(metaInfo) {
 
     }
     console.log("Looking Good")
+    console.log(metaInfo)
 }
 
-// testJsonFile(clothingMetaInfo[2])
+testJsonFile(clothingMetaInfo[2])
 
 function testJsonFileForObject(genInfo) {
     // console.log(metaInfo)
@@ -74,7 +75,7 @@ function testCategory(category) {
     console.log(errorNObj)
 }
 
-testCategory(clothingMetaInfo)
+// testCategory(clothingMetaInfo)
 
 // const fs = require('fs')
 

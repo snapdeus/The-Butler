@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 
-function countColors(itemArray) {
+function countColors(itemArray, testConfig) {
     return itemArray.reduce((acc, cur) => {
         if (acc[cur.Color]) {
             acc[cur.Color].count += 1;
@@ -16,14 +16,40 @@ function countColors(itemArray) {
             } else {
                 acc[cur.Color].ErrorArray.push(cur.Filename.slice(5))
             }
+
+            if (cur.Type !== testConfig.type) {
+                acc[cur.Color].AllErrors += 1
+                const error = []
+                error.push(cur.Type,)
+                error.push(cur.Filename)
+
+
+                acc[cur.Color].ErrorArray.push(error)
+                acc[cur.Color].ErrorArray.push(cur.Type)
+            }
+
+
+            if (typeof cur.Weight !== 'number' || typeof cur.Value !== 'number') {
+                acc[cur.Color].AllErrors += 1
+                const error = []
+                error.push(`Check for typeof weight/value of ${ cur.Filename }: ${ cur.Weight } and ${ cur.Value }`)
+                acc[cur.Color].ErrorArray.push(error)
+            }
+
         } else {
+
             acc[cur.Color] = {
                 count: 1,
                 Filename: cur.Filename.slice(5),
                 FilenameCount: 1,
                 AllErrors: 0,
-                ErrorArray: []
+                ErrorArray: [],
+                Type: cur.Type
             };
+            if (cur.Type !== testConfig.type) {
+                acc[cur.Color].AllErrors += 1
+                acc[cur.Color].ErrorArray.push(cur.Type)
+            }
         }
         return acc;
 
@@ -52,22 +78,12 @@ function mergeItemsCountsAndDescriptions(itemCounts, itemDescripObj) {
         if (!itemDescripObj[object]) {
             count.AllErrors += 1
             count.ErrorArray.push(object)
-            return {
-                [object]: {
-                    description: itemDescripObj[object],
-                    metaInfo: count,
+        }
+        return {
+            [object]: {
+                description: itemDescripObj[object],
+                metaInfo: count,
 
-                }
-            }
-
-        } else {
-
-            return {
-                [object]: {
-                    description: itemDescripObj[object],
-                    metaInfo: count,
-
-                }
             }
         }
     });

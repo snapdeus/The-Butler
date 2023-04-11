@@ -9,10 +9,12 @@ const dir = path.join(__dirname, 'head');
 
 
 const head = require('../jsonSeedFiles/final.head.json')
+const config = {
+    type: "Head"
+}
+const countHeadColors = countColors(head, config)
 
-const countHeadColors = countColors(head)
-
-
+// console.log(countHeadColors)
 const totalHead = head.length
 
 

@@ -5,7 +5,7 @@
         "Value": 590,
         "Description": "A dashing pair of boots made from the finest purple leather that glows in the dark!",
         "Filename": "0001_clothing_feet_purple.png",
-        "Type": "feet",
+        "Type": "Feet",
         "Weight": 48
     },
     {
@@ -18,7 +18,7 @@
         },
         "Description": "A pair of boots adorned with ethereal plumage that grants the wearer extra defense!",
         "Filename": "0002_clothing_feet_purple.png",
-        "Type": "feet",
+        "Type": "Feet",
         "Weight": 58
     },
     {
@@ -27,7 +27,7 @@
         "Value": 405,
         "Description": "A pair of boots made from the rarest amethyst that make the wearer feel like they're walking on clouds!",
         "Filename": "0003_clothing_feet_purple.png",
-        "Type": "feet",
+        "Type": "Feet",
         "Weight": 42
     },
     {
@@ -40,7 +40,7 @@
         },
         "Description": "A pair of boots fit for a king or queen that grants the wearer extra endurance!",
         "Filename": "0004_clothing_feet_purple.png",
-        "Type": "feet",
+        "Type": "Feet",
         "Weight": 52
     },
     {
@@ -49,7 +49,7 @@
         "Value": 120,
         "Description": "A comfortable pair of lavender loafers that are perfect for a night out on the town!",
         "Filename": "0005_clothing_feet_purple.png",
-        "Type": "feet",
+        "Type": "Feet",
         "Weight": 20
     },
     {
@@ -58,7 +58,7 @@
         "Value": 298,
         "Description": "A pair of violet boots that are perfect for the wandering adventurer!",
         "Filename": "0006_clothing_feet_purple.png",
-        "Type": "feet",
+        "Type": "Feet",
         "Weight": 35
     },
     {
@@ -67,7 +67,7 @@
         "Value": 85,
         "Description": "A pair of stylish plum pumps that are perfect for a night out on the town!",
         "Filename": "0007_clothing_feet_purple.png",
-        "Type": "feet",
+        "Type": "Feet",
         "Weight": 15
     },
     {
@@ -76,7 +76,7 @@
         "Value": 180,
         "Description": "A pair of grape galoshes that are perfect for keeping your feet dry on a rainy day!",
         "Filename": "0008_clothing_feet_purple.png",
-        "Type": "feet",
+        "Type": "Feet",
         "Weight": 30
     },
     {
@@ -85,7 +85,7 @@
         "Value": 65,
         "Description": "A pair of comfortable mauve moccasins that are perfect for a relaxing day at home!",
         "Filename": "0009_clothing_feet_purple.png",
-        "Type": "feet",
+        "Type": "Feet",
         "Weight": 10
     },
     {
@@ -94,7 +94,7 @@
         "Value": 325,
         "Description": "A pair of lilac laced boots that are perfect for any adventurer!",
         "Filename": "0010_clothing_feet_purple.png",
-        "Type": "feet",
+        "Type": "Feet",
         "Weight": 40
     },
     {
@@ -107,7 +107,7 @@
         },
         "Description": "A pair of regal periwinkle boots that grants the wearer extra HP!",
         "Filename": "0011_clothing_feet_purple.png",
-        "Type": "feet",
+        "Type": "Feet",
         "Weight": 55
     },
     {

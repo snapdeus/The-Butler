@@ -151,7 +151,7 @@
         "Value": 245,
         "Description": "A magnificent headdress with intricate beadwork and feathers, fit for a chieftain.",
         "Filename": "0015_clothing_head_red.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 25
     },
     {
@@ -164,7 +164,7 @@
         },
         "Description": "A traditional war bonnet with bright red feathers that increase the wearer's defense.",
         "Filename": "0016_clothing_head_red.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 15
     },
     {
@@ -173,7 +173,7 @@
         "Value": 40,
         "Description": "A simple yet elegant headwrap in a striking shade of red.",
         "Filename": "0017_clothing_head_red.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 10
     },
     {
@@ -186,7 +186,7 @@
         },
         "Description": "A regal headdress adorned with rubies that enhances the wearer's magic defense.",
         "Filename": "0018_clothing_head_red.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 20
     },
     {
@@ -195,7 +195,7 @@
         "Value": 30,
         "Description": "A simple headband in a deep shade of red that adds a touch of color to any outfit.",
         "Filename": "0019_clothing_head_red.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 5
     },
     {
@@ -208,7 +208,7 @@
         },
         "Description": "A luxurious turban in a rich shade of maroon that increases the wearer's endurance.",
         "Filename": "0020_clothing_head_red.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 12
     },
     {
@@ -221,7 +221,7 @@
         },
         "Description": "A majestic crown encrusted with rubies that greatly increases the wearer's HP.",
         "Filename": "0021_clothing_head_red.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 30
     },
     {
@@ -230,7 +230,7 @@
         "Value": 120,
         "Description": "A delicate tiara adorned with garnets that adds a touch of elegance to any outfit.",
         "Filename": "0022_clothing_head_red.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 8
     }
 ]

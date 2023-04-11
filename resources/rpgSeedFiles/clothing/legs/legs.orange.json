@@ -5,7 +5,7 @@
         "Value": 200,
         "Description": "A pair of dashing orange trews that resembles a phoenix rising from the ashes.",
         "Filename": "0001_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 25
     },
     {
@@ -18,7 +18,7 @@
         },
         "Description": "Finely crafted chausses adorned with intricate embroideries, granting the wearer added defense.",
         "Filename": "0002_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 35
     },
     {
@@ -27,7 +27,7 @@
         "Value": 300,
         "Description": "Elegant orange breeches made of luxurious fabric, bringing comfort and style to the wearer.",
         "Filename": "0003_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 30
     },
     {
@@ -40,7 +40,7 @@
         },
         "Description": "Resilient orange pluderhose designed to aid fighters in combat, increasing their attack capabilities.",
         "Filename": "0004_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 40
     },
     {
@@ -49,7 +49,7 @@
         "Value": 275,
         "Description": "Tailored orange hose suitable for knights, offering flexibility and easy movement.",
         "Filename": "0005_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 26
     },
     {
@@ -62,7 +62,7 @@
         },
         "Description": "Durable orange culottes, enhancing the wearer's endurance in both battle and travel.",
         "Filename": "0006_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 33
     },
     {
@@ -71,7 +71,7 @@
         "Value": 350,
         "Description": "Elegant orange trunkhose that portrays the grace of courtly dances.",
         "Filename": "0007_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 32
     },
     {
@@ -80,7 +80,7 @@
         "Value": 150,
         "Description": "A comfortable pair of orange shorts ideal for warm climates and casual wear.",
         "Filename": "0008_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 20
     },
     {
@@ -89,7 +89,7 @@
         "Value": 100,
         "Description": "Regular Browny Orange shorts...",
         "Filename": "0009_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 20
     },
     {
@@ -98,7 +98,7 @@
         "Value": 100,
         "Description": "Regular Greeny Orange shorts...",
         "Filename": "0010_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 20
     },
     {
@@ -107,7 +107,7 @@
         "Value": 400,
         "Description": "A beautifully crafted orange kirtle, fit for a regal presence at court festivities.",
         "Filename": "0011_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 42
     },
     {
@@ -120,7 +120,7 @@
         },
         "Description": "An ornate orange hennin boasting magical properties, enhancing the wearer's magical attack.",
         "Filename": "0012_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 30
     },
     {
@@ -133,7 +133,7 @@
         },
         "Description": "A durable leather dress, supporting the wearer's vitality with added health benefits.",
         "Filename": "0013_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 70
     },
     {
@@ -142,7 +142,7 @@
         "Value": 625,
         "Description": "A legendary orange cotehardie, symbolizing the passion of its wearer.",
         "Filename": "0014_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 80
     },
     {
@@ -155,7 +155,7 @@
         },
         "Description": "An exquisite set of Golden Leg Braces that aids its wearer in evading incoming attacks with ease.",
         "Filename": "0015_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 48
     },
     {
@@ -168,7 +168,7 @@
         },
         "Description": "A robust orange leg armor that bestows its wearer with an astonishing boost to their action points.",
         "Filename": "0016_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 60
     },
     {
@@ -181,7 +181,7 @@
         },
         "Description": "A heavy orange plate armor offering unwavering defense and fortification for its wearer.",
         "Filename": "0017_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 90
     },
     {
@@ -190,7 +190,7 @@
         "Value": 675,
         "Description": "Versatile orange scale armor that provides a perfect balance of protection and agility.",
         "Filename": "0018_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 75
     },
     {
@@ -203,7 +203,7 @@
         },
         "Description": "A suit of orange lamellar armor, enhancing the wearer's endurance in battle and strenuous activities.",
         "Filename": "0019_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 85
     },
     {
@@ -216,7 +216,7 @@
         },
         "Description": "A heavily reinforced orange cuirass, providing the ultimate defense for any warrior.",
         "Filename": "0020_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 90
     },
     {
@@ -229,7 +229,7 @@
         },
         "Description": "A robust orange gambeson providing exceptional protection and increasing the wearer's maximum health.",
         "Filename": "0021_clothing_legs_orange.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 100
     }
 ]

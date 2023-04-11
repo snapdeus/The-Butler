@@ -10,8 +10,10 @@ const dir = path.join(__dirname, 'hands');
 
 
 const hands = require('../jsonSeedFiles/final.hands.json')
-
-const countHandsColors = countColors(hands)
+const config = {
+    type: "Hands"
+}
+const countHandsColors = countColors(hands, config)
 
 const totalHands = hands.length
 

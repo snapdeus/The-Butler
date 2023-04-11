@@ -10,8 +10,10 @@ const dir = path.join(__dirname, 'feet');
 
 
 const feet = require('../jsonSeedFiles/final.feet.json')
-
-const countFeetColors = countColors(feet)
+const config = {
+    type: "Feet"
+}
+const countFeetColors = countColors(feet, config)
 
 const totalFeet = feet.length
 

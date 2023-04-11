@@ -5,7 +5,7 @@
         "Value": 265,
         "Description": "Adorned with intricate runes, this crimson robe enhances its wearer's magical prowess and wisdom.",
         "Filename": "0001_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 30
     },
     {
@@ -14,7 +14,7 @@
         "Value": 85,
         "Description": "A well-crafted red tunic, offering comfort while maintaining its wearer's stately appearance",
         "Filename": "0002_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 40
     },
     {
@@ -27,7 +27,7 @@
         },
         "Description": "A resplendent red mantle adorned with protective runes, shielding its wearer against magical attacks",
         "Filename": "0003_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 50
     },
     {
@@ -36,7 +36,7 @@
         "Value": 310,
         "Description": "A joyous red outfit that brings festive cheer and merriment to all who gaze upon it.",
         "Filename": "0004_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 28
     },
     {
@@ -49,7 +49,7 @@
         },
         "Description": "An lavish red doublet, woven with exquisite fabrics and bolstered to provide extra defense",
         "Filename": "0005_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 35
     },
     {
@@ -58,7 +58,7 @@
         "Value": 145,
         "Description": "A regal red tabard, embellished with noble insignias that command respect from its wearer's peers",
         "Filename": "0006_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 30
     },
     {
@@ -71,7 +71,7 @@
         },
         "Description": "A resilient red gambeson, providing the wearer with improved endurance and lasting protection",
         "Filename": "0007_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 70
     },
     {
@@ -80,7 +80,7 @@
         "Value": 240,
         "Description": "A stylish red surcoat, offering both flair and an elevated sense of elegance and gallantry",
         "Filename": "0008_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 45
     },
     {
@@ -89,7 +89,7 @@
         "Value": 320,
         "Description": "A modest red hauberk, providing adequate protection and comfort for its wearer during skirmishes",
         "Filename": "0009_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 80
     },
     {
@@ -102,7 +102,7 @@
         },
         "Description": "A formidable red cuirass, masterfully forged to enhance its wearer's offensive capabilities",
         "Filename": "0010_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 85
     },
     {
@@ -115,7 +115,7 @@
         },
         "Description": "A nostalgic outfit that symbolizes unity, resilience, and the unwavering spirit of the people.",
         "Filename": "0011_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 34
     },
     {
@@ -128,7 +128,7 @@
         },
         "Description": "Prestigious armor adorned with a regal cape, reserved for commanders known for their valor and leadership.",
         "Filename": "0012_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 65
     },
     {
@@ -137,7 +137,7 @@
         "Value": 80,
         "Description": "A bold red undergarment that combines style and support, making it a striking choice for everyday wear.",
         "Filename": "0013_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 12
     },
     {
@@ -146,7 +146,7 @@
         "Value": 160,
         "Description": "A charming red jupon allowing for unrestricted movement, favored by agile combatants and dancers alike",
         "Filename": "0014_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 20
     },
     {
@@ -155,7 +155,7 @@
         "Value": 45,
         "Description": "A cozy and unassuming outfit perfect for hobbits, providing warmth and comfort in their travels.",
         "Filename": "0015_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 25
     },
     {
@@ -164,7 +164,7 @@
         "Value": 55,
         "Description": "A charming red outfit crafted by hobbits, designed for leisurely days and adventurous quests.",
         "Filename": "0016_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 26
     },
     {
@@ -177,7 +177,7 @@
         },
         "Description": "An impressive red brigandine, reinforced with solid plates to grant its wearer hardiness in battle",
         "Filename": "0017_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 90
     },
     {
@@ -186,7 +186,7 @@
         "Value": 120,
         "Description": "A devout red cassock, perfect for spiritual leaders and those drawn toward a pious existence",
         "Filename": "0018_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 22
     },
     {
@@ -199,7 +199,7 @@
         },
         "Description": "A divine red vestment worn by esteemed clerics, radiating with a magical aura that enhances spellcasting abilities",
         "Filename": "0019_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 28
     },
     {
@@ -208,7 +208,7 @@
         "Value": 180,
         "Description": "A fashionable red cotehardie, granting its wearer an air of sophistication and nobility in all social encounters",
         "Filename": "0020_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 55
     },
     {
@@ -221,7 +221,7 @@
         },
         "Description": "A sturdy chestplate etched with occult symbols, providing protection against hostile magic.",
         "Filename": "0021_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 85
     },
     {
@@ -234,7 +234,7 @@
         },
         "Description": "An ethereal red garment for those who aspire to ascend, offering unmatched agility and grace.",
         "Filename": "0022_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 29
     },
     {
@@ -247,7 +247,7 @@
         },
         "Description": "A thick gambeson dyed a brilliant scarlet, offering enhanced endurance to its wearer.",
         "Filename": "0023_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 70
     },
     {
@@ -260,7 +260,7 @@
         },
         "Description": "A sturdy scale hauberk dyed a deep crimson, providing reliable defense to its wearer.",
         "Filename": "0024_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 95
     },
     {
@@ -273,17 +273,16 @@
         },
         "Description": "A formidable plate armor of red steel, adorned with wings that grant its wearer exceptional attack power.",
         "Filename": "0025_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 130
     },
     {
         "Name": "Burgundy Chainmail",
         "Color": "Red",
         "Value": 140,
-        "Buff": null,
         "Description": "A flexible chainmail vest dyed a deep burgundy, offering basic protection without weighing down its wearer.",
         "Filename": "0026_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 75
     },
     {
@@ -296,7 +295,7 @@
         },
         "Description": "A set of enchanted red dragon scales, known for their magical protection.",
         "Filename": "0027_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 90
     },
     {
@@ -309,7 +308,7 @@
         },
         "Description": "A regal suit of red armor worn by a famous cardinal, imbuing its wearer with exceptional ability points.",
         "Filename": "0028_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 130
     },
     {
@@ -322,7 +321,7 @@
         },
         "Description": "A lightweight chainmail hauberk dyed a vivid blood red, offering increased evasiveness to its wearer.",
         "Filename": "0029_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 80
     },
     {
@@ -335,7 +334,7 @@
         },
         "Description": "A breastplate crafted from shimmering rubies, said to provide a surge of vitality to its wearer.",
         "Filename": "0030_clothing_torso_red.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 110
     }
 ]

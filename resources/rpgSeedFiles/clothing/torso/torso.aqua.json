@@ -5,7 +5,7 @@
         "Value": 200,
         "Description": "A plain aqua tunic, fit for a serf or peasant in a time of knights and nobles.",
         "Filename": "0001_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 40
     },
     {
@@ -18,7 +18,7 @@
         },
         "Description": "A splendid aqua tunic, enchanted with a charm to boost your evade skills on the battlefield!",
         "Filename": "0002_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 40
     },
     {
@@ -27,7 +27,7 @@
         "Value": 400,
         "Description": "A finely-crafted aqua tunic, adorned with exquisite embroidery fit for a noble warrior.",
         "Filename": "0003_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 40
     },
     {
@@ -36,7 +36,7 @@
         "Value": 300,
         "Description": "An aqua tunic built to last, made of high-quality fabric ideal for any yeoman.",
         "Filename": "0004_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 40
     },
     {
@@ -45,7 +45,7 @@
         "Value": 500,
         "Description": "A truly magnificent tunic, dyed in a rich aqua hue, worthy of a powerful lord or a high-ranking cleric.",
         "Filename": "0005_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 40
     },
     {
@@ -54,7 +54,7 @@
         "Value": 500,
         "Description": "This sturdy aqua armored tunic is reinforced, offering a layer of extra protection to any brave soul.",
         "Filename": "0006_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 60
     },
     {
@@ -67,7 +67,7 @@
         },
         "Description": "Crafted using rare aqua dragonhide, a wearer of this armored tunic gains a significant increase in defense capabilities.",
         "Filename": "0007_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 60
     },
     {
@@ -76,7 +76,7 @@
         "Value": 600,
         "Description": "An magnificently adorned armored tunic, complete with aqua emblematic accents, fit for a distinguished knight.",
         "Filename": "0008_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 60
     },
     {
@@ -85,7 +85,7 @@
         "Value": 100,
         "Description": "A beautiful aqua bra.",
         "Filename": "0009_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 20
     },
     {
@@ -94,7 +94,7 @@
         "Value": 320,
         "Description": "A mystical robe in aqua hue, exuding an air of enraptured whispers from an arcane world.",
         "Filename": "0010_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 30
     },
     {
@@ -107,7 +107,7 @@
         },
         "Description": "A glorious set of aqua armor, reflecting the courageous heart of its master on the battlefield.",
         "Filename": "0011_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 90
     },
     {
@@ -116,7 +116,7 @@
         "Value": 370,
         "Description": "A finely woven luminous robe, shimmering with the brilliance of the aqua essence harbored within.",
         "Filename": "0012_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 30
     },
     {
@@ -125,7 +125,7 @@
         "Value": 420,
         "Description": "A well-tailored aqua coat adorned with elegant belts, fit for a noble with a penchant for adventure.",
         "Filename": "0013_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 60
     },
     {
@@ -134,7 +134,7 @@
         "Value": 550,
         "Description": "A regal set of aqua armor, offering unmatched protection to those stalwart defenders of realms unknown.",
         "Filename": "0014_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 90
     },
     {
@@ -147,7 +147,7 @@
         },
         "Description": "A resilient aqua battleplate, imbued with the strength to crush foes and leave them quaking in fear.",
         "Filename": "0015_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 100
     },
     {
@@ -156,7 +156,7 @@
         "Value": 530,
         "Description": "An elegant set of aqua armor, crafted to enhance the mystical prowess of a skilled arcanist.",
         "Filename": "0016_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 80
     },
     {
@@ -169,7 +169,7 @@
         },
         "Description": "A mystifying aqua robe, woven with ancient enchantments to channel insurmountable magical power.",
         "Filename": "0017_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 50
     },
     {
@@ -182,7 +182,7 @@
         },
         "Description": "An alluring aqua robe, designed to ward off the most potent spells and protect the master of sorcery.",
         "Filename": "0018_clothing_torso_aqua.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 80
     }
 ]

@@ -5,7 +5,7 @@
         "Value": 35,
         "Description": "A light and airy tulle skirt, perfect for dancing through fields.",
         "Filename": "0001_clothing_legs_pink.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 20
     },
     {
@@ -18,7 +18,7 @@
         },
         "Description": "This studded armor will protect you from any danger on your journey.",
         "Filename": "0002_clothing_legs_pink.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 70
     },
     {
@@ -31,7 +31,7 @@
         },
         "Description": "This silk armor is finely crafted and imbued with powerful magic to protect you.",
         "Filename": "0003_clothing_legs_pink.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 50
     },
     {
@@ -40,7 +40,7 @@
         "Value": 60,
         "Description": "These silky smooth pants will make you feel like royalty.",
         "Filename": "0004_clothing_legs_pink.png",
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 30
     }
 ]

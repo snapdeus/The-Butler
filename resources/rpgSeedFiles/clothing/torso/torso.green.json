@@ -5,7 +5,7 @@
         "Value": 400,
         "Description": "An elegant robe imbued with mystical forces, favored by spellcasters for its arcane enhancements.",
         "Filename": "0001_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 30
     },
     {
@@ -18,7 +18,7 @@
         },
         "Description": "A sturdy tunic, crafted to provide enhanced protection for the wearer against physical onslaughts.",
         "Filename": "0002_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 42
     },
     {
@@ -27,7 +27,7 @@
         "Value": 375,
         "Description": "A lightweight and comfortable robe, designed for the intrepid explorers who traverse dangerous paths.",
         "Filename": "0003_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 25
     },
     {
@@ -36,7 +36,7 @@
         "Value": 525,
         "Description": "A luxurious tunic befitting of nobility, meticulously woven with an eye for detail and splendor.",
         "Filename": "0004_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 38
     },
     {
@@ -49,7 +49,7 @@
         },
         "Description": "A ceremonial robe worn by revered templars, granting divine protection from arcane threats.",
         "Filename": "0005_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 34
     },
     {
@@ -58,7 +58,7 @@
         "Value": 450,
         "Description": "A traditional green kimono, emanating a sense of tranquility and grace, favored in the eastern lands.",
         "Filename": "0006_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 28
     },
     {
@@ -67,7 +67,7 @@
         "Value": 485,
         "Description": "A battle-tested tunic, born in the fires of countless conflicts, providing unmatched sturdiness and resilience.",
         "Filename": "0007_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 45
     },
     {
@@ -80,7 +80,7 @@
         },
         "Description": "A venerable robe adorned by wise sages, enhancing one's grasp over arcane energies.",
         "Filename": "0008_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 31
     },
     {
@@ -89,7 +89,7 @@
         "Value": 410,
         "Description": "A rugged fur pelt, offering warmth and protection from the harsh wilderness, perfect for survivalists.",
         "Filename": "0009_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 46
     },
     {
@@ -102,7 +102,7 @@
         },
         "Description": "A menacing ensemble resembling a winged demon, imbued with a sinister aura that amplifies magic prowess.",
         "Filename": "0010_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 60
     },
     {
@@ -111,7 +111,7 @@
         "Value": 425,
         "Description": "Forged for the mightiest of warriors, this impressive tunic inspires awe and admiration on the battlefield.",
         "Filename": "0011_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 40
     },
     {
@@ -124,7 +124,7 @@
         },
         "Description": "A vibrant robe, artfully designed for wandering bards who win both hearts and battles with their charm.",
         "Filename": "0012_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 27
     },
     {
@@ -133,7 +133,7 @@
         "Value": 460,
         "Description": "A trusted tunic for honorable knights, forged with unparalleled craftsmanship and unyielding determination.",
         "Filename": "0013_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 44
     },
     {
@@ -146,7 +146,7 @@
         },
         "Description": "A sturdy armor with verdant hues, forged to protect its wearer from even the fiercest of adversaries.",
         "Filename": "0014_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 70
     },
     {
@@ -155,7 +155,7 @@
         "Value": 550,
         "Description": "An enchanted armor, glistening with magical aura, providing protection against both physical and arcane threats.",
         "Filename": "0015_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 50
     },
     {
@@ -168,7 +168,7 @@
         },
         "Description": "A regal armor, worthy of royalty, with intricate detailing and exceptional craftsmanship for unmatched resilience.",
         "Filename": "0016_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 80
     },
     {
@@ -177,7 +177,7 @@
         "Value": 580,
         "Description": "A rugged armor designed to withstand the unforgiving elements, allowing its wearer to stand stalwart in times of need.",
         "Filename": "0017_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 60
     },
     {
@@ -190,7 +190,7 @@
         },
         "Description": "A deft very light armor worn by master swordsmen, allowing swift movements and devastating blows in combat.",
         "Filename": "0018_clothing_torso_green.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 40
     }
 ]

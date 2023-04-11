@@ -3,7 +3,7 @@
         "Name": "Black Leggings",
         "Color": "Black",
         "Value": 45,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 15,
         "Filename": "0001_clothing_legs_black.png",
         "Description": "Classic black leggings suitable for travel and daily wear, providing comfort and freedom of movement."
@@ -16,7 +16,7 @@
             "buffType": "Defense",
             "amount": 30
         },
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 70,
         "Filename": "0002_clothing_legs_black.png",
         "Description": "Sturdy black greaves adorned with intricate patterns, bolstering your defenses in harsh battles."
@@ -25,7 +25,7 @@
         "Name": "Black Chaps",
         "Color": "Black",
         "Value": 65,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 40,
         "Filename": "0003_clothing_legs_black.png",
         "Description": "Wear-resistant black chaps designed for horse riding and long journeys in diverse terrains."
@@ -34,7 +34,7 @@
         "Name": "Black Trousers",
         "Color": "Black",
         "Value": 40,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 25,
         "Filename": "0004_clothing_legs_black.png",
         "Description": "Plain yet dependable black trousers offering moderate protection and comfort for everyday use."
@@ -43,7 +43,7 @@
         "Name": "Black Breeches",
         "Color": "Black",
         "Value": 85,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 30,
         "Filename": "0005_clothing_legs_black.png",
         "Description": "Elegant black breeches with fine embroidery, meant for courtly events and regal gatherings."
@@ -52,7 +52,7 @@
         "Name": "Black Cuisses",
         "Color": "Black",
         "Value": 180,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 55,
         "Filename": "0006_clothing_legs_black.png",
         "Description": "Embellished black cuisses featuring metal reinforcements, providing superior defense during intense combat."
@@ -61,7 +61,7 @@
         "Name": "Black Poulaines",
         "Color": "Black",
         "Value": 50,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 20,
         "Filename": "0007_clothing_legs_black.png",
         "Description": "Stylish black poulaines with pointed tips, showcasing a fashionable choice for noble occasions."
@@ -70,7 +70,7 @@
         "Name": "Black Hose",
         "Color": "Black",
         "Value": 60,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 20,
         "Filename": "0008_clothing_legs_black.png",
         "Description": "Snug-fitting black hose tailored for flexibility and grace during ceremonial events and dances."
@@ -83,7 +83,7 @@
             "buffType": "HP",
             "amount": 15
         },
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 35,
         "Filename": "0009_clothing_legs_black.png",
         "Description": "Rugged black leg guards endowed with mystical properties, enhancing vitality and resilience."
@@ -92,7 +92,7 @@
         "Name": "Black Leggings",
         "Color": "Black",
         "Value": 45,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 15,
         "Filename": "0010_clothing_legs_black.png",
         "Description": "Classic black leggings suitable for travel and daily wear, providing comfort and freedom of movement."
@@ -105,7 +105,7 @@
             "buffType": "Defense",
             "amount": 30
         },
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 70,
         "Filename": "0011_clothing_legs_black.png",
         "Description": "Sturdy black greaves adorned with intricate patterns, bolstering your defenses in harsh battles."
@@ -114,7 +114,7 @@
         "Name": "Black Chaps",
         "Color": "Black",
         "Value": 65,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 40,
         "Filename": "0012_clothing_legs_black.png",
         "Description": "Wear-resistant black chaps designed for horse riding and long journeys in diverse terrains."
@@ -123,7 +123,7 @@
         "Name": "Black Trousers",
         "Color": "Black",
         "Value": 40,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 25,
         "Filename": "0013_clothing_legs_black.png",
         "Description": "Plain yet dependable black trousers offering moderate protection and comfort for everyday use."
@@ -132,7 +132,7 @@
         "Name": "Black Breeches",
         "Color": "Black",
         "Value": 85,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 30,
         "Filename": "0014_clothing_legs_black.png",
         "Description": "Elegant black breeches with fine embroidery, meant for courtly events and regal gatherings."
@@ -141,7 +141,7 @@
         "Name": "Black Cuisses",
         "Color": "Black",
         "Value": 180,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 55,
         "Filename": "0015_clothing_legs_black.png",
         "Description": "Embellished black cuisses featuring metal reinforcements, providing superior defense during intense combat."
@@ -150,7 +150,7 @@
         "Name": "Black Poulaines",
         "Color": "Black",
         "Value": 50,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 20,
         "Filename": "0016_clothing_legs_black.png",
         "Description": "Stylish black poulaines with pointed tips, showcasing a fashionable choice for noble occasions."
@@ -159,7 +159,7 @@
         "Name": "Black Hose",
         "Color": "Black",
         "Value": 60,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 20,
         "Filename": "0017_clothing_legs_black.png",
         "Description": "Snug-fitting black hose tailored for flexibility and grace during ceremonial events and dances."
@@ -172,7 +172,7 @@
             "buffType": "HP",
             "amount": 15
         },
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 35,
         "Filename": "0018_clothing_legs_black.png",
         "Description": "Rugged black leg guards endowed with mystical properties, enhancing vitality and resilience."
@@ -181,7 +181,7 @@
         "Name": "Black Platelegs",
         "Color": "Black",
         "Value": 150,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 60,
         "Filename": "0019_clothing_legs_black.png",
         "Description": "Heavy black platelegs forged from strong metal, providing increased protection in challenging fights."
@@ -190,7 +190,7 @@
         "Name": "Black Brigandine",
         "Color": "Black",
         "Value": 175,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 45,
         "Filename": "0020_clothing_legs_black.png",
         "Description": "A durable black brigandine designed for increased protection, combining multiple layers of fabric and metal rivets for added resilience."
@@ -199,7 +199,7 @@
         "Name": "Black Breeches",
         "Color": "Black",
         "Value": 120,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 25,
         "Filename": "0021_clothing_legs_black.png",
         "Description": "Comfortable black breeches crafted for agility, allowing the wearer to execute swift movements while in combat."
@@ -208,7 +208,7 @@
         "Name": "Black Tassets",
         "Color": "Black",
         "Value": 400,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 60,
         "Filename": "0022_clothing_legs_black.png",
         "Description": "Elegant black tassets forged with intricate patterns, providing the wearer a majestic appearance and enhanced endurance.",
@@ -221,7 +221,7 @@
         "Name": "Black Cuisses",
         "Color": "Black",
         "Value": 260,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 50,
         "Filename": "0023_clothing_legs_black.png",
         "Description": "Sturdy black cuisses built for protection, offering superb defense against most physical attacks."
@@ -230,7 +230,7 @@
         "Name": "Black Hosen",
         "Color": "Black",
         "Value": 180,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 35,
         "Filename": "0024_clothing_legs_black.png",
         "Description": "Finely woven black hosen providing excellent flexibility, designed for wearers who prefer to strike swiftly and evade incoming blows."
@@ -239,7 +239,7 @@
         "Name": "Black Gown",
         "Color": "Black",
         "Value": 200,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 40,
         "Filename": "0025_clothing_legs_black.png",
         "Description": "An elegant black gown with intricate lacework, designed for both style and mobility in social or combat situations."
@@ -248,7 +248,7 @@
         "Name": "Black Enchanted Dress",
         "Color": "Black",
         "Value": 600,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 45,
         "Filename": "0026_clothing_legs_black.png",
         "Description": "A bewitching black dress imbued with magical properties, enhancing the wearer's magical attack in the heat of battle.",
@@ -261,7 +261,7 @@
         "Name": "Black Greaves",
         "Color": "Black",
         "Value": 150,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 60,
         "Filename": "0027_clothing_legs_black.png",
         "Description": "Sturdy black greaves with solid protection, perfect for any warrior stepping into battle."
@@ -270,7 +270,7 @@
         "Name": "Black Plated Leggings",
         "Color": "Black",
         "Value": 250,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 75,
         "Filename": "0028_clothing_legs_black.png",
         "Description": "Impressive black leggings with steel plates, offering substantial defense without sacrificing mobility."
@@ -279,7 +279,7 @@
         "Name": "Black Chainmail Leggings",
         "Color": "Black",
         "Value": 200,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 50,
         "Filename": "0029_clothing_legs_black.png",
         "Description": "Flexible black chainmail leggings that allow for swift movements while shielding the wearer from harm."
@@ -288,7 +288,7 @@
         "Name": "Black Studded Leggings",
         "Color": "Black",
         "Value": 100,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 40,
         "Filename": "0030_clothing_legs_black.png",
         "Description": "Black leggings adorned with metal studs, offering a balance between protection and agility."
@@ -297,7 +297,7 @@
         "Name": "Black Enchanted Greaves",
         "Color": "Black",
         "Value": 500,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 65,
         "Filename": "0031_clothing_legs_black.png",
         "Description": "Mystical black greaves endowed with magical properties, empowering the wearer's defense in combat.",
@@ -310,7 +310,7 @@
         "Name": "Black Knight's Leggings",
         "Color": "Black",
         "Value": 350,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 80,
         "Filename": "0032_clothing_legs_black.png",
         "Description": "Sophisticated black leggings forged for a knight, boasting a perfect mix of unrivaled protection and finesse."
@@ -319,7 +319,7 @@
         "Name": "Black Scale Leggings",
         "Color": "Black",
         "Value": 300,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 70,
         "Filename": "0033_clothing_legs_black.png",
         "Description": "Formidable black leggings made from dragon scales, providing extraordinary resilience against magical attacks."
@@ -328,7 +328,7 @@
         "Name": "Black Shadow Greaves",
         "Color": "Black",
         "Value": 400,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 55,
         "Filename": "0034_clothing_legs_black.png",
         "Description": "Elusive black greaves with an aura of shadows, allowing the wearer to dodge attacks with ease.",
@@ -341,7 +341,7 @@
         "Name": "Black Royal Leggings",
         "Color": "Black",
         "Value": 600,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 90,
         "Filename": "0035_clothing_legs_black.png",
         "Description": "Regal black leggings adorned with gold filigree, offering unmatched elegance and preeminent protection."
@@ -350,7 +350,7 @@
         "Name": "Black Warlord's Greaves",
         "Color": "Black",
         "Value": 450,
-        "Type": "legs",
+        "Type": "Legs",
         "Weight": 95,
         "Filename": "0036_clothing_legs_black.png",
         "Description": "Imposing black greaves worn by legendary warlords, bestowing incredible fortitude for the fiercest of battles."

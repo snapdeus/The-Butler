@@ -9,8 +9,10 @@ const dir = path.join(__dirname, 'legs');
 
 
 const legs = require('../jsonSeedFiles/final.legs.json')
-
-const countLegsColors = countColors(legs)
+const config = {
+    type: "Legs"
+}
+const countLegsColors = countColors(legs, config)
 
 
 const totalLegs = legs.length

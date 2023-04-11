@@ -89,7 +89,7 @@
         "Value": 400,
         "Description": "A sturdy pair of greaves made of green dragon scales.",
         "Filename": "0009_clothing_feet_green.png",
-        "Type": "feet",
+        "Type": "Feet",
         "Weight": 80
     },
     {
@@ -102,7 +102,7 @@
         },
         "Description": "A pair of green boots that make you feel light on your feet and harder to hit.",
         "Filename": "0010_clothing_feet_green.png",
-        "Type": "feet",
+        "Type": "Feet",
         "Weight": 50
     },
     {
@@ -111,7 +111,7 @@
         "Value": 350,
         "Description": "A pair of sturdy greaves made of green steel, perfect for any warrior.",
         "Filename": "0011_clothing_feet_green.png",
-        "Type": "feet",
+        "Type": "Feet",
         "Weight": 70
     },
     {
@@ -120,7 +120,7 @@
         "Value": 150,
         "Description": "A pair of green boots made of soft leather, perfect for a long journey.",
         "Filename": "0012_clothing_feet_green.png",
-        "Type": "feet",
+        "Type": "Feet",
         "Weight": 40
     },
     {

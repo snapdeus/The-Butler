@@ -5,7 +5,7 @@
         "Value": 127,
         "Description": "Protective gauntlets made of sturdy leather and metal.",
         "Filename": "0001_clothing_hands_orange.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 70
     },
     {
@@ -18,7 +18,7 @@
         },
         "Description": "Gauntlets infused with the power of flames that increase your attack.",
         "Filename": "0002_clothing_hands_orange.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 72
     },
     {
@@ -27,7 +27,7 @@
         "Value": 98,
         "Description": "Gauntlets with sharp spikes that can intimidate your enemies.",
         "Filename": "0003_clothing_hands_orange.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 68
     },
     {
@@ -40,7 +40,7 @@
         },
         "Description": "Gauntlets that allow you to blend in with the shadows, increasing your evade.",
         "Filename": "0004_clothing_hands_orange.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 75
     },
     {
@@ -53,7 +53,7 @@
         },
         "Description": "Gauntlets that channel the power of thunder, increasing your magic attack.",
         "Filename": "0005_clothing_hands_orange.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 80
     },
     {
@@ -62,7 +62,7 @@
         "Value": 174,
         "Description": "Heavy gauntlets that provide excellent defense.",
         "Filename": "0006_clothing_hands_orange.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 85
     },
     {
@@ -71,7 +71,7 @@
         "Value": 345,
         "Description": "Elegant gauntlets made of the finest materials.",
         "Filename": "0007_clothing_hands_orange.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 60
     },
     {
@@ -84,7 +84,7 @@
         },
         "Description": "Gauntlets that have been enchanted to increase your endurance.",
         "Filename": "0008_clothing_hands_orange.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 72
     },
     {
@@ -97,7 +97,7 @@
         },
         "Description": "Gauntlets made from the scales of a dragon that provide excellent defense.",
         "Filename": "0009_clothing_hands_orange.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 78
     },
     {
@@ -106,7 +106,7 @@
         "Value": 176,
         "Description": "Gauntlets made of heavy iron that provide excellent protection.",
         "Filename": "0010_clothing_hands_orange.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 90
     },
     {
@@ -119,7 +119,7 @@
         },
         "Description": "Gauntlets that increase your speed and agility, making it easier to dodge attacks.",
         "Filename": "0011_clothing_hands_orange.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 65
     },
     {
@@ -132,7 +132,7 @@
         },
         "Description": "Gauntlets that have been blessed by a holy priest, increasing your maximum health.",
         "Filename": "0012_clothing_hands_orange.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 70
     },
     {
@@ -141,7 +141,7 @@
         "Value": 239,
         "Description": "Gauntlets that allow you to see in the dark and strike your enemies with precision.",
         "Filename": "0013_clothing_hands_orange.png",
-        "Type": "hands",
+        "Type": "Hands",
         "Weight": 75
     },
     {

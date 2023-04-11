@@ -5,7 +5,7 @@
         "Value": 300,
         "Description": "A sturdy helmet made of green dragon scales, fit for a warrior.",
         "Filename": "0001_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 80
     },
     {
@@ -18,7 +18,7 @@
         },
         "Description": "A green steel helmet with a reinforced visor, providing extra protection in battle.",
         "Filename": "0002_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 90
     },
     {
@@ -31,7 +31,7 @@
         },
         "Description": "A magnificent emerald crown, imbued with ancient magic to protect its wearer.",
         "Filename": "0003_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 50
     },
     {
@@ -40,7 +40,7 @@
         "Value": 80,
         "Description": "A simple green leather cap, perfect for a rogue or hunter.",
         "Filename": "0004_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 20
     },
     {
@@ -49,7 +49,7 @@
         "Value": 200,
         "Description": "A green metal helmet with a large green feather plume, worn by elite soldiers.",
         "Filename": "0005_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 70
     },
     {
@@ -58,7 +58,7 @@
         "Value": 120,
         "Description": "A stylish green velvet hat, perfect for a noble or bard.",
         "Filename": "0006_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 10
     },
     {
@@ -71,7 +71,7 @@
         },
         "Description": "A fearsome green helmet with large horned protrusions, increasing the wearer's attack power.",
         "Filename": "0007_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 100
     },
     {
@@ -89,7 +89,7 @@
         "Value": 45,
         "Description": "A stylish hat with a plume of emerald feathers, perfect for any adventurer.",
         "Filename": "0009_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 15
     },
     {
@@ -98,7 +98,7 @@
         "Value": 32,
         "Description": "A hood made of a lush green fabric, perfect for blending in with the forest.",
         "Filename": "0010_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 12
     },
     {
@@ -107,7 +107,7 @@
         "Value": 28,
         "Description": "A simple yet sturdy cap in a deep forest green color.",
         "Filename": "0011_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 10
     },
     {
@@ -116,7 +116,7 @@
         "Value": 18,
         "Description": "A cozy beanie made of a soft mossy green yarn.",
         "Filename": "0012_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 8
     },
     {
@@ -129,7 +129,7 @@
             "amount": 20
         },
         "Filename": "0013_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 14
     },
     {
@@ -142,7 +142,7 @@
             "amount": 30
         },
         "Filename": "0014_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 5
     },
     {
@@ -151,7 +151,7 @@
         "Value": 65,
         "Description": "A delicate headband made of jade beads, perfect for channeling your inner zen.",
         "Filename": "0015_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 7
     },
     {
@@ -160,7 +160,7 @@
         "Value": 35,
         "Description": "A cozy headdress made of green fur, perfect for a cold night in the woods.",
         "Filename": "0016_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 20
     },
     {
@@ -173,7 +173,7 @@
         },
         "Description": "A stunning headdress adorned with green feathers, it makes you feel as light as a bird.",
         "Filename": "0017_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 15
     },
     {
@@ -182,7 +182,7 @@
         "Value": 30,
         "Description": "A headdress made of green leaves, perfect for blending in with the forest.",
         "Filename": "0018_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 10
     },
     {
@@ -195,7 +195,7 @@
         },
         "Description": "A fierce headdress adorned with green spikes, it makes you feel like a warrior.",
         "Filename": "0019_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 25
     },
     {
@@ -204,7 +204,7 @@
         "Value": 40,
         "Description": "A beautiful headdress adorned with green flowers, perfect for a springtime festival.",
         "Filename": "0020_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 15
     },
     {
@@ -217,7 +217,7 @@
         },
         "Description": "A majestic headdress adorned with green horns, it makes you feel like a forest spirit.",
         "Filename": "0021_clothing_head_green.png",
-        "Type": "head",
+        "Type": "Head",
         "Weight": 30
     }
 ]

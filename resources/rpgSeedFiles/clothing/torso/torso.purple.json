@@ -5,7 +5,7 @@
         "Value": 245,
         "Description": "This mystical robe imbues its wearer with an enigmatic aura, enhancing magical prowess.",
         "Filename": "0001_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 25
     },
     {
@@ -14,7 +14,7 @@
         "Value": 180,
         "Description": "A lavish tunic made from exquisite threads, perfect for nobles seeking both comfort and style.",
         "Filename": "0002_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 35
     },
     {
@@ -23,7 +23,7 @@
         "Value": 305,
         "Description": "The preferred attire for wandering minstrels, this robe enhances versatility and adaptability.",
         "Filename": "0003_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 32
     },
     {
@@ -36,7 +36,7 @@
         },
         "Description": "Ideal for daring explorers, this jacket bolsters resilience and determination in the face of adversity.",
         "Filename": "0004_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 45
     },
     {
@@ -45,7 +45,7 @@
         "Value": 210,
         "Description": "This purple tunic harbours faint traces of magic, subtly increasing the mana regenerating capabilities of its wearer.",
         "Filename": "0005_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 40
     },
     {
@@ -58,7 +58,7 @@
         },
         "Description": "Once worn by powerful sorceresses, this enchanted robe dramatically heightens their wielder's magical attack.",
         "Filename": "0006_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 37
     },
     {
@@ -67,7 +67,7 @@
         "Value": 250,
         "Description": "A distinguished tunic granted to knights of the realm, reflecting their nobility and unwavering conviction.",
         "Filename": "0007_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 60
     },
     {
@@ -76,7 +76,7 @@
         "Value": 320,
         "Description": "Exquisite vestments with fine embroidered details, highly coveted by aristocrats and wealthy merchants alike.",
         "Filename": "0008_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 51
     },
     {
@@ -85,7 +85,7 @@
         "Value": 228,
         "Description": "A lightweight garb favored by druids, who appreciate its unassuming design and natural affinity.",
         "Filename": "0009_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 28
     },
     {
@@ -94,7 +94,7 @@
         "Value": 65,
         "Description": "Comfortable undergarment that seamlessly blends style and support, suitable for everyday wear.",
         "Filename": "0010_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 12
     },
     {
@@ -103,7 +103,7 @@
         "Value": 195,
         "Description": "Perfect for hermits and recluses, this wispy robe provides a serene and contemplative atmosphere.",
         "Filename": "0011_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 26
     },
     {
@@ -116,7 +116,7 @@
         },
         "Description": "Stylish and practical, this jacket enhances magical defense, safeguarding its wearer from arcane attacks.",
         "Filename": "0012_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 58
     },
     {
@@ -125,7 +125,7 @@
         "Value": 350,
         "Description": "A sophisticated and refined cape, perfect for making dramatic entrances at grand events.",
         "Filename": "0013_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 18
     },
     {
@@ -134,7 +134,7 @@
         "Value": 405,
         "Description": "Donned by ancient shadowcasters, this robe clouds its wearer in shadow, enhancing stealth and subterfuge.",
         "Filename": "0014_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 33
     },
     {
@@ -143,7 +143,7 @@
         "Value": 390,
         "Description": "Designed for unforgiving climates, this tunic accommodates those who seek warmth, comfort, and exploration.",
         "Filename": "0015_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 75
     },
     {
@@ -152,7 +152,7 @@
         "Value": 225,
         "Description": "Popular among mage wrestlers, this sturdy robe provides agility and freedom of movement, enabling swift combat.",
         "Filename": "0016_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 41
     },
     {
@@ -161,7 +161,7 @@
         "Value": 710,
         "Description": "Exquisitely crafted armor worn by the elite royal guards, offering unmatched protection and loyalty.",
         "Filename": "0017_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 75
     },
     {
@@ -174,7 +174,7 @@
         },
         "Description": "A revered armor that emanates the indomitable spirit of the legendary samurai warriors.",
         "Filename": "0018_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 90
     },
     {
@@ -183,7 +183,7 @@
         "Value": 600,
         "Description": "This formidable armor cloaks its wearer in shadows, striking fear into the hearts of enemies.",
         "Filename": "0019_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 79
     },
     {
@@ -192,7 +192,7 @@
         "Value": 555,
         "Description": "A resilient cuirass worn by those who walk the fine line between arcane and physical warfare.",
         "Filename": "0020_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 60
     },
     {
@@ -205,7 +205,7 @@
         },
         "Description": "A distinguished armor bestowed upon esteemed military leaders, symbolizing power and strategy.",
         "Filename": "0021_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 95
     },
     {
@@ -214,7 +214,7 @@
         "Value": 530,
         "Description": "A mysterious vest that seems to blend with its surroundings, ideal for covert operations.",
         "Filename": "0022_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 45
     },
     {
@@ -227,7 +227,7 @@
         },
         "Description": "A fearsome armor imbued with demonic essence, striking terror while amplifying destructive magic.",
         "Filename": "0023_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 78
     },
     {
@@ -236,7 +236,7 @@
         "Value": 690,
         "Description": "Armor worn by the mightiest of warlords, a testament to their command and unstoppable will.",
         "Filename": "0024_clothing_torso_purple.png",
-        "Type": "torso",
+        "Type": "Torso",
         "Weight": 85
     }
 ]
