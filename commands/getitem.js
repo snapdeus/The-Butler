@@ -178,7 +178,17 @@ module.exports = {
         drawStatsBar(ctx, colors.hp, 0, 0, 256, 10);
         drawStatsBar(ctx, colors.ap, 0, 10, 256, 10);
         drawStatsBar(ctx, colors.end, 0, 20, 256, 10);
+        const categoryPositions = [
+            { x: 50, y: 125 },
+            { x: 125, y: 125 },
+            { x: 200, y: 125 }
+        ];
 
+        const categorySizes = [
+            { count: 0, width: 75, height: 75 },
+            { count: 1, width: 50, height: 50 },
+            { count: 2, width: 25, height: 25 }
+        ];
 
         const image = await loadImage(image1);
 
@@ -193,13 +203,30 @@ module.exports = {
             fakeUser.Bag.scrolls.slot1
         ]
 
-        for (let item of bagArray) {
-            let a = [50, 125, 200]
-            const image = await loadImage(item);
-            ctx.drawImage(image, a[bagArray.indexOf(item)], a[bagArray.indexOf(item)], 25, 25);
+        // for (let item of bagArray) {
+        //     let a = [50, 125, 200]
+        //     const image = await loadImage(item);
+        //     ctx.drawImage(image, a[bagArray.indexOf(item)], a[bagArray.indexOf(item)], 25, 25);
 
+        // }
+
+        for (let [category, items] of Object.entries(fakeUser.Bag)) {
+            let categoryIndex = Object.keys(fakeUser.Bag).indexOf(category);
+
+
+            let x = categoryPositions[categoryIndex].x;
+
+
+            let y = categoryPositions[categoryIndex].y;
+            let size = categorySizes[categoryIndex]
+            console.log(x)
+            for (let [itemSlot, item] of Object.entries(items)) {
+                const image = await loadImage(item);
+                ctx.drawImage(image, x, y, size.width, size.height);
+                x += size.width;
+                console.log(x)
+            }
         }
-
 
 
         const buffer = canvas.toBuffer('image/png');
