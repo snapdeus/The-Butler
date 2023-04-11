@@ -3,7 +3,7 @@ const { MessageActionRow, MessageButton } = require('discord.js')
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const User = require('../models/user')
 const { msToTime } = require('../utils/math')
-
+const path = require('path')
 const { createCanvas, loadImage, Image } = require('canvas')
 
 
@@ -113,14 +113,16 @@ module.exports = {
         const canvas = createCanvas(width, height);
         const ctx = canvas.getContext('2d');
 
-        const image1 = 'C:\\Users\\Stephen\\Documents\\codingProjects\\The-Butler\\resources\\rpgItems\\mini\\0100_mini.png'
 
 
-
-        const item1 = `C:\\Users\\Stephen\\Documents\\codingProjects\\The-Butler\\resources\\rpgItems\\clothing\\torso\\aqua\\0001_clothing_torso_aqua.png`;
-        const potion1 = `C:\\Users\\Stephen\\Documents\\codingProjects\\The-Butler\\resources\\rpgItems\\potions\\0001_potions.png`;
-        const scroll1 = `C:\\Users\\Stephen\\Documents\\codingProjects\\The-Butler\\resources\\rpgItems\\scrolls\\0001_scrolls.png`
-
+        const imagesPath = path.join(__dirname, '..', 'resources', 'rpgItems')
+        console.log(imagesPath)
+        const torso = `${ imagesPath }/clothing/torso/aqua/0001_clothing_torso_aqua.png`;
+        const head = `${ imagesPath }/clothing/head/black/0001_clothing_head_black.png`;
+        const feet = `${ imagesPath }/clothing/feet/black/0001_clothing_feet_black.png`;
+        const legs = `${ imagesPath }/clothing/legs/black/0001_clothing_legs_black.png`;
+        const potion1 = `${ imagesPath }/potions/0001_potions.png`;
+        const scroll1 = `${ imagesPath }/scrolls/0001_scrolls.png`
 
         const fakeUser = {
             name: 'John',
@@ -128,8 +130,20 @@ module.exports = {
             AP: 75,
             End: 20,
             Bag: {
+                clothing2: {
+                    Head: head
+                },
                 clothing: {
-                    Torso: item1
+                    Torso: torso,
+
+                },
+                clothing3: {
+                    Legs: legs,
+
+                },
+                clothing4: {
+                    Feet: feet,
+
                 },
                 potions: {
                     slot1: potion1
@@ -179,18 +193,23 @@ module.exports = {
         drawStatsBar(ctx, colors.ap, 0, 10, 256, 10);
         drawStatsBar(ctx, colors.end, 0, 20, 256, 10);
         const categoryPositions = [
-            { x: 50, y: 125 },
-            { x: 125, y: 125 },
-            { x: 200, y: 125 }
+            { x: 113, y: 70 },
+            { x: 103, y: 103 },
+            { x: 103, y: 153 },
+            { x: 100, y: 205 },
+            { x: 0, y: 231 },
+            { x: 231, y: 231 }
         ];
 
         const categorySizes = [
-            { count: 0, width: 75, height: 75 },
-            { count: 1, width: 50, height: 50 },
-            { count: 2, width: 25, height: 25 }
+            { count: 0, width: 40, height: 40 },
+            { count: 1, width: 60, height: 60 },
+            { count: 2, width: 60, height: 60 },
+            { count: 3, width: 45, height: 45 },
+            { count: 4, width: 25, height: 25 },
+            { count: 5, width: 25, height: 25 }
         ];
 
-        const image = await loadImage(image1);
 
         function loadImageAndDraw(x, y, imagePath) {
             const image = loadImage(imagePath);
@@ -198,7 +217,10 @@ module.exports = {
         }
 
         const bagArray = [
+            fakeUser.Bag.clothing2.Head,
             fakeUser.Bag.clothing.Torso,
+            fakeUser.Bag.clothing3.Legs,
+            fakeUser.Bag.clothing4.Feet,
             fakeUser.Bag.potions.slot1,
             fakeUser.Bag.scrolls.slot1
         ]
@@ -209,21 +231,19 @@ module.exports = {
         //     ctx.drawImage(image, a[bagArray.indexOf(item)], a[bagArray.indexOf(item)], 25, 25);
 
         // }
-
+        let x = 0;
+        let y, size;
         for (let [category, items] of Object.entries(fakeUser.Bag)) {
             let categoryIndex = Object.keys(fakeUser.Bag).indexOf(category);
 
 
-            let x = categoryPositions[categoryIndex].x;
+            x = categoryPositions[categoryIndex].x;
+            y = categoryPositions[categoryIndex].y;
+            size = categorySizes[categoryIndex]
 
-
-            let y = categoryPositions[categoryIndex].y;
-            let size = categorySizes[categoryIndex]
-            console.log(x)
             for (let [itemSlot, item] of Object.entries(items)) {
                 const image = await loadImage(item);
                 ctx.drawImage(image, x, y, size.width, size.height);
-                x += size.width;
                 console.log(x)
             }
         }
@@ -233,7 +253,7 @@ module.exports = {
         const attachment = new Discord.MessageAttachment(buffer, 'img.png');
 
         const embeds = [
-            new Discord.MessageEmbed().setImage('attachment://img.png').setTitle('Shell').setDescription('Useful item!').setFooter({ text: 'XP boost' }),
+            new Discord.MessageEmbed().setImage('attachment://img.png').setTitle('Gear').setDescription('Equipment').setFooter({ text: 'Potions                                                          Scrolls' }),
 
 
         ];
