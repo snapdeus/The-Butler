@@ -70,7 +70,8 @@ module.exports = {
             }
 
             if (!interaction.customId.endsWith(interaction.user.id)) {
-                console.log(interaction.customId);
+                console.log(interaction.customId, interaction.user.id, typeof(interaction.user.id));
+                console.log(interaction.customId.endsWith(interaction.user.id));
                 return await interaction.reply({
                     content: "This button is not for you",
                     ephemeral: true
