@@ -42,7 +42,6 @@ module.exports = {
 
 
         const { category, question, difficulty, correctAnswer, incorrectAnswers, tags, id } = data[0];
-        console.log(difficulty);
         let amount = null;
 
         switch (difficulty) {
@@ -76,7 +75,7 @@ module.exports = {
             new MessageButton()
                 .setLabel(`${ answerArray[1] }`)
                 .setStyle('DANGER')
-                .setCustomId(`${ answerArray[1] }` + `${ interaction.user.id } `));
+                .setCustomId(`${ answerArray[1] }` + `${ interaction.user.id }`));
         row.addComponents(
             new MessageButton()
                 .setLabel(`${ answerArray[2] }`)
@@ -115,6 +114,7 @@ module.exports = {
         collector.on('collect', async i => {
 
             if (i.user.id !== userId) {
+                console.log('not for you inside of trivia.js')
                 return await i.followUp({
                     content: "This button is not for you",
                     ephemeral: true
