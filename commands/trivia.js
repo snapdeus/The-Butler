@@ -146,13 +146,16 @@ module.exports = {
                     const nextLevel = 10 * (Math.pow(2, mongoUser.level) - 1);
                     mongoUser.xp = difference;
                     mongoUser.nextLevel = nextLevel;
+                    await mongoUser.save()
+                } else {
+
+                    client.leveling.addXP(userId, guildId, amount);
                 }
+                client.leveling.addXPoverTime(userId, guildId, amount);
 
                 await interaction.editReply({ content: `**<@${ userId }>** you knew the answer!`, embeds: [embed], components: [row] });
 
-                client.leveling.addXP(userId, guildId, amount);
-                client.leveling.addXPoverTime(userId, guildId, amount);
-                await mongoUser.save()
+
                 collector.stop();
                 i.deferUpdate();
                 return;
