@@ -152,7 +152,7 @@ module.exports = {
 
                 client.leveling.addXP(userId, guildId, amount);
                 client.leveling.addXPoverTime(userId, guildId, amount);
-
+                await mongoUser.save()
                 collector.stop();
                 i.deferUpdate();
                 return;
