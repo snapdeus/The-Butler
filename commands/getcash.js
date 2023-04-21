@@ -58,7 +58,7 @@ module.exports = {
             .addComponents(
                 new MessageButton()
 
-                    .setLabel('Blue Boobs')
+                    .setLabel('Blue Mystery')
                     .setStyle('PRIMARY')
                     .setCustomId("Daily1" + interaction.user.id))
 
