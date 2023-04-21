@@ -32,15 +32,15 @@ module.exports = {
             }
 
             if (interaction.channel.id !== config.XPCHANNEL) {
-                return await interaction.reply('Please use this command in the Games channel')
+                return await interaction.reply('Please use this command in the Games channel');
             }
             if (interaction.commandName === 'double' || interaction.commandName === 'zzzbotscc' || interaction.commandName === 'zzzplayerrollscc' || interaction.commandName === 'zzzendscc') {
-                return await interaction.reply('You do not have permission')
+                return await interaction.reply('You do not have permission');
             }
             // if (interaction.commandName === 'shipcc') {
             //     return await interaction.reply('bug detected, game down temporarily')
             // }
-            const command = client.commands.get(interaction.commandName)
+            const command = client.commands.get(interaction.commandName);
             try {
                 await command.execute(interaction);
             } catch (error) {
@@ -56,7 +56,7 @@ module.exports = {
                     return await interaction.reply({
                         content: "This button is not for you",
                         ephemeral: true
-                    })
+                    });
                 }
 
             }
@@ -65,44 +65,45 @@ module.exports = {
                     return await interaction.reply({
                         content: "This button is not for you",
                         ephemeral: true
-                    })
+                    });
                 }
             }
 
             if (!interaction.customId.endsWith(interaction.user.id)) {
+                console.log(interaction.customId);
                 return await interaction.reply({
                     content: "This button is not for you",
                     ephemeral: true
-                })
+                });
             }
             if (interaction.customId.startsWith('DICE_')) {
-                const command = client.commands.get('double')
-                const value = parseInt(interaction.message.embeds[0].fields[4].value)
-                await command.execute(interaction, value)
+                const command = client.commands.get('double');
+                const value = parseInt(interaction.message.embeds[0].fields[4].value);
+                await command.execute(interaction, value);
 
             } else if (interaction.customId.startsWith('INITSCC_')) {
 
-                const command = client.commands.get('zzzbotscc')
-                await command.execute(interaction)
+                const command = client.commands.get('zzzbotscc');
+                await command.execute(interaction);
             } else if (interaction.customId.startsWith('PLAYSCC_')) {
-                const userId = interaction.user.id
-                let mongoUser = await User.findOne({ userId: userId })
-                mongoUser.is_playing_scc = false
-                await mongoUser.save()
+                const userId = interaction.user.id;
+                let mongoUser = await User.findOne({ userId: userId });
+                mongoUser.is_playing_scc = false;
+                await mongoUser.save();
 
-                const command = client.commands.get('zzzplayerrollscc')
-                await command.execute(interaction)
+                const command = client.commands.get('zzzplayerrollscc');
+                await command.execute(interaction);
 
             } else if (interaction.customId.startsWith('ENDTURNSCC_')) {
-                const userId = interaction.user.id
-                let mongoUser = await User.findOne({ userId: userId })
-                mongoUser.is_playing_scc = false
-                await mongoUser.save()
+                const userId = interaction.user.id;
+                let mongoUser = await User.findOne({ userId: userId });
+                mongoUser.is_playing_scc = false;
+                await mongoUser.save();
 
-                const command = client.commands.get('zzzendscc')
-                await command.execute(interaction)
+                const command = client.commands.get('zzzendscc');
+                await command.execute(interaction);
             }
 
-        } else return
+        } else return;
     }
-}
+};
