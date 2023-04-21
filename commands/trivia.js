@@ -134,7 +134,7 @@ module.exports = {
                     .addField('Cash Prize!:', `🪙${ amount }`)
                     .addField(`Your total balance increased to: `, `🪙 ${ userRank.XPoverTime + amount }`)
                     .addField('XP Gained:', `${ amount }`)
-                    .addField(`Your XP increased to: `, `${ userRank.xp + amount } XP`);
+
 
 
                 //gain level and xp
@@ -145,10 +145,11 @@ module.exports = {
                     mongoUser.level += 1;
                     const nextLevel = 10 * (Math.pow(2, mongoUser.level) - 1);
                     mongoUser.xp = difference;
+                    embed.addField(`Your XP increased to: `, `${ difference } XP`);
                     mongoUser.nextLevel = nextLevel;
                     await mongoUser.save()
                 } else {
-
+                    embed.addField(`Your XP increased to: `, `${ userRank.xp + amount } XP`);
                     client.leveling.addXP(userId, guildId, amount);
                 }
                 client.leveling.addXPoverTime(userId, guildId, amount);
