@@ -158,7 +158,7 @@ class EasyLeveling extends EventEmitter {
         }
     }
 
-
+    //this shouldn't be used until updated to change nextlevel value
     async setLevel(level, userId, guildId) {
         if (!level) throw new Error('Easy Level Error: A valid level must be provided')
         if (typeof level != "number") throw new SyntaxError('Easy Level Error: Type of level must be a number')

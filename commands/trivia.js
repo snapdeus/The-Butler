@@ -19,10 +19,6 @@ module.exports = {
 
     async execute(interaction) {
 
-
-
-
-
         let randomNumber = Math.ceil(Math.random() * 10);
 
         const client = interaction.client;
@@ -61,20 +57,16 @@ module.exports = {
 
         const answerArray = [correctAnswer, ...incorrectAnswers];
         shuffleArray(answerArray);
-
-
         const row = new MessageActionRow();
         row.addComponents(
             new MessageButton()
-
                 .setLabel(`${ answerArray[0] }`)
                 .setStyle('PRIMARY')
                 .setCustomId(`${ answerArray[0] }` + `${ interaction.user.id }`));
-
         row.addComponents(
             new MessageButton()
                 .setLabel(`${ answerArray[1] }`)
-                .setStyle('DANGER')
+                .setStyle('PRIMARY')
                 .setCustomId(`${ answerArray[1] }` + `${ interaction.user.id }`));
         row.addComponents(
             new MessageButton()
@@ -84,7 +76,7 @@ module.exports = {
         row.addComponents(
             new MessageButton()
                 .setLabel(`${ answerArray[3] }`)
-                .setStyle('DANGER')
+                .setStyle('PRIMARY')
                 .setCustomId(`${ answerArray[3] }` + `${ interaction.user.id }`));
 
 
@@ -131,25 +123,33 @@ module.exports = {
                 const embed = new Discord.MessageEmbed()
                     .setFooter({ text: "Trivia question answered correctly!", iconURL: user.displayAvatarURL() })
                     .setTitle(`***CORRECT!***`)
-                    .addField('Cash Prize!:', `🪙${ amount }`)
-                    .addField(`Your total balance increased to: `, `🪙 ${ userRank.XPoverTime + amount }`)
-                    .addField('XP Gained:', `${ amount }`)
+                    .addFields(
+                        { name: `Question:`, value: `${ question }` },
+                        { name: `Correct Answer:`, value: `${ correctAnswer }` },
+                        { name: `Cash Prize!:`, value: `🪙${ amount }` },
+                        { name: `Your total balance increased to: `, value: `🪙 ${ userRank.XPoverTime + amount }` },
+                        { name: `XP Gained:`, value: `${ amount }` },
+
+                    )
+
+
+
 
 
 
                 //gain level and xp
                 let curLevelUp = mongoUser.nextLevel;
                 if (mongoUser.xp + amount > curLevelUp) {
-                    embed.addField('LEVEL UP!', `↗️↗️↗️`);
+                    embed.addFields({ name: 'LEVEL UP!', value: `↗️↗️↗️` });
                     let difference = (mongoUser.xp + amount) - curLevelUp;
                     mongoUser.level += 1;
                     const nextLevel = 10 * (Math.pow(2, mongoUser.level) - 1);
                     mongoUser.xp = difference;
-                    embed.addField(`Your XP increased to: `, `${ difference } XP`);
+                    embed.addFields({ name: `Your XP increased to: `, value: `${ difference } XP` });
                     mongoUser.nextLevel = nextLevel;
                     await mongoUser.save()
                 } else {
-                    embed.addField(`Your XP increased to: `, `${ userRank.xp + amount } XP`);
+                    embed.addFields({ name: `Your XP increased to: `, value: `${ userRank.xp + amount } XP` });
                     client.leveling.addXP(userId, guildId, amount);
                 }
                 client.leveling.addXPoverTime(userId, guildId, amount);
@@ -165,9 +165,23 @@ module.exports = {
                 row.components[1].setDisabled(true);
                 row.components[2].setDisabled(true);
                 row.components[3].setDisabled(true);
+                //OLD WAY
+                // const wrongAnswerObject = row.components.filter(x => x.customId === i.customId);
+                // const { customId } = wrongAnswerObject[0];
+                // const wrongAnswer = customId.replace(interaction.user.id, '')
+                //OPTIMIZED WAY
+                const wrongAnswer = row.components
+                    .find(x => x.customId === i.customId)
+                    .customId.replace(interaction.user.id, '');
+
                 const embed = new Discord.MessageEmbed()
                     .setFooter({ text: "Trivia question answered incorrectly*", iconURL: user.displayAvatarURL() })
-                    .setTitle(`***WRONG***`);
+                    .setTitle(`***XX*** ***WRONG*** ***XX*** `)
+                    .addFields(
+                        { name: `Question:`, value: `${ question }` },
+                        { name: `Correct Answer:`, value: `${ correctAnswer }` },
+                        { name: `You incorrectly chose:`, value: `${ wrongAnswer }` },
+                    )
 
                 await interaction.editReply({ content: `**<@${ userId }>** you DID NOT know the answer!`, embeds: [embed], components: [row] });
 
