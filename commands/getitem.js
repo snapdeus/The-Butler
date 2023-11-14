@@ -1,10 +1,10 @@
-const Discord = require('discord.js')
-const { MessageActionRow, MessageButton } = require('discord.js')
+const Discord = require('discord.js');
+const { MessageActionRow, MessageButton } = require('discord.js');
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const User = require('../models/user')
-const { msToTime } = require('../utils/math')
-const path = require('path')
-const { createCanvas, loadImage, Image } = require('canvas')
+const User = require('../models/user');
+const { msToTime } = require('../utils/math');
+const path = require('path');
+const { createCanvas, loadImage, Image } = require('canvas');
 
 
 
@@ -20,7 +20,7 @@ module.exports = {
 
 
         // const amount = interaction.options.getNumber("amount")
-        const amount = Math.ceil(Math.random() * 200) + 50
+        const amount = Math.ceil(Math.random() * 200) + 50;
 
 
 
@@ -28,7 +28,7 @@ module.exports = {
         const client = interaction.client;
 
         let guildId = interaction.guild.id;
-        let user = interaction.user
+        let user = interaction.user;
         let userId = interaction.user.id;
         let username = interaction.user.username;
         let userRank = await client.leveling.getUserLevel(userId, guildId, username);
@@ -41,24 +41,24 @@ module.exports = {
 
 
 
-        let mongoUser = await User.findOne({ userId: userId })
-        let timestamp = mongoUser.timestamp
+        let mongoUser = await User.findOne({ userId: userId });
+        let timestamp = mongoUser.timestamp;
         // // const timeLimit = 86400000
-        const timeLimit = 864
+        const timeLimit = 864;
 
         // //check date to see if you can use daily
-        const thedate = Date.now()
-        const timeDate = new Date(thedate)
-        const timeWaited = timeDate - timestamp
+        const thedate = Date.now();
+        const timeDate = new Date(thedate);
+        const timeWaited = timeDate - timestamp;
 
         if (timeWaited < timeLimit) {
-            const timeLeft = msToTime(timeLimit - timeWaited)
+            const timeLeft = msToTime(timeLimit - timeWaited);
 
 
             return await interaction.reply({
                 content: `You must wait ${ timeLeft } to use this command again \n\nYaaawn...it's ${ timeDate.toLocaleTimeString() } here! What's that mean?`,
 
-            })
+            });
 
 
 
@@ -108,21 +108,21 @@ module.exports = {
         // ];
 
         const { createCanvas } = require('canvas');
-        const width = 256
-        const height = 256
+        const width = 256;
+        const height = 256;
         const canvas = createCanvas(width, height);
         const ctx = canvas.getContext('2d');
 
 
 
-        const imagesPath = path.join(__dirname, '..', 'resources', 'rpgItems')
-        console.log(imagesPath)
+        const imagesPath = path.join(__dirname, '..', 'resources', 'rpgItems');
+        console.log(imagesPath);
         const torso = `${ imagesPath }/clothing/torso/aqua/0001_clothing_torso_aqua.png`;
         const head = `${ imagesPath }/clothing/head/black/0001_clothing_head_black.png`;
         const feet = `${ imagesPath }/clothing/feet/black/0001_clothing_feet_black.png`;
         const legs = `${ imagesPath }/clothing/legs/black/0001_clothing_legs_black.png`;
         const potion1 = `${ imagesPath }/potions/0001_potions.png`;
-        const scroll1 = `${ imagesPath }/scrolls/0001_scrolls.png`
+        const scroll1 = `${ imagesPath }/scrolls/0001_scrolls.png`;
 
         const fakeUser = {
             name: 'John',
@@ -157,7 +157,7 @@ module.exports = {
         // Calculate width of HP bar based on user's HP
         const hpWidth = (fakeUser.HP / 100) * width;
         const apWidth = (fakeUser.AP / 100) * width;
-        const endWidth = (fakeUser.End / 100) * width
+        const endWidth = (fakeUser.End / 100) * width;
         //draw white background
         // ctx.fillStyle = '#fff';
         // ctx.fillRect(0, 0, width, height);
@@ -173,17 +173,17 @@ module.exports = {
         const colors = {
             hp: {
                 stat: hpWidth,
-                dark: '#112280',
+                dark: '#2b2d30',
                 light: '#b3bef8'
             },
             ap: {
                 stat: apWidth,
-                dark: '#4f0a0a',
+                dark: '#2b2d30',
                 light: '#d06969'
             },
             end: {
                 stat: endWidth,
-                dark: '#224d08',
+                dark: '#2b2d30',
                 light: '#81b85f'
             }
         };
@@ -223,7 +223,7 @@ module.exports = {
             fakeUser.Bag.clothing4.Feet,
             fakeUser.Bag.potions.slot1,
             fakeUser.Bag.scrolls.slot1
-        ]
+        ];
 
         // for (let item of bagArray) {
         //     let a = [50, 125, 200]
@@ -239,12 +239,12 @@ module.exports = {
 
             x = categoryPositions[categoryIndex].x;
             y = categoryPositions[categoryIndex].y;
-            size = categorySizes[categoryIndex]
+            size = categorySizes[categoryIndex];
 
             for (let [itemSlot, item] of Object.entries(items)) {
                 const image = await loadImage(item);
                 ctx.drawImage(image, x, y, size.width, size.height);
-                console.log(x)
+                console.log(x);
             }
         }
 
@@ -370,4 +370,4 @@ module.exports = {
 
 
     }
-}
+};

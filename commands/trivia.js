@@ -89,7 +89,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
             .setThumbnail(interaction.user.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }))
             .setTitle(`**${ userName }** is playing trivia!`)
-            .setFooter({ text: 'You have 60 seconds...' })
+            .setFooter({ text: 'You have 25 seconds...' })
             .addFields(
                 { name: 'Question:', value: `${ question }` },
                 { name: 'Category:', value: `${ category }` },
@@ -106,7 +106,7 @@ module.exports = {
         collector.on('collect', async i => {
 
             if (i.user.id !== userId) {
-                console.log('not for you inside of trivia.js')
+                console.log('not for you inside of trivia.js');
                 return await i.followUp({
                     content: "This button is not for you",
                     ephemeral: true
@@ -130,7 +130,7 @@ module.exports = {
                         { name: `Your total balance increased to: `, value: `🪙 ${ userRank.XPoverTime + amount }` },
                         { name: `XP Gained:`, value: `${ amount }` },
 
-                    )
+                    );
 
 
 
@@ -147,7 +147,7 @@ module.exports = {
                     mongoUser.xp = difference;
                     embed.addFields({ name: `Your XP increased to: `, value: `${ difference } XP` });
                     mongoUser.nextLevel = nextLevel;
-                    await mongoUser.save()
+                    await mongoUser.save();
                 } else {
                     embed.addFields({ name: `Your XP increased to: `, value: `${ userRank.xp + amount } XP` });
                     client.leveling.addXP(userId, guildId, amount);
@@ -181,7 +181,7 @@ module.exports = {
                         { name: `Question:`, value: `${ question }` },
                         { name: `Correct Answer:`, value: `${ correctAnswer }` },
                         { name: `You incorrectly chose:`, value: `${ wrongAnswer }` },
-                    )
+                    );
 
                 await interaction.editReply({ content: `**<@${ userId }>** you DID NOT know the answer!`, embeds: [embed], components: [row] });
 
@@ -200,7 +200,7 @@ module.exports = {
             row.components[2].setDisabled(true);
             row.components[3].setDisabled(true);
             interaction.editReply({ components: [row] });
-        }, 60000);
+        }, 25000);
 
     }
 };
